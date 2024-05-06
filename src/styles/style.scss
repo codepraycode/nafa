@@ -7,6 +7,8 @@ $body-padding: 4rem;
 
 $clr2: hsla(209, 100%, 21%, 1);
 
+$clr-text-3: hsla(217, 19%, 27%, 1);
+
 
 header {
 
@@ -138,4 +140,132 @@ header {
         border: 1px solid rgba(128, 128, 128, 0.438);
     }
 
+}
+
+
+main {
+
+    padding: $body-padding;
+}
+
+
+footer {
+    padding: $body-padding;
+    color: $clr-text-3;
+    font-size: 1rem;
+
+    a {
+        text-decoration: none;
+        color: inherit;
+    }
+
+
+
+    @include mixins.md {
+
+
+
+        .footer-wrapper {
+            width: 50%;
+        }
+    }
+
+
+    @include mixins.sm {
+
+        .logo {
+            margin-inline: auto;
+        }
+    }
+
+
+
+
+    ul {
+        li {
+            padding-block: .6rem;
+        }
+    }
+
+
+    
+    nav {
+        display: flex;
+        align-items: center;
+
+        justify-content: center;
+
+        text-align: center;
+
+        flex-wrap: wrap;
+
+
+        padding-top: 1rem;
+
+
+        @include mixins.md {
+            justify-content: space-between;
+            text-align: start;
+        }
+
+        h3 {
+            font-size: 1rem;
+            margin-block: 1rem;
+        }
+    }
+
+    p {
+        margin-block: 1rem;
+
+        @include mixins.sm {
+            text-align: center;
+        }
+    }
+
+
+    .socials {
+        a {
+            $icon-width: 1.5rem;
+            display: inline-block;
+            
+            width: $icon-width;
+            aspect-ratio: 1;
+            
+            overflow: hidden;
+            text-indent: 200%;
+            
+            // background-color: red;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+
+        }
+    }
+
+    .footer_extras,
+    .socials {
+
+        
+        display: flex;
+        // flex-wrap: wrap;
+
+        justify-content: center;
+        margin-block: 2rem;
+        
+        
+        @include mixins.md {
+            justify-content: flex-start;
+        }
+
+        gap: 2rem;
+    }
+
+    @include mixins.sm {
+
+        .footer_extras {
+            flex-direction: column;
+            text-align: center;
+            gap: 1rem;
+        }
+    }
 }
