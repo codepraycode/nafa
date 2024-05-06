@@ -137,12 +137,6 @@ header {
 
 
 
-main {
-
-    @include mixins.container;
-}
-
-
 footer {
     @include mixins.container;
 
@@ -285,6 +279,13 @@ footer {
     }
 }
 
+
+.mv,
+.partners {
+    @include mixins.container;
+}
+
+
 .partners-wrapper {
     // background-color: red;
 
@@ -307,4 +308,57 @@ footer {
             max-width: 100%;
         }
     }
+}
+
+.mv {
+    
+    background-image: url("/mv-bg.jpeg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center 80%;
+    
+    // background-attachment: fixed;
+    
+    min-height: 100vh;
+    
+    &-wrapper {
+        background-color: $clr2;
+
+        padding: 2.5rem 1rem;
+        border-radius: 1rem;
+
+        color: whitesmoke;
+
+        font-weight: bold;
+        // font-size: 1rem;
+        text-align: center;
+
+        margin-inline: auto;
+        
+        position: relative;
+
+        top: 30rem;
+        
+        
+        @include mixins.md {
+            top: 35rem;
+            width: 50%;
+            padding: 2rem 5rem;
+        }
+
+
+        hr {
+            margin-block: 1.2rem;
+        }
+
+        .btn {
+            // color: hsla(216, 12%, 84%, 1);
+            padding: .8rem 1.2rem;
+            box-shadow: 0 1 2px 0 rgba(6, 25, 56, 0.05);
+            background-color: rgba(255, 255, 255, 1);
+            margin-inline: auto;
+        }
+
+    }
+
 }
