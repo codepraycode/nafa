@@ -11,3 +11,12 @@
         @content;
     }
 }
+
+
+@mixin container() {
+    padding: calc($body-padding / 4);
+    
+    @include md {
+        padding: $body-padding;
+    }
+}

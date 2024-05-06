@@ -11,17 +11,16 @@ interface LogoProps {
 
 export default function Logo(props: LogoProps) {
 
-    console.log(props);
-  return (
-    <div className="logo">
-        <Link href={"/"}>
-            <Image
-                src={props.second ? "/logo.png" : "/logo-2.png"}
-                alt='NAFA LOGO'
-                width={100}
-                height={100}
-            />
-        </Link>
-    </div>
-  )
+    return (
+        <div className="logo">
+            <Link href={"/"}>
+                <Image
+                    src={props.second ? "/logo.png" : "/logo-2.png"}
+                    alt='NAFA LOGO'
+                    width={100}
+                    height={100}
+                />
+            </Link>
+        </div>
+    )
 }

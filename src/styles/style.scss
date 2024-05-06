@@ -1,13 +1,6 @@
+@use "./variables" as *;
 @use "./mixins" as mixins;
 @import "./reset";
-
-
-$clr1: hsla(98, 49%, 51%, 1);
-$body-padding: 4rem;
-
-$clr2: hsla(209, 100%, 21%, 1);
-
-$clr-text-3: hsla(217, 19%, 27%, 1);
 
 
 header {
@@ -143,14 +136,16 @@ header {
 }
 
 
+
 main {
 
-    padding: $body-padding;
+    @include mixins.container;
 }
 
 
 footer {
-    padding: $body-padding;
+    @include mixins.container;
+
     color: $clr-text-3;
     font-size: 1rem;
 
@@ -191,20 +186,17 @@ footer {
 
     
     nav {
-        display: flex;
-        align-items: center;
-
-        justify-content: center;
-
-        text-align: center;
-
-        flex-wrap: wrap;
+        text-align: center;        
 
 
         padding-top: 1rem;
 
 
         @include mixins.md {
+            display: flex;
+            align-items: center;
+        
+            justify-content: center;
             justify-content: space-between;
             text-align: start;
         }
@@ -267,6 +259,52 @@ footer {
             flex-direction: column;
             text-align: center;
             gap: 1rem;
+        }
+    }
+}
+
+
+
+.section-title {
+
+    // text-align: center;
+    font-size: 1.3rem;
+    display: inline-block;
+    text-transform: uppercase;
+
+    &::after {
+        content: " ";
+
+        display: block;
+        width: 70%;
+        height: 2px;
+        background-color: $clr2;
+
+        border-radius: 3rem;
+        // background-color: red;
+    }
+}
+
+.partners-wrapper {
+    // background-color: red;
+
+
+    ul {        
+        display: flex;
+        // justify-content: center;
+        column-gap: 3rem;
+        row-gap: 2rem;
+        flex-wrap: wrap;
+
+
+        @include mixins.md {
+            column-gap: 5rem;
+        }
+        
+        li {
+            // border: 1px solid red;
+            width: 7rem;
+            max-width: 100%;
         }
     }
 }
