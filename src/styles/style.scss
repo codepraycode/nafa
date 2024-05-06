@@ -293,6 +293,7 @@ footer {
 .mv,
 .rg,
 .hero,
+.about,
 .partners {
     @include mixins.container;
     background-repeat: no-repeat;
@@ -482,3 +483,60 @@ footer {
 
 }
 
+
+
+.about {
+    &-wrapper {
+        // display: flex;
+
+        @include mixins.md {
+            display: flex;
+            .content {
+                width: 60%;
+
+                top: -4rem;
+                right: -7.5rem;
+                border-bottom-right-radius: 0rem !important;
+
+                padding-top: 5rem 4rem;
+                padding-inline: 4rem;
+            }
+        }
+        
+        .feature-img {
+            height: 10rem;
+            width: 40rem;
+            max-width: 100%;
+
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: contain;
+        }
+
+
+        .content {
+            background-color: $clr1;
+            position: relative;
+
+            // padding: 5rem 4rem;
+            padding-block: 3rem 4rem;
+            padding-inline: 2rem;
+
+            border-bottom-left-radius: 1rem;
+            border-bottom-right-radius: 1rem;
+
+            h2 {
+                font-size: 2rem;
+            }
+
+            p {
+                font-size: 1rem;
+                line-height: 1.8rem;
+                // letter-spacing: .2rem;
+            }
+        }
+
+
+        
+    }
+}
