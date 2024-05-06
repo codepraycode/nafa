@@ -129,6 +129,14 @@ header {
         color: whitesmoke;
     }
 
+    &-light {
+        // color: hsla(216, 12%, 84%, 1);
+        padding: .8rem 1.2rem;
+        box-shadow: 0 1 2px 0 rgba(6, 25, 56, 0.05);
+        background-color: rgba(255, 255, 255, 1);
+        margin-inline: auto;
+    }
+
     &-outline {
         border: 1px solid rgba(128, 128, 128, 0.438);
     }
@@ -281,8 +289,13 @@ footer {
 
 
 .mv,
+.rg,
 .partners {
     @include mixins.container;
+    background-repeat: no-repeat;
+    background-size: cover;
+    
+    
 }
 
 
@@ -313,13 +326,12 @@ footer {
 .mv {
     
     background-image: url("/mv-bg.jpeg");
-    background-repeat: no-repeat;
-    background-size: cover;
     background-position: center 80%;
+    min-height: 100vh;
     
     // background-attachment: fixed;
     
-    min-height: 100vh;
+    // min-height: 100vh;
     
     &-wrapper {
         background-color: $clr2;
@@ -351,14 +363,45 @@ footer {
             margin-block: 1.2rem;
         }
 
-        .btn {
-            // color: hsla(216, 12%, 84%, 1);
-            padding: .8rem 1.2rem;
-            box-shadow: 0 1 2px 0 rgba(6, 25, 56, 0.05);
-            background-color: rgba(255, 255, 255, 1);
-            margin-inline: auto;
-        }
-
     }
 
+}
+
+
+.rg {
+    background-image: url("/rg-bg.jpeg");
+    background-position: center 40%;
+    min-height: 80vh;
+
+    background-color: rgb(40, 95, 7);
+    background-blend-mode: multiply;
+
+    padding: 0 !important;
+
+    display: flex;
+    align-items: flex-end;
+    
+    &-wrapper {
+        
+        // backdrop-filter: brightness(-10%);
+        color: whitesmoke;
+
+        text-align: center;
+        
+        margin-inline: auto;
+        width: 100%;
+        padding: 2rem 15rem;
+        
+        h2 {
+            font-size: 4rem;
+        }
+
+        p {
+            font-size: 1.4rem;
+        }
+
+
+        position: relative;
+
+    }
 }
