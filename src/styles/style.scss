@@ -1,0 +1,141 @@
+@use "./mixins" as mixins;
+@import "./reset";
+
+
+$clr1: hsla(98, 49%, 51%, 1);
+$body-padding: 4rem;
+
+$clr2: hsla(209, 100%, 21%, 1);
+
+
+header {
+
+    
+    ul {
+        display: flex;
+        gap: 2rem;
+        a {
+            text-decoration: none;
+            color: $clr2;
+        }
+    }
+}
+
+
+.header-top {
+    padding-inline: $body-padding;
+    background-color: $clr1;
+
+    padding-block: calc($body-padding / 5);
+
+    a {
+        
+        color: whitesmoke;
+    }
+
+
+    display: none;
+
+    @include mixins.md {
+        display: block;
+    }
+}
+
+
+.header-wrapper {
+    display: flex;
+    align-items: center;
+
+
+    padding-inline: calc($body-padding / 2);
+    padding-block: calc($body-padding / 3);
+
+
+    @include mixins.md {
+        padding-inline: $body-padding;
+    }
+
+    nav {
+        margin-left: auto;
+
+        display: none;
+
+
+        @include mixins.md {
+            display: flex;
+            gap: 2rem;
+            align-items: center;
+        }
+    }
+
+    .btn {
+        
+        &:first-of-type {
+            margin-right: 1rem;
+        }
+    }
+
+
+    .menu {
+
+        margin-left: auto;
+
+        display: block;
+        padding: 1rem;
+        width: 2rem;
+        height: 2rem;
+
+
+
+        // background-color: red;
+
+        background-image: url("/icons/menu.svg");
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+
+
+        overflow: hidden;
+
+        input[type="checkbox"] {
+            width: 0;
+        }
+
+        span {
+            display: inline-block;
+            text-indent: 150%;
+        }
+
+        @include mixins.md {
+            display: none;
+        }
+    }
+}
+
+.logo {
+    width: 8rem;
+    // background-color: red;
+}
+
+
+.btn {
+    text-decoration: none;
+    display: inline-block;
+    
+    padding-block: .7rem;
+    padding-inline: 1rem;
+
+    border-radius: .3rem;
+    
+    color: $clr2;
+
+    &-primary {
+        background-color: $clr2;
+        color: whitesmoke;
+    }
+
+    &-outline {
+        border: 1px solid rgba(128, 128, 128, 0.438);
+    }
+
+}

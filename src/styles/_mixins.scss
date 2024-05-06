@@ -1,0 +1,13 @@
+@use "./variables" as *;
+
+@mixin sm() {
+    @media screen and (max-width: $mobile-bp) {
+        @content;
+    }
+}
+
+@mixin md() {
+    @media screen and (min-width: $desktop-bp) {
+        @content;
+    }
+}
