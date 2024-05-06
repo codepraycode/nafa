@@ -391,19 +391,35 @@ footer {
         
         margin-inline: auto;
         width: 100%;
-        padding: 2rem 15rem;
+        padding: 2rem;
 
         h2 {
-            font-size: 4rem;
+            font-size: 2rem;
         }
 
         p {
-            font-size: 1.4rem;
+            font-size: 1.1rem;
         }
 
-        position: relative;
+        @include mixins.sm {
+            .btn {
+                width: 100%;
+            }
+        }
 
+        @include mixins.md {
+            padding: 2rem 15rem;
+
+            h2 {
+                font-size: 4rem;
+            }
+            p {
+                font-size: 1.4rem;
+            }
+        }
     }
+
+
 }
 
 
@@ -411,9 +427,6 @@ footer {
     background-image: url("/hero-bg.jpeg");
     background-position: center 60%;
     min-height: 90vh;
-
-    // background-image: lin,
-    //         url("/hero-bg.jpeg");
 
     background-color: hsla(98, 47%, 24%, 1);
     background-blend-mode: multiply;
@@ -425,20 +438,45 @@ footer {
     color: whitesmoke;
 
     &-wrapper {
-        padding: 3rem;
+        padding: 1rem;
+        text-align: center;
     }
     h1 {
-        font-size: 7.5rem;
+        font-size: 3rem;
     }
 
     p {
-        font-size: 1.5rem;
-        margin-block: -1rem 2rem;
+        font-size: 1.2rem;
+        margin-block: 1rem;
     }
 
     .btn {
         &:first-of-type {
-            margin-right: 1rem;
+            margin-right: 0;
+            margin-bottom: 1rem;
+        }
+    }
+
+
+    @include mixins.md {
+
+        &-wrapper {
+            padding: 3rem;
+            text-align: start;
+        }
+        h1 {
+            font-size: 7.5rem;
+        }
+    
+        p {
+            font-size: 1.5rem;
+            margin-block: -1rem 2rem;
+        }
+
+        .btn {
+            &:first-of-type {
+                margin-right: 1rem;
+            }
         }
     }
 
