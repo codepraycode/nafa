@@ -2,12 +2,21 @@ import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'
 
-export default function Logo() {
+
+
+interface LogoProps {
+    second?: boolean
+}
+
+
+export default function Logo(props: LogoProps) {
+
+    console.log(props);
   return (
     <div className="logo">
         <Link href={"/"}>
             <Image
-                src={"/logo.png"}
+                src={props.second ? "/logo.png" : "/logo-2.png"}
                 alt='NAFA LOGO'
                 width={100}
                 height={100}

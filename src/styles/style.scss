@@ -170,13 +170,14 @@ footer {
         }
     }
 
-
-    @include mixins.sm {
-
-        .logo {
+    .logo {
+        width: 5rem;
+        @include mixins.sm {
+            // width: 4rem;
             margin-inline: auto;
         }
     }
+
 
 
 

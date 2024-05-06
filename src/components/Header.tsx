@@ -24,7 +24,7 @@ export default function Header() {
 
 
             <div className="header-wrapper">
-                <Logo />
+                <Logo second/>
 
                 <nav>
 
