@@ -1,7 +1,7 @@
 import React from 'react'
 import Section from '../UI/Section'
 import Link from 'next/link'
-import SliderContainer from '../UI/Slider'
+import SliderContainer, { SlideWrapper } from '../UI/Slider'
 
 
 
@@ -52,10 +52,11 @@ export default function Projects() {
         >
             <h2 className='section-title'>Projects</h2>
 
-            <SliderContainer {...sliderconfig} className='featured-slide fs-2'>
+            <SliderContainer {...sliderconfig} className='featured-slide'>
                 {
                     projects.map((item, i)=>(
-                        <article key={i}>
+                        
+                        <SlideWrapper key={i}>
                             <Link
                                 href={"/"} 
                                 style={{backgroundImage:"url(/projects-bg.jpeg)"}}
@@ -63,7 +64,7 @@ export default function Projects() {
                             >
                                 <span>{item}</span>
                             </Link>
-                        </article>
+                        </SlideWrapper>
                     ))
                 }
             </SliderContainer>
