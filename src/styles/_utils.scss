@@ -66,3 +66,73 @@
     }
 
 }
+
+
+.slider-container {
+    // background-color: red;
+    position: relative;
+
+    &:has(.hero) {
+
+
+        .slider-arrow {
+
+            opacity: 0 !important;
+            // right: 10rem;
+            bottom: 20%;
+
+            $right-space: 5rem;
+
+            &[data-next="true"] {
+                right: $right-space;
+            }
+            
+            &[data-prev="true"] {
+                right: $right-space + 2 * 2;
+                // left: 0;
+            }
+
+
+            @include mixins.md {
+                opacity: 1 !important;
+            }
+        }
+    }
+}
+
+
+.slider-arrow {
+    background-color: transparent;
+
+    cursor: pointer;
+
+    border: .5px solid $clr-text-light;
+    border-radius: 50%;
+
+    background-image: url("/icons/chevron.svg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 20%;
+
+    width: 2.5rem;
+    height: 2.5rem;
+
+    position: absolute;
+    // top: 50%;
+
+    z-index: 1;
+
+
+    &[data-next="true"] {
+    }
+
+    &[data-prev="true"] {
+
+        &:disabled {
+            opacity: .5;
+            border-color: $clr-text-5;
+            cursor: not-allowed;
+        }
+        transform: rotate(-180deg);
+    }
+}

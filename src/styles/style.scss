@@ -30,7 +30,7 @@ header {
 
 
     a {        
-        color: whitesmoke;
+        color: $clr-text-light;
         @include mixins.fonts($family: $inter-font);
     }
 
@@ -265,15 +265,7 @@ footer {
 }
 
 
-.partners-wrapper {
-    // background-color: red;
-
-    // @include mixins.md {
-
-    //     ul {
-    //         justify-content: center;
-    //     }
-    // }
+.partners-wrapper {    
 
     ul {
         display: flex;        
@@ -424,6 +416,7 @@ footer {
         height: 100%;
         background-image: linear-gradient(to top, hsla(98, 47%, 24%, 1), hsla(0, 0%, 100%, .5));
         mix-blend-mode: multiply;
+
     }
 
     display: flex;

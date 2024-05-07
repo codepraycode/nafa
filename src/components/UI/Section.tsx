@@ -2,9 +2,10 @@ import React from 'react'
 
 
 
-interface SectionProps {
+export interface SectionProps {
     name: string,
-    children: React.ReactNode
+    children: React.ReactNode,
+    noWrapper?:boolean
 }
 
 
@@ -15,9 +16,14 @@ export default function Section(props: SectionProps) {
     const wrapperClassName = `${props.name}-wrapper`
     return (
         <section className={className}>
-            <div className={wrapperClassName}>
-                { props.children }
-            </div>
+
+            {
+                props.noWrapper ? props.children : (
+                    <div className={wrapperClassName}>
+                        { props.children }
+                    </div>
+                )
+            }
         </section>
     )
 }

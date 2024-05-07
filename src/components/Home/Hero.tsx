@@ -1,28 +1,36 @@
 import React from 'react'
 import Section from '../UI/Section'
 import Link from 'next/link'
+import SliderContainer,{ SlideWrapper} from '../UI/Slider'
 
 export default function Hero() {
     return (
-        <Section
-            name='hero'
-        >
-            <h1>
-                ONE GAME<br/>ONE NATION
+        <SliderContainer>
 
-                <br/>
-                <span>Unleash Your Passion: Empowering Your Football Journey Together.</span>
-            </h1>
+            <SlideWrapper>
+                <Section
+                    name='hero'
+                >
+                    <h1>
+                        ONE GAME<br/>ONE NATION
 
-            <div className="cta">
-                <Link href={"/"} className='btn btn-primary'>
-                    Become a Member
-                </Link>
-                <Link href={"/"} className='btn btn-light'>
-                    Enroll Your Organization
-                </Link>
+                        <br/>
+                        <span>Unleash Your Passion: Empowering Your Football Journey Together.</span>
+                    </h1>
 
-            </div>
-        </Section>
+                    <div className="cta">
+                        <Link href={"/"} className='btn btn-primary'>
+                            Become a Member
+                        </Link>
+                        <Link href={"/"} className='btn btn-light'>
+                            Enroll Your Organization
+                        </Link>
+
+                    </div>
+                </Section>
+            </SlideWrapper>
+
+
+        </SliderContainer>
     )
 }
