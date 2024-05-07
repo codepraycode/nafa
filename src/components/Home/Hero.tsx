@@ -7,8 +7,12 @@ export default function Hero() {
         <Section
             name='hero'
         >
-            <h1>ONE GAME<br/>ONE NATION</h1>
-            <p>Unleash Your Passion: Empowering Your Football Journey Together.</p>
+            <h1>
+                ONE GAME<br/>ONE NATION
+
+                <br/>
+                <span>Unleash Your Passion: Empowering Your Football Journey Together.</span>
+            </h1>
 
             <div className="cta">
                 <Link href={"/"} className='btn btn-primary'>
