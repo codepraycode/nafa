@@ -295,6 +295,7 @@ footer {
 .hero,
 .about,
 .kickoff,
+.live_scores,
 .partners {
     @include mixins.container;
     background-repeat: no-repeat;
@@ -598,3 +599,94 @@ footer {
         }
     }
 }
+
+
+.live_scores {
+    h2 {
+        font-size: 1.3rem;
+
+        @include mixins.md {
+            font-size: 2rem;
+        }
+    }
+
+
+    &-wrapper {
+        background-color: hsla(98, 49%, 51%, 1);
+
+
+        width: 70rem;
+
+        max-width: 95%;
+
+        padding: 1.5rem;
+        border-radius: 2rem;
+
+        margin-inline: auto;
+
+
+        @include mixins.md {
+            padding: 3rem;
+        }
+    }
+
+
+    .score-table {
+        // background-color: red;
+
+        h3 {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background-color: hsla(98, 47%, 24%, 1);
+            padding-block: 1rem;
+            // padding-inline: 2rem;
+            padding-inline: 1rem;
+            border-radius: 1rem;
+            color: whitesmoke;
+
+
+            font-size: .8rem;
+
+            a {
+                color: inherit;
+                text-decoration: none;
+            }
+
+            
+        }
+
+        .listing {
+            display: flex;
+            align-items: center;
+
+            justify-content: space-between;
+
+            margin-bottom: .5rem;
+
+            // padding-inline: 2rem;
+
+            
+            @include mixins.sm {
+                & > div {
+                    // background-color: red;
+    
+                    span { 
+                        margin-inline: 1rem;
+                        display: inline-block;
+                    }
+                }
+    
+    
+                & >span:first-of-type {
+                    display: none;
+                }
+                & > div > span:not(:first-of-type) {
+                    display: none;
+                }
+
+            }
+        } 
+    }
+}
+
