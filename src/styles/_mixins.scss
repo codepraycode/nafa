@@ -22,3 +22,19 @@
         padding: $body-padding;
     }
 }
+
+
+
+// Fonts
+
+@mixin fonts($family: $montserrat-font, $weight: 500 ) {
+    font-family: $family, sans-serif;
+    font-weight: $weight;
+    font-optical-sizing: auto;
+    font-style: normal;
+
+    @if $family == Inter {
+        font-variation-settings: "slnt" 0;
+    }
+    
+}

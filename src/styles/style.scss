@@ -1,6 +1,9 @@
+
 @use "./variables" as *;
 @use "./mixins" as mixins;
+@import url('https://fonts.googleapis.com/css2?family=Inria+Sans:ital,wght@0,300;0,400;0,700;1,300;1,400;1,700&family=Inter:wght@100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
 @import "./reset";
+@import "./utils";
 
 
 header {
@@ -11,7 +14,7 @@ header {
         gap: 2rem;
         a {
             text-decoration: none;
-            color: $clr2;
+            color: $clr-text-1
         }
     }
 }
@@ -23,13 +26,15 @@ header {
 
     padding-block: calc($body-padding / 5);
 
-    a {
-        
+    display: none;
+
+
+    a {        
         color: whitesmoke;
+        @include mixins.fonts($family: $inter-font);
     }
 
 
-    display: none;
 
     @include mixins.md {
         display: block;
@@ -63,10 +68,16 @@ header {
         }
     }
 
+
+    .links {
+        @include mixins.fonts($family: $inria-font);
+        font-size: 1.2rem;
+    }
+
     .btn {
         
         &:first-of-type {
-            margin-right: 1rem;
+            margin-right: 2rem;
         }
     }
 
@@ -113,45 +124,13 @@ header {
 }
 
 
-.btn {
-    text-decoration: none;
-    display: inline-block;
-    
-    padding-block: .7rem;
-    padding-inline: 1rem;
-
-    border-radius: .3rem;
-    
-    color: $clr2;
-    padding: .8rem 1.2rem;
-
-    &-primary {
-        background-color: $clr2;
-        color: whitesmoke;
-        border: 1px solid whitesmoke;
-    }
-
-    &-light {
-        // color: hsla(216, 12%, 84%, 1);
-        // padding: .8rem 1.2rem;
-        box-shadow: 0 1 2px 0 rgba(6, 25, 56, 0.05);
-        background-color: rgba(255, 255, 255, 1);
-        margin-inline: auto;
-    }
-
-    &-outline {
-        border: 1px solid rgba(128, 128, 128, 0.438);
-    }
-
-}
-
-
 
 footer {
     @include mixins.container;
 
+    font-size: 1.2rem;
     color: $clr-text-3;
-    font-size: 1rem;
+    @include mixins.fonts($family: $inter-font, $weight: 400);
 
     a {
         text-decoration: none;
@@ -159,11 +138,17 @@ footer {
     }
 
 
+    h3 {
+        font-weight: 600;
+        font-size: 1.5rem;
+        margin-block: 1rem;
+
+        color: $clr-text-1;
+    }
+
+
 
     @include mixins.md {
-
-
-
         .footer-wrapper {
             width: 50%;
         }
@@ -204,11 +189,6 @@ footer {
             justify-content: space-between;
             text-align: start;
         }
-
-        h3 {
-            font-size: 1rem;
-            margin-block: 1rem;
-        }
     }
 
     p {
@@ -231,7 +211,6 @@ footer {
             overflow: hidden;
             text-indent: 200%;
             
-            // background-color: red;
             background-position: center;
             background-repeat: no-repeat;
             background-size: cover;
@@ -255,6 +234,13 @@ footer {
         }
 
         gap: 2rem;
+    }
+
+
+    .footer_extras,
+    p {
+        font-weight: 400;
+        font-size: 1rem;
     }
 
     @include mixins.sm {
@@ -852,9 +838,6 @@ footer {
     }
 
     .content {
-        // display: flex;
-        // gap: 2rem;
-        // flex-wrap: wrap;
 
         article {
             
