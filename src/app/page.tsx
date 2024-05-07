@@ -1,4 +1,5 @@
 import About from "@/components/Home/About";
+import Articles from "@/components/Home/Articles";
 import Hero from "@/components/Home/Hero";
 import KickOff from "@/components/Home/KickOff";
 import MV from "@/components/Home/MV";
@@ -13,6 +14,7 @@ export default function Home() {
             <About />
             <KickOff />
             <LiveScores />
+            <Articles />
             <RG />
             <MV />
             <Partners />
