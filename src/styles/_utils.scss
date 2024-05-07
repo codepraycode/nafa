@@ -48,7 +48,7 @@
 
     &-primary {
         background-color: $clr2;
-        color: $clr-text-light;
+        color: $clr-text-light !important;
         border: 1px solid $clr-text-light;
     }
 
@@ -101,6 +101,7 @@
         }
 
         .slide-range {
+            display: block;
             opacity: 0 !important;
 
             color: $clr-text-light;
@@ -158,14 +159,63 @@
 
 
     }
+
+
+    &:has(.featured-slide) {
+        position: static;
+        $position-bottom: 20%;
+        $right-space: 0rem;
+
+        $position-top: 120%;
+
+        // background-color: red;
+    
+        .slider-arrow {
+            background-image: url("/icons/chevron-2.svg");
+            border-color: $clr-text-3;
+
+            // top: $position-top;
+
+
+            
+            // bottom: $position-bottom;
+            top: 109%;
+            left: 0;
+    
+    
+            &[data-next="true"] {
+                left: $right-space + 2 * 2;
+            }
+            
+            &[data-prev="true"] {
+                left: $right-space;
+            }
+
+        }
+
+
+        & ~ .slide-cta {
+            // top: 2rem;
+            // bottom: -1rem;
+            position: absolute;
+            top: 90%;
+            right: 0;
+            // right: $right-space * 2;
+
+            &.fs-2 {
+                top: 110%;
+            }
+        }
+    }
 }
 
 
 
 .slide-range {
     position: absolute;
-
     @include mixins.fonts($family: $inria-font, $weight: 700);
+
+    display: none;
 }
 
 .slider-arrow {

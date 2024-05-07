@@ -4,8 +4,18 @@ import Link from 'next/link'
 import SliderContainer,{ SlideWrapper} from '../UI/Slider'
 
 export default function Hero() {
+    const sliderconfig = {
+        dots: true,
+        fade: true,
+        infinite: true,
+        slidesToShow: 1,
+        slidesToScroll: 1,
+        autoplay: true,
+        speed: 2000,
+        cssEase: "linear",
+    }
     return (
-        <SliderContainer dots={false}>
+        <SliderContainer {...sliderconfig}>
 
             <SlideWrapper >
                 <Section

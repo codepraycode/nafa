@@ -31,7 +31,7 @@ export function SlideWrapper(props:SlideWrapperProps) {
 
 
 export function SliderArrow(props: any) {
-    console.log(props);
+
     const disablePrev = props.slideCount <= 1;
 
     return (
@@ -50,14 +50,14 @@ export function SliderArrow(props: any) {
 export default function SliderContainer(props:SliderContainerProps) {
 
     const settings: SliderSettings = {
-        dots: true,
-        fade: true,
-        infinite: true,
-        slidesToShow: 1,
-        slidesToScroll: 1,
-        autoplay: true,
-        speed: 2000,
-        cssEase: "linear",
+        // dots: true,
+        // fade: true,
+        // infinite: true,
+        // slidesToShow: 1,
+        // slidesToScroll: 1,
+        // autoplay: true,
+        // speed: 2000,
+        // cssEase: "linear",
         nextArrow: <SliderArrow isNext />,
         prevArrow: <SliderArrow isPrev />,
         afterChange: () => setUpdateCount(updateCount + 1),
