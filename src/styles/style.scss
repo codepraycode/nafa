@@ -297,6 +297,7 @@ footer {
 .kickoff,
 .live_scores,
 .articles,
+.projects,
 .partners {
     @include mixins.container;
     background-repeat: no-repeat;
@@ -432,9 +433,24 @@ footer {
     background-position: center 60%;
     min-height: 90vh;
 
-    background-color: hsla(98, 47%, 24%, 1);
-    background-blend-mode: multiply;
+    // background-color: hsla(98, 47%, 24%, 1);
+    // background-blend-mode: multiply;
 
+    position: relative;
+
+    &::after {
+        content: '';
+        position: absolute;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        left: 0;
+
+        width: 100%;
+        height: 100%;
+        background-image: linear-gradient(to top, hsla(98, 47%, 24%, 1), hsla(0, 0%, 100%, .5));
+        mix-blend-mode: multiply;
+    }
 
     display: flex;
     align-items: flex-end;
@@ -444,6 +460,7 @@ footer {
     &-wrapper {
         padding: 1rem;
         text-align: center;
+        z-index: 1;
     }
     h1 {
         font-size: 3rem;
@@ -754,6 +771,62 @@ footer {
 
             .date {
                 color: $clr-text-5;
+            }
+        }
+    }
+}
+
+
+.projects-wrapper {
+    .content {
+        margin-top: 2rem;
+
+        display: flex;
+        gap: 2rem;
+
+        .project-item {
+            display: flex;
+            align-items: flex-end;
+            width: 13rem;
+            aspect-ratio: 1;
+
+            border-radius: .9rem;
+            
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+
+            text-decoration: none;
+
+            // background-color: hsla(98, 60%, 19%, 1);
+            // background-blend-mode: multiply;
+            color: whitesmoke;
+            font-weight: 700;
+
+            padding: 1rem;
+
+            position: relative;
+
+            overflow: hidden;
+
+
+            span {
+                z-index: 1;
+            }
+
+
+            &::after {
+                content: '';
+                position: absolute;
+                top: 0;
+                right: 0;
+                bottom: 0;
+                left: 0;
+
+                width: 100%;
+                height: 100%;
+                background-image: linear-gradient(to top, hsla(98, 60%, 19%, 1), hsla(0, 0%, 100%, 1));
+                mix-blend-mode: multiply;
             }
         }
     }
