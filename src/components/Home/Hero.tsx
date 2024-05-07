@@ -5,9 +5,9 @@ import SliderContainer,{ SlideWrapper} from '../UI/Slider'
 
 export default function Hero() {
     return (
-        <SliderContainer>
+        <SliderContainer dots={false}>
 
-            <SlideWrapper>
+            <SlideWrapper >
                 <Section
                     name='hero'
                 >
