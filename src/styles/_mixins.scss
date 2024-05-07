@@ -35,6 +35,9 @@
 
     @if $family == Inter {
         font-variation-settings: "slnt" 0;
-    }
-    
+    }   
+}
+
+@mixin box-shadow($x: 0, $y: 35px, $blur: 60px, $spread: -15px, $color: hsla(218, 80%, 12%, 0.25)) {
+    box-shadow: $x $y $blur $spread $color;
 }

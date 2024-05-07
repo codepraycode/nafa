@@ -415,22 +415,36 @@ footer {
     color: $clr-text-light;
 
     &-wrapper {
-        padding: 1rem;
+        padding: .2rem;
         text-align: center;
         z-index: 1;
+
+        @include mixins.md {
+            padding: 1rem;
+        }
     }
 
     h1 {
         @include mixins.fonts($family: $inria-font, $weight: 700);
-        font-size: 8rem !important;
+        font-size: 3rem !important;
         margin-bottom: 1rem;
-
-        line-height: 7.316875rem;
-
+        
+        line-height: 2.74375rem;
+        
         span {
-            font-size: 1.5rem;
-            line-height: 2.0625rem;
+            font-size: 1rem;
+            line-height: 1.357rem;
             display: block;
+        }
+        
+        @include mixins.md {
+            font-size: 8rem !important;
+            line-height: 7.316875rem;
+
+            span {
+                font-size: 1.5rem;
+                line-height: 2.0625rem;
+            }
         }
     }
 
@@ -438,6 +452,10 @@ footer {
         &:first-of-type {
             margin-right: 0;
             margin-bottom: 1rem;
+        }
+
+        @include mixins.sm {
+            width: 100%;
         }
     }
 
@@ -466,118 +484,166 @@ footer {
 
 }
 
-.about {
-    &-wrapper {
-        // display: flex;
+.about-wrapper {
+    @include mixins.md {
+        display: flex;
+        .content {
+            width: 60%;
+
+            top: -4rem;
+            right: -7.5rem;
+            border-bottom-right-radius: 0rem !important;
+
+            padding-top: 5rem 4rem;
+            padding-inline: 4rem;
+        }
+    }
+    
+    .feature-img {
+        height: 10rem;
+        width: 40rem;
+        max-width: 100%;
+
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: contain;
+    }
+
+
+    @include mixins.fonts($family: $montserrat-font);
+    h2 {
+        font-size: 1.5rem;
+        font-weight: 600;
+        text-align: center;
+
+        line-height: 1.75rem;
 
         @include mixins.md {
-            display: flex;
-            .content {
-                width: 60%;
-
-                top: -4rem;
-                right: -7.5rem;
-                border-bottom-right-radius: 0rem !important;
-
-                padding-top: 5rem 4rem;
-                padding-inline: 4rem;
-            }
+            font-size: 2.5rem;
+            text-align: start;
         }
-        
-        .feature-img {
-            height: 10rem;
-            width: 40rem;
-            max-width: 100%;
+    }
+    
+    p {
+        font-size: 0.875rem;
+        line-height: 1.8rem;
+        font-weight: 500;
+        text-align: justify;
+        line-height: 1.8125rem;
 
-            background-position: center;
-            background-repeat: no-repeat;
-            background-size: contain;
+        @include mixins.md {
+            font-size: 1rem;
         }
+    }
 
+    .content {
+        background-color: $clr1;
+        color: $clr-text-1;
+        position: relative;
 
-        .content {
-            background-color: $clr1;
-            position: relative;
+        // padding: 5rem 4rem;
+        padding-block: 3rem 4rem;
+        padding-inline: 1rem;
 
-            // padding: 5rem 4rem;
-            padding-block: 3rem 4rem;
+        border-bottom-left-radius: 1rem;
+        border-bottom-right-radius: 1rem;
+
+        @include mixins.md {
             padding-inline: 2rem;
-
-            border-bottom-left-radius: 1rem;
-            border-bottom-right-radius: 1rem;
-
-            h2 {
-                font-size: 2rem;
-            }
-
-            p {
-                font-size: 1rem;
-                line-height: 1.8rem;
-                // letter-spacing: .2rem;
-            }
         }
-
-
-        
     }
 }
 
+
 .kickoff-wrapper {
+    @include mixins.fonts($family: $montserrat-font);
+
+    // color: hsla(217, 19%, 27%, 1);
+
+    h1 {
+        color: $clr-text-5;
+        font-weight: 600;
+        font-size: 1.25rem;
+        line-height: 1.5rem;
+
+        @include mixins.md {
+            font-size: 2.5rem;
+        }
+    }
+
+
+    h2 {
+        font-weight: 500;
+        font-size: 1.125rem;
+        // margin-top: 1.2rem;
+        margin-bottom: .8rem;
+
+        line-height: 1.5rem;
+
+        color: $clr-text-2;
+
+        @include mixins.md {
+            font-size: 1.5rem;
+        }
+    }
+
+    p {
+        font-size: 0.875rem;
+        margin-bottom: 1rem;
+        line-height: 1.5rem;
+        font-size: 500;
+
+        color: $clr-text-3;
+    }
+
+    a {
+        width: 100%;
+        text-align: center;
+        border: .5px solid $clr2;
+
+        @include mixins.fonts($family: $inter-font, $weight: 500);
+        line-height: 1.5rem;
+        font-size: .875rem;
+        color: $clr-text-4;
+    }
+
+
+    article {
+
+        width: 25rem;
+        // height: max-content;
+        min-height: 30rem;
+        background-color: $clr-text-light;
+        // box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 1px, rgba(0, 0, 0, 0.07) 0px 2px 2px, rgba(0, 0, 0, 0.07) 0px 4px 4px, rgba(0, 0, 0, 0.07) 0px 8px 8px, rgba(0, 0, 0, 0.07) 0px 16px 16px;
+
+        @include mixins.box-shadow();
+
+        // overflow: hidden;
+
+        border-radius: .5rem;
+
+        .img {
+            border-top-right-radius: .5rem;
+            border-top-left-radius: .5rem;
+            width: 100%;
+            height: 20rem;
+            max-height: 70%;
+            background-position: center 60%;
+            background-repeat: no-repeat;
+            background-size: cover;
+
+            overflow: hidden;
+        }
+
+        .details {
+            padding: 2rem;
+        }   
+    }
+
     .content {
         display: flex;
         gap: 2rem;
         flex-wrap: wrap;
-
-        article {
-
-            width: 25rem;
-            // height: max-content;
-            min-height: 30rem;
-            background-color: whitesmoke;
-            box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 1px, rgba(0, 0, 0, 0.07) 0px 2px 2px, rgba(0, 0, 0, 0.07) 0px 4px 4px, rgba(0, 0, 0, 0.07) 0px 8px 8px, rgba(0, 0, 0, 0.07) 0px 16px 16px;
-
-            // overflow: hidden;
-            
-            border-radius: .5rem;
-
-            .img {
-                border-top-right-radius: .5rem;
-                border-top-left-radius: .5rem;
-                width: 100%;
-                height: 20rem;
-                max-height: 70%;
-                background-position: center 60%;
-                background-repeat: no-repeat;
-                background-size: cover;
-
-                overflow: hidden;
-
-
-                // border-top-right-radius: .5rem;
-            }
-
-            .details {
-                padding: 1rem;
-            }
-
-            color: hsla(217, 19%, 27%, 1);
-
-            h2 {
-                font-size: 1.5rem;
-                margin-top: 1.2rem;
-                margin-bottom: .8rem;
-            }
-            
-            p {
-                font-size: 1rem;
-                margin-bottom: 1rem;
-            }
-
-            .btn{
-                width: 100%;
-                text-align: center;
-            }
-        }
     }
 }
 

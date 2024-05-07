@@ -30,9 +30,9 @@ export default function KickOff() {
         <Section
             name='kickoff'
         >
-            <h1 className='section-title'>KICKOFF WITH NAFA</h1>
+            <h1>KICKOFF WITH NAFA</h1>
 
-            <br/><br/><br/>
+            <br/><br/>
 
 
             <div className='content'>
