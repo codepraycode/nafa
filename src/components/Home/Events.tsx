@@ -13,8 +13,9 @@ export default function Events() {
                     <div className="img" style={{backgroundImage: `url(/events.jpeg)`}}/>
 
                     <div className='details'>
-                        <h2>2024 ALL SPORTS</h2>
+                        <h3>2024 ALL SPORTS</h3>
                         <p>NAFA empowers individuals to excel in various aspects of their lives,</p>
+                        <br/>
                         <p className='date'>24 Mar 2024-24 Apr 2024</p>
                     </div>
                 </article>
