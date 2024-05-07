@@ -16,70 +16,85 @@ export default function LiveScores() {
 
                     <Link href={"/"}>Draw</Link>
                 </h3>
-                <br/>
-                <div className="listing">
-                    <span>Final</span>
-                    <span>Ondo State</span>
 
-                    <div>
-                        <span>25</span>
-                        <span>25</span>
-                        <span>25</span>
-                        <span>25</span>
-                        <span>25</span>
-                        <span>25</span>
-                    </div>
-                </div>
-                <br/>
                 <div className="listing">
-                    <span>12.02. 00:30</span>
-                    <span>Lagos State</span>
-
                     <div>
-                        <span>25</span>
-                        <span>25</span>
-                        <span>25</span>
-                        <span>25</span>
-                        <span>25</span>
-                        <span>25</span>
+                        <div className="list-item">                        
+                            <span className='simple'>Final</span>
+                            <span>Ondo State</span>
+
+                            <div>
+                                <span>25</span>
+                                <span>25</span>
+                                <span>25</span>
+                                <span>25</span>
+                                <span>25</span>
+                                <span>25</span>
+                            </div>
+                        </div>
+
+                        <div className="list-item">
+                            <span className='simple'>12.02. 00:30</span>
+                            <span>Lagos State</span>
+
+                            <div>
+                                <span>25</span>
+                                <span>25</span>
+                                <span>25</span>
+                                <span>25</span>
+                                <span>25</span>
+                                <span>25</span>
+                            </div>
+                        </div>
                     </div>
+
+                    <hr/>
+                    <span className='caution' />
                 </div>
             </div>
 
-            <br/><br/>
+            {/* <hr/> */}
 
             <div className="score-table">
                 <h3>
-                    <span>NSSFFL - Play Offs</span>
+                    <span>NSSFFL - All Stars</span>
 
                     <Link href={"/"}>Draw</Link>
                 </h3>
-                <br/>
-                <div className="listing">
-                    <span>Final</span>
-                    <span>Ondo State</span>
 
-                    <div>
-                        <span>25</span>
-                        <span>25</span>
-                        <span>25</span>
-                        <span>25</span>
-                        <span>25</span>
-                        <span>25</span>
-                    </div>
-                </div>
                 <div className="listing">
-                    <span>12.02. 00:30</span>
-                    <span>Lagos State</span>
-
                     <div>
-                        <span>25</span>
-                        <span>25</span>
-                        <span>25</span>
-                        <span>25</span>
-                        <span>25</span>
-                        <span>25</span>
+                        <div className="list-item">                        
+                            <span className='simple'>Final</span>
+                            <span>Ondo State</span>
+
+                            <div>
+                                <span>25</span>
+                                <span>25</span>
+                                <span>25</span>
+                                <span>25</span>
+                                <span>25</span>
+                                <span>25</span>
+                            </div>
+                        </div>
+
+                        <div className="list-item">
+                            <span className='simple'>12.02. 00:30</span>
+                            <span>Lagos State</span>
+
+                            <div>
+                                <span>25</span>
+                                <span>25</span>
+                                <span>25</span>
+                                <span>25</span>
+                                <span>25</span>
+                                <span>25</span>
+                            </div>
+                        </div>
                     </div>
+
+                    <hr/>
+                    <span className='caution' />
                 </div>
             </div>
         </Section>

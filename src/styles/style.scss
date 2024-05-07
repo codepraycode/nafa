@@ -649,28 +649,101 @@ footer {
 
 
 .live_scores {
+
+    @include mixins.fonts($family: $montserrat-font, $weight: 600);
+
     h2 {
-        font-size: 1.3rem;
+        font-size: 1.25rem;
+        text-transform: uppercase;
+        @include mixins.fonts($family: $montserrat-font, $weight: 600);
 
         @include mixins.md {
             font-size: 2rem;
+            line-height: 1.5rem;
+        }
+    }
+
+    $padding-inline: 2rem;
+
+
+    hr {
+        display: block;
+        margin-block: 1rem;
+        position: relative;
+        top: -1rem;
+        border-color: $clr1;
+    }
+
+    .score-table {
+        border-bottom: 1px solid $clr-hr;
+        margin-bottom: 2rem;
+    }
+
+
+    h3 {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        @include mixins.fonts($family: $montserrat-font, $weight: 600);
+
+        background-color: $clr3;
+
+        padding-block: 1rem;
+        padding-inline: $padding-inline;
+        
+        border-radius: 1rem;
+        color: $clr-text-light;
+
+
+        // font-size: 0.25rem;
+        line-height: 1.5rem;
+
+        span {
+            font-size: .75rem;
+        }
+        
+        a {
+            color: inherit;
+            font-size: .75rem;
+        }
+        
+        @include mixins.md {
+            padding-inline: $padding-inline;
+
+            span {
+                font-size: 1.5rem;
+            }
+
+            a {
+                font-size: 1rem;
+            }
         }
     }
 
 
+    span {
+        @include mixins.fonts($montserrat-font, $weight:600);
+        font-size: 1rem;
+        line-height: 1.5rem;
+
+
+        &.simple {
+            font-weight: 500;
+            font-size: 1.25rem;
+            display: none;
+
+            @include mixins.md {
+                display: block;
+            }
+        }
+    }
+
     &-wrapper {
         background-color: hsla(98, 49%, 51%, 1);
 
-
-        width: 70rem;
-
-        max-width: 95%;
-
         padding: 1.5rem;
         border-radius: 2rem;
-
-        margin-inline: auto;
-
 
         @include mixins.md {
             padding: 3rem;
@@ -678,62 +751,87 @@ footer {
     }
 
 
-    .score-table {
-        // background-color: red;
+    .caution {
+        display: block;
+        width: 2rem;
+        height: 2rem;
 
-        h3 {
+        background-image: url("/icons/caution.svg");
+        background-repeat: no-repeat;
+        background-position: center;
+    }
+
+
+    .listing {
+        padding-inline: $padding-inline;
+        padding-block: 1rem 0;
+
+        display: flex;
+
+
+        @include mixins.md {
+            padding-block: 2rem 0;
+        }
+        
+        & > div {
             display: flex;
-            justify-content: space-between;
-            align-items: center;
-            background-color: hsla(98, 47%, 24%, 1);
-            padding-block: 1rem;
-            // padding-inline: 2rem;
-            padding-inline: 1rem;
-            border-radius: 1rem;
-            color: whitesmoke;
+            flex-direction: column;
+            align-items: flex-start;
 
-
-            font-size: .8rem;
-
-            a {
-                color: inherit;
-                text-decoration: none;
-            }
-
-            
+            width: 70%;
         }
 
-        .listing {
+        hr {
+            align-self: center;
+            display: block;
+            margin-inline: 2rem 0.5rem;
+            border-color: $clr1;
+            height: 5rem;
+
+            @include mixins.md {
+                margin-inline: 4rem 2rem;
+            }
+        }
+
+
+        .caution {
+            align-self: center;
+            position: relative;
+            top: -1.2rem;
+            // background-color: red;
+        }
+
+        .list-item {
+            
+            width: 100%;
+            padding: .4rem;
+
+            text-align: start;
+
             display: flex;
-            align-items: center;
-
             justify-content: space-between;
-
-            margin-bottom: .5rem;
-
-            // padding-inline: 2rem;
+            
+            @include mixins.md {
+                display: grid;
+                grid-template-columns: 1fr 1fr 2fr;
+            }
 
             
-            @include mixins.sm {
-                & > div {
-                    // background-color: red;
-    
-                    span { 
-                        margin-inline: 1rem;
-                        display: inline-block;
+            & > div {
+                display: flex;
+                // background-color: green;
+                justify-content: space-between;
+
+                span:not(:first-of-type) {
+                    display: none;
+
+                    @include mixins.md {
+                        display: block;
                     }
                 }
-    
-    
-                & >span:first-of-type {
-                    display: none;
-                }
-                & > div > span:not(:first-of-type) {
-                    display: none;
-                }
-
             }
-        } 
+
+        }
     }
 }
 
