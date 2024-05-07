@@ -294,41 +294,46 @@ footer {
     background-image: url("/mv-bg.jpeg");
     background-position: center 80%;
     min-height: 100vh;
-    
-    // background-attachment: fixed;
-    
-    // min-height: 100vh;
+
+    @include mixins.fonts($family: $montserrat-font, $weight: 600);
+    color: $clr-text-light;
+
+    p {
+        font-size: 1rem;
+        line-height: 1.82875;
+        
+        @include mixins.md {
+            font-size: 1.5rem;
+        }
+    }
+
+
+    hr {
+        margin-block: 1.2rem;
+    }
+
     
     &-wrapper {
         background-color: $clr2;
 
-        padding: 2.5rem 1rem;
         border-radius: 1rem;
 
-        color: whitesmoke;
-
-        font-weight: bold;
-        // font-size: 1rem;
         text-align: center;
 
         margin-inline: auto;
         
         position: relative;
 
+
+        padding: 1rem;
+
         top: 30rem;
-        
         
         @include mixins.md {
             top: 35rem;
-            width: 50%;
-            padding: 2rem 5rem;
+            width: 80%;
+            padding: 1.5rem 5rem;
         }
-
-
-        hr {
-            margin-block: 1.2rem;
-        }
-
     }
 
 }
@@ -346,25 +351,39 @@ footer {
 
     display: flex;
     align-items: flex-end;
+
+    @include mixins.sm {
+        background-position: center !important;
+        background-size: cover;
+    }
+
+    @include mixins.fonts($family: $inter-font, $weight: 500);
+    color: $clr-text-light;
+
+    h2 {
+        font-weight: 600;
+        font-size: 1.75rem;
+        line-height: 1.875rem;
+        
+        @include mixins.md {
+            font-size: 3rem;
+            line-height: 1.5rem;
+        }
+    }
+
+    p {
+        font-size: 0.875rem;
+        @include mixins.md {
+            font-size: 1.25rem;
+        }
+    }
     
     &-wrapper {
-        
-        // backdrop-filter: brightness(-10%);
-        color: whitesmoke;
 
         text-align: center;
         
         margin-inline: auto;
-        width: 100%;
         padding: 2rem;
-
-        h2 {
-            font-size: 2rem;
-        }
-
-        p {
-            font-size: 1.1rem;
-        }
 
         @include mixins.sm {
             .btn {
@@ -374,13 +393,7 @@ footer {
 
         @include mixins.md {
             padding: 2rem 15rem;
-
-            h2 {
-                font-size: 4rem;
-            }
-            p {
-                font-size: 1.4rem;
-            }
+            padding-bottom: 3.7rem;
         }
     }
 
@@ -561,7 +574,7 @@ footer {
     // color: hsla(217, 19%, 27%, 1);
 
     h1 {
-        color: $clr-text-5;
+        color: $clr-text-6;
         font-weight: 600;
         font-size: 1.25rem;
         line-height: 1.5rem;
@@ -854,14 +867,13 @@ footer {
         @include mixins.md {
             justify-content: flex-start;
         }
-
     }
+
     article {
 
         width: 20rem;
         height: 18rem;
-        background-color: whitesmoke;
-        box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 1px, rgba(0, 0, 0, 0.07) 0px 2px 2px, rgba(0, 0, 0, 0.07) 0px 4px 4px, rgba(0, 0, 0, 0.07) 0px 8px 8px, rgba(0, 0, 0, 0.07) 0px 16px 16px;
+        @include mixins.box-shadow;
 
         border-radius: .5rem;
 
@@ -883,15 +895,19 @@ footer {
         }
 
         @include mixins.fonts($family: $inter-font, $weight: 400);
-        color: $clr-text-5;
         
+        color: $clr-text-5;
+
         h2, .date{
             
             font-size: 0.75rem;
             line-height: 1.5rem;
         }
-
+        
         p {
+            &:not(.date) {
+                color: $clr-text-1;
+            }
             font-weight: 500;
             font-size: 1rem;
             margin-block: .7rem;

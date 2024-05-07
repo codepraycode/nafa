@@ -7,7 +7,6 @@ export default function RG() {
         <Section
             name='rg'
         >
-        
             <h2>Building Stronger Communities</h2>
             <br/><br/>
             <p>

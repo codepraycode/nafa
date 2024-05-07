@@ -40,6 +40,9 @@
 
     color: $clr-text-1;
 
+
+    @include mixins.box-shadow;
+
     @include mixins.fonts($family: $inter-font);
     font-weight: 500;
 
