@@ -1,14 +1,23 @@
-import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'
 import Logo from './Logo'
+import AppLink from './UI/AppLink'
+import { slugifyLink as slugify } from '@/utils/slugify'
 
 
 
+
+const topNavLinks = [
+    "Get certified", "Enroll your program"
+]
 
 const navLinks = [
     "About NAFA", "Our Leagues", "Our Programs",
     "Resources", "Tournaments & Events"
+]
+
+const navActionLinks = [
+    "Become a member", "Login"
 ]
 
 
@@ -17,8 +26,14 @@ export default function Header() {
         <header>
             <div className="header-top">
                 <ul role='list'>
-                    <li><Link href="/">Get certified</Link></li>
-                    <li><Link href="/">Enroll your program</Link></li>
+                    {
+                        topNavLinks.map((item, i) => (
+
+                            <li key={i}>
+                                <AppLink href={slugify(item)}>{item}</AppLink>
+                            </li>
+                        ))
+                    }
                 </ul>
             </div>
 
@@ -30,13 +45,17 @@ export default function Header() {
 
                     <ul role='list' className='links'>
                         {
-                            navLinks.map((item, i)=><li key={i}><Link href={"/"}>{item}</Link></li>)
+                            navLinks.map((item, i)=>(
+                                <li key={i}>
+                                    <AppLink href={slugify(item)}>{item}</AppLink>
+                                </li>
+                            ))
                         }
                     </ul>
 
                     <div className="cta">
-                        <Link href={"/"} className='btn btn-primary'>Become a member</Link>
-                        <Link href={"/"} className='btn btn-outline'>Login</Link>
+                        <AppLink href={slugify("Become a member")} className='btn btn-primary'>Become a member</AppLink>
+                        <AppLink href={slugify("login")} className='btn btn-outline'>Login</AppLink>
                     </div>
                 </nav>
 
