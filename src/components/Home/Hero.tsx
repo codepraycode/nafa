@@ -5,7 +5,7 @@ import SliderContainer,{ SlideWrapper} from '../UI/Slider'
 
 export default function Hero() {
     const sliderconfig = {
-        dots: true,
+        dots: false,
         fade: true,
         infinite: true,
         slidesToShow: 1,

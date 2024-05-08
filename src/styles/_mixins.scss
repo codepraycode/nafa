@@ -13,6 +13,48 @@
 }
 
 
+/* 
+    Extra Small (XS): Typically for smartphones in portrait mode. Width ranges from 0px to 576px.
+    Small (SM): Typically for smartphones in landscape mode or small tablets. Width ranges from 576px to 768px.
+    Medium (MD): Typically for tablets and larger smartphones. Width ranges from 768px to 992px.
+    Large (LG): Typically for laptops and desktops. Width ranges from 992px to 1200px.
+    Extra Large (XL): For larger desktop screens. Width starts from 1200px and beyond.
+ */
+
+
+@mixin very-small-screen() {
+    @media screen and (max-width: 576px) {
+        @content;
+    }
+}
+
+@mixin small-screen() {
+    @media screen and (min-width: 577px) and (max-width: 768px) {
+        @content;
+    }
+}
+
+@mixin medium-screen() {
+    @media screen and (min-width: 769px) and (max-width: 992px) {
+        @content;
+    }
+}
+
+@mixin large-screen() {
+    @media screen and (min-width: 993px) and (max-width: 1200px) {
+        @content;
+    }
+}
+
+@mixin very-large-screen() {
+    @media screen and (min-width: 1200px) {
+        @content;
+    }
+}
+
+
+
+
 @mixin container() {
     padding: calc($body-padding / 4);
 
