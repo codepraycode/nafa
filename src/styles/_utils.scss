@@ -128,7 +128,7 @@
             }
 
 
-            @include mixins.md {
+            @include mixins.least-large-screen {
                 opacity: 1 !important;
             }
         }
@@ -147,7 +147,7 @@
             align-items: center;
             gap: .5rem;
 
-            @include mixins.md {
+            @include mixins.least-large-screen {
                 opacity: 1 !important;
             }
 

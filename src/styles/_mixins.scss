@@ -1,18 +1,5 @@
 @use "./variables" as *;
 
-@mixin sm() {
-    @media screen and (max-width: $mobile-bp) {
-        @content;
-    }
-}
-
-@mixin md() {
-    @media screen and (min-width: $desktop-bp) {
-        @content;
-    }
-}
-
-
 /* 
     Extra Small (XS): Typically for smartphones in portrait mode. Width ranges from 0px to 576px.
     Small (SM): Typically for smartphones in landscape mode or small tablets. Width ranges from 576px to 768px.
@@ -93,7 +80,7 @@
 
     padding-block: 4rem;
     
-    @include md {
+    @include least-large-screen {
         padding: $body-padding;
     }
 }

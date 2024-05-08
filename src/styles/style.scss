@@ -196,7 +196,7 @@ footer {
 
 
 
-    @include mixins.md {
+    @include mixins.least-large-screen {
         .footer-wrapper {
             width: 50%;
         }
@@ -204,7 +204,7 @@ footer {
 
     .logo {
         width: 5rem;
-        @include mixins.sm {
+        @include mixins.least-small-screen {
             // width: 4rem;
             margin-inline: auto;
         }
@@ -229,7 +229,7 @@ footer {
         padding-top: 1rem;
 
 
-        @include mixins.md {
+        @include mixins.least-large-screen {
             display: flex;
             align-items: center;
         
@@ -242,7 +242,7 @@ footer {
     p {
         margin-block: 1rem;
 
-        @include mixins.sm {
+        @include mixins.least-small-screen {
             text-align: center;
         }
     }
@@ -277,7 +277,7 @@ footer {
         margin-block: 2rem;
         
         
-        @include mixins.md {
+        @include mixins.least-large-screen {
             justify-content: flex-start;
         }
 
@@ -291,7 +291,7 @@ footer {
         font-size: 1rem;
     }
 
-    @include mixins.sm {
+    @include mixins.least-small-screen {
 
         .footer_extras {
             flex-direction: column;
@@ -326,7 +326,7 @@ footer {
         row-gap: 2rem;
         flex-wrap: wrap;
 
-        @include mixins.md {
+        @include mixins.least-large-screen {
             column-gap: 5rem;
         }
 
@@ -400,7 +400,7 @@ footer {
     display: flex;
     align-items: flex-end;
 
-    @include mixins.sm {
+    @include mixins.least-small-screen {
         background-position: center !important;
         background-size: cover;
     }
@@ -413,7 +413,7 @@ footer {
         font-size: 1.75rem;
         line-height: 1.875rem;
         
-        @include mixins.md {
+        @include mixins.least-large-screen {
             font-size: 3rem;
             line-height: 1.5rem;
         }
@@ -421,7 +421,7 @@ footer {
 
     p {
         font-size: 0.875rem;
-        @include mixins.md {
+        @include mixins.least-large-screen {
             font-size: 1.25rem;
         }
     }
@@ -433,13 +433,13 @@ footer {
         margin-inline: auto;
         padding: 2rem;
 
-        @include mixins.sm {
+        @include mixins.least-small-screen {
             .btn {
                 width: 100%;
             }
         }
 
-        @include mixins.md {
+        @include mixins.least-large-screen {
             padding: 2rem 15rem;
             padding-bottom: 3.7rem;
         }
@@ -481,7 +481,7 @@ footer {
         text-align: center;
         z-index: 1;
 
-        @include mixins.md {
+        @include mixins.least-large-screen {
             padding: 1rem;
         }
     }
@@ -499,7 +499,7 @@ footer {
             display: block;
         }
         
-        @include mixins.md {
+        @include mixins.least-large-screen {
             font-size: 8rem !important;
             line-height: 7.316875rem;
 
@@ -516,13 +516,13 @@ footer {
             margin-bottom: 1rem;
         }
 
-        @include mixins.sm {
+        @include mixins.least-small-screen {
             width: 100%;
         }
     }
 
 
-    @include mixins.md {
+    @include mixins.least-large-screen {
 
         &-wrapper {
             padding: 3rem;
@@ -571,7 +571,7 @@ footer {
 
         line-height: 1.75rem;
 
-        @include mixins.md {
+        @include mixins.least-large-screen {
             font-size: 2.5rem;
             text-align: start;
         }
@@ -584,7 +584,7 @@ footer {
         text-align: justify;
         line-height: 1.8125rem;
 
-        @include mixins.md {
+        @include mixins.least-large-screen {
             font-size: 1rem;
         }
     }
@@ -688,7 +688,7 @@ footer {
 
         color: $clr-text-2;
 
-        @include mixins.md {
+        @include mixins.least-large-screen {
             font-size: 1.5rem;
         }
     }
@@ -1069,17 +1069,6 @@ footer {
             margin-block: 2rem;
         }
     }
-    // .content {
-    //     margin-top: 2rem;
-
-        
-
-
-    //     @include mixins.md {
-    //         display: flex;
-    //         gap: 2rem;
-    //     }
-    // }
 }
 
 .events-wrapper {
@@ -1100,7 +1089,7 @@ footer {
 
         border-radius: .5rem;
         
-        @include mixins.md {
+        @include mixins.least-large-screen {
             max-width: 80%;
 
             display: flex;
@@ -1121,7 +1110,7 @@ footer {
 
             overflow: hidden;
 
-            @include mixins.md {
+            @include mixins.least-large-screen {
                 width: 20rem;
                 height: 100%;
 
@@ -1133,7 +1122,7 @@ footer {
         .details {
             padding: 1.2rem;
             
-            @include mixins.md {
+            @include mixins.least-large-screen {
                 padding: 1rem;
                 padding-left: 3rem;
             }
@@ -1149,7 +1138,7 @@ footer {
 
             margin-bottom: .8rem;
 
-            @include mixins.md {
+            @include mixins.least-large-screen {
                 font-size: 2rem;
             }
         }
@@ -1165,12 +1154,12 @@ footer {
                 font-size: 0.75rem;
                 line-height: 1.5rem;
                 font-weight: 500;
-                @include mixins.md {
+                @include mixins.least-large-screen {
                     font-size: 1.25rem;
                 }
             }
 
-            @include mixins.md {
+            @include mixins.least-large-screen {
                 font-size: 1.25rem;
             }
         }
