@@ -4,6 +4,7 @@ import { HTMLAttributes } from "react";
 
 
 const siteLinks = siteData.siteLinks;
+const siteDefault = siteData.siteDefault;
 
 interface AppLinkProps extends HTMLAttributes<HTMLAnchorElement>, LinkProps {
     children: React.ReactNode,
@@ -17,7 +18,7 @@ export default function AppLink(props: AppLinkProps) {
     let link = href;
     
     if (!siteLinks.includes(link.toString())) {
-        link = "/coming"
+        link = siteDefault
     }
 
     return (

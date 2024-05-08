@@ -1,9 +1,8 @@
 {
     "siteTitle": "NAFA",
     "siteDescription": "One Game, One Nation",
-
+    "siteDefault": "/under-construction",
     "siteLinks": [
-        "/",
-        "/coming"
+        "/"
     ]
 }

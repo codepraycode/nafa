@@ -7,6 +7,62 @@
 
 
 
+.under-construction {
+    background-color: $clr4;
+    
+
+    padding-top: 5rem;
+
+    color: $clr-text-light;
+    text-align: center;
+    @include mixins.fonts($family: $inria-font, $weight: 700);
+
+    height: max-content;
+
+    
+    @include mixins.least-large-screen {
+        height: 100vh;
+        overflow: hidden;
+    }
+    
+    h1 {
+        // font-size: 8rem;
+        font-size: clamp(2.5rem, 12vw, 8rem);
+        // line-height: 7.316875rem;
+        line-height: clamp(2.31125rem, 10vw ,7.316875rem);
+    }
+
+    p {
+        font-size: 1.5rem;
+        line-height: 2.0625rem;
+        margin-block: 1.5rem;
+    }
+
+    .ud-img {
+        width: 60rem;
+        height: 65vh;
+
+        max-width: 100%;
+
+        margin-inline: auto;
+        background-color: $clr3;
+
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+
+        border-radius: 1rem 1rem 0 0;
+
+        @include mixins.least-small-screen {
+            height: 100vh !important;
+            // display: none;
+        }
+
+    }
+}
+
+
+
 .screen_indicator {
     width: max-content;
     padding: 1rem 2rem;
@@ -46,7 +102,7 @@
             }
 
             @include mixins.very-large-screen() {
-                content: "Large Screen (min-width: 1200px)";
+                content: "Very Large Screen (min-width: 1200px)";
             }
         }        
     }

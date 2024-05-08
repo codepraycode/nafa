@@ -34,6 +34,7 @@
     }
 }
 
+
 @mixin medium-screen() {
     @media screen and (min-width: 769px) and (max-width: 992px) {
         @content;
@@ -48,6 +49,30 @@
 
 @mixin very-large-screen() {
     @media screen and (min-width: 1200px) {
+        @content;
+    }
+}
+
+
+@mixin least-small-screen {
+    @include very-small-screen {
+        @content;
+    }
+
+    @include small-screen {
+        @content;
+    }
+}
+
+@mixin least-large-screen() {
+    @include medium-screen {
+        @content;
+    }
+
+    @include large-screen {
+        @content;
+    }
+    @include very-large-screen {
         @content;
     }
 }
