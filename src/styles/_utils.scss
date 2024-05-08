@@ -8,6 +8,39 @@
 }
 
 
+// Hambugger
+.menu {
+
+    margin-left: auto;
+
+    display: block;
+    padding: 1rem;
+    width: 2rem;
+    height: 2rem;
+
+    background-image: url("/icons/menu.svg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+
+
+    overflow: hidden;
+
+    input[type="checkbox"] {
+        width: 0;
+    }
+
+    span {
+        display: inline-block;
+        text-indent: 150%;
+    }
+
+    @include mixins.least-large-screen {
+        display: none;
+    }
+}
+
+
 .section-title {
 
     // text-align: center;

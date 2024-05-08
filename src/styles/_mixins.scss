@@ -36,13 +36,13 @@
 
 
 @mixin medium-screen() {
-    @media screen and (min-width: 769px) and (max-width: 992px) {
+    @media screen and (min-width: 769px) and (max-width: 1024px) {
         @content;
     }
 }
 
 @mixin large-screen() {
-    @media screen and (min-width: 993px) and (max-width: 1200px) {
+    @media screen and (min-width: 1025px) and (max-width: 1200px) {
         @content;
     }
 }
@@ -64,11 +64,19 @@
     }
 }
 
-@mixin least-large-screen() {
-    @include medium-screen {
+
+@mixin least-medium-screen {
+    @include least-small-screen {
         @content;
     }
 
+    @include medium-screen {
+        @content;
+    }
+}
+
+
+@mixin least-large-screen() {
     @include large-screen {
         @content;
     }

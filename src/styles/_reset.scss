@@ -43,3 +43,51 @@ img {
     width: 100%;
     height: auto;
 }
+
+.screen_indicator {
+    width: max-content;
+    padding: 1rem 2rem;
+
+    background-color: rgba(75, 85, 99, 0.795);
+
+    color: $clr-text-light;
+
+    border-radius: .5rem;
+
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 999;
+
+
+    font-size: .9rem;
+
+
+    &:empty {
+        &::before {
+            content: "Screen indicator";
+
+            @include mixins.very-small-screen() {
+                content: "Very Small Screen max-width: 576px";
+            }
+
+            @include mixins.small-screen() {
+                content: "Small Screen (min-width: 577px) and (max-width: 768px)";
+            }
+
+            @include mixins.medium-screen() {
+                content: "Medium Screen (min-width: 769px) and (max-width: 1024px)";
+            }
+
+            @include mixins.large-screen() {
+                content: "Large Screen (min-width: 1025px) and (max-width: 1200px)";
+            }
+
+            @include mixins.very-large-screen() {
+                content: "Very Large Screen (min-width: 1200px)";
+            }
+        }
+    }
+
+
+}

@@ -63,59 +63,13 @@
 
 
 
-.screen_indicator {
-    width: max-content;
-    padding: 1rem 2rem;
-
-    background-color: rgba(75, 85, 99, 0.795);
-
-    color: $clr-text-light;
-
-    border-radius: .5rem;
-
-    position: fixed;
-    top: 0;
-    right: 0;
-    z-index: 999;
-
-
-    font-size: .9rem;
-
-
-    &:empty {
-        &::before {
-            content: "Screen indicator";
-
-            @include mixins.very-small-screen() {
-                content: "Small Screen max-width: 576px";
-            }
-            @include mixins.small-screen() {
-                content: "Small Screen (min-width: 577px) and (max-width: 768px)";
-            }
-
-            @include mixins.medium-screen() {
-                content: "Medium Screen (min-width: 769px) and (max-width: 992px)";
-            }
-
-            @include mixins.large-screen() {
-                content: "Large Screen (min-width: 993px) and (max-width: 1200px)";
-            }
-
-            @include mixins.very-large-screen() {
-                content: "Very Large Screen (min-width: 1200px)";
-            }
-        }        
-    }
-
-
-}
 
 header {
 
     
     ul {
-        display: flex;
-        gap: 2rem;
+        // display: flex;
+        // gap: 2rem;
         a {
             text-decoration: none;
             color: $clr-text-1
@@ -124,24 +78,41 @@ header {
 }
 
 
+.header-top,
+.header-wrapper {
+    padding-inline: calc($body-padding / 3);
+
+    @include mixins.least-large-screen {
+        padding-inline: $body-padding;
+
+        @include mixins.large-screen {
+            padding-inline: calc($body-padding / 3);
+        }
+    }
+}
+
+
 .header-top {
-    padding-inline: $body-padding;
     background-color: $clr1;
-
+    
+    
+    display: block;
     padding-block: calc($body-padding / 5);
+    
+    
 
-    display: none;
-
-
-    a {        
+    a {
         color: $clr-text-light;
         @include mixins.fonts($family: $inter-font);
     }
 
+    ul {
+        display: flex;
+        gap: 2rem;
+    }
 
-
-    @include mixins.md {
-        display: block;
+    @include mixins.least-small-screen {
+        display: none;
     }
 }
 
@@ -149,77 +120,55 @@ header {
 .header-wrapper {
     display: flex;
     align-items: center;
+    justify-content: space-between;
 
-
-    padding-inline: calc($body-padding / 2);
     padding-block: calc($body-padding / 3);
-
-
-    @include mixins.md {
-        padding-inline: $body-padding;
-    }
 
     nav {
         margin-left: auto;
-
         display: none;
 
 
-        @include mixins.md {
+        align-items: center;
+
+        flex-grow: 1;
+
+        justify-self: stretch;
+
+        
+        ul {
             display: flex;
+            justify-content: center;
+            flex-grow: 1;
+
+
+            // gap: clamp(2rem);
             gap: 2rem;
-            align-items: center;
+
         }
+
+        @include mixins.least-large-screen {
+            // padding-inline: $body-padding;
+            display: flex;
+
+            ul {
+                gap: 1rem;
+            }
+        }
+
     }
 
 
     .links {
         @include mixins.fonts($family: $inria-font);
-        font-size: 1.2rem;
+        font-size: clamp(1rem, 2vh, 1.5rem);
     }
 
-    .btn {
-        
-        &:first-of-type {
-            margin-right: 2rem;
-        }
+    .cta {
+        display: flex;
+        gap: 1rem;
     }
 
-
-    .menu {
-
-        margin-left: auto;
-
-        display: block;
-        padding: 1rem;
-        width: 2rem;
-        height: 2rem;
-
-
-
-        // background-color: red;
-
-        background-image: url("/icons/menu.svg");
-        background-position: center;
-        background-repeat: no-repeat;
-        background-size: cover;
-
-
-        overflow: hidden;
-
-        input[type="checkbox"] {
-            width: 0;
-        }
-
-        span {
-            display: inline-block;
-            text-indent: 150%;
-        }
-
-        @include mixins.md {
-            display: none;
-        }
-    }
 }
 
 
@@ -356,7 +305,7 @@ footer {
 .mv,
 .rg,
 .hero,
-.about,
+// .about,
 .kickoff,
 .live_scores,
 .articles,
@@ -394,6 +343,9 @@ footer {
     background-image: url("/mv-bg.jpeg");
     background-position: center 80%;
     min-height: 100vh;
+    display: flex;
+    align-items: flex-end;
+    
 
     @include mixins.fonts($family: $montserrat-font, $weight: 600);
     color: $clr-text-light;
@@ -402,7 +354,7 @@ footer {
         font-size: 1rem;
         line-height: 1.82875;
         
-        @include mixins.md {
+        @include mixins.least-large-screen {
             font-size: 1.5rem;
         }
     }
@@ -412,7 +364,7 @@ footer {
         margin-block: 1.2rem;
     }
 
-    
+
     &-wrapper {
         background-color: $clr2;
 
@@ -421,16 +373,12 @@ footer {
         text-align: center;
 
         margin-inline: auto;
-        
-        position: relative;
-
 
         padding: 1rem;
+    
 
-        top: 30rem;
-        
-        @include mixins.md {
-            top: 35rem;
+        @include mixins.least-large-screen {
+            // top: 35rem;
             width: 80%;
             padding: 1.5rem 5rem;
         }
@@ -599,32 +547,23 @@ footer {
 }
 
 .about-wrapper {
-    @include mixins.md {
-        display: flex;
-        .content {
-            width: 60%;
+    overflow: hidden;
+    width: 100%;
 
-            top: -4rem;
-            right: -7.5rem;
-            border-bottom-right-radius: 0rem !important;
-
-            padding-top: 5rem 4rem;
-            padding-inline: 4rem;
-        }
-    }
-    
+    @include mixins.fonts($family: $montserrat-font);
     .feature-img {
         height: 10rem;
-        width: 40rem;
+        width: 100rem;
         max-width: 100%;
 
         background-position: center;
         background-repeat: no-repeat;
         background-size: contain;
+
+        margin-inline: auto;
     }
 
 
-    @include mixins.fonts($family: $montserrat-font);
     h2 {
         font-size: 1.5rem;
         font-weight: 600;
@@ -656,14 +595,28 @@ footer {
         position: relative;
 
         // padding: 5rem 4rem;
-        padding-block: 3rem 4rem;
-        padding-inline: 1rem;
+        padding: 2rem 1.5rem;
+
+        
 
         border-bottom-left-radius: 1rem;
         border-bottom-right-radius: 1rem;
 
-        @include mixins.md {
-            padding-inline: 2rem;
+        max-width: 95%;
+
+        margin-inline: auto;        
+    }
+
+    @include mixins.least-large-screen {
+        display: flex;
+        align-items: center;
+
+        gap: 5rem;
+
+
+        .content {
+            padding: 3rem;
+            border-radius: 0 0 0 1rem;
         }
     }
 }
@@ -672,19 +625,58 @@ footer {
 .kickoff-wrapper {
     @include mixins.fonts($family: $montserrat-font);
 
-    // color: hsla(217, 19%, 27%, 1);
-
     h1 {
         color: $clr-text-6;
         font-weight: 600;
         font-size: 1.25rem;
         line-height: 1.5rem;
 
-        @include mixins.md {
+    }
+    
+    
+    @include mixins.least-large-screen {
+        h1 {
             font-size: 2.5rem;
+        }
+
+        .content {
+            display: flex;
+            gap: 2rem;
+            // row-gap: 3rem;
+            flex-wrap: wrap;
         }
     }
 
+    @include mixins.medium-screen {
+        h1 {
+            font-size: 2rem;
+        }
+
+        .content {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+
+            article{
+                width: 23rem;
+                &:nth-last-child(-n+3) {
+                    margin-right: auto;
+                }
+            }
+        }
+    }
+
+    @include mixins.least-small-screen {
+        
+
+        article {
+            width: 100% !important;
+
+            &:not(:last-of-type) {
+                margin-bottom: 2rem;
+            }
+        }
+    }
 
     h2 {
         font-weight: 500;
@@ -725,14 +717,9 @@ footer {
     article {
 
         width: 25rem;
-        // height: max-content;
         min-height: 30rem;
         background-color: $clr-text-light;
-        // box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 1px, rgba(0, 0, 0, 0.07) 0px 2px 2px, rgba(0, 0, 0, 0.07) 0px 4px 4px, rgba(0, 0, 0, 0.07) 0px 8px 8px, rgba(0, 0, 0, 0.07) 0px 16px 16px;
-
         @include mixins.box-shadow();
-
-        // overflow: hidden;
 
         border-radius: .5rem;
 
@@ -754,11 +741,6 @@ footer {
         }   
     }
 
-    .content {
-        display: flex;
-        gap: 2rem;
-        flex-wrap: wrap;
-    }
 }
 
 
@@ -771,7 +753,7 @@ footer {
         text-transform: uppercase;
         @include mixins.fonts($family: $montserrat-font, $weight: 600);
 
-        @include mixins.md {
+        @include mixins.least-large-screen {
             font-size: 2rem;
             line-height: 1.5rem;
         }
@@ -821,8 +803,17 @@ footer {
             color: inherit;
             font-size: .75rem;
         }
+
+        @include mixins.least-medium-screen {
+            span {
+                font-size: 1.2rem;
+            }
+            a {
+                font-size: 1rem;
+            }
+        }
         
-        @include mixins.md {
+        @include mixins.least-large-screen {
             padding-inline: $padding-inline;
 
             span {
@@ -847,7 +838,7 @@ footer {
             font-size: 1.25rem;
             display: none;
 
-            @include mixins.md {
+            @include mixins.least-large-screen {
                 display: block;
             }
         }
@@ -859,7 +850,7 @@ footer {
         padding: 1.5rem;
         border-radius: 2rem;
 
-        @include mixins.md {
+        @include mixins.least-large-screen {
             padding: 3rem;
         }
     }
@@ -883,7 +874,7 @@ footer {
         display: flex;
 
 
-        @include mixins.md {
+        @include mixins.least-large-screen {
             padding-block: 2rem 0;
         }
         
@@ -902,7 +893,7 @@ footer {
             border-color: $clr1;
             height: 5rem;
 
-            @include mixins.md {
+            @include mixins.least-large-screen {
                 margin-inline: 4rem 2rem;
             }
         }
@@ -925,7 +916,7 @@ footer {
             display: flex;
             justify-content: space-between;
             
-            @include mixins.md {
+            @include mixins.least-large-screen {
                 display: grid;
                 grid-template-columns: 1fr 1fr 2fr;
             }
@@ -939,7 +930,7 @@ footer {
                 span:not(:first-of-type) {
                     display: none;
 
-                    @include mixins.md {
+                    @include mixins.least-large-screen {
                         display: block;
                     }
                 }
@@ -954,6 +945,8 @@ footer {
 .articles-wrapper {
     position: relative;
     // background-color: red;
+
+
     a {
         text-decoration: none;
         color: inherit;
@@ -964,15 +957,15 @@ footer {
 
         width: 20rem;
         height: 18rem;
-        // @include mixins.box-shadow($y: 0px);
-        box-shadow: rgba(0, 0, 0, 0.07) 0px 1px 1px, rgba(0, 0, 0, 0.07) 0px 2px 2px, rgba(0, 0, 0, 0.07) 0px 4px 4px, rgba(0, 0, 0, 0.07) 0px 8px 8px, rgba(0, 0, 0, 0.07) 0px 16px 16px;
+        // @include mixins.box-shadow();
+        box-shadow: rgba(9, 30, 66, 0.25) 0px 4px 8px -2px, rgba(9, 30, 66, 0.08) 0px 0px 0px 1px;
 
-        margin-block: 2rem;
+        margin-block: 1rem;
         
         border-radius: .5rem;
 
 
-        @include mixins.sm {
+        @include mixins.least-small-screen {
             margin-inline: auto;
         }
 
@@ -1022,10 +1015,7 @@ footer {
 
     position: relative;
 
-//    article  {
-//         // background-color: red;
-//         width: fit-content !important;
-//     }
+
 
     .project-item {
         display: flex;
@@ -1034,8 +1024,6 @@ footer {
 
         height: 23rem;
         max-width: 100%;
-
-        margin-inline: auto;
 
         border-radius: .9rem;
         
@@ -1075,7 +1063,7 @@ footer {
         }
 
 
-        @include mixins.sm {
+        @include mixins.least-small-screen {
             margin-inline: auto;
             
             margin-block: 2rem;
