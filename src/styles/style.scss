@@ -130,6 +130,7 @@ header {
     nav {
         margin-left: auto;
         display: none;
+        // opacity: 0;
 
 
         align-items: center;
@@ -137,6 +138,8 @@ header {
         flex-grow: 1;
 
         justify-self: stretch;
+
+        transition: opacity 500ms ease;
 
         
         ul {
@@ -181,29 +184,62 @@ header {
         }
     }
 
+    
     @include mixins.least-medium-screen {
+        
+        nav {
+            display: block;
+            position: fixed;
+            background-color: $clr-text-light;
 
+            // visibility: 0;
+            opacity: 0;
+            z-index: 0;
+    
+            top: 5rem;
+            left: 0;
+            right: 0;
+            bottom: 0;
+    
+            padding-inline: calc($body-padding / 2);
+    
+            ul {
+                display: block;
+                flex-direction: column;
+    
+                li {
+                    padding-block: 1.6rem;
+                    font-size: 1.3rem;
+    
+                    a {
+                        @include mixins.fonts($family: $inter-font, $weight: 500);
+                        color: $clr-text-8 !important;
+                    }
+                }
+    
+            }
+    
+            .cta {
+                display: block;
+                text-align: center;
+    
+                .btn {
+                    display: block;
+                    margin-block: 1rem;
+                }
+            }
+    
+    
+            @include mixins.medium-screen {
+                top: 7.9rem;
+            }
+        }
         // position: relative;
 
         &:has(input[type="checkbox"]:checked) {
             nav {
-                display: block;
-                position: fixed;
-                background-color: $clr-text-light;
-
-                top: 5rem;
-                left: 0;
-                right: 0;
-                bottom: 0;
-                ul {
-                    display: flex;
-                    flex-direction: column
-                }
-
-
-                @include mixins.medium-screen {
-                    top: 7.9rem;
-                }
+                opacity: 1;
+                z-index: 1;
             }
         }
     }

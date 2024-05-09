@@ -52,7 +52,8 @@ export default function Header() {
 
                     <div className="cta">
                         <AppLink href={slugify("Become a member")} className='btn btn-primary'>Become a member</AppLink>
-                        <AppLink href={slugify("login")} className='btn btn-outline'>Login</AppLink>
+                        <AppLink href={slugify("login")} className='btn btn-outline btn-d-md'>Login</AppLink>
+                        <AppLink href={slugify("login")} className='btn btn-outline btn-d-sm'>Enroll Your Organization</AppLink>
                     </div>
                 </nav>
 

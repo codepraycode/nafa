@@ -101,6 +101,21 @@
         color: $clr-text-4;
     }
 
+
+    &-d-md {
+        display: none !important;
+        @include mixins.least-large-screen {
+            display: inline-block !important;
+        }
+    }
+
+    &-d-sm {
+        display: none;
+        @include mixins.least-small-screen {
+            display: inline-block;
+        }
+    }
+
 }
 
 
