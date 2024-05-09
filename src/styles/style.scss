@@ -146,20 +146,68 @@ header {
             display: flex;
             justify-content: center;
             flex-grow: 1;
-
-
-            // gap: clamp(2rem);
             gap: 2rem;
+        }
+
+        .submenu {
+            display: none;
+
+            box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px, rgb(209, 213, 219) 0px 0px 0px 1px inset;
+            position: absolute;
+            background-color: $clr-text-light;
+
+            top: 5rem;
+            // left: 0;
+            width: 28rem;
+            max-width: 80%;
+
+            border-radius: 1rem;
+
+            padding: 1.7rem;
+
+            hr {
+                border-color: $clr-text-dark;
+                margin-block: 1.5rem;
+            }
+
+            h3 {
+                @include mixins.fonts($family: $inria-font);
+                font-weight: 400;
+                font-size: 1.25rem;
+                line-height: 1.49875rem;
+                color: $clr-text-9;
+            }
+            
+            p {
+                @include mixins.fonts($family: $inria-font);
+                font-weight: 300;
+                font-size: 0.875rem;
+                line-height: 1.2025rem;
+
+                margin-top: .8rem;
+            }
 
         }
 
         @include mixins.least-large-screen {
             // padding-inline: $body-padding;
             display: flex;
+            position: relative;
 
             ul {
                 gap: clamp(1rem, 5vw, 2rem);
+
+
+                & > li:has(.submenu) {
+                    &:hover {
+
+                        .submenu {
+                            display: block;
+                        }
+                    }
+                }
             }
+
         }
     }
 

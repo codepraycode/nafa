@@ -1,3 +1,4 @@
+'use client';
 import AppLink from '@/components/UI/AppLink';
 import React from 'react'
 import Logo from './Logo'
@@ -11,10 +12,6 @@ const topNavLinks = [
 const navLinks = [
     "About NAFA", "Our Leagues", "Our Programs",
     "Resources", "Tournaments & Events"
-]
-
-const navActionLinks = [
-    "Become a member", "Login"
 ]
 
 
@@ -44,7 +41,21 @@ export default function Header() {
                         {
                             navLinks.map((item, i)=>(
                                 <li key={i}>
-                                    <AppLink href={slugify(item)}>{item}</AppLink>
+                                    <AppLink href={slugify(item, "#")} onClick={(e)=>e.preventDefault()}>{item}</AppLink>
+
+
+                                    {<ul role='list' className="submenu">
+                                        <li>
+                                            <h3>History of American Football in Nigeria </h3>
+                                            <p>American football was introduced to Nigeria mainly through media exposure, particularly television broadcasts of NFL games and movies featuring the sport</p>
+                                        </li>
+
+                                        <hr/>
+                                        <li>
+                                            <h3>History of American Football in Nigeria </h3>
+                                            <p>American football was introduced to Nigeria mainly through media exposure, particularly television broadcasts of NFL games and movies featuring the sport</p>
+                                        </li>
+                                    </ul>}
                                 </li>
                             ))
                         }
