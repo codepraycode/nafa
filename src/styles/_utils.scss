@@ -23,6 +23,8 @@
     background-repeat: no-repeat;
     background-size: cover;
 
+    transition: background-image 500ms ease;
+
 
     overflow: hidden;
 
@@ -35,8 +37,9 @@
         text-indent: 150%;
     }
 
-    @include mixins.least-large-screen {
-        display: none;
+
+    &:has(input[type="checkbox"]:checked) {
+        background-image: url("/icons/cross.svg");
     }
 }
 

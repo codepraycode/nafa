@@ -56,11 +56,13 @@ export default function Header() {
                     </div>
                 </nav>
 
+
                 <label htmlFor='menu' className='menu'>
                     <input id='menu' type='checkbox'/>
 
                     <span>Menu</span>
                 </label>
+                
             </div>
         </header>
     )

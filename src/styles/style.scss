@@ -66,7 +66,10 @@
 
 header {
 
-    
+    position: sticky;
+    top: 0;
+    background-color: $clr-text-light;
+
     ul {
         // display: flex;
         // gap: 2rem;
@@ -168,6 +171,42 @@ header {
         gap: 1rem;
     }
 
+}
+
+
+.header-wrapper {
+    .menu {
+        @include mixins.least-large-screen {
+            display: none;
+        }
+    }
+
+    @include mixins.least-medium-screen {
+
+        // position: relative;
+
+        &:has(input[type="checkbox"]:checked) {
+            nav {
+                display: block;
+                position: fixed;
+                background-color: $clr-text-light;
+
+                top: 5rem;
+                left: 0;
+                right: 0;
+                bottom: 0;
+                ul {
+                    display: flex;
+                    flex-direction: column
+                }
+
+
+                @include mixins.medium-screen {
+                    top: 7.9rem;
+                }
+            }
+        }
+    }
 }
 
 
