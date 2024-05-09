@@ -258,10 +258,28 @@ header {
                 li {
                     padding-block: 1.6rem;
                     font-size: 1.3rem;
+
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
     
                     a {
                         @include mixins.fonts($family: $inter-font, $weight: 500);
                         color: $clr-text-8 !important;
+                    }
+
+                    &::after {
+                        content: "";
+                        background-image: url("/icons/cheveron-3.svg");
+                        background-position: center;
+                        background-repeat: no-repeat;
+
+                        display: block;
+
+                        width: 2rem;
+                        height: 2rem;
+
+
                     }
                 }
     
