@@ -1020,9 +1020,11 @@ footer {
     .project-item {
         display: flex;
         align-items: flex-end;
-        width: 25rem;
+        width: 27rem;
 
-        height: 23rem;
+        height: 25rem;
+
+        // margin-inline: 5rem;
         max-width: 100%;
 
         border-radius: .9rem;

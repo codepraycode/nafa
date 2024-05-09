@@ -1,11 +1,17 @@
-export const inPageSliderconfig = {
-    slidesToShow: 4,
+import {Settings as SliderSettings} from "react-slick";
+
+export const inPageSliderconfig: SliderSettings = {
+    slidesToShow: 2,
+    // centerPadding: '10px',
+    // centerMode: true,
+    // infinite: false,
+    variableWidth: true,
     responsive: [
         {
             breakpoint: 1690,
             settings: {
             slidesToShow: 3,
-            slidesToScroll: 3,
+            // slidesToScroll: 3,
             // infinite: true,
             // dots: true
             }
@@ -14,7 +20,7 @@ export const inPageSliderconfig = {
             breakpoint: 1400,
             settings: {
             slidesToShow: 3,
-            slidesToScroll: 3,
+            // slidesToScroll: 3,
             // infinite: true,
             // dots: true
             }
@@ -45,7 +51,7 @@ export const inPageSliderconfig = {
             }
         },
         {
-            breakpoint: 780,
+            breakpoint: 880,
             settings: {
             slidesToShow: 1,
             // slidesToScroll: 2,
