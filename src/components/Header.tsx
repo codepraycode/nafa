@@ -1,10 +1,7 @@
-import Link from 'next/link'
+import AppLink from '@/components/UI/AppLink';
 import React from 'react'
 import Logo from './Logo'
-import AppLink from './UI/AppLink'
 import { slugifyLink as slugify } from '@/utils/slugify'
-
-
 
 
 const topNavLinks = [

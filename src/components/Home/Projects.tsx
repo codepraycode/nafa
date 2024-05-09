@@ -1,6 +1,6 @@
 import React from 'react'
 import Section from '../UI/Section'
-import Link from 'next/link'
+import Link from '@/components/UI/AppLink';
 import SliderContainer, { SlideWrapper } from '../UI/Slider'
 import { inPageSliderconfig } from '@/utils/sliderConfig'
 

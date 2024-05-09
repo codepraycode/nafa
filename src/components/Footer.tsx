@@ -1,6 +1,5 @@
 import Logo from '@/components/Logo'
-import Link from 'next/link'
-import React from 'react'
+import AppLink from '@/components/UI/AppLink';
 
 export default function Footer() {
     return (
@@ -14,20 +13,20 @@ export default function Footer() {
                     <div>
                         <h3>Explore</h3>
                         <ul role='list'>
-                            <li><Link href={"/"}>Tournaments & Events</Link></li>
-                            <li><Link href={"/"}>About NAFA</Link></li>
-                            <li><Link href={"/"}>News</Link></li>
-                            <li><Link href={"/"}>Schedule</Link></li>
-                            <li><Link href={"/"}>Videos</Link></li>
+                            <li><AppLink href={"/"}>Tournaments & Events</AppLink></li>
+                            <li><AppLink href={"/"}>About NAFA</AppLink></li>
+                            <li><AppLink href={"/"}>News</AppLink></li>
+                            <li><AppLink href={"/"}>Schedule</AppLink></li>
+                            <li><AppLink href={"/"}>Videos</AppLink></li>
                         </ul>
                     </div>
                     <div>
                         <h3>Also Visit</h3>
                         <ul role='list'>
-                            <li><Link href={"/"}>All stories & topics</Link></li>
-                            <li><Link href={"/"}>Reports & Documents</Link></li>
-                            <li><Link href={"/"}>Jobs & Career</Link></li>
-                            <li><Link href={"/"}>Contact NAFA</Link></li>
+                            <li><AppLink href={"/"}>All stories & topics</AppLink></li>
+                            <li><AppLink href={"/"}>Reports & Documents</AppLink></li>
+                            <li><AppLink href={"/"}>Jobs & Career</AppLink></li>
+                            <li><AppLink href={"/"}>Contact NAFA</AppLink></li>
                         </ul>
                     </div>
                 </nav>
@@ -36,53 +35,53 @@ export default function Footer() {
                 
                 <ul role='list' className='socials'>
                     <li>
-                        <Link href="/" style={{backgroundImage:"url(/icons/twitter.png)"}}>
+                        <AppLink href="/" style={{backgroundImage:"url(/icons/twitter.png)"}}>
                             Twitter
-                        </Link>
+                        </AppLink>
                     </li>
                     <li>
-                        <Link href="/" style={{backgroundImage:"url(/icons/instagram.png)"}}>
+                        <AppLink href="/" style={{backgroundImage:"url(/icons/instagram.png)"}}>
                             Instagram
-                        </Link>
+                        </AppLink>
                     </li>
                     <li>
-                        <Link href="/" style={{backgroundImage:"url(/icons/linkedin.png)"}}>
-                            Linkedin
-                        </Link>
+                        <AppLink href="/" style={{backgroundImage:"url(/icons/AppLinkedin.png)"}}>
+                            AppLinkedin
+                        </AppLink>
                     </li>
                     <li>
-                        <Link href="/" style={{backgroundImage:"url(/icons/facebook.png)"}}>
+                        <AppLink href="/" style={{backgroundImage:"url(/icons/facebook.png)"}}>
                             Facebook
-                        </Link>
+                        </AppLink>
                     </li>
                     <li>
-                        <Link href="/" style={{backgroundImage:"url(/icons/youtube.png)"}}>
+                        <AppLink href="/" style={{backgroundImage:"url(/icons/youtube.png)"}}>
                             Youtube
-                        </Link>
+                        </AppLink>
                     </li>
                 </ul>            
 
 
                 <ul role='list' className='footer_extras'>
                     <li>
-                        <Link href="/">
+                        <AppLink href="/">
                             Terms of service
-                        </Link>
+                        </AppLink>
                     </li>
                     <li>
-                        <Link href="/">
+                        <AppLink href="/">
                             Data protection portal
-                        </Link>
+                        </AppLink>
                     </li>
                     <li>
-                        <Link href="/">
+                        <AppLink href="/">
                             Downloads
-                        </Link>
+                        </AppLink>
                     </li>
                     <li>
-                        <Link href="/">
+                        <AppLink href="/">
                             Manage preferences
-                        </Link>
+                        </AppLink>
                     </li>
                 </ul>
             

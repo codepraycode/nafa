@@ -152,16 +152,15 @@ header {
             display: flex;
 
             ul {
-                gap: 1rem;
+                gap: clamp(1rem, 5vw, 2rem);
             }
         }
-
     }
 
 
     .links {
         @include mixins.fonts($family: $inria-font);
-        font-size: clamp(1rem, 2vh, 1.5rem);
+        font-size: clamp(.5rem, 2vh, 1.5rem);
     }
 
     .cta {

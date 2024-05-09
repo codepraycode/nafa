@@ -1,6 +1,7 @@
 import React from 'react'
 import Section from '../UI/Section'
-import Link from 'next/link'
+import Link from '@/components/UI/AppLink';
+import { slugifyLink as slugify } from '@/utils/slugify';
 
 export default function LiveScores() {
     return (
@@ -14,7 +15,7 @@ export default function LiveScores() {
                 <h3>
                     <span>NSSFFL - Play Offs</span>
 
-                    <Link href={"/"}>Draw</Link>
+                    <Link href={slugify("Draw")}>Draw</Link>
                 </h3>
 
                 <div className="listing">
@@ -59,7 +60,7 @@ export default function LiveScores() {
                 <h3>
                     <span>NSSFFL - All Stars</span>
 
-                    <Link href={"/"}>Draw</Link>
+                    <Link href={slugify("Draw")}>Draw</Link>
                 </h3>
 
                 <div className="listing">

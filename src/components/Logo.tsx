@@ -1,5 +1,5 @@
 import Image from 'next/image'
-import Link from 'next/link'
+import AppLink from '@/components/UI/AppLink';
 import React from 'react'
 
 
@@ -13,14 +13,14 @@ export default function Logo(props: LogoProps) {
 
     return (
         <div className="logo">
-            <Link href={"/"}>
+            <AppLink href={"/"}>
                 <Image
                     src={props.second ? "/logo.png" : "/logo-2.png"}
                     alt='NAFA LOGO'
                     width={100}
                     height={100}
                 />
-            </Link>
+            </AppLink>
         </div>
     )
 }

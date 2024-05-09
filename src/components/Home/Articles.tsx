@@ -1,8 +1,8 @@
 import React from 'react'
 import Section from '../UI/Section'
-import Link from 'next/link'
 import SliderContainer, { SlideWrapper } from '../UI/Slider'
 import { inPageSliderconfig } from '@/utils/sliderConfig'
+import AppLink from '../UI/AppLink'
 
 
 const article = {
@@ -29,7 +29,7 @@ export default function Articles() {
                     [...Array(5)].map((item, i)=>(
                         <SlideWrapper key={i}>
                             <article >
-                                <Link href="/">
+                                <AppLink href="/">
                                     <div className="img" style={{backgroundImage: `url(${article.image})`}}/>
 
                                     <div className='details'>
@@ -37,7 +37,7 @@ export default function Articles() {
                                         <p>{article.details}</p>
                                         <p className='date'>{article.date}</p>
                                     </div>
-                                </Link>
+                                </AppLink>
                             </article>
                         </SlideWrapper>
                     ))
@@ -46,9 +46,9 @@ export default function Articles() {
             </SliderContainer>
 
 
-            <Link href={"/"} className='btn btn-primary slide-cta'>
+            <AppLink href={"/"} className='btn btn-primary slide-cta'>
                 View all articles
-            </Link>
+            </AppLink>
 
         </Section>
     )
