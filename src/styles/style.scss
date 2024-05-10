@@ -278,7 +278,7 @@ header {
     align-items: center;
     justify-content: space-between;
 
-    // padding-block: calc($body-padding / 3);
+    
 
     nav {
         margin-left: auto;
@@ -430,6 +430,8 @@ header {
 
     
     @include mixins.least-medium-screen {
+
+        padding-block: calc($body-padding / 3);
         
         nav {
             display: block;
