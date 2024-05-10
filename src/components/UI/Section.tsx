@@ -1,26 +1,34 @@
-import React from 'react'
+import React, { HTMLAttributes } from 'react'
 
 
 
-export interface SectionProps {
+export interface SectionProps extends HTMLAttributes<HTMLElement> {
     name: string,
     children: React.ReactNode,
-    noWrapper?:boolean
+    noWrapper?:boolean,
+    image?:string
 }
 
 
 export default function Section(props: SectionProps) {
 
-    const className = `${props.name}`;
+    const {className: moreCln, noWrapper, children, ...rest} = props;
+
+    const className = (`${props.name}` +" " + moreCln).trim();
 
     const wrapperClassName = `${props.name}-wrapper`
+
+
     return (
-        <section className={className}>
+        <section
+            className={className}
+            {...rest}
+        >
 
             {
-                props.noWrapper ? props.children : (
+                noWrapper ? children : (
                     <div className={wrapperClassName}>
-                        { props.children }
+                        { children }
                     </div>
                 )
             }

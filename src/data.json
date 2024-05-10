@@ -3,7 +3,8 @@
     "siteDescription": "One Game, One Nation",
     "siteDefault": "/under-construction",
     "siteLinks": [
-        "/"
+        "/",
+        "/about-us/history"
     ],
     "nav": [
         {
@@ -12,7 +13,7 @@
                 {
                     "label": "History of American Football in Nigeria",
                     "description": "American football was introduced to Nigeria mainly through media exposure, particularly television broadcasts of NFL games and movies featuring the sport",
-                    "link":"/history"
+                    "link":"/about-us/history"
                 },
                 {
                     "label": "Our Organization Structure",

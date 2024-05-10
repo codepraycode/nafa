@@ -8,6 +8,78 @@
 }
 
 
+
+.f-w {
+
+    @include mixins.fonts($family: $montserrat-font, $weight: 300);
+    display: block;
+    width: 100% !important;
+
+    figcaption {
+        b {
+            font-weight: 700;
+        }
+        font-weight: 300;
+        
+        font-size: 0.875rem;
+        @include mixins.least-large-screen {
+            font-size: 1.5rem;
+        }
+    }
+    
+    .image-wrapper {
+        width: 100% !important;
+        img {
+            width: 100% !important;
+        }
+    }
+}
+
+.breadcrumb {
+    display: flex;
+    align-items: center;
+
+    color: $clr-text-light;
+
+    a {
+        @include mixins.fonts($family: $montserrat-font, $weight: 400);
+        color: inherit;
+        text-decoration: none;
+
+        font-size: 0.875rem;
+        line-height: 1.066875rem;
+    }
+
+    flex-wrap: wrap;
+
+    li {
+        display: flex;
+        align-items: center;
+
+        
+        overflow: hidden;
+        text-overflow: ellipsis;
+        
+        
+        @include mixins.least-medium-screen {
+            display: none;
+        }
+
+        &:not(:last-of-type):after {
+            content: "";
+            display: inline-block;
+            width: .6rem;
+            height: .6rem;
+
+            margin-inline: .6rem;
+
+            background-image: url("/icons/chevron.svg");
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+    }
+}
+
 // Hambugger
 .menu {
 
@@ -118,6 +190,71 @@
 
 }
 
+
+.article-list {
+    
+    @include mixins.least-large-screen {
+        
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 3rem;
+
+        article {
+            &:nth-child(even) {
+                margin-block: 0rem !important;
+            }
+        }
+    }
+
+    
+    article {
+        padding: 2rem;
+        min-height: 22rem;
+
+        display: flex;
+        flex-direction: column;
+
+        border-radius: 1rem;
+
+        &:nth-child(even) {
+            margin-block: 2rem;
+        }
+
+        h2 {
+            @include mixins.fonts($family: $montserrat-font, $weight: 600);
+            font-size: 2rem;
+        }
+        p {
+            @include mixins.fonts($family: $inter-font, $weight: 500);
+            font-size: 1rem;
+            line-height: 1.5rem;
+        }
+
+        .btn {
+            margin-inline: 0;
+            width: fit-content;
+            margin-top: auto;
+        }
+
+
+    }
+}
+
+
+.bg{
+    &-green {
+        background-color: $clr-article-1;
+        color: $clr-text-light;
+    }
+    &-blue {
+        background-color: $clr-article-2;
+        color: $clr-text-light;
+    }
+    &-orange {
+        background-color: $clr-article-3;
+        color: $clr-text-light;
+    }
+}
 
 .slider-container {
     // background-color: red;
@@ -318,5 +455,26 @@
             cursor: not-allowed;
         }
         transform: rotate(-180deg);
+    }
+}
+
+
+.text{
+    &-w-600 {
+        font-weight: 600 !important;
+    }
+
+    &-center {
+        text-align: center;
+    }   
+}
+
+.flist {
+    @include mixins.fonts($family: $montserrat-font, $weight: 700);
+    font-size: 1.5rem;
+    font-style: italic;
+
+    @include mixins.least-medium-screen {
+        margin-top: 2rem;
     }
 }
