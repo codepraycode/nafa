@@ -168,8 +168,25 @@ header {
             padding: 1.7rem;
 
             hr {
-                border-color: $clr-text-dark;
+                height: .5px !important;
+                border-color: $clr5;
                 margin-block: 1.5rem;
+                display: none;
+            }
+
+
+            li {
+                padding-block: 1rem;
+                &:first-of-type {
+                    padding-top: 0;
+                }
+                &:not(:last-of-type) {
+                    border-bottom: 1px solid $clr5;
+
+                }
+                &:only-child {
+                    padding: 0rem !important;
+                }
             }
 
             h3 {
