@@ -127,7 +127,7 @@ header {
     align-items: center;
     justify-content: space-between;
 
-    padding-block: calc($body-padding / 3);
+    // padding-block: calc($body-padding / 3);
 
     nav {
         margin-left: auto;
@@ -152,20 +152,36 @@ header {
         }
 
         .submenu {
+            $submenu-width: 28rem;
+
             display: none;
 
             box-shadow: rgba(0, 0, 0, 0.05) 0px 0px 0px 1px, rgb(209, 213, 219) 0px 0px 0px 1px inset;
             position: absolute;
             background-color: $clr-text-light;
 
-            top: 5rem;
+            top: 6rem;
+            // top: 25rem;
             // left: 0;
-            width: 28rem;
+            width: $submenu-width;
             max-width: 80%;
 
             border-radius: 1rem;
 
             padding: 1.7rem;
+
+
+            &::before {
+                content: "";
+                width: $submenu-width;
+                height: 1rem;
+                background-color: transparent;
+                display: block;
+
+                position: absolute;
+                top: -1rem;
+                left: 0;
+            }
 
             hr {
                 height: .5px !important;
@@ -234,6 +250,16 @@ header {
     .links {
         @include mixins.fonts($family: $inria-font);
         font-size: clamp(.5rem, 2vh, 1.5rem);
+
+        & > li {
+            // background-color: red;
+            height: 5rem !important;
+
+            display: flex;
+            align-items: center;
+            // flex-direction: column;
+            // justify-content: center;
+        }
     }
 
     .cta {
