@@ -12,25 +12,25 @@ export default function Hero() {
         infinite: true,
         slidesToShow: 1,
         slidesToScroll: 1,
-        autoplay: true,
+        autoplay: false,
         speed: 2000,
         cssEase: "linear",
     }
     return (
         <SliderContainer {...sliderconfig}>
 
-            <SlideWrapper >
-                {
-                    homeData.hero.map((item, i)=>(
+            {
+                homeData.hero.map((item, i)=>(
+                    <SlideWrapper
+                        key={i}
+                    >
                         <Section
                             name='hero'
-                            key={i}
                             style={{
                                 backgroundImage: `url(${item.image})`
                             }}
                         >
                             <h1>
-                                {/* ONE GAME<br/>ONE NATION */}
                                 {
                                     item.title.map((it, i)=>(
                                         <>
@@ -54,9 +54,9 @@ export default function Hero() {
 
                             </div>
                         </Section>
-                    ))
-                }
-            </SlideWrapper>
+                    </SlideWrapper>
+                ))
+            }
 
 
         </SliderContainer>
