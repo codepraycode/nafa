@@ -1,4 +1,4 @@
-import { BareArticle } from "./type";
+import { BareArticle } from "../type";
 
 export const articles: BareArticle[] = [
     {
