@@ -1,0 +1,98 @@
+{
+    "hero": [
+        {
+            "title": [
+                "ONE GAME", "ONE NATION"
+            ],
+            "text": "Unleash Your Passion: Empowering Your Football Journey Together.",
+            "image": "https://live.staticflickr.com/65535/53108530844_14595421ab_b.jpg"
+        }
+    ],
+    "kickoff": {
+        "title":"KICKOFF WITH NAFA",
+        
+        "articles":[
+            {
+                "image": "https://live.staticflickr.com/65535/53108758630_d2e61d5b51_b.jpg",
+                "title": "Become a Member",
+                "details": "Joining our community propels your game forward and amplifies your impact on the field. Gain exclusive resources and support to enhance your performance with membership",
+                "link": ""
+            },
+            {
+                "image": "https://live.staticflickr.com/65535/53108317981_eb5369cfd9_b.jpg",
+                "title": "Flag Tournament",
+                "details": "Joining our community propels your game forward and amplifies your impact on the field. Gain exclusive resources and support to enhance your performance with membership",
+                "link": ""
+            },
+            {
+                "image": "/kickoff-3.jpeg",
+                "title": "Coach Certificate",
+                "details": "Joining our community propels your game forward and amplifies your impact on the field. Gain exclusive resources and support to enhance your performance with membership",
+                "link": ""
+            }
+        ]
+    },
+    "rg": {
+        "bg": "https://live.staticflickr.com/65535/53108546354_3be5c88a30_b.jpg",
+        "title": "Building Stronger Communities",
+        "text": "NAFA plays a pivotal role in nurturing individuals to reach their full potential, thereby contributing to the emergence of giants within the community. Through promoting physical fitness, mental well-being, and personal growth, NAFA empowers individuals to excel in various aspects of their lives, ultimately elevating the collective strength and vitality of the community.",
+        "cta": {
+            "link": "/",
+            "label": "Register Now"
+        }
+    },
+    "projects": {
+        "title": "Projects",
+        "items": [
+            {
+                "title": "AMBASSADORS",
+                "image": "https://www.mlive.com/resizer/v2/VFWLY2BAJFF2TNUXJ7TVHEJ3HI.jpg?auth=b1ed865680032c85221adf823423aefe814bc5f54789aa1c03c3803a3c99d714&width=1280&quality=90"
+            },
+            {
+                "title": "EQUILITY",
+                "image": "https://live.staticflickr.com/65535/53108826483_028a901dc3_b.jpg"
+            },
+            {
+                "title": "YOUTHS",
+                "image": "https://live.staticflickr.com/65535/53652520226_bca9c3be04_b.jpg"
+            },
+            {
+                "title": "TEENAGERS",
+                "image": "https://live.staticflickr.com/65535/53108528794_fb05f747fc_b.jpg"
+            }
+        ]
+    },
+    "articles": {
+        "title": "News Articles",
+        "items": [
+            {
+                "image": "https://live.staticflickr.com/65535/53108322246_57b94f5a65_b.jpg",
+                "title": "American Football Development",
+                "details": "Aketi bowl",
+                "link":"/articles",
+                "date": "27 Mar 2024"
+            },
+            {
+                "image": "https://live.staticflickr.com/65535/53108531729_297890eba1_b.jpg",
+                "title": "American Football Development",
+                "details": "Promoting American football...",
+                "link":"/articles",
+                "date": "27 Mar 2024"
+            },
+            {
+                "image": "https://live.staticflickr.com/65535/53652505896_f0513b301b_b.jpg",
+                "title": "American Football Development",
+                "details": "Nafa inspires youth",
+                "link":"/articles",
+                "date": "27 Mar 2024"
+            },
+            {
+                "image": "/images/_MG_0382.jpg",
+                "title": "American Football Development",
+                "details": "Nafa concludes national tour",
+                "link":"/articles",
+                "date": "27 Mar 2024"
+            }
+        ]
+    }
+}

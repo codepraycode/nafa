@@ -3,15 +3,8 @@ import Section from '../UI/Section'
 import Link from '@/components/UI/AppLink';
 import SliderContainer, { SlideWrapper } from '../UI/Slider'
 import { inPageSliderconfig } from '@/utils/sliderConfig'
+import homeData from "@/data/home.json"
 
-
-
-const projects = [
-    "AMBASSADORS",
-    "EQUILITY",
-    "YOUTHS",
-    "TEENAGERS"
-]
 
 export default function Projects() {
     
@@ -19,20 +12,20 @@ export default function Projects() {
         <Section
             name='projects'
         >
-            <h2 className='section-title'>Projects</h2>
+            <h2 className='section-title'>{homeData.projects.title}</h2>
             <br/><br/>
 
             <SliderContainer {...inPageSliderconfig} className='featured-slide'>
                 {
-                    projects.map((item, i)=>(
+                    homeData.projects.items.map((item, i)=>(
                         
                         <SlideWrapper key={i}>
                             <Link
                                 href={"/"} 
-                                style={{backgroundImage:"url(/projects-bg.jpeg)"}}
+                                style={{backgroundImage:`url(${item.image})`}}
                                 className='project-item'
                             >
-                                <span>{item}</span>
+                                <span>{item.title}</span>
                             </Link>
                         </SlideWrapper>
                     ))

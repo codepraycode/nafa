@@ -1,43 +1,21 @@
 import React from 'react'
 import Section from '../UI/Section'
 import Link from '@/components/UI/AppLink';
-
-
-
-const articles = [
-    {
-        image: "/kickoff-1.jpeg",
-        title: "Become a Member",
-        details: "Joining our community propels your game forward and amplifies your impact on the field. Gain exclusive resources and support to enhance your performance with membership",
-        link:''
-    },
-    {
-        image: "/kickoff-2.jpeg",
-        title: "Flag Tournament",
-        details: "Joining our community propels your game forward and amplifies your impact on the field. Gain exclusive resources and support to enhance your performance with membership",
-        link:''
-    },
-    {
-        image: "/kickoff-3.jpeg",
-        title: "Coach Certificate",
-        details: "Joining our community propels your game forward and amplifies your impact on the field. Gain exclusive resources and support to enhance your performance with membership",
-        link:''
-    },
-]
+import homeData from "@/data/home.json";
 
 export default function KickOff() {
     return (
         <Section
             name='kickoff'
         >
-            <h1>KICKOFF WITH NAFA</h1>
+            <h1>{homeData.kickoff.title}</h1>
 
             <br/><br/>
 
 
             <div className='content'>
                 {
-                    articles.map((item, i)=>(
+                    homeData.kickoff.articles.map((item, i)=>(
                         <article key={i}>
                             <div className="img" style={{backgroundImage: `url(${item.image})`}}/>
 

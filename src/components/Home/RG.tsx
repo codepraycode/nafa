@@ -1,20 +1,25 @@
 import React from 'react'
 import Section from '../UI/Section'
 import Link from '@/components/UI/AppLink';
+import homeData from "@/data/home.json";
+
 
 export default function RG() {
     return (
         <Section
             name='rg'
+            style={{
+                backgroundImage: `url(${homeData.rg.bg})`
+            }}
         >
-            <h2>Building Stronger Communities</h2>
+            <h2>{homeData.rg.title}</h2>
             <br/><br/>
             <p>
-                NAFA plays a pivotal role in nurturing individuals to reach their full potential, thereby contributing to the emergence of giants within the community. Through promoting physical fitness, mental well-being, and personal growth, NAFA empowers individuals to excel in various aspects of their lives, ultimately elevating the collective strength and vitality of the community.
+                {homeData.rg.text}
             </p>
             <br/><br/>
-            <Link href={"/"} className='btn btn-light'>
-                Register Now
+            <Link href={homeData.rg.cta.link} className='btn btn-light'>
+                {homeData.rg.cta.label}
             </Link>
         </Section>
     )
