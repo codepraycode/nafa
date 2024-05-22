@@ -1265,7 +1265,11 @@ footer {
 
 .articles-wrapper {
     position: relative;
-    // background-color: red;
+
+    // Hide the entire section if there is no article item
+    &:has(.no-article) {
+        display: none;
+    }
 
 
     a {

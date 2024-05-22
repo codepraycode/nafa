@@ -31,6 +31,11 @@ function useArticles(): ArticleItem[] {
 export default function ArticleItems() {
 
     const articles = useArticles();
+
+
+    if (articles.length < 1) {
+        return <div className="no-article"></div>
+    }
     
     return (
         <SliderContainer {...inPageSliderconfig} className='featured-slide'>
