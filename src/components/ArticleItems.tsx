@@ -2,7 +2,6 @@
 import {useState, useEffect} from 'react';
 import { inPageSliderconfig } from '@/utils/sliderConfig';
 import SliderContainer, { SlideWrapper } from "@/components/UI/Slider";
-import homeData from "@/data/home.json"
 import AppLink from '@/components/UI/AppLink';
 import { ArticleItem } from '@/lib/nobox/type';
 import { ArticleModel } from '@/lib/nobox/structure';
