@@ -5,6 +5,7 @@ import SliderContainer, { SlideWrapper } from "@/components/UI/Slider";
 import AppLink from '@/components/UI/AppLink';
 import { ArticleItem } from '@/lib/nobox/type';
 import { ArticleModel } from '@/lib/nobox/structure';
+import { bareFormatDate } from '@/utils/formatDate';
 
 
 
@@ -51,7 +52,7 @@ export default function ArticleItems() {
                                 <div className='details'>
                                     <h2>{item.title}</h2>
                                     <p>{item.content}</p>
-                                    <p className='date'>{item.createdAt.toLocaleString()}</p>
+                                    <p className='date'>{bareFormatDate(item.createdAt)}</p>
                                 </div>
                             </AppLink>
                         </article>
