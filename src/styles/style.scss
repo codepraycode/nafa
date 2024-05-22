@@ -978,6 +978,8 @@ footer {
             justify-content: space-around;
             flex-wrap: wrap;
 
+            row-gap: 2rem;
+
             article{
                 width: 23rem;
                 &:nth-last-child(-n+3) {
@@ -1028,16 +1030,31 @@ footer {
         text-align: center;
         border: .5px solid $clr2;
 
+        display: block;
+
         @include mixins.fonts($family: $inter-font, $weight: 500);
         line-height: 1.5rem;
         font-size: .875rem;
         color: $clr-text-4;
+
+
+        margin-top: auto !important;
+
+        // background-color: red !important;
+    }
+
+
+    @include mixins.least-large-screen {
+        .content {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+        }
     }
 
 
     article {
 
-        width: 25rem;
+        // width: 25rem;
         min-height: 30rem;
         background-color: $clr-text-light;
         @include mixins.box-shadow();
@@ -1059,6 +1076,13 @@ footer {
 
         .details {
             padding: 2rem;
+
+            min-height: 19rem;
+            // height: 100%;
+
+            display: flex;
+            flex-direction: column;
+            // background-color: green;
         }   
     }
 

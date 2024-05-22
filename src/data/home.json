@@ -22,20 +22,29 @@
             {
                 "image": "https://live.staticflickr.com/65535/53108758630_d2e61d5b51_b.jpg",
                 "title": "Become a Member",
-                "details": "Joining our community propels your game forward and amplifies your impact on the field. Gain exclusive resources and support to enhance your performance with membership",
-                "link": ""
+                "details": "Becoming a member of NAFA means joining a vibrant community, enjoying fitness and fun through flag football, while also accessing skill development, competition, socialization, and inclusivity.",
+                "cta": {
+                    "label": "Join Now",
+                    "link": "/"
+                }
             },
             {
-                "image": "https://live.staticflickr.com/65535/53108317981_eb5369cfd9_b.jpg",
+                "image": "https://s3-alpha-sig.figma.com/img/2718/d294/626d854b2cded01962ebdee603a19144?Expires=1717372800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=koBRjvFReOGcTUKPuSik5U4qIGqEm-wkHrKhqAR4eE~yO8A4W8OXJLC-AuizIpJuQhMjrIgqX0bOYkU8JRZMR7CXeOkqzmiLnCjofLVv-pHCVafie0N9VM5auOSJ85Kx779PESjPwMGX8NJs~r4HmvFjZZQGzKxaCuvIxlaf8prJ2wJO8ycMMR5HfqKy~-JXpvy6GfLHXDCuh2a9PnjN1NYggaO~~wsAQjolnoZqy2Yzs6~A6F8Kx11TFzYLFmSEXymuRng0oMZ9rYaja1RGU4HeHgy2bfLsPPFHkO0MeDfBvc0UhBMFEEVDbBd5uqZ4p4~QSqklov5Sy1b9jrNIOQ__",
                 "title": "Flag Tournament",
-                "details": "Joining our community propels your game forward and amplifies your impact on the field. Gain exclusive resources and support to enhance your performance with membership",
-                "link": ""
+                "details": "A non-contact version of American football where players remove opponents' flags instead of tackling them. It provides all the excitement and strategy of football in a safer format, appealing to people of all ages and skill levels.",
+                "cta": {
+                    "label":"Learn More",
+                    "link": "/"
+                }
             },
             {
-                "image": "/kickoff-3.jpeg",
+                "image": "https://live.staticflickr.com/65535/53108835463_4ebe9271f5_b.jpg",
                 "title": "Coach Certificate",
-                "details": "Joining our community propels your game forward and amplifies your impact on the field. Gain exclusive resources and support to enhance your performance with membership",
-                "link": ""
+                "details": "In collaboration with the NFL and IFAF, NAFA offers certification to its coaches through the USA Football program. Interested coaches should reach out to the NAFA team for more information on how to access this service free of charge.",
+                "cta": {
+                    "label": "Learn More",
+                    "link": "/"
+                }
             }
         ]
     },

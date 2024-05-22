@@ -21,8 +21,14 @@ export default function KickOff() {
 
                             <div className='details'>
                                 <h2>{item.title}</h2>
+                                <br/>
                                 <p>{item.details}</p>
-                                <Link href={"/"} className='btn btn-light'>Join Now</Link>
+                                <Link
+                                    href={item.cta.link}
+                                    className='btn btn-light'
+                                >
+                                    {item.cta.label}
+                                </Link>
                             </div>
                         </article>
                     ))
