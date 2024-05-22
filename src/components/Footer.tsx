@@ -45,7 +45,7 @@ export default function Footer() {
                         </AppLink>
                     </li>
                     <li>
-                        <AppLink href="/" style={{backgroundImage:"url(/icons/AppLinkedin.png)"}}>
+                        <AppLink href="/" style={{backgroundImage:"url(/icons/linkedin.png)"}}>
                             AppLinkedin
                         </AppLink>
                     </li>

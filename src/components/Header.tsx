@@ -49,7 +49,7 @@ export default function Header() {
 
                                                 {
                                                     item.submenu.map((sitem, i)=>(
-                                                       <>
+                                                       <React.Fragment key={i}>
                                                             <li>
                                                                 <AppLink href={sitem.link}>
                                                                     <h3>{sitem.label}</h3>
@@ -59,7 +59,7 @@ export default function Header() {
                                                             {
                                                                 i !== (item.submenu.length - 1) && <hr/>
                                                             }
-                                                       </> 
+                                                       </React.Fragment> 
                                                     ))
                                                 }
 
