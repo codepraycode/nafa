@@ -51,7 +51,6 @@ export default function ArticleItems() {
 
                                 <div className='details'>
                                     <h2>{item.title}</h2>
-                                    <p>{item.content}</p>
                                     <p className='date'>{bareFormatDate(item.createdAt)}</p>
                                 </div>
                             </AppLink>

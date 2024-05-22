@@ -57,6 +57,15 @@
             "label": "Register Now"
         }
     },
+    "mv": {
+        "bg": "https://s3-alpha-sig.figma.com/img/70d3/13dc/68ed43ef3a47d945422d0536caecfdd9?Expires=1717372800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=inTU714Fve4MGrJs-koLDnkdFFYlkNtmOaMVyNJeematnpeuQnHKct11UgeVWaBhjc~8pO9e~JF5sgjo75reT4I2A-VZa92jPakfviseoqmU-MTnqznYxXGtvDP4mRaDAbXRna3XyaD4iZsXp5vOxRGd7NKoV53Us0PhTDSvjj8TVGmMcFILRsk--Sx~1BsG42j35SG3B8KuOzqmkRxNikyH09UleiPjuPlDkbCi8~3XP1Ure3avwRnQJPWISSoyV2MBcQuPBIcqpZEC4RuiO9VSVZ9bdWjzbCe~RpQ9jrDO6Wz3ftR65vgKTe~d8wI7~H1~-hcjL8WCOkhXFmbihQ__",
+        "title": "OUR PRINCIPLES ENCOMPASSES DEMOCRAZY, EQUALITY, INCLUSIVITY, SUSTAINABILITY, INTEGRITY AND EDUCATION.",
+        "text": "",
+        "cta": {
+            "link": "/",
+            "label": "Mission & Vision"
+        }
+    },
     "projects": {
         "title": "Projects",
         "items": [
@@ -108,6 +117,20 @@
                 "details": "Nafa concludes national tour",
                 "link":"/articles",
                 "date": "27 Mar 2024"
+            }
+        ]
+    },
+    "events": {
+        "title": "Events",
+        "items": [
+            {
+                "image": "https://s3-alpha-sig.figma.com/img/3967/99b2/81e11876dd19646f531d554e1ecd94b5?Expires=1717372800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=JU7ZHLxU4q5g~gxL3ziP1qi48AoN2bMgcilNbGuOxe77f7KIY3Ag9p-TwycJ~KuMbgDAdlZrDd7Wv2O1-QzWm3359zzh41VYkTWUaxrO9pb1wSV1OJBM5Y8FfUwEKxmG6Wo~3IDrOqnL9UbefSvVnfaHj2bs~NAXNXrhNIgK5D9DtvAdnzMyXDO2AzCq8-KlmDoSRb1-4cMCiNq5-X5ZzVNmivDVC6KoIHy~P2oG5cQ02-809lmR2nP09GWHLJA7y6aOSV6UxAt1Hy-7epA0Q8accMwQ-3-MmSfCq9RUrB9hLgQX4pE-Si5eTobI5MnJUnAMPO5~q-9stlBYKMijmg__",
+                "title": "2024 ALL SPORTS",
+                "text": "NAFA empowers individuals to excel in various aspects of their lives",
+                "date": {
+                    "from": "24 Mar 2024",
+                    "to": "24 Apr 2024"
+                }
             }
         ]
     }

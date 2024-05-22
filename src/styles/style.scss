@@ -661,7 +661,7 @@ footer {
 
 .mv {
     
-    background-image: url("/mv-bg.jpeg");
+    // background-image: url("/mv-bg.jpeg");
     background-position: center 80%;
     min-height: 100vh;
     display: flex;
@@ -1082,7 +1082,6 @@ footer {
 
             display: flex;
             flex-direction: column;
-            // background-color: green;
         }   
     }
 
@@ -1345,7 +1344,7 @@ footer {
             line-height: 1.5rem;
         }
         
-        p {
+        h2 {
             &:not(.date) {
                 color: $clr-text-1;
             }
@@ -1433,12 +1432,13 @@ footer {
         
         
         margin-inline: auto;
-        height: max-content;
+        min-height: 15rem;
         
         background-color: $clr-text-light;
         @include mixins.box-shadow;
 
-        border-radius: .5rem;
+        overflow-x: hidden;
+        border-radius: 2.5rem;
         
         @include mixins.least-large-screen {
             max-width: 80%;
