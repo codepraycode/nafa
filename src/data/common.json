@@ -1,0 +1,178 @@
+{
+    "nav": [
+        {
+            "label": "About NAFA",
+            "submenu": [
+                {
+                    "label": "History of American Football in Nigeria",
+                    "description": "American football was introduced to Nigeria mainly through media exposure, particularly television broadcasts of NFL games and movies featuring the sport",
+                    "link": "/about-us/history"
+                },
+                {
+                    "label": "Our Organization Structure",
+                    "description": "American football was introduced to Nigeria mainly through media exposure, particularly television broadcasts of NFL games and movies featuring the sport",
+                    "link": "/organization"
+                },
+                {
+                    "label": "Our People",
+                    "description": "American football was introduced to Nigeria mainly through media exposure, particularly television broadcasts of NFL games and movies featuring the sport",
+                    "link": "/people"
+                },
+                {
+                    "label": "The Huddle Way",
+                    "description": "American football was introduced to Nigeria mainly through media exposure, particularly television broadcasts of NFL games and movies featuring the sport",
+                    "link": "/huddle"
+                }
+            ]
+        },
+        {
+            "label": "Our Leagues",
+            "submenu": [
+                {
+                    "label": "NSSFFL",
+                    "description": "American football was introduced to Nigeria mainly through media exposure, particularly television broadcasts of NFL games and movies featuring the sport",
+                    "link": "/nssfl"
+                },
+                {
+                    "label": "AFFL",
+                    "description": "American football was introduced to Nigeria mainly through media exposure, particularly television broadcasts of NFL games and movies featuring the sport",
+                    "link": "/affl"
+                },
+                {
+                    "label": "Nigeria Flag Football League",
+                    "description": "American football was introduced to Nigeria mainly through media exposure, particularly television broadcasts of NFL games and movies featuring the sport",
+                    "link": "/nffl"
+                },
+                {
+                    "label": "Find a Football league",
+                    "description": "American football was introduced to Nigeria mainly through media exposure, particularly television broadcasts of NFL games and movies featuring the sport",
+                    "link": "/link"
+                }
+            ]
+        },
+        {
+            "label": "Our Programs",
+            "submenu": [
+                {
+                    "label": "Gridiron Development Program",
+                    "description": "Become a Referee",
+                    "link": "/become-a-referee"
+                },
+                {
+                    "label": "Gridiron Guardians Program",
+                    "description": "",
+                    "link": "/"
+                },
+                {
+                    "label": "Gridiron Gems Program",
+                    "description": "",
+                    "link": "/"
+                },
+                {
+                    "label": "Flag Football Nigeria",
+                    "description": "",
+                    "link": "/"
+                }
+            ]
+        },
+        {
+            "label": "Resources",
+            "submenu": [
+                {
+                    "label": "Coach Certification",
+                    "description": "",
+                    "link": "/"
+                },
+                {
+                    "label": "Health and Safety Resources",
+                    "description": "",
+                    "link": "/"
+                },
+                {
+                    "label": "Rules",
+                    "description": "",
+                    "link": "/"
+                },
+                {
+                    "label": "Starting a League in your area",
+                    "description": "",
+                    "link": "/"
+                },
+                {
+                    "label": "Starting a chapter",
+                    "description": "",
+                    "link": "/"
+                }
+            ]
+        },
+        {
+            "label": "Tournaments & Events",
+            "submenu": [
+                {
+                    "label": "Camps and Clinics",
+                    "description": "",
+                    "link": "/"
+                }
+            ]
+        }
+    ],
+    "partners": {
+        "title": "NAFA Partners",
+        "items": [
+            {
+                "src":"https://s3-alpha-sig.figma.com/img/682e/5af5/f480340f99e520d232de6f0aa63329f5?Expires=1717372800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=RIV0enPiCKDLTzuN97preY8uvpg-gDp9QQpHOY0ouBezeVfB5iYtOSsBsYTZc2O8BGqQtLyQCFaUikZrXQlCa5tVyfMu0NYEO9qUkoJdRVyNBwaea4oNMSsZaT2N5l-pZkIdo05WU15FhuvlNV-qLuxTjRURQimkBYIS61PM6XWqIfwUtlThmNhcYFJRzR6XKB0DJ~VOZLONLcdQWllNyz7zr-H~V2rLfIFW03oJEbkBlYGY5kV-GWDlYnfPxV3oWzjMwg0bRYTq-0zkp9hMYEvbFWaUjR-e998EnLQpVAVa8aroSaZemUHsFrj0UErP52jcPYZlK9qLGy7SLaNnfw__",
+                "alt": "NFL",
+                "width": 64,
+                "height": 86
+            },
+            {
+                "src": "https://s3-alpha-sig.figma.com/img/6e9a/331e/472cbf3b8b9c1dc68936a50821925869?Expires=1717372800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=niS3Wh0cwSE5WzRV4K03scK5avlKs6AzXKtDkJyERkThSp2n1nWV7buF7jVJ3XYpFaXkGpCNCZszwQxj3WfBKm4APXYq1g9brq-CDIdroSbZ4X-04ksTR4nSc6SpHNlR2AbPol22IpRR1nPZV5XLqRFLNH8CzjpsrogFyKGOaFdlw14Y12tz0fY6gpFH1eO-wTPwVt7o4BuLp8qG0UMf8Di3GsybX~jVLlGuQJQpNTe26wrmHLEjbcVBoytcWS7AkhI0hWLa-pLO3-KGIwfntet4HXNwJ9yIrDezIm-mC9AeZspPko50tBdLSMnm4ZvhUnV6oBpTuWy3-KeYXCugkw__",
+                "alt": "FAF",
+                "width": 91,
+                "height": 61
+            },
+            {
+                "src": "https://s3-alpha-sig.figma.com/img/fa9a/7d71/666f434f38d06466c47f0854446b4d49?Expires=1717372800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=IPnHCdF0pVSDZ0TRip0ZoWCDbxsKkMHD81hCxwp0gjeitYfcosb2BVswJ8cmvzYPTpaXIzy2-2loTpfSNARCP9S8gJxktzQX5D3ouK2qOCZJH~aipVMXttiYK1F2j-ZJA7VkxIS30qcnvaBOnR7iUasi~~KY6JwKyH9k6pwhxPbC1lu7xgwsha~CcmFt-4HpGGG3IdfM--gkO6KeSIxE8xR-9i~gL4MltZxPBRcem8c5cnoYEiVFRyLd95LoDseMMl2QSwBSnAV2jF3Ep4xcsbY1PVUj7vZ9ylXdyyo-xJbRsvGaZpXsNq5a0MjKUyuXLcK0E4wKwQXIemTSnsy4mg__",
+                "alt": "FEDERAL MINISTRY OF YOUTH & SPORT DEVLOPMENT",
+                "height": 73,
+                "width": 73
+            },
+            {
+                "src": "https://s3-alpha-sig.figma.com/img/2091/4e1c/5f7064340fc0407f6aef483adda4d18c?Expires=1717372800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=fo-pUYzVBM16UzsatriWKtLwNlsJBmEhJYensYTEQBA5cZ0cnuOkSoBoq3uAXwvB3KYeHuJ1BIEilJtkywfrNsms6zqyqyPlNLRVLW6e6g8CqVJw9pP~K8pdNY-Vo9GZp1gP7DYZmQvJTifHHfh-oFiye-xISAUmrGhXuZu5ngexWhm-PJ9ZpHvthGfNWFwZiVVVc2EXOcLs98XIwu5rocPccvX85iF7XC3J3YVJd1WJO62RysCSeTg5~24Z~lTJ53jOMWc92n0N0bg50v1dw~Nal41B2vwrW8AP3ILrmgP1AKYqbtUNq1qgu1QB2djqZp11p7Lkh1ySBBVlY2tvTQ__",
+                "alt": "FEDERAL MINISTRY OF EDUCATION",
+                "height": 52,
+                "width": 196
+            },
+            {
+                "src": "https://s3-alpha-sig.figma.com/img/51f3/ac60/1324f15fde5e6d3ecf692614f33c0f51?Expires=1717372800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=NPg5FXfYIz5GF5rMbRHe8~29Icp36hGFwJnFdVB2r067PZ9KGWt8yZkF81Q1n2j3~6qGAWbEzVhvaVH3EstK6hJMkxIThSCpr0fgd4X-K7YkO2YENsLRjR3tQDlA5xVexGs5D1wkpfy3Dld3ISrKebSZxSapxoLsQsKlnQ19c57j27~dXIIqKoA4Xa~th8SnBUoamJgZ5jEdpNuoc87HUHI9CiVtoRf9LBYutfUjKbJZauA-Kqii8N7X9wzM-yGLQsPhYxEgCDB~L08E-w9hAJQxYoD4bA0ekEfgHub8O0aLm6E1Qbs3IMKSxTeR6oi-krieO1Sk7rXXnY-nxhj2VA__",
+                "alt": "NSSF LOGO",
+                "width": 62,
+                "height": 86
+            },
+            {
+                "src": "https://s3-alpha-sig.figma.com/img/a63c/4701/7cf0d6b99cb39b0f7f76eea79fd54968?Expires=1717372800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=mrCGO2RBrC~k0v5xwfZQIMGZ55KW-E6HtcZNAv1a3WtGuxM5uJWEK~Ztkt4erNG68K6HaTfzjI1ta6nsN5Jzl7MrYuNxIxiUY9Lev8aP4G1kLexjFOFUU7cCXcitGOjaUe7LNJSkzhfF9vJ7UcU3gh2tzX50XlXumxra8vmhuOn12fASc8pzasI0o6Yqj4kMq-M7xRUrf7vOOIf9JbxGOyltHo69LAYPVx6jKcQCkXWxRgoyIeGmOUQD68QOhFsFwsvdQqnhKxo7VlQ47mff4CeCAufFOn5W4ISGannrUobbKoReaYILsQGa5w41n3KAdWdhJZzpmibWYl9p0yWdNg__",
+                "alt": "SFFL LOGO",
+                "width": 101,
+                "height": 82
+            },
+            {
+                "src": "https://s3-alpha-sig.figma.com/img/1326/79ac/9fd5c0f5242b5cc63a43b944730a6c8b?Expires=1717372800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=I0Xj50onMuSR5pc2peMsUXc-NVsUo0qoCHUqcmCTl8O4cbtAftX26D9u5ODTHyXwVPKmSTJxGd4p6-hJX2zBs-MwLEQWxY-B7Yny7OlHraIkZV2M4Nva0ZdM78aBeLFtP7HLp-5rXJS5ryaynI3d-lEcEmfXfYvyy1Mwb8V3HBG5fxXqdbHkX-Pe00ByrPcyeFF96gUcpBCrEcQ2d-lAULzk9rKoxcCCenqmf-lrS6NpI63y3u~pCb2nJa6GbtXdKttZWSzJgh~i4Fx909ULurUDehssG7tPY8tJ6oWBukXCusrxsKaHmJ-Fi6QHMauF7AVzSlJGEERABRYdVjGq3w__",
+                "alt": "LAGOS STATE COMM",
+                "height": 86,
+                "width": 82
+            },
+            {
+                "src": "https://s3-alpha-sig.figma.com/img/8f8e/461f/9b0d3e5c66fbfda8a789e11c71438cab?Expires=1717372800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=bvyLkjuWIE0Av7j9H9cd0jlIiYOqGi~wIRA8~QUl~dP9u1otyn~gTZFwaKmBrr1UdsuOOzqKUqFW5pBtL6aqMdGO80xDAIuv4Bwt4OKbM-Jxu2AqvFbDnDvpVBs5fRcH29fd6yIFlRFSKijkWaub5pqyub3f4ycgiL46d7sNfO4CjDuyPuzpv~o8U~nKg43tu5rPx7pIJAIBh3PNHKIOFUMrQLAzRVh6EUfl13S8yQawTVNf55~PnkPVhEPX0sF-XGeiXNiwBoA0qt4tHLwHtjmyx-eKVZ3yi548tB4noFBZPA9ESaBF1WFJyvTiscfID2C6jd5MRCIvrQjtsHR9BQ__",
+                "alt": "ABUJA FLAG logo",
+                "height": 86,
+                "width": 56
+            },
+            {
+                "src": "https://s3-alpha-sig.figma.com/img/317a/89fe/b09e7c607f4c702e25d685aece785466?Expires=1717372800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=BFRqDkbOG9DNGtYeU7xL~zp4lbBGKv7tX8eRI8v7CYGQyf5m~7DhuoG3dMjfeHfBprZTegnXaBg1F7zCpj5J4Qh~TrZe~AoaP9z2bvY2cjVTjXAd~S3WR61fptB7RnVkYe5jAb05p5DGEf6vGrbFy70gvhwjmXcTpzzUnlicYAz7U80RRMXJdSf71L7PajlceAD4nDWDKe8-uudTIN9zemKL1tpIhZRVIXmi~7TkvcR3eaNRS7nZHFaeJl2N0h4-VyEH8YWfVCP2iVGbQ75RZA2fzP5GLcxlruB36IdeU51hmlCzUVL8DGd1NWuRl0S~V3mSDhdC4XX2V9WDvvyScA__",
+                "alt": "GRIDIRON IMPORTS LOGO",
+                "width": 159,
+                "height": 62
+            }
+        ]
+    }
+}
