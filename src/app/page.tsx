@@ -14,12 +14,18 @@ export default function Home() {
         <>
             <Hero />
             <About />
+            <br/><br/><br/><br/>
             <KickOff />
+            <br/><br/><br/><br/>
             <LiveScores />
+
             <Articles />
+            <br/><br/><br/><br/>
             <RG />
             <MV />
+            <br/><br/><br/><br/>
             <Projects />
+            <br/><br/><br/><br/>
             <Events />
             <Partners />
         </>

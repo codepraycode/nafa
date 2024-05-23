@@ -679,7 +679,7 @@ footer {
 .mv {
     
     // background-image: url("/mv-bg.jpeg");
-    background-position: center 80%;
+    background-position: center ;
     min-height: 100vh;
     display: flex;
     align-items: flex-end;
@@ -728,7 +728,7 @@ footer {
 .rg {
     // background-image: url("/rg-bg.jpeg");
     background-position: center 40%;
-    min-height: 80vh;
+    min-height: 90vh;
 
     background-color: rgb(40, 95, 7);
     background-blend-mode: multiply;
@@ -738,9 +738,13 @@ footer {
     display: flex;
     align-items: flex-end;
 
+    
     @include mixins.least-small-screen {
-        background-position: center !important;
-        background-size: cover;
+        background-position: center 45% !important;
+        background-size: 400%;
+    }
+    @include mixins.small-screen {
+        background-position: center 35% !important;
     }
 
     @include mixins.fonts($family: $inter-font, $weight: 500);
@@ -753,13 +757,15 @@ footer {
         
         @include mixins.least-large-screen {
             font-size: 3rem;
-            line-height: 1.5rem;
+            line-height: 3.5rem;
         }
     }
 
     p {
         font-size: 0.875rem;
+        line-height: 1.5rem;
         @include mixins.least-large-screen {
+            line-height: 1.7rem;
             font-size: 1.25rem;
         }
     }
@@ -769,8 +775,9 @@ footer {
         text-align: center;
         
         margin-inline: auto;
-        padding: 2rem;
-
+        padding-block: 2rem;
+        max-width: 80%;
+        
         @include mixins.least-small-screen {
             .btn {
                 width: 100%;
@@ -778,6 +785,7 @@ footer {
         }
 
         @include mixins.least-large-screen {
+            max-width: 90%;
             padding: 2rem 15rem;
             padding-bottom: 3.7rem;
         }
@@ -1455,15 +1463,20 @@ footer {
         @include mixins.box-shadow;
 
         overflow-x: hidden;
-        border-radius: 2.5rem;
+        border-radius: 1rem;
+        max-width: 80%;
         
         @include mixins.least-large-screen {
-            max-width: 80%;
+            border-radius: 2.5rem;
 
             display: flex;
             align-items: center;
             min-width: 45rem;
             height: 14rem;
+        }
+
+        @include mixins.least-medium-screen {
+            max-width: 90%;
         }
 
         .img {
