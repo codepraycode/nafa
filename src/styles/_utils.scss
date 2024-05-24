@@ -119,7 +119,9 @@
 .section-title {
 
     // text-align: center;
-    font-size: 1.3rem;
+    @include mixins.fonts($family: $montserrat-font, $weight: 600);
+    font-size: 1.5rem;
+    color: $clr-text-10;
     display: inline-block;
     text-transform: uppercase;
 
@@ -138,6 +140,7 @@
 
 .btn {
     text-decoration: none;
+    text-align: center;
     display: inline-block;
 
     padding-block: .7rem;
@@ -365,7 +368,8 @@
     }
 
 
-    &:has(.featured-slide) {
+    &:has(.featured-slide),
+    &:has(.events-slide) {
         position: static;
         $position-bottom: 20%;
         $right-space: 0rem;
@@ -458,6 +462,17 @@
     }
 }
 
+
+.events-slide {
+    // background-color: red !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    // width: fit-content !important;
+    box-shadow: none;
+    padding: 0 !important;
+    margin: 0 !important;
+    // height: fit-content;
+}
 
 .text{
     &-w-600 {

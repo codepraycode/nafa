@@ -27,6 +27,7 @@ export default function Home() {
             <Projects />
             <br/><br/><br/><br/>
             <Events />
+            <br/><br/><br/><br/>
             <Partners />
         </>
     );

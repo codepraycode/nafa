@@ -1,6 +1,7 @@
 import React from 'react'
 import Section from '../UI/Section'
 import homeData from "@/data/home.json";
+import Link from 'next/link';
 
 
 const data = homeData.about;
@@ -31,6 +32,10 @@ export default function About() {
                         ))
                     }
                 </p>
+                <br/><br/>
+                <Link href={"/about"} className='btn btn-light'>
+                    Learn More
+                </Link>
             </div>
         </Section>
     )

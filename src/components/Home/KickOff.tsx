@@ -10,7 +10,7 @@ export default function KickOff() {
         >
             <h1>{homeData.kickoff.title}</h1>
 
-            <br/><br/>
+            <br/><br/><br/>
 
 
             <div className='content'>

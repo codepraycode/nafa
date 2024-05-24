@@ -7,7 +7,12 @@ const nextConfig = {
                 hostname: 's3-alpha-sig.figma.com',
                 // port: '',
                 pathname: '/img/**',
-
+            },
+            {
+                protocol: 'https',
+                hostname: 'live.staticflickr.com',
+                // port: '',
+                pathname: '/**',
             }
         ]
     }
