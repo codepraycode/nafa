@@ -6,18 +6,20 @@ import { inPageSliderconfig } from '@/utils/sliderConfig'
 import homeData from "@/data/home.json"
 
 
+const data = homeData.projects
+
 export default function Projects() {
     
     return (
         <Section
             name='projects'
         >
-            <h2 className='section-title'>{homeData.projects.title}</h2>
+            <h2 className='section-title'>{data.title}</h2>
             <br/><br/>
 
             <SliderContainer {...inPageSliderconfig} className='featured-slide'>
                 {
-                    homeData.projects.items.map((item, i)=>(
+                    data.items.map((item, i)=>(
                         
                         <SlideWrapper key={i}>
                             <Link
@@ -32,8 +34,11 @@ export default function Projects() {
                 }
             </SliderContainer>
 
-            <Link href={"/"} className='btn btn-primary slide-cta fs-2'>
-                View all articles
+            <Link
+                href={data.cta.link}
+                className='btn btn-primary slide-cta fs-2'
+            >
+                {data.cta.label}
             </Link>
 
         </Section>

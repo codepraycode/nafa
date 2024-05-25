@@ -94,7 +94,11 @@
                 "title": "TEENAGERS",
                 "image": "https://live.staticflickr.com/65535/53108528794_fb05f747fc_b.jpg"
             }
-        ]
+        ],
+        "cta": {
+            "label": "View All Projects",
+            "link": "/projects"
+        }
     },
     "articles": {
         "title": "News Articles",
@@ -141,6 +145,10 @@
                     "to": "24 Apr 2024"
                 }
             }
-        ]
+        ],
+        "cta": {
+            "label": "View All Events",
+            "link": "/events"
+        }
     }
 }

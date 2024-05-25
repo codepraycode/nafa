@@ -261,14 +261,14 @@
 
 .slider-container {
     // background-color: red;
-    position: relative;
+    // position: relative;
 
     .slick-list {
         max-height: 30rem;
     }
-    .slick-slide {
-        margin-inline: 2rem;
-    }
+    // .slick-slide {
+    //     // margin-inline: 2rem;
+    // }
 
 
     &:has(.hero) {
@@ -368,28 +368,18 @@
     }
 
 
-    &:has(.featured-slide),
-    &:has(.events-slide) {
-        position: static;
+    &:has(.featured-slide) {
         $position-bottom: 20%;
         $right-space: 0rem;
 
         $position-top: 120%;
-
-        // background-color: red;
     
         .slider-arrow {
             background-image: url("/icons/chevron-2.svg");
             border-color: $clr-text-3;
 
-            // top: $position-top;
-
-
-            
-            // bottom: $position-bottom;
             top: 109%;
-            left: 0;
-    
+            left: 0;    
     
             &[data-next="true"] {
                 left: $right-space + 2 * 2;
@@ -398,7 +388,6 @@
             &[data-prev="true"] {
                 left: $right-space;
             }
-
         }
 
 
@@ -414,6 +403,39 @@
                 top: 110%;
             }
         }
+    }
+
+
+    &:has(.featured-slide.horizontal) {
+
+
+        @include mixins.least-large-screen {
+
+            // TODO: Implement horizontal slider here
+            // background-color: red;
+            
+            .slider-arrow {
+                position: absolute !important;
+                right: 0;
+                // top: 50%;
+
+                // right: 10rem !important;
+        
+                // &[data-next="true"] {
+                //     // left: $right-space + 2 * 2;
+                //     right: 0!important;
+                //     // right: -50% !important;
+                //     // translate: 500% 0;
+                // }
+                
+                // &[data-prev="true"] {
+                //     // left: $right-space;
+                //     left: 0 !important;
+                // }
+            }
+        }
+
+    
     }
 }
 
@@ -462,17 +484,6 @@
     }
 }
 
-
-.events-slide {
-    // background-color: red !important;
-    padding: 0 !important;
-    margin: 0 !important;
-    // width: fit-content !important;
-    box-shadow: none;
-    padding: 0 !important;
-    margin: 0 !important;
-    // height: fit-content;
-}
 
 .text{
     &-w-600 {

@@ -1423,6 +1423,8 @@ footer {
 
         overflow: hidden;
 
+        margin-inline: 2rem;
+
 
         span {
             z-index: 1;
@@ -1448,11 +1450,20 @@ footer {
             margin-inline: auto;
             
             margin-block: 2rem;
+            margin-inline: 1rem;
+        }
+
+        @include mixins.small-screen {
+            margin-inline: auto;
+            
+            margin-block: 2rem;
+            margin-inline: 0rem;
         }
     }
 }
 
 .events-wrapper {
+    position: relative;
     a {
         text-decoration: none;
         color: inherit;

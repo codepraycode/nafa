@@ -25,7 +25,7 @@ export default function Events() {
             <br/><br/><br/>
 
 
-            <SliderContainer {...sliderconfig} className='events-slide'>
+            <SliderContainer {...sliderconfig} className='featured-slide horizontal'>
                 {
                     data.items.map((item, i)=>(
                         <SlideWrapper key={i}>
@@ -49,11 +49,13 @@ export default function Events() {
                     ))
                 }
             </SliderContainer>
-
-            <Link href={"/"} className='btn btn-primary slide-cta fs-2'>
-                View all articles
-            </Link>
             
+            <Link
+                href={data.cta.link}
+                className='btn btn-primary slide-cta fs-2'
+            >
+                {data.cta.label}
+            </Link>
         
         </Section>
     )
