@@ -512,11 +512,6 @@
 }
 
 
-.events-slide {
-    // background-color: sta
-    // height: fit-content;
-}
-
 .text{
     &-w-600 {
         font-weight: 600 !important;
@@ -534,5 +529,14 @@
 
     @include mixins.least-medium-screen {
         margin-top: 2rem;
+    }
+}
+
+.text {
+    &-capitalize {
+        text-transform: capitalize;
+    }
+    &-center{
+        text-align: center;
     }
 }

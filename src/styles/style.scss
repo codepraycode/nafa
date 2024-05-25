@@ -1602,20 +1602,21 @@ footer {
 
     }
     h2 {
-        @include mixins.fonts($family: $inter-font, $weight: 600);
+        @include mixins.fonts($family: $montserrat-font, $weight: 600);
         // font-family: Gotham$;
         font-size: 2.5rem;
         line-height: 3.0475rem;
     }
 
     p, li {
-        @include mixins.fonts($family: $inter-font, $weight: 400);
+        @include mixins.fonts($family: $gotham-font, $weight: 400);
         font-size: 1.5rem ;
         line-height: 2.3125rem;
+        text-align: justify;
     }
 
     li {
-        font-size: 1.2rem;
+        font-size: 1.5rem;
     }
 }
 
@@ -1664,7 +1665,11 @@ footer {
     }
     .img {
         width: 100%;
-        height: 22.4375rem;
+        height: 15.375rem;
+
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
 
         background-color: $clr8;
         border-radius: 1rem;
@@ -1673,22 +1678,25 @@ footer {
     figure {
         // background-color: red;
 
-        min-width: 17.75rem;
-        max-width: 18rem;
+        min-width: 13.825rem;
+        max-width: 13.825rem;
         flex: 1 1 2rem;
     }
     figcaption {
+        // background-color: red;
         @include mixins.fonts($family: $inter-font);
         b {
             font-weight: 600 !important;
-            font-size: 1.75rem;
-            line-height: 2.118125rem;
+            font-size: 1.25rem;
+            line-height: 1.5125rem;
+            // display: block;
         }
 
         span {
             font-weight: 400 !important;
             font-size: 1.1875rem;
             line-height: 1.75rem;
+            display: block;
         }
     }
 }
