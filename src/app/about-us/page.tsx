@@ -1,5 +1,6 @@
 import Partners from "@/components/Home/Partners";
 import PageHeader from "@/components/PageHeader";
+import AppLink from "@/components/UI/AppLink";
 import Section from "@/components/UI/Section";
 import aboutData from "@/data/about.json";
 import Image from "next/image";
@@ -79,16 +80,111 @@ export default function AboutPage() {
                 <br/><br/><br/><br/>
 
                 <Section name="objectives">
+                    <h2 className="section-title">Objectives</h2>
+                    <br/><br/>
                     <ol>
                         <li>Promote contact and non-contact American Football competitions.</li>
-                        Develop, manage and grow the American Football League and brand within Africa, for international competition (2 years plan).
-                        Develop, manage and grow the American Football League and brand for international competition (5 years plan).
-                        Develop, manage and grow the American Football League in Nigeria.
-                        Provide opportunities for engagement and development to people of all ages, background and abilities within American Football.
-                        The regulation of the game on and off the field of play through oversight of its rules;
-                        The representation of the Nigerian game to national and international partners, be it sporting organizations, federations or commercial interests.
+                        <li>
+                            Develop, manage and grow the American Football League and brand within Africa, for international competition (2 years plan).
+                        </li>
+                        <li>
+                            Develop, manage and grow the American Football League and brand for international competition (5 years plan).
+                        </li>
+                        <li>
+                            Develop, manage and grow the American Football League in Nigeria.
+                        </li>
+                        <li>
+                            Provide opportunities for engagement and development to people of all ages, background and abilities within American Football.
+                        </li>
+                        <li>
+                            The regulation of the game on and off the field of play through oversight of its rules;
+                        </li>
+                        <li>
+                            The representation of the Nigerian game to national and international partners, be it sporting organizations, federations or commercial interests.
+                        </li>
                     </ol>
                 </Section>
+
+
+
+                <br/><br/><br/><br/><br/><br/><br/><br/><br/>
+                <Section name="article-highlight">
+                    <h2 className='section-title'>
+                        Explore More
+                    </h2>
+                    <br/><br/><br/>
+                    
+
+                    <div className="article-list">
+                        <article className='bg-green'>
+                            <h2>History of American<br/>Football In Nigeria</h2>
+                            <br/>
+                            <p>Since the 2011s American football has been an interest to African youth, as their counterparts in the Western World have been making wave in the sport over the years.</p>
+
+                            <AppLink href="/" className='btn btn-light'>
+                                Learn More
+                            </AppLink>
+                        </article>
+
+                        <article className='bg-blue'>
+                            <h2>Organization<br/>Structure</h2>
+                            <br/>
+                            <p>Established in 2019, NAFA was created to increase the number of opportunities for people through the game of American football.</p>
+
+                            <AppLink href="/" className='btn btn-light'>
+                                Learn More
+                            </AppLink>
+                        </article>
+                        
+                        <article className='bg-orange'>
+                            <h2>The HUDDLE<br/>Way</h2>
+                            <br/>
+                            <p>We exist to provide a source of livelihood, bridge the educational gap in the society and promote interest for the sport in women. American football is emerging as one of the keys to holistic social development as it fosters inclusion.</p>
+
+                            <AppLink href="/" className='btn btn-light'>
+                                Learn More
+                            </AppLink>
+                        </article>
+                    </div>
+                </Section>
+
+                <br/><br/><br/><br/><br/><br/><br/><br/><br/>
+
+
+                <Section name="people">
+                    <h2 className="section-title">Our People</h2>
+                    <br/><br/><br/><br/>
+
+
+                    <div className="listing">
+                        {
+                            [...Array(4)].map((e)=>(  
+                                <figure key={e}>
+                                    {/* <Image src="image.jpg" alt="Description of the image">
+                                    */}
+
+                                    <div className="img" />
+                                    <br/>
+                                    <figcaption>
+                                        <b>Babajide Akeredolu</b>
+                                        <br/>
+                                        <span>President, NAFA</span>
+                                    </figcaption>
+                                </figure>
+                            ))
+                        }
+                    </div>
+
+                </Section>
+
+                <br/><br/>
+
+                <AppLink
+                    href={"/our-people"}
+                    className='btn btn-primary slide-cta fs-2'
+                >
+                    Meet Our People
+                </AppLink>
 
 
             </Section>
