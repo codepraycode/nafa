@@ -17,7 +17,7 @@ export default function Hero() {
         cssEase: "linear",
     }
     return (
-        <SliderContainer {...sliderconfig}>
+        <SliderContainer {...sliderconfig} max={"02"} min={"01"}>
 
             {
                 homeData.hero.map((item, i)=>(

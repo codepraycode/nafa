@@ -261,14 +261,14 @@
 
 .slider-container {
     // background-color: red;
-    // position: relative;
+    position: relative;
 
     .slick-list {
         max-height: 30rem;
     }
-    // .slick-slide {
-    //     // margin-inline: 2rem;
-    // }
+    .slick-slide {
+        margin-inline: 1.5rem;
+    }
 
 
     &:has(.hero) {
@@ -369,17 +369,26 @@
 
 
     &:has(.featured-slide) {
+        position: static;
         $position-bottom: 20%;
         $right-space: 0rem;
 
         $position-top: 120%;
+
+        // background-color: red;
     
         .slider-arrow {
             background-image: url("/icons/chevron-2.svg");
             border-color: $clr-text-3;
 
+            // top: $position-top;
+
+
+            
+            // bottom: $position-bottom;
             top: 109%;
-            left: 0;    
+            left: 0;
+    
     
             &[data-next="true"] {
                 left: $right-space + 2 * 2;
@@ -388,6 +397,7 @@
             &[data-prev="true"] {
                 left: $right-space;
             }
+
         }
 
 
@@ -405,37 +415,54 @@
         }
     }
 
-
     &:has(.featured-slide.horizontal) {
+        .slick-slide {
+            margin-inline: 0rem;
+        }
+        position: static;
+        $position-bottom: 20%;
+        $right-space: 0rem;
+
+        $position-top: 120%;
+
+        // background-color: red;
+    
+        .slider-arrow {
+            background-image: url("/icons/chevron-2.svg");
+            border-color: $clr-text-3;
+
+            // top: $position-top;
 
 
-        @include mixins.least-large-screen {
-
-            // TODO: Implement horizontal slider here
-            // background-color: red;
             
-            .slider-arrow {
-                position: absolute !important;
-                right: 0;
-                // top: 50%;
-
-                // right: 10rem !important;
-        
-                // &[data-next="true"] {
-                //     // left: $right-space + 2 * 2;
-                //     right: 0!important;
-                //     // right: -50% !important;
-                //     // translate: 500% 0;
-                // }
-                
-                // &[data-prev="true"] {
-                //     // left: $right-space;
-                //     left: 0 !important;
-                // }
+            // bottom: $position-bottom;
+            top: 109%;
+            left: 0;
+    
+    
+            &[data-next="true"] {
+                left: $right-space + 2 * 2;
             }
+            
+            &[data-prev="true"] {
+                left: $right-space;
+            }
+
         }
 
-    
+
+        & ~ .slide-cta {
+            // top: 2rem;
+            // bottom: -1rem;
+            position: absolute;
+            top: 90%;
+            right: 0;
+            // right: $right-space * 2;
+
+            &.fs-2 {
+                top: 110%;
+            }
+        }
     }
 }
 
@@ -484,6 +511,11 @@
     }
 }
 
+
+.events-slide {
+    // background-color: sta
+    // height: fit-content;
+}
 
 .text{
     &-w-600 {

@@ -1423,8 +1423,6 @@ footer {
 
         overflow: hidden;
 
-        margin-inline: 2rem;
-
 
         span {
             z-index: 1;
@@ -1450,14 +1448,14 @@ footer {
             margin-inline: auto;
             
             margin-block: 2rem;
-            margin-inline: 1rem;
+            // margin-inline: 1rem;
         }
 
         @include mixins.small-screen {
             margin-inline: auto;
             
             margin-block: 2rem;
-            margin-inline: 0rem;
+            // margin-inline: 0rem;
         }
     }
 }
@@ -1501,12 +1499,13 @@ footer {
         .img {
             border-top-left-radius: .5rem;
             border-top-right-radius: .5rem;
-            width: 100%;
+            width: 25rem !important;
+            // background-color: red;
             height: 15rem;
             // max-height: 70%;
-            background-position: center 60%;
+            background-position: center;
             background-repeat: no-repeat;
-            background-size: cover;
+            background-size: contain;
 
             overflow: hidden;
 

@@ -9,7 +9,9 @@ import { useRef, useState } from "react";
 
 
 interface SliderContainerProps extends SliderSettings {
-    children: React.ReactNode
+    children: React.ReactNode,
+    max?: number | string,
+    min?: number | string
 }
 
 
@@ -64,7 +66,7 @@ export default function SliderContainer(props:SliderContainerProps) {
         beforeChange: (current, next) => setSlideIndex(next)
     };
 
-    const {children, ...rest} = props;
+    const {children,max, min, ...rest} = props;
 
 
     const [slideIndex, setSlideIndex] = useState(0);
@@ -77,7 +79,7 @@ export default function SliderContainer(props:SliderContainerProps) {
 
             <label htmlFor="slide-range" className="slide-range">
                 {/* <span>Total updates: {updateCount} </span> */}
-                <span>01</span>
+                <span>{min}</span>
                 <input
                     onChange={e => sliderRef.current?.slickGoTo(+e.target.value)}
                     value={slideIndex}
@@ -86,7 +88,7 @@ export default function SliderContainer(props:SliderContainerProps) {
                     min={0}
                     max={3}
                 />
-                <span>05</span>
+                <span>{max}</span>
             </label>
 
             <Slider

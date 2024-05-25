@@ -42,7 +42,7 @@ export default function Events() {
                                     <br/>
                                     <p>{item.text}</p>
                                     <br/>
-                                    <p className='date'>{item.date.from} - {item.date.to}</p>
+                                    <p className='date'>{item.date}</p>
                                 </div>
                             </article>
                         </SlideWrapper>
