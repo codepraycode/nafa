@@ -20,10 +20,10 @@ export default function AboutPage() {
                 <Section name="vision_mission">
                     <div>
                         <h2 className="section-title">Our Vision</h2>
-                        <br/><br/>
+                        <br/><br/><br/>
                         <p>
                             <b>
-                                Our vision is to create increased opportunities for the African continent through American Football.  Opportunities ranging from free healthcare and enhanced access to health care, to educational scholarships through sport, provisions of sustainable means of livelihood and exposure to diverse cultures and international leagues and tournaments through NAFA tours. We will be the first organization with clear intent to integrate Nigeria and Africa with the National Football League (NFL) in America and other organizations across the world.
+                                Our vision is to create increased opportunities for the African continent through American Football.
                             </b>
                             <br/><br/>
                             <span>
