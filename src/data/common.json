@@ -2,6 +2,7 @@
     "nav": [
         {
             "label": "About NAFA",
+            "link": "/about-us",
             "submenu": [
                 {
                     "label": "History of American Football in Nigeria",
@@ -27,6 +28,7 @@
         },
         {
             "label": "Our Leagues",
+            "link": "/",
             "submenu": [
                 {
                     "label": "NSSFFL",
@@ -52,6 +54,7 @@
         },
         {
             "label": "Our Programs",
+            "link": "/",
             "submenu": [
                 {
                     "label": "Gridiron Development Program",
@@ -77,6 +80,7 @@
         },
         {
             "label": "Resources",
+            "link": "/",
             "submenu": [
                 {
                     "label": "Coach Certification",
@@ -107,6 +111,7 @@
         },
         {
             "label": "Tournaments & Events",
+            "link": "/",
             "submenu": [
                 {
                     "label": "Camps and Clinics",

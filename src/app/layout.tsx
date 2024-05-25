@@ -1,5 +1,5 @@
 import type { Metadata } from "next";
-import siteData from "@/data.json";
+import siteData from "@/data/site.json";
 import "@/styles/style.scss";
 import Header from "@/components/Header";
 import Footer from "../components/Footer";

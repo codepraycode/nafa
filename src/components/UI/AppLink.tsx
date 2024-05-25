@@ -1,4 +1,4 @@
-import siteData from "@/data.json";
+import siteData from "@/data/site.json";
 import Link, { LinkProps } from "next/link";
 import { HTMLAttributes } from "react";
 

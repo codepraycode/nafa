@@ -4,6 +4,7 @@
     "siteDefault": "/under-construction",
     "siteLinks": [
         "/",
+        "/about-us",
         "/about-us/history"
     ]
 }

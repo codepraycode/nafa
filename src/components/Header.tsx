@@ -3,7 +3,8 @@ import AppLink from '@/components/UI/AppLink';
 import React from 'react'
 import Logo from './Logo'
 import { slugifyLink as slugify } from '@/utils/slugify'
-import siteData from "@/data.json";
+import siteData from "@/data/common.json";
+
 
 const topNavLinks = [
     "Get certified", "Enroll your program"
@@ -38,7 +39,10 @@ export default function Header() {
                         {
                             navLinks.map((item, i)=>(
                                 <li key={i}>
-                                    <AppLink href={slugify("/", "#")} onClick={(e)=>e.preventDefault()}>
+                                    <AppLink
+                                        href={item.link}
+                                        // onClick={(e)=>e.preventDefault()}
+                                    >
                                         {item.label}
                                     </AppLink>
 

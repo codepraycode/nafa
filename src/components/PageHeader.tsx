@@ -14,9 +14,9 @@ function Breadcrumb() {
             <li>
                 <AppLink href={"/about-us"}>About Us</AppLink>
             </li>
-            <li>
+            {/* <li>
                 <AppLink href={"/about-us/history"}>History of American Football in Nigeria</AppLink>
-            </li>
+            </li> */}
         </ul>
     )
 }
@@ -38,6 +38,7 @@ export default function PageHeader(props:PageHeader) {
             }}
         >
             <Breadcrumb />
+            <br/><br/>
 
             <h1>{props.title}</h1>
         </Section>
