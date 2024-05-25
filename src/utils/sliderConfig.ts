@@ -4,6 +4,7 @@ export const inPageSliderconfig: SliderSettings = {
     slidesToShow: 2,
     // centerPadding: '10px',
     // centerMode: true,
+    // initialSlide:1,
     // infinite: false,
     variableWidth: true,
     responsive: [
