@@ -4,7 +4,7 @@ export interface Content {
     title: string;
     author?: string;
     content: string;
-    slug: string;
+    slug?: string;
     tags?: string[];
     createdAt: String | Date;
     updatedAt?: String | Date;
