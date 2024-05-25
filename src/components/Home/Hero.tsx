@@ -33,10 +33,10 @@ export default function Hero() {
                             <h1>
                                 {
                                     item.title.map((it, i)=>(
-                                        <>
+                                        <React.Fragment key={i}>
                                             {it}
                                             {i != item.title.length - 1 && <br/>}
-                                        </>
+                                        </React.Fragment>
                                     ))
                                 }
 

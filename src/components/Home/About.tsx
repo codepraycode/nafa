@@ -20,7 +20,7 @@ export default function About() {
                 <p>
                     {
                         data.text.map((it, i)=>(
-                            <>
+                            <React.Fragment key={i}>
                                 {it}
 
                                 {i !== data.text.length - 1 && (
@@ -28,7 +28,7 @@ export default function About() {
                                     <br/><br/>
                                     </>
                                 )}
-                            </>
+                            </React.Fragment>
                         ))
                     }
                 </p>
