@@ -212,25 +212,30 @@
     
     article {
         padding: 2rem;
-        min-height: 24rem;
-
+        
         display: flex;
         flex-direction: column;
 
         border-radius: 1rem;
-
+        
         &:nth-child(even) {
             margin-block: 2rem;
         }
+        
+        
+        @include mixins.least-large-screen {
+            min-height: 32.1875rem;
+
+        }
 
         h2 {
-            @include mixins.fonts($family: $montserrat-font, $weight: 600);
+            @include mixins.fonts($family: $gotham-font, $weight: 600);
             font-size: 2rem;
         }
         p {
-            @include mixins.fonts($family: $inter-font, $weight: 500);
-            font-size: 1rem;
-            line-height: 1.5rem;
+            @include mixins.fonts($family: $gotham-font, $weight: 400);
+            font-size: 1.25rem;
+            line-height: 2.3125rem;
         }
 
         .btn {

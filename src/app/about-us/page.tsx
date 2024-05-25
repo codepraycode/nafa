@@ -153,7 +153,7 @@ export default function AboutPage() {
                             <h2>History of American<br/>Football In Nigeria</h2>
                             <br/>
                             <p>Since the 2011s American football has been an interest to African youth, as their counterparts in the Western World have been making wave in the sport over the years.</p>
-
+                            <br/><br/>
                             <AppLink href="/" className='btn btn-light'>
                                 Learn More
                             </AppLink>
@@ -163,7 +163,7 @@ export default function AboutPage() {
                             <h2>Organization<br/>Structure</h2>
                             <br/>
                             <p>Established in 2019, NAFA was created to increase the number of opportunities for people through the game of American football.</p>
-
+                            <br/><br/>
                             <AppLink href="/" className='btn btn-light'>
                                 Learn More
                             </AppLink>
@@ -173,7 +173,7 @@ export default function AboutPage() {
                             <h2>The HUDDLE<br/>Way</h2>
                             <br/>
                             <p>We exist to provide a source of livelihood, bridge the educational gap in the society and promote interest for the sport in women. American football is emerging as one of the keys to holistic social development as it fosters inclusion.</p>
-
+                            <br/><br/>
                             <AppLink href="/" className='btn btn-light'>
                                 Learn More
                             </AppLink>
@@ -193,15 +193,6 @@ export default function AboutPage() {
                         {
                             people.map((e, i)=>(  
                                 <figure key={i}>
-                                    {/* <div className="img-wrapper">
-                                        <Image
-                                            src={e.image}
-                                            alt={e.name}
-                                            width={221.2}
-                                            height={246}
-                                        />
-                                    </div> */}
-
                                     <div
                                         className="img"
                                         title={e.name}
