@@ -99,8 +99,6 @@ main:has(.page-header) {
 
 
 .page-header {
-    // background-position: 30rem 92rem;
-    // background-size: cover;
     background-position: center;
     background-size: cover;
     background-attachment: fixed;
@@ -108,9 +106,6 @@ main:has(.page-header) {
     @include mixins.least-large-screen {
         background-repeat: repeat;
         background-position: 30rem 50%;
-        // background-position: 30% 92rem;
-        // background-position-x: 200%;
-
     }
 
     min-height: 20.4375rem;
@@ -150,7 +145,10 @@ main:has(.page-header) {
             font-size: 8rem;
             line-height: 7.316875rem;
 
-            // margin-top: 2rem;
+            &[data-small="true"] {
+                font-size: 4rem;
+                line-height: 4.02rem;
+            }
         }
     }
 }

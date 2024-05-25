@@ -11,7 +11,8 @@ export default function HistoryPage() {
         <>
             <PageHeader
                 title='History of American Football in Nigeria'
-                image={'/history-page-header.jpeg'}
+                image={"https://s3-alpha-sig.figma.com/img/383f/f84f/5e165f49a7e2991ba3d1cf201f89cb84?Expires=1717372800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=T9ehRq3W73-wjbnktFe~EIBjMcEyRYHyMmYabgLY7Ptu0KkrD~okObGey-MEZqcgSnOd65HZKF0e2Kie1i5UpiBoerpTrfF~SkWT4eCOs4MfP2tbVIOb1msWyL0LWjXyMbAwELzuE~0bVNmy-muSEs7cLL~ESJN80p5q9yO96pTaeozWTuwWwmHhQ-3UpCNGxrNI4-siB6V-tj7zfolf3S6F1NrVI28Ff3RkhygaI7-oSXahaVgBHc5vAOsl4qjkQIdjATxOSPs4AsI8rQArVwqj5edVE6ZOFgVlduZdtgLGvo~2a87~s-JE~reE~UfZxQ3uBGFzWElI9ETrovW83A__"}
+                small
             />
 
             <Section name='page-content'>
@@ -28,7 +29,7 @@ export default function HistoryPage() {
                         <figure>
                             <div className="image-wrapper">
                                 <Image
-                                    src="/early-history.jpeg"
+                                    src="https://s3-alpha-sig.figma.com/img/7cc7/9fe2/8d00323f7bd4d939ca5c8e684ee8d6de?Expires=1717372800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=SEbTVYhi1hQW8SBQ6~pdKe9La97bkueWyp963AMhR7Y-U3E~NgNdC1lybbYxc2qLdRN118HvtBjb0waLZSnoiZknHIIwPCsZ82mL11IAy5aWTOArRxK-akTG6-Qj6d4Gl65Xo56SlWh3NJggZHVigdVIHX1KQxOc7if0VDVWXL0U7lNhC~AxuVV~bxrCF-~ivHaQDMJGJI4lnJzfJDmkoJoNHYhdPj-hZBr~5g8rXaW-HkDAz6G0CkwVAktcPTozKc7TiqUxyQhI9Qv35~AflDH1yT9AE~vZ45kixL5h0M13tSxD88vP2ByNs2cDqVWT2-zr547bnBG~khtcI4rUtg__"
                                     alt="Figure 3 Cross section of players of the Lagos Marines, the most active tackle football Team in Nigeria today"
                                     width={500}
                                     height={500}
@@ -88,7 +89,7 @@ In 2017, the American football community in Africa hosted more key events. First
                 <figure className='f-w'>
                     <div className="image-wrapper">
                         <Image
-                            src="/history-page-header.jpeg"
+                            src="https://s3-alpha-sig.figma.com/img/babe/4fce/5c481946e7e93030d30c33d4cbe7401c?Expires=1717372800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=pUDVenBcW2rL1WW37qIdgaKqL~a39OBNp-cYyZbiqSX~7Xh6xc1842ZVo5-3CJe5-PcMc5Tj0Wv1wqyjGqeSIeZ7jO~EasxioFnEfAC5lvnz-1Gx989R2ow3E5gRu8ce~r7ekUw~geyIT~92mFiDx3fjMnD~9spsMAG-CeqRLv-eCUozqqzt9~evi5azpbg8Eo2iSFLSyhwsfDKIkNgVaCPxJkpj6DSUUJItB1Lh0VNRFsqnbwqGug~wuc8Pbxc1kr4O6WLRjnGQW~CDOl3pBCMcrgQBKRz9LwitdrDODQK1JAYCvhezNlqAb4JBc-9IGQxUz~aggs-jGB8h4d4V9w__"
                             alt="Figure 3 Cross section of players of the Lagos Marines, the most active tackle football Team in Nigeria today"
                             width={500}
                             height={500}
@@ -146,7 +147,7 @@ In 2017, the American football community in Africa hosted more key events. First
                     <figure className='f-w'>
                         <div className="image-wrapper">
                             <Image
-                                src="/history-1.jpeg"
+                                src="https://s3-alpha-sig.figma.com/img/6acb/dbe6/774490e7948ef855ed75740da90b3da2?Expires=1717372800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=OkdCOxDX-W2dG6Q3L-HXOpf9yff0gMIArRlAc8MMJwkzfGK3bl9sx-d8tbg41pR6agSgCkGvLMb8k5KLemHDdUjJRyWFDnexY8eB8Zb07cIPje0pKTmbysBcMwmNZ45guWtlSqjxUuFCK-dUEsOv~qPQtZjKdBzBahBrmohFUGSw5kJN9LXbgMfpQAnGEtzxFmPEfomMJoKoQaTeOEkZEE7jFxjZ5vJClgYNmjcRleAlwTiV4iNKTmoMeV~zE3seOf58Ab9HY6jtXSsSFoa2DAbI7BwCT891s6McXEwhFd58Hyr3oH2cO42BG6fy218iINAnOnI1BEveutevMehQKw__"
                                 alt="Figure 3 Cross section of players of the Lagos Marines, the most active tackle football Team in Nigeria today"
                                 width={500}
                                 height={500}
@@ -166,7 +167,7 @@ In 2017, the American football community in Africa hosted more key events. First
                     <figure className='f-w'>
                         <div className="image-wrapper">
                             <Image
-                                src="/history-2.jpeg"
+                                src="https://s3-alpha-sig.figma.com/img/e6c0/d90c/ed9f8b88877d50b66eacd77b954933d5?Expires=1717372800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=GkpF61IWgEb-WaRN6zLwv63baQuq-I87kW8VxVdfJCqFiY29AmQTOif4uD0boucrFJF9ZROeZnnsSVhS8r0xdnetPWk3D2DjdE4knfdZV0hwkU83lNlU1AJP2nBLYhsZnaqgLPtu-eIygXTq6ltnmQaXXU7f5ae5MDegh4EI7akQVUryhLJZ3dxP8l88qYfa1fkhwK6ix~bZsjOQ-GzH1ZKN6FUIfaKowBTP~d0la0TG1ntSdzphPm5n~mTP2Ny1ER-KoEyZZMxpNrdcWu2tPRFh71kj~uEyJi0qhva55qzn3wqIPhRAHIzKYDXTgrcYCKvzzXlxC5-mUTdxruIywA__"
                                 alt="Figure 3 Cross section of players of the Lagos Marines, the most active tackle football Team in Nigeria today"
                                 width={500}
                                 height={500}
@@ -186,7 +187,7 @@ In 2017, the American football community in Africa hosted more key events. First
                     <figure className='f-w'>
                         <div className="image-wrapper">
                             <Image
-                                src="/history-3.jpeg"
+                                src="https://s3-alpha-sig.figma.com/img/2efe/d633/a6283b344b4d2e35150e15f2648f626d?Expires=1717372800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=i1gE2JbhYbO~S~fugMdxi1utgfylOcLbPxaFki9mY2W24txeUBK3VGcuy0Y7n522spfPszSbadmkuXWzwdgAQ4DhqpyJYh-iFcmY6df9rfwcA2EmS7AjmBY5Z6oLKxA9qqZD~hdp5tYKYcc6NfjZsZmOmKXT-XJvrT9y7GtlnFqtbqovXKqiFvfdWCv-L02thkmTQuVkEXEwZSV1yOS5xeDAej6zB5FdKXiXbHcMchy8YcnFpCyR0EMntgUyyYSEFDTx7REPqIAqdCKvU99GbphuLXGnDN549sH3R2PPrXL3roj~Mh8GBJ2kX9V7D8uOkcQj4gMsc2jySHXAQqtt2w__"
                                 alt="Figure 3 Cross section of players of the Lagos Marines, the most active tackle football Team in Nigeria today"
                                 width={500}
                                 height={500}
@@ -206,7 +207,7 @@ In 2017, the American football community in Africa hosted more key events. First
                     <figure className='f-w'>
                         <div className="image-wrapper">
                             <Image
-                                src="/history-4.jpeg"
+                                src="https://s3-alpha-sig.figma.com/img/aba5/c3dc/aee2a6b67dde5824ac9786b8163f38f3?Expires=1717372800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=aHs3GLRDAOtQnfcigRDEq7O-2JnerQ4S1fKMPoIScgoEuaBZ5S-VrPm28exeDicOLE6~oUNmnD27zDbN842Xbf0md79TcnodOhzHoznduK-K37spqqI3N5qd9H5fhnUenJvYyH71QmYH8TNyAJ1mGxN5~5~H3G2ldLrD7nmns0JBA7FbLRiBieOmzA1zohPTIOKZOtntZiAYoVV4OQkT-WkhV7PUxsZ7B~LhO-vZZ4U~N9o025H8Cr7b0D1u5pJZR4lpuUshN2spcHNa0rHrcTjoFNXDJIx7wPPbpobJfpXcicFbr5pT3xvOAOHRAOdd-jKljdMzgl5jFt3HyEctqQ__"
                                 alt="Figure 3 Cross section of players of the Lagos Marines, the most active tackle football Team in Nigeria today"
                                 width={500}
                                 height={500}
