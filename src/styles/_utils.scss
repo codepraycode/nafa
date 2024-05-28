@@ -497,16 +497,12 @@
     height: 2.5rem;
 
     position: absolute;
-    // top: 50%;
 
     z-index: 1;
 
 
-    // &[data-next="true"] {
-    // }
-
     &[data-prev="true"] {
-
+        
         &:disabled {
             opacity: .5;
             border-color: $clr-text-5;
@@ -514,6 +510,7 @@
         }
         transform: rotate(-180deg);
     }
+    // background-color: red !important;
 }
 
 
