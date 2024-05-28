@@ -11,7 +11,7 @@ export default function MV() {
                 backgroundImage: `url(${homeData.mv.bg})`
             }}
         >
-            <p>{homeData.mv.title}</p>
+            <p className='text-uppercase'>{homeData.mv.title}</p>
             <hr/>
             <Link href={"/"} className='btn btn-light'>
                 {homeData.mv.cta.label}
