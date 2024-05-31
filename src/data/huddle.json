@@ -8,9 +8,46 @@
         }
     },
 
-    
-    "goals": {
+    "sections": [
+        null,
+        {
+            "text": "Health",
+            "image": "https://s3-alpha-sig.figma.com/img/bf28/d6fe/f0d836e21aecf92a9f879ff9aacc6647?Expires=1717977600&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=Nz1r3bOXAda72Dwip0f35TOkUEhQctxIA60S7YyTVoBq1snMwJy2s~~2wM2VFLzqTPKru5HTe7vDHGUHyivp49J6nVjVi5m9VLzg-LLCeNqO-jhQIRbybAOdnOQ2Z41~MlDwiwcC1F8nOfPojVOGzgTm30Go4VwvM9CbT9pNv-uLSZ5yze-SEY5x2T9ZDqdFVLK-SyJY~tmvXgo4DF0sMrp8nmXfLaergi37ncPOB4lay6cUK3tJ3I283XHCakTKqZC9L513poqNk4pWesHN1YhizRmLXEkNkkuaYpKgrGduhwI0BMaKBhSLq9p-t6XoDXlsFr7x-T3MYKdPQXaD8A__"
+        },
+        {
+            "text": "Unity",
+            "image": "https://s3-alpha-sig.figma.com/img/ac89/01e8/6a47f3566969327ed8ea3a625ddd7d60?Expires=1717977600&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=RU7LoNwbmTRO7JpzBCH5Ct9c0xTgSM~a-ZvwIijmbTY9CEn6txUcG7A-KGtyG83Z8dw5Zwr9COfJl7udM127M~8Sg7gtEtYFt3MERG1NoTuQVy-j5OYIifQ0CzGVCYMwiW0QwkOlfJgVeWMaxvgaJ1mokGnXlmKrAuBD-IicgS3RcY4sZsTrv3v6sBpkkeeN51mcZnIBj-J0jUzLxkhqHsrVjmIgt6fMEUMqjTbbvT0lLBi5W~WA9t64ITCzKFGsuLZAMvNwXWBqAsx06GnVnAQlSfHnEENgcM3IFapOqwpuD0WzsdG0yHJ5Hh35G~OfHtBWE5GlSC7OjZ03iZP3Fw__"
+        },
+        {
+
+            "text": "Diversity",
+            "image": "https://s3-alpha-sig.figma.com/img/2efe/0e02/fab14a9e504bffb8825cbaec7be039e0?Expires=1717977600&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=PR~OaVtQinu4cWS45Uyn76pe9DMZHXxtWJkJBSDfwSrBjjYbUIhAkD0Ye7RcMOf4gpwBgSb4cn0HJyDD9aFt5unfkmKnTYlaIbHVgXpFcpuhG3WRM4rWHAm0XG3FgxNC6rw43mbd3gdj~LMFulWXlQdDFNmCi3ZFwzrm50q0-VL909yT~JX3d~DzNRIV~jM2Vfn4mXmgJUfATcAAKxOVlSEZWRmXyTLi4Fk0Gln~mIG9H0ZYnWGmIJFlHDWL6~cTtIdDOkVao1FE43YL2PUGbZHD4VJMXuoVzpcwv-qmQhB0S44Bra0ca3oJBQ4Ux494IfdcxNP3rhaAZ8ctuGGn9g__"
+        },
+        {
+            "text": "Development",
+            "image": "https://s3-alpha-sig.figma.com/img/913d/b948/44dd037ccd3257717f964c2330a1f330?Expires=1717977600&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=fzx9kxT~iONVywnXgy94iFYDj5WgoPEVaY1lm7T0qxzK-Pn3Q-iRKjQAH7U5zRiZzEBShxeZzlWv1XG2JUXlBpLWnFCtSPQFhN2JX0pt0rElcQSs-GUld-uvXnv2gDt4B-Kx-oWZySdgFL1jp0CbOvGgQcnJcOlbRvh3LztTukpMoTCkd64i43Wi0LWON73kAV2cpI8DtJUzhsv2W9qTb-XGIfmqe6d02bTkRigDxpMIA2SIZ-y291bsPegce9g-BJ3Ph7v6UeQGmtznu5mFDugtvgJRLkjOm6cMugnFwB~vwBk9mopE540OHpUyG95xDQ8Ino33nvNFJGRL9Bt9bg__"
+        },
+        {
+            "text": "Livelihood",
+            "image": "https://s3-alpha-sig.figma.com/img/13e0/8736/71a4b045894c66077f27d1ba8e6ff07b?Expires=1717977600&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=SdQ8l~~aZ9oXh7rQj46Y0zP5xsUOOOEDVPkllBnVeCymxWqo5dQtPhb3wsiKAyTz0V1uG2A4PyxCvMoLr1KWzxMuCeYJIpSBJzzu-qzi9YaMQALhlI~fw4pUvzdCdwN2QgTT9NsLAuI95QOeE0XRI8xEWneKdSS3rMMoA-gBAP1Ubi-7sr8zL~saew~ixPCIgFDFMIvQOhdOLXGqGbuPtnFihFmxbdQ1snn~kG0hcKQBs~eCEUd9meZ6kZ4HeHcvUWY7FLgMEhDrnT2zgEbuP9G2zihCi8RSASRYHqLoke5OV11Z1r8hnkQtJm0N6pDduD-0c3UhUIsNFF7QS7EegQ__"
+        },
+        {
+            "text": "Entertainment",
+            "image": "https://s3-alpha-sig.figma.com/img/b4b3/e1bb/c06c5e486f54b33dc13a6a06a29e105f?Expires=1717977600&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=VGPjV4s~mTZXV554k02pHw2D5JKPlZD~taNPwZomkjjplkAQcMiUMVt7-HtVJ8UV7HLAXdZayFOmkXyiFlk7t3uX6aeH0ITJLbSY5AJeEWGzLmHnIvqvV6XUy57HOpFVXEUESJKyAZOWOY7Thpj-VxXvgTqLfOQGW8OWdNabA62NaSQ7CkX4CnR2sCuRfr9TK6qC2D3iikXmS12AHTUOQydtwiHXHKrJ62UaMPe3hxp0Wn6lvNBbXIfN2suKYM8qnR9QQ7tAcBsyOpVgKG76y8h21aztgcoztr4TVoYyiV937bt-C6eE~Uvb-3pRY4Bht3SX1syH6xTpzhEobWucXw__"
+        }
+    ],
+
+    "default": {
+        "title": "THE HUDDLE EXPLAINED",
+        "paragraph": [
+            "We exist to provide a source of livelihood, bridge the educational gap in the society and promote interest for the sport in women. American football is emerging as one of the keys to holistic social development as it fosters inclusion, cohesion, tolerance and strengthens an atmosphere of mutual co-existence.",
+            "","",
+            "There are only a handful of initiatives (governmental and non-governmental) that use sports as a vehicle to drive development and NAFA was established to become one of those drivers.",
+            "","",
+            "American Football is vastly gaining prominence in Africa, this realization has caused us to become fully aware of the potential opportunities that the sports avails as well as the latent talent innate in Africans waiting to be harnessed. We decided that the best way to plug into these opportunities will be to create an umbrella organization for American football in Nigeria that serves as a platform for partnering with relevant organisations and agencies to aid the driving and achieving of its fundamental goals."
+        ],
         "text": "It is pertinent at this point to note that The American Football Association of Nigeria is driven to ensure the actualization of sustainable development goals and within our vision, mission and objectives lie inherently the following goals:",
+
         "items": [
         {
             "title": "GOAL 3",

@@ -1,10 +1,12 @@
 import Partners from "@/components/Home/Partners";
 import PageHeader from "@/components/PageHeader";
+import TextMunch from "@/components/TextMucnh";
 import Section from "@/components/UI/Section";
 import huddleData from "@/data/huddle.json";
 import { slugify } from "@/utils/slugify";
 import Image from "next/image";
 import Link from "next/link";
+import React from "react";
 
 export default function HuddlePage() {
     return (
@@ -18,9 +20,48 @@ export default function HuddlePage() {
             <Section name="page-content">
 
 
-                <br/>
+                <Section name="huddle-menu">
+                    <ul role="list" className="huddle-list">
+                        {
+                            huddleData.sections.map((item, i)=>{
+
+                                if (!item) return null;
+                                
+                                const firstLetter = item.text.charAt(0);
+
+                                
+                                return (
+                                    <li
+                                        key={i}
+                                        // style={{
+                                        //     backgroundImage: `url(${item.image})`
+                                        // }}
+                                    >
+                                        <Link href={"#"}>
+                                            <b>{firstLetter}</b>
+                                            <hr/>
+                                            <span>{item.text}</span>
+                                        </Link>
+                                    </li>
+                                )
+                            })
+                        }
+                    </ul>
+
+                    <div>
+                        <h2>
+                            {huddleData.default.title}
+                        </h2>
+                        <br/><br/>
+                        <p>
+                            <TextMunch text={huddleData.default.paragraph}/>
+                        </p>
+                    </div>
+                </Section>
+
+                <br/><br/><br/><br/>
                 <p className="huddle-title">
-                    {huddleData.goals.text}
+                    {huddleData.default.text}
                 </p>
                 <br/><br/><br/><br/><br/><br/>
 
@@ -28,18 +69,13 @@ export default function HuddlePage() {
                     name="huddle-goals"
                 >
                     {
-                        huddleData.goals.items.map((item, i)=>(
+                        huddleData.default.items.map((item, i)=>(
                             <article key={i}>
                                 <Link href={"#" + slugify(item.title)}
                                     className="_front"
                                     style={{backgroundColor: item.bg}}
                                 >
-                                    <h3>{item.heading.map((e,i)=>(
-                                        <>
-                                            {e}
-                                            {(i !== item.heading.length -1) && <br/>}
-                                        </>
-                                    ))}</h3>
+                                    <h3><TextMunch text={item.heading}/></h3>
                                     <br/><br/>
 
                                     <div className="img-wrapper">
@@ -53,9 +89,9 @@ export default function HuddlePage() {
 
                                     <br/><br/>
 
-                                    <Link href="#" className="btn btn-light">
+                                    <button className="btn btn-light">
                                         Learn More
-                                    </Link>
+                                    </button>
                                 </Link>
 
                                 <Link href={"#" + slugify(item.title)}
