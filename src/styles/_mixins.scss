@@ -128,7 +128,8 @@
         width: 100%;
         height: 100%;
         z-index: -1;
-        background-image: linear-gradient(to right, hsla(98, 47%, 24%, 1), hsla(0, 0%, 100%, .5));
+        // background-image: linear-gradient(to right, hsla(98, 47%, 24%, 1), hsla(0, 0%, 100%, .5));
+        background-image: linear-gradient(269.67deg, #FFFFFF 0.29%, #355920 30.51%, #000000 70.07%);
         mix-blend-mode: multiply;
     }
 }
