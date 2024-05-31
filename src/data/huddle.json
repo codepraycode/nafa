@@ -1,0 +1,101 @@
+{
+    "header": {
+        "title": "THE HUDDLE WAY",
+        "image": {
+            "src": "https://s3-alpha-sig.figma.com/img/ee66/0a69/35d78181f258f76e248a8eda7c32f847?Expires=1717977600&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=aa5AZI8ME5wWaHRqH36QjU8HIc6Lg7QjAtYc0coyj8j~QFljA-layLF1S309GofJK3rMe-6SCMoIqCkHUNZE8NxoIWEaq4WwOaTS2ZmStn~q2Q1I5225HfyLusQ5ErZE6DwPk-dPTQRa7nWEuwS91Va0BvD20OzxWtUTtI8EGDY-JtSkPxlqp-ctkVWZmmItu87DiuLbpf-z5FKwZ721uK1i4mVm1J0HkZu7tIy33jEpZvCIv7vFeNLA4N5VpvOzNhmrQHmjUmwHmNwqHZpAAwCxhjSqRa9bY5q~e45XPP3bDbxYrx8AHAStqQ1nAGgrDu1l8oPXb8sm3wpblPYoDw__",
+            "width": 200,
+            "height": 100
+        }
+    },
+
+    "goals": [
+        {
+            "title": "GOAL 3",
+            "heading": ["GOOD HEALTH", "AND WELL-BEING"],
+            "text": "Ensure healthy lives and promote well-being for all at all ages",
+            "bg": "hsla(134, 55%, 39%, 1)",
+            "image": {
+                "src": "/images/health.svg",
+                "width": 200,
+                "height": 100
+            }
+        },
+        {
+            "title": "GOAL 4",
+            "heading": ["QUALITY", "EDUCATION"],
+            "text": "Ensure inclusive and equitable quality education and promote lifelong learning opportunities for all",
+            "bg": "hsla(353, 72%, 44%, 1)",
+            "image": {
+                "src": "/images/education.svg",
+                "width": 200,
+                "height": 100
+            }
+        },
+        {
+            "title": "GOAL 5",
+            "heading": ["GENDER", "EQUALITY"],
+            "text": "Achieve gender equality and empower all women and girls",
+            "bg": "hsla(7, 86%, 55%, 1)",
+            "image": {
+                "src": "/images/gender.svg",
+                "width": 200,
+                "height": 100
+            }
+        },
+        {
+            "title": "GOAL 8",
+            "heading": ["DECENT WORK AND", "ECONOMIC GROWTH"],
+            "text": "Promote sustained, inclusive and sustainable economic growth, full and productive employment and decent work for all",
+            "bg": "hsla(344, 71%, 33%, 1)",
+            "image": {
+                "src": "/images/economy.svg",
+                "width": 200,
+                "height": 100
+            }
+        },
+        {
+            "title": "GOAL 9",
+            "heading": ["INDUSTRY, INNOVATION,", "AND INFRASTRUCTURE"],
+            "text": "To build resilient infrastructure, promote inclusive and sustainable industrialization, and encourage innovation.",
+            "bg": "hsla(21, 90%, 55%, 1)",
+            "image": {
+                "src": "/images/industry.svg",
+                "width": 200,
+                "height": 100
+            }
+        },
+        {
+            "title": "GOAL 11",
+            "heading": ["SUSTAINABLE CITIES", "AND COMMUNITIES"],
+            "text": "Making cities and human settlements inclusive, safe, resilient, and sustainable. It emphasizes on improving urban planning, providing affordable housing, ensuring access to green spaces, and enhancing public transportation.",
+            "bg": "hsla(7, 86%, 55%, 1)",
+            "image": {
+                "src": "/images/community.svg",
+                "width": 200,
+                "height": 100
+            }
+        },
+        {
+            "title": "GOAL 16",
+            "heading": ["PEACE, JUSTICE AND", "STRONG INSTITUTIONS"],
+            "text": "Seeks to promote peaceful and inclusive societies, ensure access to justice for everyone, and establish effective, accountable, and inclusive institutions.",
+            "bg": "hsla(203, 100%, 27%, 1)",
+            "image": {
+                "src": "/images/peace.svg",
+                "width": 200,
+                "height": 100
+            }
+        },
+        {
+            "title": "GOAL 17",
+            "heading": ["PARTNERSHIPS FOR", "THE GOALS"],
+            "text": "Strengthen the means of implementation and revitalize the global partnership for sustainable development.",
+            "bg": "hsla(218, 60%, 25%, 1)",
+            "image": {
+                "src": "/images/partnership.svg",
+                "width": 200,
+                "height": 100
+            }
+        }
+    ]
+}
