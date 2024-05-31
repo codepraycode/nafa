@@ -1705,8 +1705,14 @@ footer {
 }
 
 
+p.huddle-title {
+    @include mixins.fonts($family: $montserrat-font, $weight: 400);
+    font-size: 1.25rem;
+    line-height: 2.3125rem;
+}
 
 .huddle-goals {
+
 
     &-wrapper {
         display: flex;

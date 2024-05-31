@@ -8,7 +8,10 @@
         }
     },
 
-    "goals": [
+    
+    "goals": {
+        "text": "It is pertinent at this point to note that The American Football Association of Nigeria is driven to ensure the actualization of sustainable development goals and within our vision, mission and objectives lie inherently the following goals:",
+        "items": [
         {
             "title": "GOAL 3",
             "heading": ["GOOD HEALTH", "AND WELL-BEING"],
@@ -97,5 +100,6 @@
                 "height": 100
             }
         }
-    ]
+        ]
+    }
 }

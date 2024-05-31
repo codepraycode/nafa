@@ -17,11 +17,18 @@ export default function HuddlePage() {
 
             <Section name="page-content">
 
+
+                <br/>
+                <p className="huddle-title">
+                    {huddleData.goals.text}
+                </p>
+                <br/><br/><br/><br/><br/><br/>
+
                 <Section
                     name="huddle-goals"
                 >
                     {
-                        huddleData.goals.map((item, i)=>(
+                        huddleData.goals.items.map((item, i)=>(
                             <article key={i}>
                                 <Link href={"#" + slugify(item.title)}
                                     className="_front"
