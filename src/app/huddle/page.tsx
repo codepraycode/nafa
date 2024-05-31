@@ -51,6 +51,7 @@ export default function HuddlePage() {
                     <div>
                         <h2>
                             {huddleData.default.title}
+                            
                         </h2>
                         <br/><br/>
                         <p>
@@ -61,7 +62,8 @@ export default function HuddlePage() {
 
                 <br/><br/><br/><br/>
                 <p className="huddle-title">
-                    {huddleData.default.text}
+                    {/* {huddleData.default.text} */}
+                    <TextMunch text={huddleData.default.text}/>
                 </p>
                 <br/><br/><br/><br/><br/><br/>
 
