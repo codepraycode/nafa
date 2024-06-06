@@ -87,7 +87,7 @@ main:has(.page-header) {
     .page-content{
         padding-inline: 0;
         &-wrapper {
-            width: 84rem;
+            width: 90rem;
             max-width: 90%;
     
             margin-inline: auto;
@@ -1708,9 +1708,10 @@ p.huddle-title {
 
     h2 {
         font-size: 3rem;
-        line-height: 2.3125rem;
+        line-height: 3.875rem;
         color: $clr-text-8;
         font-family: inherit;
+        font-weight: 700;
     }
 
     p {
@@ -1767,6 +1768,13 @@ p.huddle-title {
                 background-position: center;
                 background-repeat: no-repeat;
                 margin-left: 2rem;
+            }
+
+            &[data-active="true"] {
+                background: $clr10;
+                &::after {
+                    visibility: hidden;
+                }
             }
         }
         

@@ -37,106 +37,401 @@
         }
     ],
 
-    "default": {
-        "title": "THE HUDDLE EXPLAINED",
-        "paragraph": [
-            "We exist to provide a source of livelihood, bridge the educational gap in the society and promote interest for the sport in women. American football is emerging as one of the keys to holistic social development as it fosters inclusion, cohesion, tolerance and strengthens an atmosphere of mutual co-existence.",
-            "","",
-            "There are only a handful of initiatives (governmental and non-governmental) that use sports as a vehicle to drive development and NAFA was established to become one of those drivers.",
-            "","",
-            "American Football is vastly gaining prominence in Africa, this realization has caused us to become fully aware of the potential opportunities that the sports avails as well as the latent talent innate in Africans waiting to be harnessed. We decided that the best way to plug into these opportunities will be to create an umbrella organization for American football in Nigeria that serves as a platform for partnering with relevant organisations and agencies to aid the driving and achieving of its fundamental goals."
-        ],
-        "text": ["It is pertinent at this point to note that The American Football Association of Nigeria is driven to ensure the actualization of sustainable development goals and within our vision, mission and objectives lie inherently the following goals:"],
+    "sectionData": {
+        "default": {
+            "title": "THE HUDDLE EXPLAINED",
+            "paragraph": [
+                "We exist to provide a source of livelihood, bridge the educational gap in the society and promote interest for the sport in women. American football is emerging as one of the keys to holistic social development as it fosters inclusion, cohesion, tolerance and strengthens an atmosphere of mutual co-existence.",
+                "","",
+                "There are only a handful of initiatives (governmental and non-governmental) that use sports as a vehicle to drive development and NAFA was established to become one of those drivers.",
+                "","",
+                "American Football is vastly gaining prominence in Africa, this realization has caused us to become fully aware of the potential opportunities that the sports avails as well as the latent talent innate in Africans waiting to be harnessed. We decided that the best way to plug into these opportunities will be to create an umbrella organization for American football in Nigeria that serves as a platform for partnering with relevant organisations and agencies to aid the driving and achieving of its fundamental goals."
+            ],
+            "text": ["It is pertinent at this point to note that The American Football Association of Nigeria is driven to ensure the actualization of sustainable development goals and within our vision, mission and objectives lie inherently the following goals:"],
+    
+            "items": [
+                {
+                    "title": "GOAL 3",
+                    "heading": ["GOOD HEALTH", "AND WELL-BEING"],
+                    "text": "Ensure healthy lives and promote well-being for all at all ages",
+                    "bg": "hsla(134, 55%, 39%, 1)",
+                    "image": {
+                        "src": "/images/health.svg",
+                        "width": 200,
+                        "height": 100
+                    }
+                },
+                {
+                    "title": "GOAL 4",
+                    "heading": ["QUALITY", "EDUCATION"],
+                    "text": "Ensure inclusive and equitable quality education and promote lifelong learning opportunities for all",
+                    "bg": "hsla(353, 72%, 44%, 1)",
+                    "image": {
+                        "src": "/images/education.svg",
+                        "width": 200,
+                        "height": 100
+                    }
+                },
+                {
+                    "title": "GOAL 5",
+                    "heading": ["GENDER", "EQUALITY"],
+                    "text": "Achieve gender equality and empower all women and girls",
+                    "bg": "hsla(7, 86%, 55%, 1)",
+                    "image": {
+                        "src": "/images/gender.svg",
+                        "width": 200,
+                        "height": 100
+                    }
+                },
+                {
+                    "title": "GOAL 8",
+                    "heading": ["DECENT WORK AND", "ECONOMIC GROWTH"],
+                    "text": "Promote sustained, inclusive and sustainable economic growth, full and productive employment and decent work for all",
+                    "bg": "hsla(344, 71%, 33%, 1)",
+                    "image": {
+                        "src": "/images/economy.svg",
+                        "width": 200,
+                        "height": 100
+                    }
+                },
+                {
+                    "title": "GOAL 9",
+                    "heading": ["INDUSTRY, INNOVATION,", "AND INFRASTRUCTURE"],
+                    "text": "To build resilient infrastructure, promote inclusive and sustainable industrialization, and encourage innovation.",
+                    "bg": "hsla(21, 90%, 55%, 1)",
+                    "image": {
+                        "src": "/images/industry.svg",
+                        "width": 200,
+                        "height": 100
+                    }
+                },
+                {
+                    "title": "GOAL 11",
+                    "heading": ["SUSTAINABLE CITIES", "AND COMMUNITIES"],
+                    "text": "Making cities and human settlements inclusive, safe, resilient, and sustainable. It emphasizes on improving urban planning, providing affordable housing, ensuring access to green spaces, and enhancing public transportation.",
+                    "bg": "hsla(7, 86%, 55%, 1)",
+                    "image": {
+                        "src": "/images/community.svg",
+                        "width": 200,
+                        "height": 100
+                    }
+                },
+                {
+                    "title": "GOAL 16",
+                    "heading": ["PEACE, JUSTICE AND", "STRONG INSTITUTIONS"],
+                    "text": "Seeks to promote peaceful and inclusive societies, ensure access to justice for everyone, and establish effective, accountable, and inclusive institutions.",
+                    "bg": "hsla(203, 100%, 27%, 1)",
+                    "image": {
+                        "src": "/images/peace.svg",
+                        "width": 200,
+                        "height": 100
+                    }
+                },
+                {
+                    "title": "GOAL 17",
+                    "heading": ["PARTNERSHIPS FOR", "THE GOALS"],
+                    "text": "Strengthen the means of implementation and revitalize the global partnership for sustainable development.",
+                    "bg": "hsla(218, 60%, 25%, 1)",
+                    "image": {
+                        "src": "/images/partnership.svg",
+                        "width": 200,
+                        "height": 100
+                    }
+                }
+            ]
+        },
+        "health": {
+            "title": "PROMOTE HEALTHY LIVING",
+            "paragraph": [
+                "We are using the sport to promote healthy living in Nigeria, create an increased awareness on Breast Cancer for women across Nigeria as our Corporate Social Responsibility (CSR) and engage more people whilst increasing campaign for strengthening cardiovascular health, body fitness and wellness, aerobic and anaerobic exercising.",
+                "",
+                "American Football has health benefits for your whole body as it involves jumping, running, quick changes of direction, and more. It puts you through a high level of cardio and is an amazing form of aerobic and anaerobic exercising. People who need to do a lot of cardio tend to choose something as intense as football. It is one of the quickest ways of losing fat and getting a toned body as well. More and more people now stress on how mental health is important but don’t know how to promote its wellness. This sport is one of the best ways to maintain a great endorphin level and helps you have a stable mood and promote fitness and wellness.",
+                "",
+                "According to studies, people who play American football have fewer chances to face conditions like depression or have an aggressive behavior in life. Of course, they are extremely aggressive towards their game, but it is aimed at maintaining every rule as the game demands. It improves body strength and maintains healthy bone density thereby preventing conditions like osteoporosis in old age."
+            ],
+            "text": [
+                "Thus, playing American football keeps one strong and fights body fragility, nurturing one's muscles.",
+                "",
+                "Increases Cognitive Brain Function: this sport helps increase skills in concentration, persistence, and self-discipline because it is a fast-paced game that requires quick decisions on the field. Even when the tempo appears to slow down, players are constantly looking for territorial advantages, trying to position themselves to receive a pass or to defend an area the opponent may attack.",
+                "",
+                "This sport promotes sustainable lifestyles and encourage demand for sustainable consumption of goods and services as it raises awareness on the need for sustainable consumption and production of healthy foods for a healthy life and healthy people."
+            ],
 
-        "items": [
-        {
-            "title": "GOAL 3",
-            "heading": ["GOOD HEALTH", "AND WELL-BEING"],
-            "text": "Ensure healthy lives and promote well-being for all at all ages",
-            "bg": "hsla(134, 55%, 39%, 1)",
-            "image": {
-                "src": "/images/health.svg",
-                "width": 200,
-                "height": 100
-            }
+            "itemTitle": "Explore More",
+    
+            "items": [
+                {
+                    "title": "Gridiron Gems Program",
+                    "text": "Becoming a member of NAFA means joining a vibrant community, enjoying fitness and fun through flag football, while also accessing skill development, competition, socialization, and inclusivity.",
+                    "image": {
+                        "src": "https://s3-alpha-sig.figma.com/img/4386/4747/70f39d3c47d3985d47125601a252a576?Expires=1718582400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=ammtVyOHgP~xyE70z312kAAEARl93Q7d1maO--coeb2n4IT5hGdVY5F4Oho9MGdM6B88~uRD-wjQ8-6CAphvMTV-KXmt6CZOYm1aryhi~5iC6kL9PumcQpg6Ksv3w5trK~7dHRflRbYIXZNv-nzqYw4RJQZ8tOwajgZPoL9ucA46umeP6Qp8zq2aoOPdw0kguXM3l3Ez2DoIar5tYc8lDQOfie-kMcY~lXOACrFhoNHq5s8AX9h3S8wVYa85LectnHiOm6BNnQrgFNZtB4xXYUR0sTo9PjzZFTgPxyQWNOZSaVY5zJKIg~-VMD53bhnLD4z0swAfmQfIl4L5U6QWbw__",
+                        "width": 441,
+                        "height": 394
+                    }
+                },
+                {
+                    "title": "American Football 101",
+                    "text": "A non-contact version of American football where players remove opponents' flags instead of tackling them. It provides all the excitement and strategy of football in a safer format, appealing to people of all ages and skill levels.",
+                    "image": {
+                        "src": "https://s3-alpha-sig.figma.com/img/10ba/5878/70e46ae4141ce5681bb6d9298fb1c821?Expires=1718582400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=T9daaBKHLJRUJQWbvgii4AY6fzg-eU0n5L6yIJOyk3WQ81NIb9qRTdLn-X4G50mbWoSGkbRAXXf7uMpFGBWKJbm73oo1fic3wpfR59PtNdKCZGaaLdVcjKyVcKp6VZI4g5ZoS5~t7J5H6ucsbShhHd400t4WuZXvx3qFlm2P3e1ZUqCg16uYBarkVrk5phlFG5iwtS-QnNFKl17nMbo3MUsu7LRYu5Fx6wvUdxFbCte0oidHFTyq3li433HDQ9BUECGq5APeSzrJlyn73a84o-Z-zoZ0nWG4JgeDQleGcCOSHszPIhmzYfGaZWigwmdVJjLp4DIT7BL9WVTRpPRCvg__",
+                        "width": 451,
+                        "height": 403
+                    }
+                },
+                {
+                    "title": "Coach Certificate",
+                    "text": "In collaboration with the NFL and IFAF, NAFA offers certification to its coaches through the USA Football program. Interested coaches should reach out to the NAFA team for more information on how to access this service free of charge.",
+                    "image": {
+                        "src": "https://s3-alpha-sig.figma.com/img/f50d/1dcf/686894fa7f5a35e687be27ede9d20521?Expires=1718582400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=hB3bZrOmBhX~kdao~X~6M6qgeeOkgVRRH5Jwy7qq-crQPEWdTaUlVkYAENNQmyYPM-qaiWcKI2lZXYrDy7nY7pK1iA1ZzRe-C41zr2Jef8uFpvPB-f607t1uomvc7g5PeyliXL7A9qlESOjjBtRiyMy0uMgn7-SVC7Da~okxasZcZScqFtw0obRdSiYv35FIVpfZwvAyTxuLLfy~QtI8wht1LquNM18l0VX5MtIYL0EdqYqjuaqVbuD69wwZRVr7XFjTl8fh9SULiXzy1Lr0LIPDqJml08bOu4MKmhYLIeRCnanKxR2OY2FzPycT1COsACCuwZmRYDm9Cys6~nmc~Q__",
+                        "width": 439,
+                        "height": 392
+                    }
+                }
+            ]
         },
-        {
-            "title": "GOAL 4",
-            "heading": ["QUALITY", "EDUCATION"],
-            "text": "Ensure inclusive and equitable quality education and promote lifelong learning opportunities for all",
-            "bg": "hsla(353, 72%, 44%, 1)",
-            "image": {
-                "src": "/images/education.svg",
-                "width": 200,
-                "height": 100
-            }
+        "unity": {
+            "title": "ACTIVE POSITIVE ENGAGEMENT AND UNITY",
+            "paragraph": [
+                "In 2018 it was recorded that the United States National Football League’s draft list had players with connection to Africa, a closer look at this list showed that these African players were predominantly of Nigerian descent. The fore runners of this sport in the country are therefore actively working towards making the sport the most engaging and desirable sport amongst the youth to further increase the number of Nigerians who get into NFL. Where this is achieved the average Nigerian youth prone to engaging in vices harmful to himself and his immediate community will channel his/her energy into a cause more productive with the guarantee of a secured future.",
+                "",
+                "Sport values such as fairness and respect can serve as examples for an economic system that builds on fair competition and supports an equal sharing of resources. Reinforcing competencies and values such as teamwork, cooperation, fair-play and goal setting, sport can teach and practice transferable employment skills which can support employment readiness, productivity and income-generating activities.",
+                "",
+                "Every type of sport need teamwork, but American football needs more unity than most other sport types. Since the game has three divisions and separate groups of people, everyone has to be"
+            ],
+            "text": [
+                "extremely cordial and promote fair play. In any nation-state, unity, team spirit, selflessness, discipline and patriotism are major benefits obtainable from sports. When two people of different cultures and colour participate in the same game and abide by the same rules, fairness and equity is often regarded by a regulatory official.",
+                "",
+                "This sport is a compelling tool to promote peace, tolerance, and understanding, bringing people together across boundaries, cultures, and religions. Its values such as teamwork, fairness, discipline, and respect are understood all over the world and can be utilized in the advancement of solidarity and social cohesion. Persons with different religious beliefs, tribal belongings and geographical origins are combined. It is expected by the fans that all members of the team cooperate to uplift the entire nation. In the end, everyone overlooks their differences, giving way to unity and a patriotic spirit. We all share in the excitement and disappointments encountered in the tournament.",
+                "",
+                "Where politics has failed, sports have on countless occasions succeeded in not only bringing development, but also fostered peace and national cohesion. There have been countless times when politics and religion have instigated the worse forms of violence with many leading to bloody wars, but there is not a single example of war perpetrated by sport in recent memory. This sport can promote personal well-being and encourage social inclusion which may lead to larger economic participation. It can help educate empower individuals, even displaced persons with social and life skills for a self-reliant and sustainable life."
+            ],
+
+            "itemTitle": "Explore More",
+    
+            "items": [
+                {
+                    "title": "Gridiron Gems Program",
+                    "text": "Becoming a member of NAFA means joining a vibrant community, enjoying fitness and fun through flag football, while also accessing skill development, competition, socialization, and inclusivity.",
+                    "image": {
+                        "src": "https://s3-alpha-sig.figma.com/img/4386/4747/70f39d3c47d3985d47125601a252a576?Expires=1718582400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=ammtVyOHgP~xyE70z312kAAEARl93Q7d1maO--coeb2n4IT5hGdVY5F4Oho9MGdM6B88~uRD-wjQ8-6CAphvMTV-KXmt6CZOYm1aryhi~5iC6kL9PumcQpg6Ksv3w5trK~7dHRflRbYIXZNv-nzqYw4RJQZ8tOwajgZPoL9ucA46umeP6Qp8zq2aoOPdw0kguXM3l3Ez2DoIar5tYc8lDQOfie-kMcY~lXOACrFhoNHq5s8AX9h3S8wVYa85LectnHiOm6BNnQrgFNZtB4xXYUR0sTo9PjzZFTgPxyQWNOZSaVY5zJKIg~-VMD53bhnLD4z0swAfmQfIl4L5U6QWbw__",
+                        "width": 441,
+                        "height": 394
+                    }
+                },
+                {
+                    "title": "American Football 101",
+                    "text": "A non-contact version of American football where players remove opponents' flags instead of tackling them. It provides all the excitement and strategy of football in a safer format, appealing to people of all ages and skill levels.",
+                    "image": {
+                        "src": "https://s3-alpha-sig.figma.com/img/10ba/5878/70e46ae4141ce5681bb6d9298fb1c821?Expires=1718582400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=T9daaBKHLJRUJQWbvgii4AY6fzg-eU0n5L6yIJOyk3WQ81NIb9qRTdLn-X4G50mbWoSGkbRAXXf7uMpFGBWKJbm73oo1fic3wpfR59PtNdKCZGaaLdVcjKyVcKp6VZI4g5ZoS5~t7J5H6ucsbShhHd400t4WuZXvx3qFlm2P3e1ZUqCg16uYBarkVrk5phlFG5iwtS-QnNFKl17nMbo3MUsu7LRYu5Fx6wvUdxFbCte0oidHFTyq3li433HDQ9BUECGq5APeSzrJlyn73a84o-Z-zoZ0nWG4JgeDQleGcCOSHszPIhmzYfGaZWigwmdVJjLp4DIT7BL9WVTRpPRCvg__",
+                        "width": 451,
+                        "height": 403
+                    }
+                },
+                {
+                    "title": "Coach Certificate",
+                    "text": "In collaboration with the NFL and IFAF, NAFA offers certification to its coaches through the USA Football program. Interested coaches should reach out to the NAFA team for more information on how to access this service free of charge.",
+                    "image": {
+                        "src": "https://s3-alpha-sig.figma.com/img/f50d/1dcf/686894fa7f5a35e687be27ede9d20521?Expires=1718582400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=hB3bZrOmBhX~kdao~X~6M6qgeeOkgVRRH5Jwy7qq-crQPEWdTaUlVkYAENNQmyYPM-qaiWcKI2lZXYrDy7nY7pK1iA1ZzRe-C41zr2Jef8uFpvPB-f607t1uomvc7g5PeyliXL7A9qlESOjjBtRiyMy0uMgn7-SVC7Da~okxasZcZScqFtw0obRdSiYv35FIVpfZwvAyTxuLLfy~QtI8wht1LquNM18l0VX5MtIYL0EdqYqjuaqVbuD69wwZRVr7XFjTl8fh9SULiXzy1Lr0LIPDqJml08bOu4MKmhYLIeRCnanKxR2OY2FzPycT1COsACCuwZmRYDm9Cys6~nmc~Q__",
+                        "width": 439,
+                        "height": 392
+                    }
+                }
+            ]
         },
-        {
-            "title": "GOAL 5",
-            "heading": ["GENDER", "EQUALITY"],
-            "text": "Achieve gender equality and empower all women and girls",
-            "bg": "hsla(7, 86%, 55%, 1)",
-            "image": {
-                "src": "/images/gender.svg",
-                "width": 200,
-                "height": 100
-            }
+        "diversity": {
+            "title": "EXPOSURE, INCLUSION AND DIVERSITY",
+            "paragraph": [
+                "The sport because of its unique nature will require lots of traveling, within the state, around the African continent and subsequently beyond the shores of Africa. These experiences (i.e activities ranging from spectacular sport, International games, international scouts, IFAF championships etc) will serve as an informal form of education for the youth engaging in the sport and affording them an opportunity to learn the ways of life and diverse cultures of various communities.",
+                "",
+                "Regardless of age, gender or ethnicity, sport is enjoyed by all; its reach is unrivalled. More importantly, this sport promotes universal values that transcend language and culture. It can be used as a tool to improve the welfare of the planet and its people. Through its values, we can teach teamwork, leadership, humility, tenacity, and determination but we will also use it to shine a light on social issues, harnessing its influence and reach to draw attention to matters that are impacting society.",
+                "",
+                "This sport can promote the use of public spaces where diverse populations and marginalized community members can interact and create friendly relations. It can reduce antisocial behaviour through the provision of facilities and opportunities in areas affected by poverty, disengagement and low social development."
+            ],
+            "text": [
+                "The role of this sport in promoting gender equality is also critical. It will help girls and women build self-esteem and develop skills needed to become equal participants and leaders in their various communities. Gender equality and women’s empowerment are essential to the achievement of the SDGs. We have the potential to equip girls and women with knowledge and skills that allow them to progress in society. This sport will also serve as a platform to promote the value of diversity. Our public awareness campaigns can promote awareness towards climate protection and can stimulate enhanced community response for local environment preservation.",
+                "",
+                "The right to equality and non-discrimination is a cornerstone of international law. The popularity of, and positive attitude towards sport make it a suitable tool for tackling inequality in areas and populations that are difficult to reach. It can also tackle prejudice and intolerance by promoting tolerance and pro-social behaviour instead."
+            ],
+
+            "itemTitle": "Explore More",
+    
+            "items": [
+                {
+                    "title": "Gridiron Gems Program",
+                    "text": "Becoming a member of NAFA means joining a vibrant community, enjoying fitness and fun through flag football, while also accessing skill development, competition, socialization, and inclusivity.",
+                    "image": {
+                        "src": "https://s3-alpha-sig.figma.com/img/4386/4747/70f39d3c47d3985d47125601a252a576?Expires=1718582400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=ammtVyOHgP~xyE70z312kAAEARl93Q7d1maO--coeb2n4IT5hGdVY5F4Oho9MGdM6B88~uRD-wjQ8-6CAphvMTV-KXmt6CZOYm1aryhi~5iC6kL9PumcQpg6Ksv3w5trK~7dHRflRbYIXZNv-nzqYw4RJQZ8tOwajgZPoL9ucA46umeP6Qp8zq2aoOPdw0kguXM3l3Ez2DoIar5tYc8lDQOfie-kMcY~lXOACrFhoNHq5s8AX9h3S8wVYa85LectnHiOm6BNnQrgFNZtB4xXYUR0sTo9PjzZFTgPxyQWNOZSaVY5zJKIg~-VMD53bhnLD4z0swAfmQfIl4L5U6QWbw__",
+                        "width": 441,
+                        "height": 394
+                    }
+                },
+                {
+                    "title": "American Football 101",
+                    "text": "A non-contact version of American football where players remove opponents' flags instead of tackling them. It provides all the excitement and strategy of football in a safer format, appealing to people of all ages and skill levels.",
+                    "image": {
+                        "src": "https://s3-alpha-sig.figma.com/img/10ba/5878/70e46ae4141ce5681bb6d9298fb1c821?Expires=1718582400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=T9daaBKHLJRUJQWbvgii4AY6fzg-eU0n5L6yIJOyk3WQ81NIb9qRTdLn-X4G50mbWoSGkbRAXXf7uMpFGBWKJbm73oo1fic3wpfR59PtNdKCZGaaLdVcjKyVcKp6VZI4g5ZoS5~t7J5H6ucsbShhHd400t4WuZXvx3qFlm2P3e1ZUqCg16uYBarkVrk5phlFG5iwtS-QnNFKl17nMbo3MUsu7LRYu5Fx6wvUdxFbCte0oidHFTyq3li433HDQ9BUECGq5APeSzrJlyn73a84o-Z-zoZ0nWG4JgeDQleGcCOSHszPIhmzYfGaZWigwmdVJjLp4DIT7BL9WVTRpPRCvg__",
+                        "width": 451,
+                        "height": 403
+                    }
+                },
+                {
+                    "title": "Coach Certificate",
+                    "text": "In collaboration with the NFL and IFAF, NAFA offers certification to its coaches through the USA Football program. Interested coaches should reach out to the NAFA team for more information on how to access this service free of charge.",
+                    "image": {
+                        "src": "https://s3-alpha-sig.figma.com/img/f50d/1dcf/686894fa7f5a35e687be27ede9d20521?Expires=1718582400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=hB3bZrOmBhX~kdao~X~6M6qgeeOkgVRRH5Jwy7qq-crQPEWdTaUlVkYAENNQmyYPM-qaiWcKI2lZXYrDy7nY7pK1iA1ZzRe-C41zr2Jef8uFpvPB-f607t1uomvc7g5PeyliXL7A9qlESOjjBtRiyMy0uMgn7-SVC7Da~okxasZcZScqFtw0obRdSiYv35FIVpfZwvAyTxuLLfy~QtI8wht1LquNM18l0VX5MtIYL0EdqYqjuaqVbuD69wwZRVr7XFjTl8fh9SULiXzy1Lr0LIPDqJml08bOu4MKmhYLIeRCnanKxR2OY2FzPycT1COsACCuwZmRYDm9Cys6~nmc~Q__",
+                        "width": 439,
+                        "height": 392
+                    }
+                }
+            ]
         },
-        {
-            "title": "GOAL 8",
-            "heading": ["DECENT WORK AND", "ECONOMIC GROWTH"],
-            "text": "Promote sustained, inclusive and sustainable economic growth, full and productive employment and decent work for all",
-            "bg": "hsla(344, 71%, 33%, 1)",
-            "image": {
-                "src": "/images/economy.svg",
-                "width": 200,
-                "height": 100
-            }
+        "development": {
+            "title": "DEVELOPMENT OF THE NATION AND SOCIETY AT LARGE",
+            "paragraph": [
+                "Employment and economic growth emerge as a result of sports. In places like the United Kingdom, Italy, Spain, France and Germany, football leagues provide massive employment for many citizens.  Again, in the United Kingdom American football amongst other sports are very prominent and lucrative sporting activities. Huge funds are used to run such business-centred competitions and this further helps to balance the cash flow of the associated countries. The electronic entertainment industry has also tapped into the leisure aspect of sports by producing gaming appliances for global consumers. As such, more people are employed globally, and economies grow. We believe that Nigeria’s economic growth will be immensely boosted as well if the country actively engages in this sport.",
+                "",
+                "The right to education and equal rights of women and girls in the field of education form the basis of this goal. Inclusive sport activities have long been used to foster education and have therefore been identified as a tool to advance those rights. Sport can encourage inclusion and the equal participation of women and girls, people with disabilities, and other vulnerable or underrepresented groups and individuals thereby indirectly leading to the growth and development of the Nation."
+            ],
+            "text": [
+                "Employment and entrepreneurship provided by this sport can contribute to creating decent jobs for all by complying with labour standards throughout their value chain and in line with businesses policies and practices.",
+                "",
+                "This sport can enhance the sustainable development of cities by building facilities with the most enhanced resource and energy efficiency, and by assessing policies and procedures with procurement standards labelling.",
+                "",
+                "Our public awareness campaigns can promote awareness towards climate protection and can stimulate enhanced community response for local environment preservation including sport events and stakeholders involved can transmit messages regarding climate change and encourage policy developments in this context.",
+                "",
+                "This sport can catalyze, build and strengthen multi-stakeholder networks and partnerships for sustainable development and peace goals, involving and bringing together governments, donors, NGOs, sport organizations, the private sector, academia and the media.",
+                "",
+                "The presence and diversity of this sport on local, national, regional and international levels can provide effective networks for partnerships and implementation of programmes."
+            ],
+
+            "itemTitle": "Explore More",
+    
+            "items": [
+                {
+                    "title": "Gridiron Gems Program",
+                    "text": "Becoming a member of NAFA means joining a vibrant community, enjoying fitness and fun through flag football, while also accessing skill development, competition, socialization, and inclusivity.",
+                    "image": {
+                        "src": "https://s3-alpha-sig.figma.com/img/4386/4747/70f39d3c47d3985d47125601a252a576?Expires=1718582400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=ammtVyOHgP~xyE70z312kAAEARl93Q7d1maO--coeb2n4IT5hGdVY5F4Oho9MGdM6B88~uRD-wjQ8-6CAphvMTV-KXmt6CZOYm1aryhi~5iC6kL9PumcQpg6Ksv3w5trK~7dHRflRbYIXZNv-nzqYw4RJQZ8tOwajgZPoL9ucA46umeP6Qp8zq2aoOPdw0kguXM3l3Ez2DoIar5tYc8lDQOfie-kMcY~lXOACrFhoNHq5s8AX9h3S8wVYa85LectnHiOm6BNnQrgFNZtB4xXYUR0sTo9PjzZFTgPxyQWNOZSaVY5zJKIg~-VMD53bhnLD4z0swAfmQfIl4L5U6QWbw__",
+                        "width": 441,
+                        "height": 394
+                    }
+                },
+                {
+                    "title": "American Football 101",
+                    "text": "A non-contact version of American football where players remove opponents' flags instead of tackling them. It provides all the excitement and strategy of football in a safer format, appealing to people of all ages and skill levels.",
+                    "image": {
+                        "src": "https://s3-alpha-sig.figma.com/img/10ba/5878/70e46ae4141ce5681bb6d9298fb1c821?Expires=1718582400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=T9daaBKHLJRUJQWbvgii4AY6fzg-eU0n5L6yIJOyk3WQ81NIb9qRTdLn-X4G50mbWoSGkbRAXXf7uMpFGBWKJbm73oo1fic3wpfR59PtNdKCZGaaLdVcjKyVcKp6VZI4g5ZoS5~t7J5H6ucsbShhHd400t4WuZXvx3qFlm2P3e1ZUqCg16uYBarkVrk5phlFG5iwtS-QnNFKl17nMbo3MUsu7LRYu5Fx6wvUdxFbCte0oidHFTyq3li433HDQ9BUECGq5APeSzrJlyn73a84o-Z-zoZ0nWG4JgeDQleGcCOSHszPIhmzYfGaZWigwmdVJjLp4DIT7BL9WVTRpPRCvg__",
+                        "width": 451,
+                        "height": 403
+                    }
+                },
+                {
+                    "title": "Coach Certificate",
+                    "text": "In collaboration with the NFL and IFAF, NAFA offers certification to its coaches through the USA Football program. Interested coaches should reach out to the NAFA team for more information on how to access this service free of charge.",
+                    "image": {
+                        "src": "https://s3-alpha-sig.figma.com/img/f50d/1dcf/686894fa7f5a35e687be27ede9d20521?Expires=1718582400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=hB3bZrOmBhX~kdao~X~6M6qgeeOkgVRRH5Jwy7qq-crQPEWdTaUlVkYAENNQmyYPM-qaiWcKI2lZXYrDy7nY7pK1iA1ZzRe-C41zr2Jef8uFpvPB-f607t1uomvc7g5PeyliXL7A9qlESOjjBtRiyMy0uMgn7-SVC7Da~okxasZcZScqFtw0obRdSiYv35FIVpfZwvAyTxuLLfy~QtI8wht1LquNM18l0VX5MtIYL0EdqYqjuaqVbuD69wwZRVr7XFjTl8fh9SULiXzy1Lr0LIPDqJml08bOu4MKmhYLIeRCnanKxR2OY2FzPycT1COsACCuwZmRYDm9Cys6~nmc~Q__",
+                        "width": 439,
+                        "height": 392
+                    }
+                }
+            ]
         },
-        {
-            "title": "GOAL 9",
-            "heading": ["INDUSTRY, INNOVATION,", "AND INFRASTRUCTURE"],
-            "text": "To build resilient infrastructure, promote inclusive and sustainable industrialization, and encourage innovation.",
-            "bg": "hsla(21, 90%, 55%, 1)",
-            "image": {
-                "src": "/images/industry.svg",
-                "width": 200,
-                "height": 100
-            }
+        "livelihood": {
+            "title": "CREATING A WIDE RANGE OF JOBS, SCHOLARSHIP OPPORTUNITIES AND LIVELIHOOD.",
+            "paragraph": [
+                "American football in Nigeria is introducing another way of being gainfully employed in Nigeria without the restrictions of a college degree, this advantage is no way downplaying the importance of a certificate from a tertiary institute and it is based on that NAFA is working tirelessly to also be able to obtain international scholarships for her players who would choose to further their education in a distinct discipline.",
+                "",
+                "At the grassroots or community level, it can be used to provide a useful way of creating an environment where people come together to work towards the same goal, show respect for others and share space and equipment. It can play a very important role in helping achieve SDG goals of No poverty, Zero Hunger, good health and gender equality. When paired with lessons on nutrition and agriculture, our sport for development programs can be a suitable complement for food programs tackling healthy living, hunger and education.",
+                "",
+                "This sport will be used as a platform to speak out for the realization"
+            ],
+            "text": [
+                "of human rights, including the right to an adequate standard of living, the right to social security and the equal rights of women in economic life, which have direct impacts on the goal to end poverty. It can also be used as a platform to campaign for socio-economic progress and raise funds to alleviate poverty.",
+                "",
+                "It can raise and generate funds for poverty programmes, provide employment as well as assist in raising awareness and facilitating the mobilization of needed resources to alleviate poverty and contribute to local economies through partnerships with local and international bodies.",
+                "",
+                "American Football-based employment and entrepreneurship can contribute to create decent jobs for all by complying with labour standards throughout their value chain and in line with businesses policies and practices."
+            ],
+
+            "itemTitle": "Explore More",
+    
+            "items": [
+                {
+                    "title": "Gridiron Gems Program",
+                    "text": "Becoming a member of NAFA means joining a vibrant community, enjoying fitness and fun through flag football, while also accessing skill development, competition, socialization, and inclusivity.",
+                    "image": {
+                        "src": "https://s3-alpha-sig.figma.com/img/4386/4747/70f39d3c47d3985d47125601a252a576?Expires=1718582400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=ammtVyOHgP~xyE70z312kAAEARl93Q7d1maO--coeb2n4IT5hGdVY5F4Oho9MGdM6B88~uRD-wjQ8-6CAphvMTV-KXmt6CZOYm1aryhi~5iC6kL9PumcQpg6Ksv3w5trK~7dHRflRbYIXZNv-nzqYw4RJQZ8tOwajgZPoL9ucA46umeP6Qp8zq2aoOPdw0kguXM3l3Ez2DoIar5tYc8lDQOfie-kMcY~lXOACrFhoNHq5s8AX9h3S8wVYa85LectnHiOm6BNnQrgFNZtB4xXYUR0sTo9PjzZFTgPxyQWNOZSaVY5zJKIg~-VMD53bhnLD4z0swAfmQfIl4L5U6QWbw__",
+                        "width": 441,
+                        "height": 394
+                    }
+                },
+                {
+                    "title": "American Football 101",
+                    "text": "A non-contact version of American football where players remove opponents' flags instead of tackling them. It provides all the excitement and strategy of football in a safer format, appealing to people of all ages and skill levels.",
+                    "image": {
+                        "src": "https://s3-alpha-sig.figma.com/img/10ba/5878/70e46ae4141ce5681bb6d9298fb1c821?Expires=1718582400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=T9daaBKHLJRUJQWbvgii4AY6fzg-eU0n5L6yIJOyk3WQ81NIb9qRTdLn-X4G50mbWoSGkbRAXXf7uMpFGBWKJbm73oo1fic3wpfR59PtNdKCZGaaLdVcjKyVcKp6VZI4g5ZoS5~t7J5H6ucsbShhHd400t4WuZXvx3qFlm2P3e1ZUqCg16uYBarkVrk5phlFG5iwtS-QnNFKl17nMbo3MUsu7LRYu5Fx6wvUdxFbCte0oidHFTyq3li433HDQ9BUECGq5APeSzrJlyn73a84o-Z-zoZ0nWG4JgeDQleGcCOSHszPIhmzYfGaZWigwmdVJjLp4DIT7BL9WVTRpPRCvg__",
+                        "width": 451,
+                        "height": 403
+                    }
+                },
+                {
+                    "title": "Coach Certificate",
+                    "text": "In collaboration with the NFL and IFAF, NAFA offers certification to its coaches through the USA Football program. Interested coaches should reach out to the NAFA team for more information on how to access this service free of charge.",
+                    "image": {
+                        "src": "https://s3-alpha-sig.figma.com/img/f50d/1dcf/686894fa7f5a35e687be27ede9d20521?Expires=1718582400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=hB3bZrOmBhX~kdao~X~6M6qgeeOkgVRRH5Jwy7qq-crQPEWdTaUlVkYAENNQmyYPM-qaiWcKI2lZXYrDy7nY7pK1iA1ZzRe-C41zr2Jef8uFpvPB-f607t1uomvc7g5PeyliXL7A9qlESOjjBtRiyMy0uMgn7-SVC7Da~okxasZcZScqFtw0obRdSiYv35FIVpfZwvAyTxuLLfy~QtI8wht1LquNM18l0VX5MtIYL0EdqYqjuaqVbuD69wwZRVr7XFjTl8fh9SULiXzy1Lr0LIPDqJml08bOu4MKmhYLIeRCnanKxR2OY2FzPycT1COsACCuwZmRYDm9Cys6~nmc~Q__",
+                        "width": 439,
+                        "height": 392
+                    }
+                }
+            ]
         },
-        {
-            "title": "GOAL 11",
-            "heading": ["SUSTAINABLE CITIES", "AND COMMUNITIES"],
-            "text": "Making cities and human settlements inclusive, safe, resilient, and sustainable. It emphasizes on improving urban planning, providing affordable housing, ensuring access to green spaces, and enhancing public transportation.",
-            "bg": "hsla(7, 86%, 55%, 1)",
-            "image": {
-                "src": "/images/community.svg",
-                "width": 200,
-                "height": 100
-            }
-        },
-        {
-            "title": "GOAL 16",
-            "heading": ["PEACE, JUSTICE AND", "STRONG INSTITUTIONS"],
-            "text": "Seeks to promote peaceful and inclusive societies, ensure access to justice for everyone, and establish effective, accountable, and inclusive institutions.",
-            "bg": "hsla(203, 100%, 27%, 1)",
-            "image": {
-                "src": "/images/peace.svg",
-                "width": 200,
-                "height": 100
-            }
-        },
-        {
-            "title": "GOAL 17",
-            "heading": ["PARTNERSHIPS FOR", "THE GOALS"],
-            "text": "Strengthen the means of implementation and revitalize the global partnership for sustainable development.",
-            "bg": "hsla(218, 60%, 25%, 1)",
-            "image": {
-                "src": "/images/partnership.svg",
-                "width": 200,
-                "height": 100
-            }
+        "entertainment": {
+            "title": "ENTERTAINMENT, CULTURE AND TOURISM",
+            "paragraph": [
+                "Sports marketing is a subdivision of marketing which focuses both on the promotion of sports events and teams as well as the promotion of other products and services through sporting events and sports teams. It is a service in which the element promoted can be a physical product or a brand name. The goal is to provide our partners and investors with strategies to promote their products, service, business or cause through sports.",
+                "",
+                "Today’s sporting events welcome people of all ages and backgrounds seeking more than just their share of action on the pitch. Crowds at the biggest sporting events are placing more value in the entertainment and pleasure they offer off the pitch, and businesses are quickly responding, this we can achieve through our leagues and tournaments.",
+                "",
+                "Think Shakira at the 2010 World Cup, cheerleaders at Indian Premier League Cricket, Janet Jackson and Justin Timberlake at the Super Bowl, and Hollywood A-listers sitting courtside at the NBA it is now impossible to keep the worlds of sport and entertainment apart. People are buying tickets to today’s events expecting to be entertained and, with this in mind, the responsibility of sports entities is evolving. It is no longer enough to win on the court or on the pitch, but the need is ever greater to entertain off it as well."
+            ],
+            "text": [
+                "Our tournaments and big leagues will involve A-list Nigerian Artists to pull the crowd thereby promoting our brand partners and investors.",
+                "",
+                "No other social activity brings people together in such great numbers, and with so much passion and enjoyment like sports. Regardless of age, gender, religion, sexual orientation or ethnicity, sport is enjoyed by all; its reach is unrivalled. More importantly, this sport promotes universal values that transcend language and culture."
+            ],
+
+            "itemTitle": "Explore More",
+    
+            "items": [
+                {
+                    "title": "Gridiron Gems Program",
+                    "text": "Becoming a member of NAFA means joining a vibrant community, enjoying fitness and fun through flag football, while also accessing skill development, competition, socialization, and inclusivity.",
+                    "image": {
+                        "src": "https://s3-alpha-sig.figma.com/img/4386/4747/70f39d3c47d3985d47125601a252a576?Expires=1718582400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=ammtVyOHgP~xyE70z312kAAEARl93Q7d1maO--coeb2n4IT5hGdVY5F4Oho9MGdM6B88~uRD-wjQ8-6CAphvMTV-KXmt6CZOYm1aryhi~5iC6kL9PumcQpg6Ksv3w5trK~7dHRflRbYIXZNv-nzqYw4RJQZ8tOwajgZPoL9ucA46umeP6Qp8zq2aoOPdw0kguXM3l3Ez2DoIar5tYc8lDQOfie-kMcY~lXOACrFhoNHq5s8AX9h3S8wVYa85LectnHiOm6BNnQrgFNZtB4xXYUR0sTo9PjzZFTgPxyQWNOZSaVY5zJKIg~-VMD53bhnLD4z0swAfmQfIl4L5U6QWbw__",
+                        "width": 441,
+                        "height": 394
+                    }
+                },
+                {
+                    "title": "American Football 101",
+                    "text": "A non-contact version of American football where players remove opponents' flags instead of tackling them. It provides all the excitement and strategy of football in a safer format, appealing to people of all ages and skill levels.",
+                    "image": {
+                        "src": "https://s3-alpha-sig.figma.com/img/10ba/5878/70e46ae4141ce5681bb6d9298fb1c821?Expires=1718582400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=T9daaBKHLJRUJQWbvgii4AY6fzg-eU0n5L6yIJOyk3WQ81NIb9qRTdLn-X4G50mbWoSGkbRAXXf7uMpFGBWKJbm73oo1fic3wpfR59PtNdKCZGaaLdVcjKyVcKp6VZI4g5ZoS5~t7J5H6ucsbShhHd400t4WuZXvx3qFlm2P3e1ZUqCg16uYBarkVrk5phlFG5iwtS-QnNFKl17nMbo3MUsu7LRYu5Fx6wvUdxFbCte0oidHFTyq3li433HDQ9BUECGq5APeSzrJlyn73a84o-Z-zoZ0nWG4JgeDQleGcCOSHszPIhmzYfGaZWigwmdVJjLp4DIT7BL9WVTRpPRCvg__",
+                        "width": 451,
+                        "height": 403
+                    }
+                },
+                {
+                    "title": "Coach Certificate",
+                    "text": "In collaboration with the NFL and IFAF, NAFA offers certification to its coaches through the USA Football program. Interested coaches should reach out to the NAFA team for more information on how to access this service free of charge.",
+                    "image": {
+                        "src": "https://s3-alpha-sig.figma.com/img/f50d/1dcf/686894fa7f5a35e687be27ede9d20521?Expires=1718582400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=hB3bZrOmBhX~kdao~X~6M6qgeeOkgVRRH5Jwy7qq-crQPEWdTaUlVkYAENNQmyYPM-qaiWcKI2lZXYrDy7nY7pK1iA1ZzRe-C41zr2Jef8uFpvPB-f607t1uomvc7g5PeyliXL7A9qlESOjjBtRiyMy0uMgn7-SVC7Da~okxasZcZScqFtw0obRdSiYv35FIVpfZwvAyTxuLLfy~QtI8wht1LquNM18l0VX5MtIYL0EdqYqjuaqVbuD69wwZRVr7XFjTl8fh9SULiXzy1Lr0LIPDqJml08bOu4MKmhYLIeRCnanKxR2OY2FzPycT1COsACCuwZmRYDm9Cys6~nmc~Q__",
+                        "width": 439,
+                        "height": 392
+                    }
+                }
+            ]
         }
-        ]
     }
+
 }
