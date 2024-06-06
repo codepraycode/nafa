@@ -98,7 +98,12 @@ main:has(.page-header) {
 
 
 .page-header {
-    @include mixins.background-filter;
+    
+    position: relative;
+    background-blend-mode: multiply;
+    background-position: center;
+    background-repeat: no-repeat;
+
 
     min-height: 20.4375rem;
 
@@ -1724,13 +1729,14 @@ p.huddle-title {
     
     li {
         max-width: 100%;
-        // width: 17.125rem;
-        height: 5.06875rem;
-        
-        
-        @include mixins.background-filter;
 
-        // border: 1px solid red;
+        height: 5.06875rem;
+
+        position: relative;
+        background-blend-mode: multiply;
+        background-position: center;
+        background-repeat: no-repeat;
+
         border-radius: 0.75rem;
         overflow: hidden;
         

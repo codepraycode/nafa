@@ -22,10 +22,24 @@ export default function PageMenu() {
 
                     
                     return (
-                        <li key={i}>
+                        <li
+                            key={i}
+                            style={{
+                            backgroundImage: `linear-gradient(
+                                269.67deg, 
+                                #FFFFFF 0.29%, 
+                                #355920 30.51%, 
+                                #000000 70.07%
+                                ),
+                                url(${item.image.src})`
+                        }}
+                        >
                             <Link
                                 href={slugifyLink(item.text, "/huddle/")}
                                 data-active={current_path.includes(slugifyLink(item.text, "/huddle/"))}
+                            //     style={{
+                            //     backgroundImage: `url(${item.image.src})`
+                            // }}
                             >
                                 <b>{firstLetter}</b>
                                 <hr/>

@@ -1,10 +1,8 @@
 import Partners from "@/components/Home/Partners";
-import PageContent from "@/components/Huddle/PageMenuContent";
-import PageHeader from "@/components/PageHeader";
-import Section from "@/components/UI/Section";
-import huddleData from "@/data/huddle.json";
+import HuddlePageContent from "@/components/Huddle/PageMenuContent";
 import {metadata as MainMeta} from "@/app/layout";
 import { Metadata } from "next";
+import HuddlePageHeader from "@/components/Huddle/PageHeader";
 
 
 export const metadata: Metadata = {
@@ -16,16 +14,11 @@ export default function DashboardLayout({children}: {
 }) {
     return (
         <>
-            <PageHeader
-                title={huddleData.header.title}
-                image={huddleData.header.image.src}
-            />
+            <HuddlePageHeader />
 
 
-            <Section name="page-content">
-                {/* { children } */}
-                <PageContent />
-            </Section>
+            <HuddlePageContent />
+            
 
             <Partners/>
         </>

@@ -1,24 +1,16 @@
 'use client';
-import React, { useEffect } from 'react'
+import React from 'react'
 import huddleData from "@/data/huddle.json";
 import Section from '../UI/Section'
 import PageMenu from './PageMenu'
 import TextMunch from '../TextMucnh';
-import Image from 'next/image';
-import { slugifyLink } from '@/utils/slugify';
-import Link from 'next/link';
-import { redirect, usePathname, useRouter } from 'next/navigation';
+import { usePathname } from 'next/navigation';
 import Custom404 from '@/app/not-found';
-import { PageData, PageDataItem } from './types';
+import { PageData } from './types';
 import HuddleItems from './HuddleItems';
 
 
-
-
-
 function HuddlePageContent({data}:{data: PageData | null}) {
-
-    // const router = useRouter();
 
     if (!data){
         return (
@@ -70,7 +62,7 @@ export default function PageContent() {
     // console.log(p.split("/").pop());
     const aspect = p.split("/").pop();
 
-    console.log(aspect);
+    // console.log(aspect);
 
     switch (aspect) {
         case 'health':
@@ -98,7 +90,9 @@ export default function PageContent() {
             break;
     }
 
-
-
-    return <HuddlePageContent data={pageData} />
+    return (
+        <Section name="page-content">
+            <HuddlePageContent data={pageData} />
+        </Section>
+    )
 }

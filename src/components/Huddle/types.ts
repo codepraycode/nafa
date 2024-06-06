@@ -1,5 +1,17 @@
 
 
+type Image = {
+    src: string,
+    width: number,
+    height: number
+}
+
+export type IPageHeader = {
+    text?: string,
+    title?: string,
+    image: Image,
+}
+
 export type PageData = {
     title: string,
     paragraph: string[],
@@ -11,11 +23,7 @@ export type PageData = {
 export type PageDataItem = {
     title: string,
     text: string,
-    image: {
-        src: string,
-        width: number,
-        height: number
-    },
+    image: Image,
 }
 
 export interface PageDataItemHighlight extends PageDataItem {

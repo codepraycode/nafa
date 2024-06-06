@@ -35,7 +35,13 @@ export default function PageHeader(props:PageHeader) {
         <Section
             name='page-header'
             style={{
-                backgroundImage: `url(${props.image})`
+                backgroundImage: `linear-gradient(
+                    269.67deg, 
+                    #FFFFFF 0.29%, 
+                    #355920 30.51%, 
+                    #000000 70.07%
+                    ),
+                    url(${props.image})`
             }}
         >
             <Breadcrumb />
