@@ -24,6 +24,10 @@ export type PageDataItem = {
     title: string,
     text: string,
     image: Image,
+    cta?: {
+        label: string,
+        link: string
+    }
 }
 
 export interface PageDataItemHighlight extends PageDataItem {

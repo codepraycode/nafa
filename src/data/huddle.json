@@ -191,6 +191,10 @@
                         "src": "https://s3-alpha-sig.figma.com/img/4386/4747/70f39d3c47d3985d47125601a252a576?Expires=1718582400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=ammtVyOHgP~xyE70z312kAAEARl93Q7d1maO--coeb2n4IT5hGdVY5F4Oho9MGdM6B88~uRD-wjQ8-6CAphvMTV-KXmt6CZOYm1aryhi~5iC6kL9PumcQpg6Ksv3w5trK~7dHRflRbYIXZNv-nzqYw4RJQZ8tOwajgZPoL9ucA46umeP6Qp8zq2aoOPdw0kguXM3l3Ez2DoIar5tYc8lDQOfie-kMcY~lXOACrFhoNHq5s8AX9h3S8wVYa85LectnHiOm6BNnQrgFNZtB4xXYUR0sTo9PjzZFTgPxyQWNOZSaVY5zJKIg~-VMD53bhnLD4z0swAfmQfIl4L5U6QWbw__",
                         "width": 441,
                         "height": 394
+                    },
+                    "cta": {
+                        "label": "Join Now",
+                        "link": "#"
                     }
                 },
                 {
@@ -200,6 +204,10 @@
                         "src": "https://s3-alpha-sig.figma.com/img/10ba/5878/70e46ae4141ce5681bb6d9298fb1c821?Expires=1718582400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=T9daaBKHLJRUJQWbvgii4AY6fzg-eU0n5L6yIJOyk3WQ81NIb9qRTdLn-X4G50mbWoSGkbRAXXf7uMpFGBWKJbm73oo1fic3wpfR59PtNdKCZGaaLdVcjKyVcKp6VZI4g5ZoS5~t7J5H6ucsbShhHd400t4WuZXvx3qFlm2P3e1ZUqCg16uYBarkVrk5phlFG5iwtS-QnNFKl17nMbo3MUsu7LRYu5Fx6wvUdxFbCte0oidHFTyq3li433HDQ9BUECGq5APeSzrJlyn73a84o-Z-zoZ0nWG4JgeDQleGcCOSHszPIhmzYfGaZWigwmdVJjLp4DIT7BL9WVTRpPRCvg__",
                         "width": 451,
                         "height": 403
+                    },
+                    "cta": {
+                        "label": "Join Now",
+                        "link": "#"
                     }
                 },
                 {
@@ -209,6 +217,10 @@
                         "src": "https://s3-alpha-sig.figma.com/img/f50d/1dcf/686894fa7f5a35e687be27ede9d20521?Expires=1718582400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=hB3bZrOmBhX~kdao~X~6M6qgeeOkgVRRH5Jwy7qq-crQPEWdTaUlVkYAENNQmyYPM-qaiWcKI2lZXYrDy7nY7pK1iA1ZzRe-C41zr2Jef8uFpvPB-f607t1uomvc7g5PeyliXL7A9qlESOjjBtRiyMy0uMgn7-SVC7Da~okxasZcZScqFtw0obRdSiYv35FIVpfZwvAyTxuLLfy~QtI8wht1LquNM18l0VX5MtIYL0EdqYqjuaqVbuD69wwZRVr7XFjTl8fh9SULiXzy1Lr0LIPDqJml08bOu4MKmhYLIeRCnanKxR2OY2FzPycT1COsACCuwZmRYDm9Cys6~nmc~Q__",
                         "width": 439,
                         "height": 392
+                    },
+                    "cta": {
+                        "label": "Join Now",
+                        "link": "#"
                     }
                 }
             ]
@@ -240,6 +252,10 @@
                         "src": "https://s3-alpha-sig.figma.com/img/4386/4747/70f39d3c47d3985d47125601a252a576?Expires=1718582400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=ammtVyOHgP~xyE70z312kAAEARl93Q7d1maO--coeb2n4IT5hGdVY5F4Oho9MGdM6B88~uRD-wjQ8-6CAphvMTV-KXmt6CZOYm1aryhi~5iC6kL9PumcQpg6Ksv3w5trK~7dHRflRbYIXZNv-nzqYw4RJQZ8tOwajgZPoL9ucA46umeP6Qp8zq2aoOPdw0kguXM3l3Ez2DoIar5tYc8lDQOfie-kMcY~lXOACrFhoNHq5s8AX9h3S8wVYa85LectnHiOm6BNnQrgFNZtB4xXYUR0sTo9PjzZFTgPxyQWNOZSaVY5zJKIg~-VMD53bhnLD4z0swAfmQfIl4L5U6QWbw__",
                         "width": 441,
                         "height": 394
+                    },
+                    "cta": {
+                        "label": "Join Now",
+                        "link": "#"
                     }
                 },
                 {
@@ -249,6 +265,10 @@
                         "src": "https://s3-alpha-sig.figma.com/img/10ba/5878/70e46ae4141ce5681bb6d9298fb1c821?Expires=1718582400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=T9daaBKHLJRUJQWbvgii4AY6fzg-eU0n5L6yIJOyk3WQ81NIb9qRTdLn-X4G50mbWoSGkbRAXXf7uMpFGBWKJbm73oo1fic3wpfR59PtNdKCZGaaLdVcjKyVcKp6VZI4g5ZoS5~t7J5H6ucsbShhHd400t4WuZXvx3qFlm2P3e1ZUqCg16uYBarkVrk5phlFG5iwtS-QnNFKl17nMbo3MUsu7LRYu5Fx6wvUdxFbCte0oidHFTyq3li433HDQ9BUECGq5APeSzrJlyn73a84o-Z-zoZ0nWG4JgeDQleGcCOSHszPIhmzYfGaZWigwmdVJjLp4DIT7BL9WVTRpPRCvg__",
                         "width": 451,
                         "height": 403
+                    },
+                    "cta": {
+                        "label": "Join Now",
+                        "link": "#"
                     }
                 },
                 {
@@ -258,6 +278,10 @@
                         "src": "https://s3-alpha-sig.figma.com/img/f50d/1dcf/686894fa7f5a35e687be27ede9d20521?Expires=1718582400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=hB3bZrOmBhX~kdao~X~6M6qgeeOkgVRRH5Jwy7qq-crQPEWdTaUlVkYAENNQmyYPM-qaiWcKI2lZXYrDy7nY7pK1iA1ZzRe-C41zr2Jef8uFpvPB-f607t1uomvc7g5PeyliXL7A9qlESOjjBtRiyMy0uMgn7-SVC7Da~okxasZcZScqFtw0obRdSiYv35FIVpfZwvAyTxuLLfy~QtI8wht1LquNM18l0VX5MtIYL0EdqYqjuaqVbuD69wwZRVr7XFjTl8fh9SULiXzy1Lr0LIPDqJml08bOu4MKmhYLIeRCnanKxR2OY2FzPycT1COsACCuwZmRYDm9Cys6~nmc~Q__",
                         "width": 439,
                         "height": 392
+                    },
+                    "cta": {
+                        "label": "Join Now",
+                        "link": "#"
                     }
                 }
             ]
@@ -287,6 +311,10 @@
                         "src": "https://s3-alpha-sig.figma.com/img/4386/4747/70f39d3c47d3985d47125601a252a576?Expires=1718582400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=ammtVyOHgP~xyE70z312kAAEARl93Q7d1maO--coeb2n4IT5hGdVY5F4Oho9MGdM6B88~uRD-wjQ8-6CAphvMTV-KXmt6CZOYm1aryhi~5iC6kL9PumcQpg6Ksv3w5trK~7dHRflRbYIXZNv-nzqYw4RJQZ8tOwajgZPoL9ucA46umeP6Qp8zq2aoOPdw0kguXM3l3Ez2DoIar5tYc8lDQOfie-kMcY~lXOACrFhoNHq5s8AX9h3S8wVYa85LectnHiOm6BNnQrgFNZtB4xXYUR0sTo9PjzZFTgPxyQWNOZSaVY5zJKIg~-VMD53bhnLD4z0swAfmQfIl4L5U6QWbw__",
                         "width": 441,
                         "height": 394
+                    },
+                    "cta": {
+                        "label": "Join Now",
+                        "link": "#"
                     }
                 },
                 {
@@ -296,6 +324,10 @@
                         "src": "https://s3-alpha-sig.figma.com/img/10ba/5878/70e46ae4141ce5681bb6d9298fb1c821?Expires=1718582400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=T9daaBKHLJRUJQWbvgii4AY6fzg-eU0n5L6yIJOyk3WQ81NIb9qRTdLn-X4G50mbWoSGkbRAXXf7uMpFGBWKJbm73oo1fic3wpfR59PtNdKCZGaaLdVcjKyVcKp6VZI4g5ZoS5~t7J5H6ucsbShhHd400t4WuZXvx3qFlm2P3e1ZUqCg16uYBarkVrk5phlFG5iwtS-QnNFKl17nMbo3MUsu7LRYu5Fx6wvUdxFbCte0oidHFTyq3li433HDQ9BUECGq5APeSzrJlyn73a84o-Z-zoZ0nWG4JgeDQleGcCOSHszPIhmzYfGaZWigwmdVJjLp4DIT7BL9WVTRpPRCvg__",
                         "width": 451,
                         "height": 403
+                    },
+                    "cta": {
+                        "label": "Join Now",
+                        "link": "#"
                     }
                 },
                 {
@@ -305,6 +337,10 @@
                         "src": "https://s3-alpha-sig.figma.com/img/f50d/1dcf/686894fa7f5a35e687be27ede9d20521?Expires=1718582400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=hB3bZrOmBhX~kdao~X~6M6qgeeOkgVRRH5Jwy7qq-crQPEWdTaUlVkYAENNQmyYPM-qaiWcKI2lZXYrDy7nY7pK1iA1ZzRe-C41zr2Jef8uFpvPB-f607t1uomvc7g5PeyliXL7A9qlESOjjBtRiyMy0uMgn7-SVC7Da~okxasZcZScqFtw0obRdSiYv35FIVpfZwvAyTxuLLfy~QtI8wht1LquNM18l0VX5MtIYL0EdqYqjuaqVbuD69wwZRVr7XFjTl8fh9SULiXzy1Lr0LIPDqJml08bOu4MKmhYLIeRCnanKxR2OY2FzPycT1COsACCuwZmRYDm9Cys6~nmc~Q__",
                         "width": 439,
                         "height": 392
+                    },
+                    "cta": {
+                        "label": "Join Now",
+                        "link": "#"
                     }
                 }
             ]
@@ -338,6 +374,10 @@
                         "src": "https://s3-alpha-sig.figma.com/img/4386/4747/70f39d3c47d3985d47125601a252a576?Expires=1718582400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=ammtVyOHgP~xyE70z312kAAEARl93Q7d1maO--coeb2n4IT5hGdVY5F4Oho9MGdM6B88~uRD-wjQ8-6CAphvMTV-KXmt6CZOYm1aryhi~5iC6kL9PumcQpg6Ksv3w5trK~7dHRflRbYIXZNv-nzqYw4RJQZ8tOwajgZPoL9ucA46umeP6Qp8zq2aoOPdw0kguXM3l3Ez2DoIar5tYc8lDQOfie-kMcY~lXOACrFhoNHq5s8AX9h3S8wVYa85LectnHiOm6BNnQrgFNZtB4xXYUR0sTo9PjzZFTgPxyQWNOZSaVY5zJKIg~-VMD53bhnLD4z0swAfmQfIl4L5U6QWbw__",
                         "width": 441,
                         "height": 394
+                    },
+                    "cta": {
+                        "label": "Join Now",
+                        "link": "#"
                     }
                 },
                 {
@@ -347,6 +387,10 @@
                         "src": "https://s3-alpha-sig.figma.com/img/10ba/5878/70e46ae4141ce5681bb6d9298fb1c821?Expires=1718582400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=T9daaBKHLJRUJQWbvgii4AY6fzg-eU0n5L6yIJOyk3WQ81NIb9qRTdLn-X4G50mbWoSGkbRAXXf7uMpFGBWKJbm73oo1fic3wpfR59PtNdKCZGaaLdVcjKyVcKp6VZI4g5ZoS5~t7J5H6ucsbShhHd400t4WuZXvx3qFlm2P3e1ZUqCg16uYBarkVrk5phlFG5iwtS-QnNFKl17nMbo3MUsu7LRYu5Fx6wvUdxFbCte0oidHFTyq3li433HDQ9BUECGq5APeSzrJlyn73a84o-Z-zoZ0nWG4JgeDQleGcCOSHszPIhmzYfGaZWigwmdVJjLp4DIT7BL9WVTRpPRCvg__",
                         "width": 451,
                         "height": 403
+                    },
+                    "cta": {
+                        "label": "Join Now",
+                        "link": "#"
                     }
                 },
                 {
@@ -356,6 +400,10 @@
                         "src": "https://s3-alpha-sig.figma.com/img/f50d/1dcf/686894fa7f5a35e687be27ede9d20521?Expires=1718582400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=hB3bZrOmBhX~kdao~X~6M6qgeeOkgVRRH5Jwy7qq-crQPEWdTaUlVkYAENNQmyYPM-qaiWcKI2lZXYrDy7nY7pK1iA1ZzRe-C41zr2Jef8uFpvPB-f607t1uomvc7g5PeyliXL7A9qlESOjjBtRiyMy0uMgn7-SVC7Da~okxasZcZScqFtw0obRdSiYv35FIVpfZwvAyTxuLLfy~QtI8wht1LquNM18l0VX5MtIYL0EdqYqjuaqVbuD69wwZRVr7XFjTl8fh9SULiXzy1Lr0LIPDqJml08bOu4MKmhYLIeRCnanKxR2OY2FzPycT1COsACCuwZmRYDm9Cys6~nmc~Q__",
                         "width": 439,
                         "height": 392
+                    },
+                    "cta": {
+                        "label": "Join Now",
+                        "link": "#"
                     }
                 }
             ]
@@ -387,6 +435,10 @@
                         "src": "https://s3-alpha-sig.figma.com/img/4386/4747/70f39d3c47d3985d47125601a252a576?Expires=1718582400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=ammtVyOHgP~xyE70z312kAAEARl93Q7d1maO--coeb2n4IT5hGdVY5F4Oho9MGdM6B88~uRD-wjQ8-6CAphvMTV-KXmt6CZOYm1aryhi~5iC6kL9PumcQpg6Ksv3w5trK~7dHRflRbYIXZNv-nzqYw4RJQZ8tOwajgZPoL9ucA46umeP6Qp8zq2aoOPdw0kguXM3l3Ez2DoIar5tYc8lDQOfie-kMcY~lXOACrFhoNHq5s8AX9h3S8wVYa85LectnHiOm6BNnQrgFNZtB4xXYUR0sTo9PjzZFTgPxyQWNOZSaVY5zJKIg~-VMD53bhnLD4z0swAfmQfIl4L5U6QWbw__",
                         "width": 441,
                         "height": 394
+                    },
+                    "cta": {
+                        "label": "Join Now",
+                        "link": "#"
                     }
                 },
                 {
@@ -396,6 +448,10 @@
                         "src": "https://s3-alpha-sig.figma.com/img/10ba/5878/70e46ae4141ce5681bb6d9298fb1c821?Expires=1718582400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=T9daaBKHLJRUJQWbvgii4AY6fzg-eU0n5L6yIJOyk3WQ81NIb9qRTdLn-X4G50mbWoSGkbRAXXf7uMpFGBWKJbm73oo1fic3wpfR59PtNdKCZGaaLdVcjKyVcKp6VZI4g5ZoS5~t7J5H6ucsbShhHd400t4WuZXvx3qFlm2P3e1ZUqCg16uYBarkVrk5phlFG5iwtS-QnNFKl17nMbo3MUsu7LRYu5Fx6wvUdxFbCte0oidHFTyq3li433HDQ9BUECGq5APeSzrJlyn73a84o-Z-zoZ0nWG4JgeDQleGcCOSHszPIhmzYfGaZWigwmdVJjLp4DIT7BL9WVTRpPRCvg__",
                         "width": 451,
                         "height": 403
+                    },
+                    "cta": {
+                        "label": "Join Now",
+                        "link": "#"
                     }
                 },
                 {
@@ -405,6 +461,10 @@
                         "src": "https://s3-alpha-sig.figma.com/img/f50d/1dcf/686894fa7f5a35e687be27ede9d20521?Expires=1718582400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=hB3bZrOmBhX~kdao~X~6M6qgeeOkgVRRH5Jwy7qq-crQPEWdTaUlVkYAENNQmyYPM-qaiWcKI2lZXYrDy7nY7pK1iA1ZzRe-C41zr2Jef8uFpvPB-f607t1uomvc7g5PeyliXL7A9qlESOjjBtRiyMy0uMgn7-SVC7Da~okxasZcZScqFtw0obRdSiYv35FIVpfZwvAyTxuLLfy~QtI8wht1LquNM18l0VX5MtIYL0EdqYqjuaqVbuD69wwZRVr7XFjTl8fh9SULiXzy1Lr0LIPDqJml08bOu4MKmhYLIeRCnanKxR2OY2FzPycT1COsACCuwZmRYDm9Cys6~nmc~Q__",
                         "width": 439,
                         "height": 392
+                    },
+                    "cta": {
+                        "label": "Join Now",
+                        "link": "#"
                     }
                 }
             ]
@@ -434,6 +494,10 @@
                         "src": "https://s3-alpha-sig.figma.com/img/4386/4747/70f39d3c47d3985d47125601a252a576?Expires=1718582400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=ammtVyOHgP~xyE70z312kAAEARl93Q7d1maO--coeb2n4IT5hGdVY5F4Oho9MGdM6B88~uRD-wjQ8-6CAphvMTV-KXmt6CZOYm1aryhi~5iC6kL9PumcQpg6Ksv3w5trK~7dHRflRbYIXZNv-nzqYw4RJQZ8tOwajgZPoL9ucA46umeP6Qp8zq2aoOPdw0kguXM3l3Ez2DoIar5tYc8lDQOfie-kMcY~lXOACrFhoNHq5s8AX9h3S8wVYa85LectnHiOm6BNnQrgFNZtB4xXYUR0sTo9PjzZFTgPxyQWNOZSaVY5zJKIg~-VMD53bhnLD4z0swAfmQfIl4L5U6QWbw__",
                         "width": 441,
                         "height": 394
+                    },
+                    "cta": {
+                        "label": "Join Now",
+                        "link": "#"
                     }
                 },
                 {
@@ -443,6 +507,10 @@
                         "src": "https://s3-alpha-sig.figma.com/img/10ba/5878/70e46ae4141ce5681bb6d9298fb1c821?Expires=1718582400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=T9daaBKHLJRUJQWbvgii4AY6fzg-eU0n5L6yIJOyk3WQ81NIb9qRTdLn-X4G50mbWoSGkbRAXXf7uMpFGBWKJbm73oo1fic3wpfR59PtNdKCZGaaLdVcjKyVcKp6VZI4g5ZoS5~t7J5H6ucsbShhHd400t4WuZXvx3qFlm2P3e1ZUqCg16uYBarkVrk5phlFG5iwtS-QnNFKl17nMbo3MUsu7LRYu5Fx6wvUdxFbCte0oidHFTyq3li433HDQ9BUECGq5APeSzrJlyn73a84o-Z-zoZ0nWG4JgeDQleGcCOSHszPIhmzYfGaZWigwmdVJjLp4DIT7BL9WVTRpPRCvg__",
                         "width": 451,
                         "height": 403
+                    },
+                    "cta": {
+                        "label": "Join Now",
+                        "link": "#"
                     }
                 },
                 {
@@ -452,6 +520,10 @@
                         "src": "https://s3-alpha-sig.figma.com/img/f50d/1dcf/686894fa7f5a35e687be27ede9d20521?Expires=1718582400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=hB3bZrOmBhX~kdao~X~6M6qgeeOkgVRRH5Jwy7qq-crQPEWdTaUlVkYAENNQmyYPM-qaiWcKI2lZXYrDy7nY7pK1iA1ZzRe-C41zr2Jef8uFpvPB-f607t1uomvc7g5PeyliXL7A9qlESOjjBtRiyMy0uMgn7-SVC7Da~okxasZcZScqFtw0obRdSiYv35FIVpfZwvAyTxuLLfy~QtI8wht1LquNM18l0VX5MtIYL0EdqYqjuaqVbuD69wwZRVr7XFjTl8fh9SULiXzy1Lr0LIPDqJml08bOu4MKmhYLIeRCnanKxR2OY2FzPycT1COsACCuwZmRYDm9Cys6~nmc~Q__",
                         "width": 439,
                         "height": 392
+                    },
+                    "cta": {
+                        "label": "Join Now",
+                        "link": "#"
                     }
                 }
             ]

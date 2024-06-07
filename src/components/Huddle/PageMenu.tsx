@@ -37,9 +37,6 @@ export default function PageMenu() {
                             <Link
                                 href={slugifyLink(item.text, "/huddle/")}
                                 data-active={current_path.includes(slugifyLink(item.text, "/huddle/"))}
-                            //     style={{
-                            //     backgroundImage: `url(${item.image.src})`
-                            // }}
                             >
                                 <b>{firstLetter}</b>
                                 <hr/>
