@@ -9,7 +9,7 @@ export default function RG() {
         <Section
             name='rg'
             style={{
-                backgroundImage: `url(${homeData.rg.bg})`
+                backgroundImage: `linear-gradient(180deg, #FFFFFF 25%, #2A4F14 58%), url(${homeData.rg.bg})`
             }}
         >
             <h2>{homeData.rg.title}</h2>

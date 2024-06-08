@@ -670,7 +670,7 @@ footer {
 .mv {
     
     // background-image: url("/mv-bg.jpeg");
-    background-position: center ;
+    background-position: center ;    
     min-height: 100vh;
     display: flex;
     align-items: flex-end;
@@ -721,7 +721,7 @@ footer {
     background-position: center 40%;
     min-height: 90vh;
 
-    background-color: rgb(40, 95, 7);
+    // background-color: rgb(40, 95, 7);
     background-blend-mode: multiply;
 
     padding: 0 !important;
@@ -793,20 +793,7 @@ footer {
 
     position: relative;
 
-    &::after {
-        content: '';
-        position: absolute;
-        top: 0;
-        right: 0;
-        bottom: 0;
-        left: 0;
-
-        width: 100%;
-        height: 100%;
-        background-image: linear-gradient(to top, hsla(98, 47%, 24%, 1), hsla(0, 0%, 100%, .5));
-        mix-blend-mode: multiply;
-
-    }
+    background-blend-mode: multiply;
 
     display: flex;
     align-items: flex-end;
@@ -1403,6 +1390,7 @@ footer {
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
+        background-blend-mode: multiply;
 
         text-decoration: none;
 
@@ -1418,21 +1406,6 @@ footer {
 
         span {
             z-index: 1;
-        }
-
-
-        &::after {
-            content: '';
-            position: absolute;
-            top: 0;
-            right: 0;
-            bottom: 0;
-            left: 0;
-
-            width: 100%;
-            height: 100%;
-            background-image: linear-gradient(to top, hsla(98, 60%, 19%, 1), hsla(0, 0%, 100%, 1));
-            mix-blend-mode: multiply;
         }
 
 
@@ -1643,12 +1616,20 @@ footer {
         display: flex;
         flex-wrap: wrap;
         gap: 2rem;
+
+        @include mixins.least-small-screen {
+            display: block;
+
+            figure {
+                margin-top: 3rem;
+            }
+        }
     }
     .img {
         width: 100%;
         height: 15.375rem;
 
-        background-position: center;
+        background-position: top;
         background-repeat: no-repeat;
         background-size: cover;
 
@@ -1657,10 +1638,8 @@ footer {
     }
 
     figure {
-        // background-color: red;
+        flex: 1;
 
-        min-width: 13.825rem;
-        max-width: 13.825rem;
         flex: 1 1 2rem;
 
         @include mixins.least-small-screen {
@@ -1846,18 +1825,6 @@ p.huddle-title {
         }
     }
 
-
-    h2 {
-        flex-basis: 100%;
-        display: block;
-        margin-bottom: 2rem;
-        font-weight: 600;
-        text-transform: capitalize;
-        &::after {
-            width: 4.5%;
-        };
-    }
-
     h3 {
         @include mixins.fonts($family: $inter-font, $weight:400);
         font-size: 1.75rem;
@@ -1974,11 +1941,18 @@ p.huddle-title {
 
 
 
-.huddle-goals-wrapper:has(.item-list-item) {
-    
-    @include mixins.least-large-screen {
-        
-        
+
+
+
+
+.explore-wrapper {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 2rem;
+
+    @include mixins.least-large-screen {    
+
         justify-content: flex-start;
         flex-wrap: wrap;
     }
@@ -1996,81 +1970,86 @@ p.huddle-title {
         //     margin
         // }
     }
-}
 
-
-.item-list-item {
-
-    box-shadow: 0px 35px 60px -15px hsla(218, 80%, 12%, 0.25);
-    border-radius: .5rem;
-    max-width: 100%;
-    width: 27.5625rem;
-    height: 40.375rem !important;
-
-    flex: 1;
-
-
-    @include mixins.fonts($family: $montserrat-font, $weight: 500);
-
-    .img-wrapper {
-        width: 100%;
-        height: 50%;
-
-
-        background-position: center;
-        background-size: cover;
-        background-repeat: no-repeat;
+    h2 {
+        flex-basis: 100%;
+        margin-bottom: 2rem;
     }
 
-
-
-
-    div {
-        display: flex;
-        flex-direction: column;
-
-        gap: 1rem;
-        // background-color: red;
-        height: 50%;
-
-        padding: 1.5rem 2rem;
-        
-
-    }
-
-    h3,p {
-        font-family: inherit;
-        font-weight: inherit;
-    }
-
-    h3 {
-        font-size: 1.5rem;
-        line-height: 1.5rem;
-        color: $clr-text-10;
-    }
-
-    p {
-        line-height: 1.5rem;
-        font-size: 0.875rem;
-        color: $clr-text-3;
-    }
-
-    .btn {
-        margin-top: auto;
-        // margin-inline: 0;
-
-        display: block;
-        width: 100%;
-        text-align: center;
-        
-        padding-block: .85rem;
-
-
-        box-shadow: 0px 1px 2px 0px hsla(218, 80%, 12%, 0.05);
-        border: 0.5px solid hsla(209, 100%, 21%, 1);
-
-        &::after {
-            display: none;
+    article {
+    
+        box-shadow: 0px 35px 60px -15px hsla(218, 80%, 12%, 0.25);
+        border-radius: .5rem;
+        max-width: 100%;
+        width: 27.5625rem;
+        height: 40.375rem !important;
+    
+        flex: 1;
+    
+    
+        @include mixins.fonts($family: $montserrat-font, $weight: 500);
+    
+        .img-wrapper {
+            width: 100%;
+            height: 50%;
+    
+    
+            background-position: center;
+            background-size: cover;
+            background-repeat: no-repeat;
+        }
+    
+    
+    
+    
+        div {
+            display: flex;
+            flex-direction: column;
+    
+            gap: 1rem;
+            // background-color: red;
+            height: 50%;
+    
+            padding: 1.5rem 2rem;
+            
+    
+        }
+    
+        h3,p {
+            font-family: inherit;
+            font-weight: inherit;
+        }
+    
+        h3 {
+            font-size: 1.5rem;
+            line-height: 1.5rem;
+            color: $clr-text-10;
+        }
+    
+        p {
+            line-height: 1.5rem;
+            font-size: 0.875rem;
+            color: $clr-text-3;
+        }
+    
+        .btn {
+            margin-top: auto;
+            // margin-inline: 0;
+    
+            display: block;
+            width: 100%;
+            text-align: center;
+            
+            padding-block: .85rem;
+    
+    
+            box-shadow: 0px 1px 2px 0px hsla(218, 80%, 12%, 0.05);
+            border: 0.5px solid hsla(209, 100%, 21%, 1);
+    
+            &::after {
+                display: none;
+            }
         }
     }
 }
+

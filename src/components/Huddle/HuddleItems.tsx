@@ -3,6 +3,7 @@ import TextMunch from "../TextMucnh";
 import { slugifyLink } from "@/utils/slugify";
 import { PageDataItem, PageDataItemHighlight } from "./types";
 import Link from "next/link";
+import Section from "../UI/Section";
 
 
 
@@ -102,12 +103,19 @@ export default function HuddleItems({data, title}:{data: PageDataItem[], title?:
 
     if (title) {
         return (
-            <>
+            <Section name="explore">
                 <h2 className="section-title">{title}</h2>
                 <ItemListing data={data as PageDataItem[]}/>
-            </>
+            </Section>
         )
     }
 
-    return <ItemHighlight data={data as PageDataItemHighlight[]}/>
+    return (
+        <Section
+            name="huddle-goals"
+        >
+            <ItemHighlight data={data as PageDataItemHighlight[]}/>
+        </Section>
+    )
+
 }

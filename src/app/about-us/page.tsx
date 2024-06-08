@@ -10,27 +10,27 @@ import Image from "next/image";
 const people = [
     
     {
-        image:"https://s3-alpha-sig.figma.com/img/29f9/d16e/86025eea815a9dfaa385286a5821b6df?Expires=1717372800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=Oy6sCVSu5Z9GnnR2qSTFqrQTze92E-h7-sdeIokDFQ4Rr0MEyPTPT5mDcGwZZyuL2aKB93B5pmenUvtNHFjTM00EP0eC9VmRK2KM9XclOA0yH0v7H9P7MHWWWu64z27GZb~cen7xM8MRnnk7U~TZ80enTYJt~PF9KQZ97d2QBwsfQBJNKN5O~g5rKBabW5oE~ei1sDGk-DuKuixylsGIGEePlwcgYi-ODumO4OOOooEEF-y6lSzpA5dAUdkkbCS1ASm0NSKfVnk3bSM9-wXo~I8Ggg73Iqb-t3bGAzN55OVrlYGpi3o~RhGvMtFNkOxCmwB7P3hkEb-7taEJpeKuvg__",
+        image:"https://s3-alpha-sig.figma.com/img/29f9/d16e/86025eea815a9dfaa385286a5821b6df?Expires=1718582400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=GQAsfrz0PjMoNsJ6p~qB0ldXdpM6CwM6qx1Mrz8SRtWx2J-1fvGoKuyH9lX6dwSjFeEJmZll-vCA0fymP1c1iQYkkcsNT-pEnniIVMkbRRIZe7salpS5XgHea21P~8CrUdsg1dw2sALX0eBM9zCKYMuYdrBzeUOD3iw0EH2C3LfXp0ISk9QdzcafPE~4hTgZK2H4nxBB731BXgncGFxVoRhqtYh9h3PNpIgftrX8jMwPLPdsS6aC3zyRKE6QXVjHCBf3l6yR8OXXctlqwspm0mUB~xMjcvlZcQhowKcRBCBZ4Fh6iwH7h-hEa48EKybjmQDTyDQWSq~kSgMIrd9N4A__",
         name: "Babajide Akeredolu",
         about: "President and Acting BOT Chairman"
     },
     {
-        image: "https://s3-alpha-sig.figma.com/img/c948/0fdd/7dde1799300944f039c60d1e67d6d889?Expires=1717372800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=mhe-AIY7zhAO86uWBglQu6y701zhXZWE-4266wsG4Ft84t1qV6IboZMBjgV2KyuNUk3zdjPjOpNKshZk391pX62IaulGFrv--PjlhQyAl1CwxaHODd0mz7-xlFRN7tWZnW0wRAwRYlbliwvXx6NkNyBnkn3iSH5rmlKOD1WYyXSZpPIzEZn4aS7HORgYemF7a-UvwN5FUuX29TJ1M~iFoRcv6kEK16m1sgt517zL5ErxyzF4eGrpoDbz1srPFRv~DJO3mzmHLaKGHoIigPuIqKuT1XwJd6f4GlGm2U-T2S7JONCz7V-R7LoMcCWnQU3iodAQHPFjKvV~DrgiahLHFg__",
+        image: "https://s3-alpha-sig.figma.com/img/8d96/f68a/5a1d7f278caf1a4fea63edc911007643?Expires=1718582400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=LnAsJtGhN-37A8jkrIfTvW8WLtWWE-zVMO~L-cP8seqOGQAd85oqStdjbGuPJpyieVWsG4GnFartXwXLKWV7mxYAKRE4bFruae0dLxU~lxhtZKo91cgvo-Iwuhs7-vUBGY~r7BjFdS5s3ET28c9znl6MPrYjmpMnq8KUDG~fPJT8~IatIyz0dmXJEOLz9HKcKiphuT6ARsOYnGsFPQfuNP6vnFT~gxBOVCIINHYIQIREyDZQdjne2ODSQlrJ5Q48SHk6ww35ug0nitBYJ6iMDGk1hQvTdt~Gxt9PLon21zmXl4XB9rtUNyWyWbxLdN4tKEtj3MyunhHA74MaKbVscA__",
         name: "David Obatolu",
         about: "Vice President"
     },
     {
-        image: "https://s3-alpha-sig.figma.com/img/190b/614e/280904092ffcb35ee0c9ee1a8d496c0d?Expires=1717372800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=nvpFAee64Pbyu4m4~Ep1nIss2hQM~VWGy~KApQdvAjsU6ZPuAoKvVNYjvwU4cuNUt-vUirJpEEf0t-m84i-V3FaOYaP6iOBvQJVUBS1BZZ3XILFNOjJeaS9nWXLwupgsS227a7kV1LB8Bbdyt8pg1V1YQDYw4DZYo2cfkQjTCxsj3BWsjZkBwkGMo-ZuZDPvBU0A6yy8YhST2VA5350gaGrseusMNr-5ttfjJgVyo1jlqN~W8pApsZ~N-6wA85f1-VTexAY8BVCCQuNFdRlm09kBeNCklz45Klbh9gaxMa-yCjwRLYyTC6GY7tfVCSgSKNbVGRk7vFIdvPyD5bpvZQ__",
+        image: "https://s3-alpha-sig.figma.com/img/190b/614e/280904092ffcb35ee0c9ee1a8d496c0d?Expires=1718582400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=UJwMGzt2fpY4U1glDSYhAdUB6XPB6iXRhDVxFvzhoRJdOAiFGVPAC22DeBd5UCyzJ25IUFpKhUSTjZS-3AuJCEeOZZp3QiH-WFnzrsnRnYNkq0W6opdyIDw30ien39Ks0dAMCLKZXhXSgp5seqclhlkqlfPqcIdTmnpJDjBt9sUgxeh5~yc7OuuRIhNFg7oyg3UQsVS-MT5mJeXzPd2MFCIj4Z~kqjbqZSIKolRjE6b8bSIMiZVucWi9VCVs-MNIyDe8~znDJY~sfSEL0mS1dJeGTQ0N6frnEFnqB8HaUB2mJPZ3491axsi1lqogDObzo2-~wlGSipET78fmAEavxw__",
         name: "Ms. Nancy Damhindi",
         about: "Head of HR and Secretary to the Board of Trustees"
     },
     {
-        image: "https://s3-alpha-sig.figma.com/img/58de/d8a8/261fde1df9b5a116e68776049ad3825c?Expires=1717372800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=UHxJiQBIRLYPIQeHcB4saO-eccGQ9m~MhsUk9gyngIM93czeQlQdrlTz8J5krAA1nRjNkv-B6AUO3zcLdHvDNJqlTeDRXql61ro9cfBaUuBfNdz56iOZAF0lcwHIDWVUGsfXNwDw3IxP1CakLua-VRN61E1UAoJk2ggAJl67-G7TUk8t7H964QY~4Bt7tgPy52m-Rrya9KjJxqOGfdSz~strTWfvCkI~NQslaj8DPn9yEoMs9k3wZxjSMRNJ6MGISAMRfKlx4IcjF9ZdA8UZ3MG-y2h5kawGvIYernfQPVjwuyP4FV7fgqUsKbT-IOAiw5tvOVX03u2J4PQFi3PLIw__",
+        image: "https://s3-alpha-sig.figma.com/img/58de/d8a8/261fde1df9b5a116e68776049ad3825c?Expires=1718582400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=SgCD0IpNlVISM1ZkhkAOQipOcFQjQmGU9uykTip5gxI9s10aXwJw1I0p~lhxRE2gmnHfM5TuT41IZ9RNIxdeCB6W1IthYwCwtytDOHinr-4HuwM5dDS39S62-j~mFQgGThoJmA2W98dovOJm3PJpxulvMPEFx-QIvvUU4rFC9S2LMvje5Zy7kc1RnjzuoEqFOPGO22XOlr8foA1LLQ9ym38tYS5osY1rmbaMYWea9iVhDb9brtjIJKKddNFhIhLrz1HXN23BfTXrtIVmzxBInCLNFCsN3jFx8hr~P5qyqOOZNPzpzjeLeXSTyt2thDskkH-7tOK6CtS61tq6wT1MJQ__",
         name: "Lawrence Ojaideh",
         about: "Secretary General"
     },
     {
-        image: "https://s3-alpha-sig.figma.com/img/beb8/dcc9/2c97414350d32b734fd4509b37a2c19c?Expires=1717372800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=fLHLTLjs6GT5ui9tnajRj6PJFZUd1Ky-LFZeA611fThwQHtxkwSMtHs9uWH0hNQGzJRcg7RSJrmO8kV6ype09G5i2LzH9Io6dwMGOjh2r-26ULTyU8xYTfGWFCwUKct6LP18BWRGfo1QeXUkKhB81buGn-fgordegQe8eb3npwA7p4v7klBTSgUxlZXY0aBTpJGWiiUg~tZnmwByG~jE-TCG7CjxT8u6u4AVQer2SalvJf0wQT3l8qLPYOqSer3pXUUSdHCIqNLO4XxJn0Gnqdbpl~zpkF4PP7Aur1LXhXYrQe5NULrW5c49NtgHqtRuk4Egc9k6eHvn7HzoSfjWIw__",
+        image: "https://s3-alpha-sig.figma.com/img/beb8/dcc9/2c97414350d32b734fd4509b37a2c19c?Expires=1718582400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=D3mbF549FlWxGhzOgQmMNUOTSafSfzC7nAco~GwNpDFs8eStpGuI9zKgLkpPUz7YduZ7dUczXxLnVC7Is9eU4rnvBs76G-TgjYbhvLWOBQXGoNLYi90COudGzpr8dma-k4XYxAkIr75CySGqeYGJi0i7WReczP9QUpOfirZ7ypC88rAPBbab2jL4pF~gJpb1wPyLiffG6A~UYZDJO7mRCCXBNDBEXHp8YT9nIkH7aPadYy80DaOf0~3DDUkhDE9LaSrUE14n6~2yz3JrBQBb54o~MvwNmDjqBWt6EFT6SIMGdjdJivL~CwGl7VvY98Ta510emLj77l7b82zaDADwWQ__",
         name: "Tola Ariyo",
         about: "Head of Legal & Compliance"
     }
@@ -45,7 +45,7 @@ export default function AboutPage() {
         <>
             <PageHeader
                 title={aboutData.header.title}
-                image={aboutData.header.image}
+                image={aboutData.header.image.src}
             />
 
             <Section name="page-content">

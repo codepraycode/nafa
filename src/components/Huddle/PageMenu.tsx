@@ -36,6 +36,7 @@ export default function PageMenu() {
                         >
                             <Link
                                 href={slugifyLink(item.text, "/huddle/")}
+                                scroll={false}
                                 data-active={current_path.includes(slugifyLink(item.text, "/huddle/"))}
                             >
                                 <b>{firstLetter}</b>

@@ -24,7 +24,11 @@ export default function Projects() {
                         <SlideWrapper key={i}>
                             <Link
                                 href={"/"} 
-                                style={{backgroundImage:`url(${item.image})`}}
+                                style={{
+                                    backgroundImage:`
+                                        linear-gradient(180deg, #FFFFFF 25%, #2A4F14 71%),
+                                        url(${item.image})`
+                                }}
                                 className='project-item'
                             >
                                 <span>{item.title}</span>

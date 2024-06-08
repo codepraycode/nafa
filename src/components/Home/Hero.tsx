@@ -27,7 +27,8 @@ export default function Hero() {
                         <Section
                             name='hero'
                             style={{
-                                backgroundImage: `url(${item.image})`
+                                backgroundImage: `
+                                    linear-gradient(180deg, #FFFFFF 0%, #355920 27.81%), url(${item.image})`
                             }}
                         >
                             <h1>

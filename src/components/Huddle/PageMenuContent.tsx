@@ -43,11 +43,8 @@ function HuddlePageContent({data}:{data: PageData | null}) {
 
             <br/><br/><br/><br/><br/><br/>
 
-            <Section
-                name="huddle-goals"
-            >
-                <HuddleItems data={data.items} title={data.itemTitle}/>
-            </Section>
+            <HuddleItems data={data.items} title={data.itemTitle}/>
+            
         </>
     )
 }
