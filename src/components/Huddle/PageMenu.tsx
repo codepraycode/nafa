@@ -6,7 +6,7 @@ import { slugifyLink } from '@/utils/slugify';
 import { usePathname } from 'next/navigation';
 
 
-
+const pagePath = "/about-us/huddle/"
 export default function PageMenu() {
 
     const current_path = usePathname();
@@ -35,7 +35,7 @@ export default function PageMenu() {
                         }}
                         >
                             <Link
-                                href={slugifyLink(item.text, "/huddle/")}
+                                href={slugifyLink(item.text, pagePath)}
                                 scroll={false}
                                 data-active={current_path.includes(slugifyLink(item.text, "/huddle/"))}
                             >

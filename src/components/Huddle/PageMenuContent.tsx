@@ -1,4 +1,4 @@
-// 'use client';
+'use client';
 import React from 'react'
 import huddleData from "@/data/huddle.json";
 import Section from '../UI/Section'

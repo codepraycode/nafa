@@ -1,22 +1,35 @@
+'use client';
 import React from 'react'
 import Section from './UI/Section'
 import AppLink from './UI/AppLink'
+import { usePathList } from '@/hooks/usePath';
+import { unslugify } from '@/utils/slugify';
 
 
 
 function Breadcrumb() {
     // TODO: Read current url and use paths to create breadcrumb
+    const list = usePathList()
+    // console.log(list);
     return (
         <ul role='list' className='breadcrumb'>
-            <li>
-                <AppLink href={"/"} className='text-w-600'>Home</AppLink>
-            </li>
-            <li>
-                <AppLink href={"/about-us"}>About Us</AppLink>
-            </li>
-            {/* <li>
-                <AppLink href={"/about-us/history"}>History of American Football in Nigeria</AppLink>
-            </li> */}
+            {
+                list.map((e, i)=>{
+                    const label = e === "" ? "Home" : e;
+                    const link = "/";
+
+                    return (
+                        <li key={i}>
+                            <AppLink
+                                href={"/"}
+                                className='text-w-600'
+                            >
+                                {unslugify(label)}
+                            </AppLink>
+                        </li>
+                    )
+                })
+            }
         </ul>
     )
 }

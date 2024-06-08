@@ -12,3 +12,8 @@ export function usePath() {
         recent: aspects.pop()
     }
 }
+
+export function usePathList() {
+    const p = usePathname();
+    return p.split("/");
+}
