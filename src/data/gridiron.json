@@ -1,0 +1,78 @@
+{
+    "pathways": {
+        "header": {
+            "title": "NAFA Gridiron Pathways Program",
+            "text": "Paving the Way for Future Football Stars",
+            "image": {
+                "src": "https://s3-alpha-sig.figma.com/img/ac39/e168/4b967d13d018512e1839edf014905573?Expires=1718582400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=iTq3vM4KuxEPwbmXsoxH7Bxt0o4cbIIsWrjyOjHUwX5yAcSQ5cyoUTjds0n6GMqofI1v98zll0wYKqmPBvna0NXDx4JuEGne4r6npVVZhylyA6ScRAZv1lhZca999i~fTCyLq7UcQAf0VtT~e~z-QnVCarkgvkmY00jwiyo6AMhrXFy6ArxlHM2Qr0euwhhoKTWgnysU1HMbSQInS7xJXiy6aI4mUe1s76n3qDDqRbnwsIPf74CPmXiVwHatO7v3bug0GriWbg1DMsoM~E6gkt~N9iWwvO84oAJMCyAUg1WLL4JQHZSXgBoE1S7Gf3-0SGzMtQ20M8Y4jwSxWEFqRw__",
+                "width": 1451,
+                "height": 327
+            }
+        }
+    },
+    "guidian": {
+        "header": {
+            "title": "Gridiron GUARDIANS Program",
+            "text": "Paving the Way for Future Football Stars",
+            "image": {
+                "src": "https://s3-alpha-sig.figma.com/img/03da/5879/c54bf792a5e9def53cd72065e80be7a3?Expires=1718582400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=nltPpGP1dOTnSFi9Oz~5FJdBO7e5AouSspJoroDdq8uW-0KxsVZoG1aPbNb6uwDZPqjOPUPTA0x~yTVlUtZXlsWnX0Vf1BAUt2pO2YbWFzhfZAUwxcUWAgEYZtKluuJbasAasNC6Xd4EhmFw~lzcb3SX-7x7fFgR8kVUWqv4uxvfDiMns1qZR3igGx1G4JJC6mSTwpTGrjsWuAoTdtnwPW1BQnQqPUC5eJpJvJDecMIHaWrFtfYeM1eGk4QpcG46xepgOygXahmzZF3~hL3KKTX0aw7Ad8z5cu-aozYi7y6E2BNrEAfF~upelFQBfr0-VioQFQJBBXOhEB6eqlquSA__",
+                "width": 1451,
+                "height": 327
+            }
+        }
+    },
+    "gems": {
+        "header": {
+            "title": "NAFA Gridiron GEMS Program",
+            "text": "Empowering Women in Flag Football",
+            "image": {
+                "src": "https://s3-alpha-sig.figma.com/img/ac39/e168/4b967d13d018512e1839edf014905573?Expires=1718582400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=iTq3vM4KuxEPwbmXsoxH7Bxt0o4cbIIsWrjyOjHUwX5yAcSQ5cyoUTjds0n6GMqofI1v98zll0wYKqmPBvna0NXDx4JuEGne4r6npVVZhylyA6ScRAZv1lhZca999i~fTCyLq7UcQAf0VtT~e~z-QnVCarkgvkmY00jwiyo6AMhrXFy6ArxlHM2Qr0euwhhoKTWgnysU1HMbSQInS7xJXiy6aI4mUe1s76n3qDDqRbnwsIPf74CPmXiVwHatO7v3bug0GriWbg1DMsoM~E6gkt~N9iWwvO84oAJMCyAUg1WLL4JQHZSXgBoE1S7Gf3-0SGzMtQ20M8Y4jwSxWEFqRw__",
+                "width": 1451,
+                "height": 327
+            }
+        }
+    },
+
+    "itemTitle": "Explore More",
+    "items": [
+        {
+            "title": "Gridiron Guardians Program",
+            "text": "An initiative that aims to accelerate the growth of American football at the grassroots level in Nigeria. It will bring together the expertise and support of professional players in the National Football League (NFL) to foster a nurturing environment for the sport in specific states across the country.",
+            "image": {
+                "src": "https://s3-alpha-sig.figma.com/img/652b/48d1/c081cc0e98c3299aa21ae07f3a449760?Expires=1718582400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=CeA-610sPM5j3UJiva0ppvsH~dkIDzGqJxOBb-9esjgA7M8K2DT5YF8reZPPSL91zTUe5Ae8ohntB4NcaCTHX-JPLwH6mLnxkf9AlnfILxU3jCEQAhJXlqSVZy8yZzH2kWUNaNMVr7-gdluW5hlbpWw-Mdpzq~suvwvNO6iFvCwbxAxIZy-fs9m9qvr5hNVvjRYOwg5lJHwZnXAIbwy151QefjaiLczge81l1KVeUzFRNFBMGSBR~kAtlMWEn45-0LMtVdp2Q1ACcTDMIXbku2lmuZFUy6HGCsppk-EnPUHvbg3DivgzgAA9sdt1qyoA0KNKyXQqzXiRcj~IbmZNcw__",
+                "width": 441,
+                "height": 394
+            },
+            "cta": {
+                "label": "Join Now",
+                "link": "#"
+            }
+        },
+        {
+            "title": "Gridiron Gems Program",
+            "text": "The Gridiron Gems Program is designed to position women for success in flag football. Whether you’re a seasoned player or new to the game, this program is your gateway to growth, empowerment, and community.",
+            "image": {
+                "src": "https://s3-alpha-sig.figma.com/img/16d9/5a7f/5e6143d2a6e0cfd31fb6e5efd149cb7a?Expires=1718582400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=TbHkxi-tEUk9GRqNxgAev5zl~yXdL-wK6lYFPHq5cah1H9k4HZHafslt54~es2YnJqxLQtc6spWDLYzjoveJMmp8UJGGbI5P-7bci7Orh989OGMnywI1QXzzqK~~UmSUg8-Kr315MZOgHo2-Ta9L-c8qjPMzA~0OOVN3~Faw0oQ-did9JR3-pctwO6e5OlfAd53OJ3IuhMTsfHPZLUtRmuy-4a75iCzkaDMSE4HDfaoir~SRdfxcjJEDN3Xzs7WoP~ncwbNAEyAmywyXW6AZTCLKlM-uAYHc15aZ7~uzkS5SwS-0~1ycy9RgN0rOd7WPaaTGEZ598KcKKReJrVzMYw__",
+                "width": 451,
+                "height": 403
+            },
+            "cta": {
+                "label": "Join Now",
+                "link": "#"
+            }
+        },
+        {
+            "title": "Flag Football Nigeria",
+            "text": "In collaboration with the NFL and IFAF, NAFA offers certification to its coaches through the USA Football program. Interested coaches should reach out to the NAFA team for more information on how to access this service free of charge.",
+            "image": {
+                "src": "https://s3-alpha-sig.figma.com/img/f465/0d37/63522561bc347a526e8f01057f571957?Expires=1718582400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=AldA16CerICbIj3lsBSb~4bjHHGrxuQj9ViugPLT4IqDmx7yX06kM236VS9uZGVGXiMcTQx7KinyxUvUj~fkeQbxlzbYBHK-3zVbcAWZDxH4y0AWKZV2c2O2f~uRDs1uHC25oixPF-VUtiB2tl6x5Rfc3kjGeFeHYpg52Blb9PCchJk15Afyn72LQpiGzJBI2aeIer-yDQoo7S6qDHO4P9N32etvPoyLRfQvRJv5g5Nq6xoxs3cL7AV5GffDAQQqPUOTPd5qVi7oedzZqqOZsHJkn26Dl-XoKfvMzCnhPKXw-AL4a~MWePK~qExntPGiQfvUDQWWMIAz-O7euRDhGg__",
+                "width": 439,
+                "height": 392
+            },
+            "cta": {
+                "label": "Join Now",
+                "link": "#"
+            }
+        }
+    ]
+}

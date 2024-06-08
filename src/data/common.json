@@ -12,17 +12,17 @@
                 {
                     "label": "Our Organization Structure",
                     "description": "American football was introduced to Nigeria mainly through media exposure, particularly television broadcasts of NFL games and movies featuring the sport",
-                    "link": "/organization"
+                    "link": "/about-us/organization"
                 },
                 {
                     "label": "Our People",
                     "description": "American football was introduced to Nigeria mainly through media exposure, particularly television broadcasts of NFL games and movies featuring the sport",
-                    "link": "/people"
+                    "link": "/about-us/our-people"
                 },
                 {
                     "label": "The Huddle Way",
                     "description": "American football was introduced to Nigeria mainly through media exposure, particularly television broadcasts of NFL games and movies featuring the sport",
-                    "link": "/huddle"
+                    "link": "/about-us/huddle"
                 }
             ]
         },
@@ -59,22 +59,22 @@
                 {
                     "label": "Gridiron Development Program",
                     "description": "Become a Referee",
-                    "link": "/become-a-referee"
+                    "link": "/our-programs/gridiron-development-program"
                 },
                 {
                     "label": "Gridiron Guardians Program",
                     "description": "",
-                    "link": "/"
+                    "link": "/our-programs/gridiron-guardians-program"
                 },
                 {
                     "label": "Gridiron Gems Program",
                     "description": "",
-                    "link": "/"
+                    "link": "/our-programs/gridiron-gems-program"
                 },
                 {
                     "label": "Flag Football Nigeria",
                     "description": "",
-                    "link": "/"
+                    "link": "/our-programs/flag-football-nigeria"
                 }
             ]
         },

@@ -1,13 +1,13 @@
-'use client';
+// 'use client';
 import React from 'react'
 import huddleData from "@/data/huddle.json";
 import Section from '../UI/Section'
 import PageMenu from './PageMenu'
 import TextMunch from '../TextMucnh';
-import { usePathname } from 'next/navigation';
 import Custom404 from '@/app/not-found';
 import { PageData } from './types';
 import HuddleItems from './HuddleItems';
+import { usePath } from '@/hooks/usePath';
 
 
 function HuddlePageContent({data}:{data: PageData | null}) {
@@ -55,9 +55,7 @@ export default function PageContent() {
 
     let pageData: PageData | null = null;
 
-    const p = usePathname();
-    // console.log(p.split("/").pop());
-    const aspect = p.split("/").pop();
+    const {recent: aspect} = usePath();
 
     // console.log(aspect);
 

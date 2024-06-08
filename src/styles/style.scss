@@ -133,6 +133,13 @@ main:has(.page-header) {
             }
         }
     }
+
+    p {
+        @include mixins.fonts($family:$inria-font, $weight:700);
+        font-size: 1.5rem;
+        line-height: 1.371875rem;
+        color: $clr-text-light;
+    }
 }
 
 .page-content {

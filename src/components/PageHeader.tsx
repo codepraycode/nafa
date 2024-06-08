@@ -26,6 +26,7 @@ function Breadcrumb() {
 
 interface PageHeader {
     title: string,
+    text?: string,
     image?: string,
     small?: boolean,
 }
@@ -48,6 +49,10 @@ export default function PageHeader(props:PageHeader) {
             <br/><br/>
 
             <h1 data-small={props.small && "true"}>{props.title}</h1>
+            {props.text && (<>
+                <br/><br/>
+                <p>{props.text}</p>
+            </>)}
         </Section>
     )
 }

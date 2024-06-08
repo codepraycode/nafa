@@ -2,16 +2,13 @@
 import { usePathname } from "next/navigation";
 import PageHeader from "../PageHeader";
 import huddleData from "@/data/huddle.json";
-import { PageData, IPageHeader } from "./types";
+import { IPageHeader } from "./types";
 
 export default function HuddlePageHeader() {
     let pageH: IPageHeader | null = null;
 
     const p = usePathname();
-    // console.log(p.split("/").pop());
     const aspect = p.split("/").pop();
-
-    // console.log(aspect);
 
     const sections = huddleData.sections;
 
@@ -26,10 +23,7 @@ export default function HuddlePageHeader() {
 
     if (!pageH) {
         pageH = huddleData.header;
-    }
-
-
-    console.log(pageH);
+    }    
 
     return (
         <PageHeader
