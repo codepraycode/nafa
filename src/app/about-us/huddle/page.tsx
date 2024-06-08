@@ -3,6 +3,6 @@
 
 export default function HuddlePage() {
     return (
-        <>Huddle COntent</>
+        <h1>Huddle COntent</h1>
     )
 }
