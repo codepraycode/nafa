@@ -1,8 +1,8 @@
-
+import HuddlePageContent from "@/components/Huddle/PageMenuContent";
 
 
 export default function HuddlePage() {
     return (
-        <h1>Huddle COntent</h1>
+        <HuddlePageContent />
     )
 }
