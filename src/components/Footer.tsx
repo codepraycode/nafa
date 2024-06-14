@@ -86,7 +86,7 @@ export default function Footer() {
                 </ul>
             
                     <p className="copyright">
-                        Copyright 1994-2024 FIFA. All rights reserved.
+                        Copyright 2024 NAFA. All rights reserved.
                     </p>
 
                     <p>
