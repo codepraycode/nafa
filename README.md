@@ -1,6 +1,8 @@
-# Nafa - website
+# Nigerian American Football Association - official website
 
-This is [Nafa](https://nafa-design.vercel.app/) website project repository
+!["NAFA Logo"](https://nafa-design.vercel.app/logo.png)
+
+This is [Nafa](https://nafa-design.vercel.app/) website project repository.
 
 ## Getting Started
 
@@ -19,3 +21,6 @@ bun dev
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
 Please update the environment variables to suit your setup.
+
+
+Powered by [@nobox](https://github.com/nobox-org/)
