@@ -1,6 +1,6 @@
 @use "./variables" as *;
 @use "./mixins" as mixins;
-
+@import './utils/text';
 
 
 .logo {
@@ -518,19 +518,6 @@
 }
 
 
-.text{
-    &-w-600 {
-        font-weight: 600 !important;
-    }
-
-    &-center {
-        text-align: center;
-    }
-
-    &-uppercase {
-        text-transform: uppercase;
-    }
-}
 
 .flist {
     @include mixins.fonts($family: $montserrat-font, $weight: 700);
@@ -539,14 +526,5 @@
 
     @include mixins.least-medium-screen {
         margin-top: 2rem;
-    }
-}
-
-.text {
-    &-capitalize {
-        text-transform: capitalize;
-    }
-    &-center{
-        text-align: center;
     }
 }

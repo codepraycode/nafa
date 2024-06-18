@@ -1,0 +1,72 @@
+.text {
+    &-center {
+        text-align: center;
+    }
+
+    &-uppercase {
+        text-transform: uppercase;
+    }
+
+    &-capitalize {
+        text-transform: capitalize;
+    }
+
+    &-center {
+        text-align: center;
+    }
+    &-justify {
+        text-align: justify;
+    }
+}
+
+// Font weight
+.text-clr {
+    &-8 {
+        color: $clr-text-8;
+    }
+}
+
+// Font size
+.fs {
+    &-20 {
+        font-size: 1.25rem !important;
+    }
+    &-32 {
+        font-size: 2rem !important;
+    }
+    &-48 {
+        font-size: 3rem;
+    }
+    &-700 {
+        font-weight: 700;
+    }
+}
+// Line height
+.lh {
+    &-37 {
+        line-height: 2.3125rem !important;
+    }
+}
+
+// Font weight
+.fw {
+    &-400 {
+        font-weight: 400 !important;
+    }
+    &-600 {
+        font-weight: 600 !important;
+    }
+    &-700 {
+        font-weight: 700;
+    }
+}
+
+// Font family
+.ff {
+    &-gotham {
+        font-family: $gotham-font;
+    }
+    &-montserrat {
+        font-family: $montserrat-font;
+    }
+}
