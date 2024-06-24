@@ -31,19 +31,30 @@ export default function Hero() {
                                     linear-gradient(180deg, #FFFFFF 0%, #355920 27.81%), url(${item.image})`
                             }}
                         >
-                            <h1>
-                                {
-                                    item.title.map((it, i)=>(
-                                        <React.Fragment key={i}>
-                                            {it}
-                                            {i != item.title.length - 1 && <br/>}
-                                        </React.Fragment>
-                                    ))
-                                }
+                            <div>
 
+                                <h1
+                                    className='text-clr-light ff-inria fw-700 fs-3 lg-fs-8 lg-lh-7'
+                                >
+                                    {
+                                        item.title.map((it, i)=>(
+                                            <React.Fragment key={i}>
+                                                {it}
+                                                {i != item.title.length - 1 && <br/>}
+                                            </React.Fragment>
+                                        ))
+                                    }
+
+                                    {/* <br/> */}
+                                </h1>
                                 <br/>
-                                <span>{item.text}</span>
-                            </h1>
+                                <p
+                                    className='text-clr-light ff-inria fw-700 fs-1 lh-1 lg-lh-2'
+                                >
+                                    {item.text}
+                                </p>
+                                <br/><br/>
+                            </div>
 
                             <div className="cta">
                                 <Link href={"/"} className='btn btn-primary'>

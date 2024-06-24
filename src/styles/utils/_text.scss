@@ -45,8 +45,20 @@
 
 // Font size
 @include mixins.responsive-options('fs') {
+    &-1 {
+        font-size: 1.5rem;
+    }
+    &-1 {
+        font-size: 1.5rem;
+    }
     &-3 {
         font-size: 3rem;
+    }
+    &-7 {
+        font-size: 7.5rem;
+    }
+    &-8 {
+        font-size: 8rem;
     }
     &-20 {
         font-size: 1.25rem;
@@ -68,6 +80,9 @@
 
 // Line height
 @include mixins.responsive-options('lh') {
+    &-2 {
+        line-height: 2.0625rem;
+    }
     &-7 {
         line-height: 7.316875rem;
     }
@@ -109,7 +124,8 @@
         font-variation-settings: "slnt" 0;
     }
 
-    &-inria-sans {
+    &-inria-sans,
+    &-inria {
         font-family: $inria-font;
         // font-variation-settings: "slnt" 0;
     }
