@@ -1,8 +1,29 @@
-.text {
+@use "../variables" as *;
+@use "../mixins" as mixins;
+
+
+@include mixins.responsive-options('text') {
+    // Text align
     &-center {
         text-align: center;
     }
 
+    &-right,
+    &-end {
+        text-align: right;
+    }
+
+    &-left,
+    &-start {
+        text-align: start;
+    }
+
+    &-justify {
+        text-align: justify;
+    }
+
+
+    // Transform
     &-uppercase {
         text-transform: uppercase;
     }
@@ -11,50 +32,62 @@
         text-transform: capitalize;
     }
 
-    &-center {
-        text-align: center;
-    }
-    &-justify {
-        text-align: justify;
-    }
 }
 
-// Font weight
-.text-clr {
+@include mixins.responsive-options('text-clr') {
+    &-light {
+        color: $clr-text-light;
+    }
     &-8 {
         color: $clr-text-8;
     }
 }
 
 // Font size
-.fs {
+@include mixins.responsive-options('fs') {
+    &-3 {
+        font-size: 3rem;
+    }
     &-20 {
-        font-size: 1.25rem !important;
+        font-size: 1.25rem;
     }
+
     &-32 {
-        font-size: 2rem !important;
+        font-size: 2rem;
     }
+
     &-48 {
         font-size: 3rem;
     }
-    &-700 {
-        font-weight: 700;
-    }
-}
-// Line height
-.lh {
-    &-37 {
-        line-height: 2.3125rem !important;
+
+    &-128 {
+        font-size: 8rem;
     }
 }
 
+
+// Line height
+@include mixins.responsive-options('lh') {
+    &-7 {
+        line-height: 7.316875rem;
+    }
+    &-37 {
+        line-height: 2.3125rem;
+    }
+    
+    &-117{
+        line-height: 117.07px;
+    }
+
+}
+
 // Font weight
-.fw {
+@include mixins.responsive-options('fw') {
     &-400 {
-        font-weight: 400 !important;
+        font-weight: 400;
     }
     &-600 {
-        font-weight: 600 !important;
+        font-weight: 600;
     }
     &-700 {
         font-weight: 700;
@@ -62,11 +95,22 @@
 }
 
 // Font family
-.ff {
+@include mixins.responsive-options('ff') {
     &-gotham {
         font-family: $gotham-font;
     }
+
     &-montserrat {
-        font-family: $montserrat-font !important;
+        font-family: $montserrat-font;
+    }
+
+    &-inter {
+        font-family: $inter-font;
+        font-variation-settings: "slnt" 0;
+    }
+
+    &-inria-sans {
+        font-family: $inria-font;
+        // font-variation-settings: "slnt" 0;
     }
 }

@@ -74,14 +74,39 @@
 
 
 
+@mixin responsive-options($cls) {
+    .#{$cls} {
+        @content;
+    }
+    
+    .lg-#{$cls} {
+        @include least-large-screen {
+            @content;
+        }
+    }
+
+    .md-#{$cls} {
+        @include least-medium-screen {
+            @content;
+        }
+    }
+
+    .sm-#{$cls} {
+        @include least-small-screen {
+            @content;
+        }
+    }
+}
+
+
 
 @mixin container() {
-    padding: calc($body-padding / 4);
+    padding: calc($screen-padding / 4);
 
     padding-block: 4rem;
     
     @include least-large-screen {
-        padding: $body-padding;
+        padding: $screen-padding;
     }
 }
 

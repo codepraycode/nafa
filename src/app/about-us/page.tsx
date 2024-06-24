@@ -14,7 +14,11 @@ export default function AboutPage() {
     return(
         <>
             <PageHeader
-                title={aboutData.header.title}
+                title={
+                    <span className="lg-fs-128 fs-3">
+                        {aboutData.header.title}
+                    </span>
+                }
                 image={aboutData.header.image.src}
             />
 

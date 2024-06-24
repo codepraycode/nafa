@@ -38,8 +38,8 @@ function Breadcrumb() {
 
 
 interface PageHeader {
-    title: string,
-    text?: string,
+    title: string | React.ReactNode,
+    text?: string | React.ReactNode,
     image?: string,
     small?: boolean,
 }
@@ -61,11 +61,21 @@ export default function PageHeader(props:PageHeader) {
             <Breadcrumb />
             <br/><br/>
 
-            <h1 data-small={props.small && "true"}>{props.title}</h1>
-            {props.text && (<>
-                <br/><br/>
-                <p>{props.text}</p>
-            </>)}
+            <h1
+                data-small={props.small && "true"}
+                className='ff-inria-sans fw-700 text-clr-light text-center lg-text-left'
+            >
+                {props.title}
+            </h1>
+
+            {
+                props.text && (
+                    <>
+                        <br/><br/>
+                        <p>{props.text}</p>
+                    </>
+                )
+            }
         </Section>
     )
 }
