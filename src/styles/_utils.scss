@@ -1,6 +1,7 @@
 @use "./variables" as *;
 @use "./mixins" as mixins;
 @import './utils/text';
+@import './utils/btn';
 
 
 .logo {
@@ -122,7 +123,7 @@
     @include mixins.fonts($family: $montserrat-font, $weight: 600);
     font-size: 1.5rem;
     font-weight: 600 !important;
-    color: $clr-text-10;
+    color: $clr-text-2;
     display: block;
     text-transform: capitalize;
     
@@ -139,63 +140,6 @@
     }
 }
 
-.btn {
-    text-decoration: none;
-    text-align: center;
-    display: inline-block;
-
-    padding-block: .7rem;
-    padding-inline: 1rem;
-
-    border-radius: .3rem;
-    padding: .8rem 1.2rem;
-
-    color: $clr-text-1;
-
-    outline: 0;
-    border: 0;
-
-
-    @include mixins.box-shadow;
-
-    @include mixins.fonts($family: $inter-font);
-    font-weight: 500;
-
-    &-primary {
-        background-color: $clr2;
-        color: $clr-text-light !important;
-        border: 1px solid $clr-text-light;
-    }
-
-    &-light {
-        // color: hsla(216, 12%, 84%, 1);
-        // padding: .8rem 1.2rem;
-        box-shadow: 0 1 2px 0 rgba(6, 25, 56, 0.05);
-        background-color: rgba(255, 255, 255, 1);
-        margin-inline: auto;
-    }
-
-    &-outline {
-        border: .5px solid hsla(216, 12%, 84%, 1);
-        color: $clr-text-4;
-    }
-
-
-    &-d-md {
-        display: none !important;
-        @include mixins.least-large-screen {
-            display: inline-block !important;
-        }
-    }
-
-    &-d-sm {
-        display: none;
-        @include mixins.least-small-screen {
-            display: inline-block;
-        }
-    }
-
-}
 
 
 .article-list {

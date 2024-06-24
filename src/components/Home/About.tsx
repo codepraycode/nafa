@@ -15,9 +15,17 @@ export default function About() {
 
 
             <div className="content">
-                <h2>{data.title}</h2>
+                <h2
+                    className='fs-1 lg-fs-2 fw-600 lh-1 lh-2 text-center lg-text-start'
+                >
+                    {data.title}
+                </h2>
+
                 <br/>
-                <p>
+
+                <p
+                    className='fs-0 lg-fs-1 lh-1 fw-500 text-justify'
+                >
                     {
                         data.text.map((it, i)=>(
                             <React.Fragment key={i}>
@@ -32,7 +40,9 @@ export default function About() {
                         ))
                     }
                 </p>
+                
                 <br/><br/>
+                
                 <Link href={"/about"} className='btn btn-light'>
                     Learn More
                 </Link>

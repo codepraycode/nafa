@@ -38,6 +38,18 @@
     &-light {
         color: $clr-text-light;
     }
+    &-2 {
+        color: $clr-text-2;
+    }
+    &-3 {
+        color: $clr-text-3;
+    }
+    &-4 {
+        color: $clr-text-4;
+    }
+    &-6 {
+        color: $clr-text-6;
+    }
     &-8 {
         color: $clr-text-8;
     }
@@ -45,11 +57,20 @@
 
 // Font size
 @include mixins.responsive-options('fs') {
-    &-1 {
-        font-size: 1.5rem;
+    &-0 {
+        font-size: 0.875rem;
     }
     &-1 {
-        font-size: 1.5rem;
+        font-size: 1rem;
+        &_2 {
+            font-size: 1.25rem;
+        }
+        &_5 {
+            font-size: 1.5rem;
+        }
+    }
+    &-2 {
+        font-size: 2rem;
     }
     &-3 {
         font-size: 3rem;
@@ -60,12 +81,24 @@
     &-8 {
         font-size: 8rem;
     }
+
+    &-14 {
+        font-size: 0.875rem;
+    }
+    &-18 {
+        font-size: 1.125rem;
+    }
     &-20 {
         font-size: 1.25rem;
     }
-
+    &-24 {
+        font-size: 1.5rem;
+    }
     &-32 {
         font-size: 2rem;
+    }
+    &-40 {
+        font-size: 2.5rem;
     }
 
     &-48 {
@@ -80,12 +113,20 @@
 
 // Line height
 @include mixins.responsive-options('lh') {
+    &-1 {
+        line-height: 1.8125rem;
+    }
     &-2 {
         line-height: 2.0625rem;
     }
     &-7 {
         line-height: 7.316875rem;
     }
+
+    &-24 {
+        line-height: 1.5rem;
+    }
+
     &-37 {
         line-height: 2.3125rem;
     }
@@ -100,6 +141,9 @@
 @include mixins.responsive-options('fw') {
     &-400 {
         font-weight: 400;
+    }
+    &-500 {
+        font-weight: 500;
     }
     &-600 {
         font-weight: 600;

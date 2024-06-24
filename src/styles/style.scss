@@ -801,7 +801,6 @@ footer {
     overflow: hidden;
     width: 100%;
 
-    @include mixins.fonts($family: $montserrat-font);
     .feature-img {
         height: 10rem;
         width: 100rem;
@@ -819,43 +818,12 @@ footer {
         width: 8.875rem;
     }
 
-
-    h2 {
-
-        font-size: 1.25rem;
-        font-weight: 600;
-        text-align: center;
-
-        line-height: 1.875rem;
-
-        @include mixins.least-large-screen {
-            font-size: 2rem;
-            line-height: 2.6875rem;
-            text-align: start;
-        }
-    }
-    
-    p {
-        font-size: 0.875rem;
-        line-height: 1.8rem;
-        font-weight: 500;
-        text-align: justify;
-        line-height: 1.8125rem;
-
-        @include mixins.least-large-screen {
-            font-size: 1rem;
-        }
-    }
-
     .content {
         background-color: $clr1;
         color: $clr-text-1;
         position: relative;
 
-        // padding: 5rem 4rem;
         padding: 2rem 1.5rem;
-
-        
 
         border-bottom-left-radius: 1rem;
         border-bottom-right-radius: 1rem;
@@ -881,22 +849,8 @@ footer {
 
 
 .kickoff-wrapper {
-    @include mixins.fonts($family: $montserrat-font);
-
-    h1 {
-        color: $clr-text-6;
-        font-weight: 600;
-        font-size: 1.25rem;
-        line-height: 1.5rem;
-
-    }
-    
     
     @include mixins.least-large-screen {
-        h1 {
-            font-size: 2.5rem;
-        }
-
         .content {
             display: flex;
             gap: 2rem;
@@ -906,9 +860,6 @@ footer {
     }
 
     @include mixins.medium-screen {
-        h1 {
-            font-size: 2rem;
-        }
 
         .content {
             display: flex;
@@ -939,45 +890,21 @@ footer {
     }
 
     h2 {
-        font-weight: 500;
-        font-size: 1.125rem;
-        // margin-top: 1.2rem;
+        margin-top: 1.2rem;
         margin-bottom: .8rem;
-
-        line-height: 1.5rem;
-
-        color: $clr-text-2;
-
-        @include mixins.least-large-screen {
-            font-size: 1.5rem;
-        }
     }
 
     p {
-        font-size: 0.875rem;
         margin-bottom: 1rem;
-        line-height: 1.5rem;
-        font-size: 500;
-
-        color: $clr-text-3;
     }
 
     a {
         width: 100%;
-        text-align: center;
         border: .5px solid $clr2;
 
         display: block;
 
-        @include mixins.fonts($family: $inter-font, $weight: 500);
-        line-height: 1.5rem;
-        font-size: .875rem;
-        color: $clr-text-4;
-
-
         margin-top: auto !important;
-
-        // background-color: red !important;
     }
 
 
@@ -1866,12 +1793,6 @@ p.huddle-title {
     }
 }
 
-
-
-
-
-
-
 .explore-wrapper {
     display: flex;
     justify-content: center;
@@ -1950,7 +1871,7 @@ p.huddle-title {
         h3 {
             font-size: 1.5rem;
             line-height: 1.5rem;
-            color: $clr-text-10;
+            color: $clr-text-2;
         }
     
         p {
