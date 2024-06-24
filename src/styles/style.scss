@@ -2064,14 +2064,24 @@ p.huddle-title {
 .policy .page-content-wrapper {
     display: flex;
     align-items: flex-start;
+    flex-direction: column;
     gap: 2.5rem;
 
+    padding-inline: 1rem;
+
+    @include mixins.least-large-screen {
+        flex-direction: row;
+        padding-inline: 0rem;
+    }
+
     .items-menu {
-        width: 25.75rem !important;
+        width: 25.75rem;
+        max-width: 100%;
 
         ul {
             list-style: none;
             padding: 0;
+            
             border: 0.5px solid hsla(0, 0%, 12%, 1);
             border-radius: 0.3125rem;
             padding-block: 2.0625rem;
@@ -2090,9 +2100,14 @@ p.huddle-title {
                     @include mixins.fonts($family: $gotham-font, $weight: 400);
                     font-size: 1.25rem;
                     line-height: 2.3125rem;
-                    text-align: justify;
+                    
                     color: inherit;
                     text-decoration: none;
+
+
+                    @include mixins.least-large-screen {
+                        text-align: justify;
+                    }
                     
                 }
             }
