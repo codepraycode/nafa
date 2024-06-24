@@ -2132,5 +2132,26 @@ p.huddle-title {
 
     .items-content {
         flex: 1;
+
+
+        ul {
+            padding: 0;
+            margin: 0 !important;
+            // background-color: red;
+
+            list-style: '• ';
+            list-style-position: inside;
+
+            li {
+                font-family: inherit;
+                margin-bottom: .6rem;
+            }
+            
+            
+            // li span {
+            //     // display: inline-block;
+            //     margin-left: .5rem;
+            // }
+        }
     }
 }

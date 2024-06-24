@@ -60,7 +60,7 @@ export default function HistoryPage() {
 
                 <div className="items-content">
                     <h1
-                        className='text-clr-8 fs-48 fw-700 lh-37'
+                        className='text-clr-8 fs-48 fw-700 lh-37 ff-gotham'
                     >
                         POLICY STATEMENT FOR NAFA
                     </h1>
@@ -68,6 +68,7 @@ export default function HistoryPage() {
                     <p className='ff-montserrat fw-400 fs-20 lh-37 text-justify'>
                         The Nigeria American Football Association (NAFA) is committed to providing a fun, safe, and respectful environment for all children, young people, and adults involved in American Football. We recognise the right of all participants to be free from all forms of abuse and acknowledge our duty of care to safeguard them.
                     </p>
+
                     <br/><br/><br/><br/>
 
                     <h2
@@ -79,11 +80,11 @@ export default function HistoryPage() {
                     <br/><br/>
 
                     <p className='ff-montserrat fw-400 fs-20 lh-37 text-justify'>
-                        This policy outlines our commitment to safeguarding individuals involved in the delivery of American Football in Nigeria. It is supported by codes of conduct, guidelines, and procedures to ensure effective implementation. This policy applies to everyone, without any form of discrimination.
+                        This policy outlines our commitment to safeguarding individuals involved in the delivery of American Football in Nigeria. It is supported by codes of conduct, guidelines, and procedures to ensure effective implementation. This policy applies to everyone, without any form of discrimination.<br/>
                         We recognise that certain groups, such as disabled individuals, women, and those on elite pathways, may be particularly vulnerable to abuse. NAFA accepts the responsibility to promote their inclusion, safety, and well-being throughout all levels of our sport.
                     </p>
 
-                    <br/><br/>
+                    <br/><br/><br/><br/>
 
                     <h2
                         id={slugify("Definitions")}
