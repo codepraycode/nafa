@@ -159,130 +159,123 @@ header {
 
 footer {
     @include mixins.container;
-    background-color: $clr6;
 
-    font-size: 1.2rem;
-    color: $clr-text-3;
-    @include mixins.fonts($family: $inter-font, $weight: 400);
+    padding-block: 3.6875rem !important;
+
+    h3 {
+
+        margin-block: 2rem;
+
+    }
 
     a {
-        text-decoration: none;
+        text-decoration: inherit;
+        font-size: inherit;
+        font-weight: inherit;
+        font-family: inherit;
         color: inherit;
     }
 
 
-    h3 {
-        font-weight: 600;
-        font-size: 1.5rem;
-        margin-block: 1rem;
-
-        color: $clr-text-1;
-    }
-
-
-
-    @include mixins.least-large-screen {
-        .footer-wrapper {
-            width: 50%;
-        }
+    .footer-wrapper {
+        width: 46.5625rem;
+        max-width: 100%;
     }
 
     .logo {
-        width: 5rem;
-
-        @include mixins.least-small-screen {
-            // width: 4rem;
-            margin-inline: auto;
+        width: 9.75rem;
+        margin-inline: auto;
+        
+        @include mixins.least-large-screen {
+            width: 4rem;
+            margin-inline: 0;
         }
     }
-
-
-
-
-
-    ul {
-        li {
-            padding-block: .6rem;
-        }
-    }
-
-
 
     nav {
         text-align: center;
-
-
         padding-top: 1rem;
+
+        ul {
+            li {
+                // padding-block: .3rem;
+                margin-block: 1.5rem;
+            }
+        }
 
 
         @include mixins.least-large-screen {
             display: flex;
-            align-items: center;
 
-            justify-content: center;
             justify-content: space-between;
             text-align: start;
+
+            li {
+                padding-block: .6rem;
+                margin-block: 1rem;
+            }
         }
     }
 
-    p {
-        margin-block: 1rem;
-
-        @include mixins.least-small-screen {
-            text-align: center;
-        }
+    .footer_extras,
+    .socials {
+        display: flex;
     }
 
 
     .socials {
+        margin-block: 3rem;
+        gap: 3rem;
+
+        justify-content: center;
+        
+        
+        @include mixins.least-large-screen {
+            justify-content: flex-start;
+        }
+        
         a {
-            $icon-width: 1.5rem;
             display: inline-block;
 
-            width: $icon-width;
+            width: var(--icon-width, 1.25rem);
             aspect-ratio: 1;
 
             overflow: hidden;
             text-indent: 200%;
-
+            
             background-position: center;
             background-repeat: no-repeat;
             background-size: cover;
-
+            
+            @include mixins.least-large-screen {
+                --icon-width: 2.375rem;
+            }
         }
     }
 
-    .footer_extras,
-    .socials {
 
-
-        display: flex;
-        // flex-wrap: wrap;
-
-        justify-content: center;
-        margin-block: 2rem;
-
+    .footer_extras {
+        // gap: 4.375rem;
+        flex-direction: column;
+        text-align: center;
+        row-gap: 1.5rem;
+        column-gap: 1.5rem;
 
         @include mixins.least-large-screen {
-            justify-content: flex-start;
+            flex-direction: row;
+            text-align: start;
         }
 
-        gap: 2rem;
+        
     }
 
 
-    .footer_extras,
     p {
-        font-weight: 400;
-        font-size: 1rem;
-    }
+        margin-block: 2.5rem;
+        text-align: center;
 
-    @include mixins.least-small-screen {
-
-        .footer_extras {
-            flex-direction: column;
-            text-align: center;
-            gap: 1rem;
+        @include mixins.least-large-screen {
+            text-align: start;
         }
     }
 }

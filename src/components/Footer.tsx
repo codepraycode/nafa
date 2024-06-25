@@ -3,7 +3,7 @@ import AppLink from '@/components/UI/AppLink';
 
 export default function Footer() {
     return (
-        <footer>
+        <footer className='bg-6 text-clr-3'>
 
 
             <div className="footer-wrapper">
@@ -11,8 +11,13 @@ export default function Footer() {
 
                 <nav>
                     <div>
-                        <h3>Explore</h3>
-                        <ul role='list'>
+                        <h3
+                            className='fw-600 lg-fs-24 fs-18 lh-24 text-clr-dark'
+                        >
+                            Explore
+                        </h3>
+                        {/* <br/> */}
+                        <ul role='list' className='text-decoration-none fw-400 lg-fs-20 fs-14 lh-16 lg-lh-24'>
                             <li><AppLink href={"/"}>Tournaments & Events</AppLink></li>
                             <li><AppLink href={"/"}>About NAFA</AppLink></li>
                             <li><AppLink href={"/"}>News</AppLink></li>
@@ -20,9 +25,14 @@ export default function Footer() {
                             <li><AppLink href={"/"}>Videos</AppLink></li>
                         </ul>
                     </div>
+
                     <div>
-                        <h3>Also Visit</h3>
-                        <ul role='list'>
+                        <h3
+                            className='fw-600 lg-fs-24 fs-18 lh-24 text-clr-dark'
+                        >
+                            Also Visit
+                        </h3>
+                        <ul role='list' className='text-decoration-none fw-400 lg-fs-20 fs-14 lh-16 lg-lh-24'>
                             <li><AppLink href={"/"}>All stories & topics</AppLink></li>
                             <li><AppLink href={"/"}>Reports & Documents</AppLink></li>
                             <li><AppLink href={"/"}>Jobs & Career</AppLink></li>
@@ -33,7 +43,7 @@ export default function Footer() {
 
 
                 
-                <ul role='list' className='socials'>
+                <ul role='list' className='socials' >
                     <li>
                         <AppLink href="/" style={{backgroundImage:"url(/icons/twitter.png)"}}>
                             Twitter
@@ -62,7 +72,7 @@ export default function Footer() {
                 </ul>            
 
 
-                <ul role='list' className='footer_extras'>
+                <ul role='list' className='footer_extras text-decoration-none fw-400 lg-fs-16 fs-14 lg-lh-19 lg-lh-16 text-clr-3'>
                     <li>
                         <AppLink href="/">
                             Terms of service
@@ -85,13 +95,13 @@ export default function Footer() {
                     </li>
                 </ul>
             
-                    <p className="copyright">
-                        Copyright 2024 NAFA. All rights reserved.
-                    </p>
+                <p className="fw-400 lg-fs-16 fs-14 lg-lh-19 lg-lh-16 text-clr-3">
+                    Copyright 2024 NAFA. All rights reserved.
+                </p>
 
-                    <p>
-                        Cookie Settings
-                    </p>
+                <p>
+                    Cookie Settings
+                </p>
             </div>
 
 
