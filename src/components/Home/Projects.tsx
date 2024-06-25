@@ -1,9 +1,10 @@
 import React from 'react'
 import Section from '../UI/Section'
 import Link from '@/components/UI/AppLink';
-import SliderContainer, { SlideWrapper } from '../UI/Slider'
+import SliderContainer, { SlideCta, SlideWrapper } from '../UI/Slider'
 import { inPageSliderconfig } from '@/utils/sliderConfig'
 import homeData from "@/data/home.json"
+import SectionTitle from '../UI/SectionTitle';
 
 
 const data = homeData.projects
@@ -14,7 +15,8 @@ export default function Projects() {
         <Section
             name='projects'
         >
-            <h2 className='section-title'>{data.title}</h2>
+
+            <SectionTitle title={data.title}/>
             <br/><br/>
 
             <SliderContainer {...inPageSliderconfig} className='featured-slide'>
@@ -29,21 +31,20 @@ export default function Projects() {
                                         linear-gradient(180deg, #FFFFFF 25%, #2A4F14 71%),
                                         url(${item.image})`
                                 }}
-                                className='project-item'
+                                className='project-item text-decoration-none text-clr-light'
                             >
-                                <span>{item.title}</span>
+                                <span
+                                    className='fw-600 fs-24 lh-29'
+                                >
+                                    {item.title}
+                                </span>
                             </Link>
                         </SlideWrapper>
                     ))
                 }
             </SliderContainer>
 
-            <Link
-                href={data.cta.link}
-                className='btn btn-primary slide-cta fs-2'
-            >
-                {data.cta.label}
-            </Link>
+            <SlideCta data={data} className='fs-2'/>
 
         </Section>
     )

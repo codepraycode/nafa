@@ -38,20 +38,35 @@ export default function ArticleItems() {
     }
     
     return (
-        <SliderContainer {...inPageSliderconfig} className='featured-slide'>
+        <SliderContainer
+            {...inPageSliderconfig}
+            className='featured-slide'
+        >
             {
                 articles.map((item, i)=>(
                     <SlideWrapper key={i}>
                         <article >
-                            <AppLink href="/">
+                            <AppLink
+                                href="/"
+                                className='text-decoration-none'
+                            >
                                 <div
                                     className="img"
                                     style={{backgroundImage: `url(${item.image})`}}
                                 />
 
                                 <div className='details'>
-                                    <h2>{item.title}</h2>
-                                    <p className='date'>{bareFormatDate(item.createdAt)}</p>
+                                    <h2
+                                        className='fw-500 fs-14 lh-24 text-clr-dark'
+                                    >
+                                        {item.title}
+                                    </h2>
+
+                                    <p
+                                        className='date fw-400 fs-12 lh-24 text-clr-5'
+                                    >
+                                        {bareFormatDate(item.createdAt)}
+                                    </p>
                                 </div>
                             </AppLink>
                         </article>

@@ -2,6 +2,7 @@
 import Slider, {Settings as SliderSettings} from "react-slick";
 import Section, { SectionProps } from "./Section";
 import { useRef, useState } from "react";
+import Link from "next/link";
 
 
 
@@ -44,6 +45,18 @@ export function SliderArrow(props: any) {
             disabled={disablePrev}
             onClick={props.onClick}
         />
+    )
+}
+
+
+export function SlideCta({data, className}:{data: any, className?: string}) {
+    return (
+        <Link
+            href={data.cta.link}
+            className={`btn btn-primary slide-cta ${className || ''} fw-500 fs-14 lh-24 text-clr-light`}
+        >
+            {data.cta.label}
+        </Link>
     )
 }
 

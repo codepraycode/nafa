@@ -117,15 +117,17 @@
 }
 
 
-.section-title {
+.underline {
 
     // text-align: center;
-    @include mixins.fonts($family: $montserrat-font, $weight: 600);
-    font-size: 1.5rem;
-    font-weight: 600 !important;
-    color: $clr-text-2;
+    // @include mixins.fonts($family: $montserrat-font, $weight: 600);
     display: block;
-    text-transform: capitalize;
+
+    // font-size: 1.5rem;
+    // font-weight: 600;
+    
+    // text-transform: uppercase;
+    // color: $clr-text-2;
     
     &::after {
         content: " ";
@@ -426,6 +428,12 @@
     @include mixins.fonts($family: $inria-font, $weight: 700);
 
     display: none;
+}
+
+.slide-cta {
+    // width: 8.875rem;
+    border-radius: 0.25rem;
+    padding: .5rem 1rem;
 }
 
 .slider-arrow {
