@@ -10,7 +10,11 @@ export default function Partners() {
         <Section
             name="partners"
         >
-            <h2>{data.title}</h2>
+            <h2
+                className="fw-500 fs-24 lh-24 text-clr-dark text-center"
+            >
+                {data.title}
+            </h2>
 
             <br/><br/><br/>
 
