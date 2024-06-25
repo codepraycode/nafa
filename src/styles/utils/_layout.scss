@@ -1,0 +1,27 @@
+@use "../variables" as *;
+@use "../mixins" as mixins;
+
+// Display
+@include mixins.responsive-options('d') {
+    &-none {
+        display: none !important;
+    }
+    &-block {
+        display: block;
+    }
+    &-inline {
+        display: inline;
+
+        &-block {
+            display: inline-block;
+        }
+
+        &-flex {
+            display: inline-flex;
+        }
+    }
+
+    &-flex {
+        display: flex;
+    }
+}

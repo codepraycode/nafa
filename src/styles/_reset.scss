@@ -139,3 +139,150 @@ footer {
 
     margin-inline: auto;
 }
+
+
+header {
+
+    position: sticky;
+    top: 0;
+    background-color: $clr-text-light;
+    z-index: 10;
+    box-shadow: rgba(9, 30, 66, 0.25) 0px 1px 1px, rgba(9, 30, 66, 0.13) 0px 0px 1px 1px;
+
+    ul {
+        a {
+            text-decoration: none;
+            color: $clr-text-1;
+        }
+    }
+}
+
+footer {
+    @include mixins.container;
+    background-color: $clr6;
+
+    font-size: 1.2rem;
+    color: $clr-text-3;
+    @include mixins.fonts($family: $inter-font, $weight: 400);
+
+    a {
+        text-decoration: none;
+        color: inherit;
+    }
+
+
+    h3 {
+        font-weight: 600;
+        font-size: 1.5rem;
+        margin-block: 1rem;
+
+        color: $clr-text-1;
+    }
+
+
+
+    @include mixins.least-large-screen {
+        .footer-wrapper {
+            width: 50%;
+        }
+    }
+
+    .logo {
+        width: 5rem;
+
+        @include mixins.least-small-screen {
+            // width: 4rem;
+            margin-inline: auto;
+        }
+    }
+
+
+
+
+
+    ul {
+        li {
+            padding-block: .6rem;
+        }
+    }
+
+
+
+    nav {
+        text-align: center;
+
+
+        padding-top: 1rem;
+
+
+        @include mixins.least-large-screen {
+            display: flex;
+            align-items: center;
+
+            justify-content: center;
+            justify-content: space-between;
+            text-align: start;
+        }
+    }
+
+    p {
+        margin-block: 1rem;
+
+        @include mixins.least-small-screen {
+            text-align: center;
+        }
+    }
+
+
+    .socials {
+        a {
+            $icon-width: 1.5rem;
+            display: inline-block;
+
+            width: $icon-width;
+            aspect-ratio: 1;
+
+            overflow: hidden;
+            text-indent: 200%;
+
+            background-position: center;
+            background-repeat: no-repeat;
+            background-size: cover;
+
+        }
+    }
+
+    .footer_extras,
+    .socials {
+
+
+        display: flex;
+        // flex-wrap: wrap;
+
+        justify-content: center;
+        margin-block: 2rem;
+
+
+        @include mixins.least-large-screen {
+            justify-content: flex-start;
+        }
+
+        gap: 2rem;
+    }
+
+
+    .footer_extras,
+    p {
+        font-weight: 400;
+        font-size: 1rem;
+    }
+
+    @include mixins.least-small-screen {
+
+        .footer_extras {
+            flex-direction: column;
+            text-align: center;
+            gap: 1rem;
+        }
+    }
+}

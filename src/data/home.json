@@ -144,19 +144,31 @@
         "title": "Events",
         "items": [
             {
-                "image": "https://s3-alpha-sig.figma.com/img/682e/5af5/f480340f99e520d232de6f0aa63329f5?Expires=1717372800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=RIV0enPiCKDLTzuN97preY8uvpg-gDp9QQpHOY0ouBezeVfB5iYtOSsBsYTZc2O8BGqQtLyQCFaUikZrXQlCa5tVyfMu0NYEO9qUkoJdRVyNBwaea4oNMSsZaT2N5l-pZkIdo05WU15FhuvlNV-qLuxTjRURQimkBYIS61PM6XWqIfwUtlThmNhcYFJRzR6XKB0DJ~VOZLONLcdQWllNyz7zr-H~V2rLfIFW03oJEbkBlYGY5kV-GWDlYnfPxV3oWzjMwg0bRYTq-0zkp9hMYEvbFWaUjR-e998EnLQpVAVa8aroSaZemUHsFrj0UErP52jcPYZlK9qLGy7SLaNnfw__",
+                "image": {
+                    "src": "https://nobox-upload-bucket.s3.eu-west-2.amazonaws.com/uploads/6f0b6079-9a8d-4e16-8ad3-a0ffe1806dfd_f480340f99e520d232de6f0aa63329f5.png",
+                    "width": 184,
+                    "height": 247
+                },
                 "title": "NFL AFRICA",
                 "text": "for IPP Men and Women",
                 "date": "This June"
             },
             {
-                "image": "https://s3-alpha-sig.figma.com/img/c31a/278b/93c254ca9fafac1b40254ca343164a75?Expires=1718582400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=VAt9BPSNOz6Fz0BcBUWpQm7cjAfdq01IwDjXO2RXjbXrk7OlwRewb24S097Th63eLE3jvwj2hS-wou-91M-HKObRNcaaow33iWC7ZAiR7-GVPvH5HyHczPkQgg5k1M0xpL9uMNMwIrQ8YJ-yorp7hhe14-Ol1-VFQwWuTu~3zna7vGjuj0OI9AYU6BbZVTHzB~8pNfOqrQqLbs4KOCUV95SBXiST~QdaMk0Mq9qJ3dolorj4qzjnp-hFtTrPFiKUsTHfpadv77E98Pv27cpXLFiy5RZUFx3A~lSUYzig1lRJJDEr3BAce9g70iYrXH6N6NAKHLWtNpeNoS956d~5hA__",
+                "image": {
+                    "src": "https://nobox-upload-bucket.s3.eu-west-2.amazonaws.com/uploads/057a34b9-9602-4638-a69e-24ffa3786189_93c254ca9fafac1b40254ca343164a75.png",
+                    "width": 225,
+                    "height": 83
+                },
                 "title": "NSSFFL SEASON 3",
                 "text": "state preliminaries",
                 "date": "This July"
             },
             {
-                "image": "https://s3-alpha-sig.figma.com/img/482a/da66/7361d27482ba9da2d80c92b1cd6bc421?Expires=1718582400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=YnLqWQ1jIN-qau2qrmOYbs5r6pSjVG4-F9OzbfGlYzYzpR4KaNuvFpn9x9ipLlmJuYWCyGoMqc6QowN1MejFPNnbUkyDodeb9i7SOU~h5RVdLZ17ggppuzEIXyhdlQmhgoE~nuqIlDSA4RphbK6lPoelSeZpEmtJuMit1SpaztJ~wzQGqlCIsl-m9-KvNQaEq5ILfa006xX3h9uFicZdNRnGfdu1CWE6WltqHeGbk1ppPmLwNHlHuEDceht8mBpiA5hEMk3a5wBbEtQeC~nQUIIQRjtZKJ3WpRu49S1VlsnQP5eaA3x9nFfm5-aHCFRz2~ocmweKtym7jZhaQZc-zw__",
+                "image": {
+                    "src": "https://nobox-upload-bucket.s3.eu-west-2.amazonaws.com/uploads/85dc75b6-8cff-4c8e-9ebc-1cd16b9e0142_7361d27482ba9da2d80c92b1cd6bc421.png",
+                    "width": 246,
+                    "height": 205
+                },
                 "title": "AKETI BOWL",
                 "text": "Championship",
                 "date": "This August"

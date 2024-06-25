@@ -184,22 +184,6 @@ main:has(.page-header) {
 
 }
 
-header {
-
-    position: sticky;
-    top: 0;
-    background-color: $clr-text-light;
-    z-index: 10;
-    box-shadow: rgba(9, 30, 66, 0.25) 0px 1px 1px, rgba(9, 30, 66, 0.13) 0px 0px 1px 1px;
-
-    ul {
-        a {
-            text-decoration: none;
-            color: $clr-text-1;
-        }
-    }
-}
-
 
 .header-top,
 .header-wrapper {
@@ -476,135 +460,6 @@ header {
 }
 
 
-
-footer {
-    @include mixins.container;
-    background-color: $clr6;
-
-    font-size: 1.2rem;
-    color: $clr-text-3;
-    @include mixins.fonts($family: $inter-font, $weight: 400);
-
-    a {
-        text-decoration: none;
-        color: inherit;
-    }
-
-
-    h3 {
-        font-weight: 600;
-        font-size: 1.5rem;
-        margin-block: 1rem;
-
-        color: $clr-text-1;
-    }
-
-
-
-    @include mixins.least-large-screen {
-        .footer-wrapper {
-            width: 50%;
-        }
-    }
-
-    .logo {
-        width: 5rem;
-        @include mixins.least-small-screen {
-            // width: 4rem;
-            margin-inline: auto;
-        }
-    }
-
-
-
-
-
-    ul {
-        li {
-            padding-block: .6rem;
-        }
-    }
-
-
-    
-    nav {
-        text-align: center;        
-
-
-        padding-top: 1rem;
-
-
-        @include mixins.least-large-screen {
-            display: flex;
-            align-items: center;
-        
-            justify-content: center;
-            justify-content: space-between;
-            text-align: start;
-        }
-    }
-
-    p {
-        margin-block: 1rem;
-
-        @include mixins.least-small-screen {
-            text-align: center;
-        }
-    }
-
-
-    .socials {
-        a {
-            $icon-width: 1.5rem;
-            display: inline-block;
-            
-            width: $icon-width;
-            aspect-ratio: 1;
-            
-            overflow: hidden;
-            text-indent: 200%;
-            
-            background-position: center;
-            background-repeat: no-repeat;
-            background-size: cover;
-
-        }
-    }
-
-    .footer_extras,
-    .socials {
-
-        
-        display: flex;
-        // flex-wrap: wrap;
-
-        justify-content: center;
-        margin-block: 2rem;
-        
-        
-        @include mixins.least-large-screen {
-            justify-content: flex-start;
-        }
-
-        gap: 2rem;
-    }
-
-
-    .footer_extras,
-    p {
-        font-weight: 400;
-        font-size: 1rem;
-    }
-
-    @include mixins.least-small-screen {
-
-        .footer_extras {
-            flex-direction: column;
-            text-align: center;
-            gap: 1rem;
-        }
-    }
-}
 
 .partners {
     border-top: 1px solid hsla(0, 0%, 67%, 1);
@@ -1180,107 +1035,71 @@ footer {
 
 .events-wrapper {
     position: relative;
-    a {
-        text-decoration: none;
-        color: inherit;
-    }
 
-    // // background-color: red !important;
-    // padding: 0 !important;
     article {
         
         
-        margin-inline: auto;
-        min-height: 15rem;
-        
-        background-color: $clr-text-light;
-        @include mixins.box-shadow;
+        --event-article-height: fit-content;
 
-        overflow-x: hidden;
-        border-radius: 1rem;
-        max-width: 80%;
-        width: 85.5rem;
+        margin-inline: auto;
+
+        width: 71.25rem;
+        max-width: 95%;
+        height: var(--event-article-height, 27.1875rem);
+        
+        
+        border-radius: 0.625rem;
+        box-shadow: 0px 25px 50px -12px hsla(218, 80%, 12%, 0.25);
         
         @include mixins.least-large-screen {
-            border-radius: 2.5rem;
+            border-radius: 1.875rem;
 
             display: flex;
             align-items: center;
-            min-width: 45rem;
-            height: 14rem;
-        }
+            gap: 3rem;
+            --event-article-height: 15.5625rem;
 
-        @include mixins.least-medium-screen {
-            max-width: 90%;
+            padding: 2rem;
         }
 
         .img {
-            border-top-left-radius: .5rem;
-            border-top-right-radius: .5rem;
-            width: 25rem !important;
-            // background-color: red;
-            height: 15rem;
-            // max-height: 70%;
-            background-position: center;
-            background-repeat: no-repeat;
-            background-size: contain;
 
-            overflow: hidden;
+            max-width: 15.625rem;
+            margin-inline: auto;
+            height: 15.4375rem;
 
-            @include mixins.least-large-screen {
-                width: 20rem;
-                height: 100%;
-
-                border-top-left-radius: .5rem;
-                border-bottom-left-radius: .5rem;
-            }
+            padding: .5rem;
+            display: flex;
+            align-items: center;
         }
 
         .details {
-            padding: 1.2rem;
-            
-            @include mixins.least-large-screen {
-                padding: 1rem;
-                padding-left: 3rem;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            // background-color: red;
+
+            width: calc(100% - 15.625rem);
+            height: calc(100% - 1rem);
+
+            margin-inline: auto;
+
+            & > div {
+                // justify-self: flex-end !important;
+                flex: 1;
+                justify-self: center;
+                padding-top: 2rem;
             }
-        }
 
-
-        @include mixins.fonts($family: $inter-font, $weight: 600);
-        color: $clr-text-2;
-
-        h3 {
-            font-size: 1.25rem;
-            line-height: 1.5rem;
-
-            margin-bottom: .8rem;
-
-            @include mixins.least-large-screen {
-                font-size: 2rem;
-            }
-        }
-
-        p {
-            font-size: .875rem;
-            margin-bottom: 1rem;
-            font-weight: 400;
-
-
-            &.date {
-                color: $clr-text-7;
-                font-size: 0.75rem;
-                line-height: 1.5rem;
-                font-weight: 500;
+            & > p {
+                margin-block: 3rem 3rem;
                 @include mixins.least-large-screen {
-                    font-size: 1.25rem;
+                    margin-block: 0;
                 }
             }
 
-            @include mixins.least-large-screen {
-                font-size: 1.25rem;
-            }
         }
-    }    
+    }
 }
 
 
