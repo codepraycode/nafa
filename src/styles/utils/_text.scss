@@ -38,6 +38,12 @@
     &-light {
         color: $clr-text-light;
     }
+    &-dark {
+        color: $clr-text-dark;
+    }
+    &-1 {
+        color: $clr-text-1;
+    }
     &-2 {
         color: $clr-text-2;
     }
@@ -52,6 +58,30 @@
     }
     &-8 {
         color: $clr-text-8;
+    }
+}
+
+@include mixins.responsive-options('bg') {
+    &-light {
+        background-color: $clr-text-light;
+    }
+    &-1 {
+        background-color: $clr1;
+    }
+    &-2 {
+        background-color: $clr2;
+    }
+    &-3 {
+        background-color: $clr3;
+    }
+    &-4 {
+        background-color: $clr4;
+    }
+    &-6 {
+        background-color: $clr6;
+    }
+    &-8 {
+        background-color: $clr8;
     }
 }
 
@@ -82,8 +112,14 @@
         font-size: 8rem;
     }
 
+    &-12 {
+        font-size: 0.75rem;
+    }
     &-14 {
         font-size: 0.875rem;
+    }
+    &-16 {
+        font-size: 1rem;
     }
     &-18 {
         font-size: 1.125rem;
@@ -93,6 +129,9 @@
     }
     &-24 {
         font-size: 1.5rem;
+    }
+    &-28 {
+        font-size: 1.75rem;
     }
     &-32 {
         font-size: 2rem;
@@ -123,8 +162,27 @@
         line-height: 7.316875rem;
     }
 
+    &-19 {
+        line-height: 1.21875rem;
+    }
+    &-20 {
+        line-height: 1.25rem;
+    }
     &-24 {
         line-height: 1.5rem;
+    }
+    &-25 {
+        line-height: 1.5625rem;
+    }
+    &-26 {
+        line-height: 1.625rem;
+    }
+
+    &-28 {
+        line-height: 1.75rem;
+    }
+    &-29 {
+        line-height: 1.82875rem;
     }
 
     &-37 {

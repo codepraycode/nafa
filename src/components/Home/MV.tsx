@@ -7,13 +7,22 @@ export default function MV() {
     return (
         <Section
             name='mv'
+            className='text-clr-light'
             style={{
                 backgroundImage: `url(${homeData.mv.bg})`
             }}
         >
-            <p className='text-uppercase'>{homeData.mv.title}</p>
+            <p
+                className='text-uppercase fw-600 lg-fs-24 fs-16 lg-lh-29 lh-19'
+            >
+                {homeData.mv.title}
+            </p>
+
             <hr/>
-            <Link href={"/"} className='btn btn-light'>
+            <Link
+                href={"/"}
+                className='btn btn-light fs-14 fw-500 lh-24'
+            >
                 {homeData.mv.cta.label}
             </Link>
         </Section>

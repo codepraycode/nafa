@@ -642,25 +642,13 @@ footer {
 }
 
 .mv {
-    
-    // background-image: url("/mv-bg.jpeg");
     background-position: center ;    
-    min-height: 100vh;
+    
+    height: 47.375rem;
+    
     display: flex;
     align-items: flex-end;
     
-
-    @include mixins.fonts($family: $montserrat-font, $weight: 600);
-    color: $clr-text-light;
-
-    p {
-        font-size: 1rem;
-        line-height: 1.82875;
-        
-        @include mixins.least-large-screen {
-            font-size: 1.5rem;
-        }
-    }
 
 
     hr {
@@ -675,15 +663,22 @@ footer {
 
         text-align: center;
 
+        
+        // padding: 1rem;
+        padding: 1.5rem 5rem;
+        
+        width: 69.875rem;
+        max-width: 95%;
         margin-inline: auto;
-
-        padding: 1rem;
     
+        .btn {
+            display: none;
+        }
 
         @include mixins.least-large-screen {
-            // top: 35rem;
-            width: 80%;
-            padding: 1.5rem 5rem;
+            .btn {
+                display: inline-block;
+            }
         }
     }
 
@@ -693,7 +688,7 @@ footer {
 .rg {
     // background-image: url("/rg-bg.jpeg");
     background-position: center 40%;
-    min-height: 90vh;
+    height: 41rem;
 
     // background-color: rgb(40, 95, 7);
     background-blend-mode: multiply;
@@ -702,6 +697,10 @@ footer {
 
     display: flex;
     align-items: flex-end;
+
+    @include mixins.least-large-screen {
+        height: 41.5625rem;
+    }
 
     
     @include mixins.least-small-screen {
@@ -712,47 +711,19 @@ footer {
         background-position: center 35% !important;
     }
 
-    @include mixins.fonts($family: $inter-font, $weight: 500);
-    color: $clr-text-light;
 
-    h2 {
-        font-weight: 600;
-        font-size: 1.75rem;
-        line-height: 1.875rem;
-        
-        @include mixins.least-large-screen {
-            font-size: 3rem;
-            line-height: 3.5rem;
-        }
-    }
-
-    p {
-        font-size: 0.875rem;
-        line-height: 1.5rem;
-        @include mixins.least-large-screen {
-            line-height: 1.7rem;
-            font-size: 1.25rem;
-        }
-    }
     
     &-wrapper {
 
-        text-align: center;
-        
+        width: 74.1875rem;
+        max-width: 95%;
         margin-inline: auto;
-        padding-block: 2rem;
-        max-width: 80%;
+        padding-bottom: 3.7rem;
         
         @include mixins.least-small-screen {
             .btn {
                 width: 100%;
             }
-        }
-
-        @include mixins.least-large-screen {
-            max-width: 90%;
-            padding: 2rem 15rem;
-            padding-bottom: 3.7rem;
         }
     }
 
@@ -954,19 +925,6 @@ footer {
 
 .live_scores {
 
-    @include mixins.fonts($family: $montserrat-font, $weight: 600);
-
-    h2 {
-        font-size: 1.25rem;
-        text-transform: uppercase;
-        @include mixins.fonts($family: $montserrat-font, $weight: 600);
-
-        @include mixins.least-large-screen {
-            font-size: 2rem;
-            line-height: 1.5rem;
-        }
-    }
-
     $padding-inline: 2rem;
 
 
@@ -989,61 +947,18 @@ footer {
         justify-content: space-between;
         align-items: center;
 
-        @include mixins.fonts($family: $montserrat-font, $weight: 600);
-
-        background-color: $clr3;
-
         padding-block: 1rem;
         padding-inline: $padding-inline;
         
         border-radius: 1rem;
-        color: $clr-text-light;
-
-
-        // font-size: 0.25rem;
-        line-height: 1.5rem;
-
-        span {
-            font-size: .75rem;
-        }
-        
-        a {
-            color: inherit;
-            font-size: .75rem;
-        }
-
-        @include mixins.least-medium-screen {
-            span {
-                font-size: 1.2rem;
-            }
-            a {
-                font-size: 1rem;
-            }
-        }
-        
-        @include mixins.least-large-screen {
-            padding-inline: $padding-inline;
-
-            span {
-                font-size: 1.5rem;
-            }
-
-            a {
-                font-size: 1rem;
-            }
-        }
     }
 
 
     span {
-        @include mixins.fonts($montserrat-font, $weight:600);
-        font-size: 1rem;
-        line-height: 1.5rem;
 
 
         &.simple {
-            font-weight: 500;
-            font-size: 1.25rem;
+
             display: none;
 
             @include mixins.least-large-screen {
@@ -1147,8 +1062,6 @@ footer {
         }
     }
 }
-
-
 
 .articles-wrapper {
     position: relative;

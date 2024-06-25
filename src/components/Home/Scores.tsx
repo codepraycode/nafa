@@ -8,21 +8,43 @@ export default function LiveScores() {
         <Section
             name='live_scores'
         >
-            <h2>Latest Scores</h2>
+            <h2
+                className='fw-600 lg-fs-32 fs-20 lh-24 text-clr-4 text-uppercase'
+            >
+                Latest Scores
+            </h2>
             <br/>
 
             <div className="score-table">
-                <h3>
-                    <span>NSSFFL - Play Offs</span>
+                <h3
+                    className='text-clr-light bg-3 lh-24 fw-600'
+                >
+                    <span
+                        className='lg-fs-24 fs-12'
+                    >
+                        NSSFFL - Play Offs
+                    </span>
 
-                    <Link href={slugify("Draw")}>Draw</Link>
+                    <Link
+                        href={slugify("Draw")}
+                        className='text-clr-light lg-fs-16 fs-12'
+                    >
+                        Draw
+                    </Link>
                 </h3>
 
                 <div className="listing">
-                    <div>
-                        <div className="list-item">                        
-                            <span className='simple'>Final</span>
-                            <span>Ondo State</span>
+                    <div className='text-clr-4 fw-600 fs-16 lh-24'>
+                        <div className="list-item">
+                            <span
+                                className='simple fw-500 fs-20 lh-24 text-clr-dark'
+                            >
+                                Final
+                            </span>
+
+                            <span>
+                                Ondo State
+                            </span>
 
                             <div>
                                 <span>25</span>
@@ -35,7 +57,11 @@ export default function LiveScores() {
                         </div>
 
                         <div className="list-item">
-                            <span className='simple'>12.02. 00:30</span>
+                            <span
+                                className='simple fw-500 fs-20 lh-20'
+                            >
+                                12.02. 00:30
+                            </span>
                             <span>Lagos State</span>
 
                             <div>
@@ -57,16 +83,32 @@ export default function LiveScores() {
             {/* <hr/> */}
 
             <div className="score-table">
-                <h3>
-                    <span>NSSFFL - All Stars</span>
+                <h3
+                    className='text-clr-light bg-3 lh-24 fw-600'
+                >
+                    <span
+                        className='lg-fs-24 fs-12'
+                    >
+                        NSSFFL - All Stars
+                    </span>
 
-                    <Link href={slugify("Draw")}>Draw</Link>
+                    <Link
+                        href={slugify("Draw")}
+                        className='text-clr-light lg-fs-16 fs-12'
+                    >
+                        Draw
+                    </Link>
                 </h3>
 
                 <div className="listing">
-                    <div>
+                    <div className='text-clr-4 fw-600 fs-16 lh-24'>
                         <div className="list-item">                        
-                            <span className='simple'>Final</span>
+                            <span
+                                className='simple fw-500 fs-20 lh-24 text-clr-dark'
+                            >
+                                Final
+                            </span>
+
                             <span>Ondo State</span>
 
                             <div>
@@ -80,7 +122,12 @@ export default function LiveScores() {
                         </div>
 
                         <div className="list-item">
-                            <span className='simple'>12.02. 00:30</span>
+                            <span
+                                className='simple fw-500 fs-20 lh-20'
+                            >
+                                12.02. 00:30
+                            </span>
+
                             <span>Lagos State</span>
 
                             <div>
