@@ -120,21 +120,15 @@
 
 .underline {
 
-    // text-align: center;
-    // @include mixins.fonts($family: $montserrat-font, $weight: 600);
-    display: block;
+    // --line-width: 4.5%;
 
-    // font-size: 1.5rem;
-    // font-weight: 600;
-    
-    // text-transform: uppercase;
-    // color: $clr-text-2;
+    display: block;
     
     &::after {
         content: " ";
 
         display: block;
-        width: 4.5%;
+        width: var(--line-width, 5rem);
         height: 2px;
         background-color: $clr2;
 
@@ -179,16 +173,6 @@
 
         }
 
-        h2 {
-            @include mixins.fonts($family: $gotham-font, $weight: 600);
-            font-size: 2rem;
-        }
-        p {
-            @include mixins.fonts($family: $gotham-font, $weight: 400);
-            font-size: 1.25rem;
-            line-height: 2.3125rem;
-        }
-
         .btn {
             margin-inline: 0;
             width: fit-content;
@@ -199,21 +183,6 @@
     }
 }
 
-
-.bg{
-    &-green {
-        background-color: $clr-article-1;
-        color: $clr-text-light;
-    }
-    &-blue {
-        background-color: $clr-article-2;
-        color: $clr-text-light;
-    }
-    &-orange {
-        background-color: $clr-article-3;
-        color: $clr-text-light;
-    }
-}
 
 .slider-container {
     // background-color: red;
@@ -480,4 +449,11 @@
     @include mixins.least-medium-screen {
         margin-top: 2rem;
     }
+}
+
+
+.li-inside {
+    list-style-position: inside;
+
+    padding-left:0;
 }

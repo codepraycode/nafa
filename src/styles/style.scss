@@ -146,25 +146,25 @@ main:has(.page-header) {
         max-width: 100%;
         // background-color: red;
         
-        .image-wrapper {
-            overflow: hidden;
-            border-radius: 1rem 1rem 1rem 1rem;
-            width: 100%;
-            height: 100%;
-            img {
-                width: 39.625rem;
-                height: 100%;
-            }
-        }
+        // .image-wrapper {
+        //     overflow: hidden;
+        //     border-radius: 1rem 1rem 1rem 1rem;
+        //     width: 100%;
+        //     height: 100%;
+        //     img {
+        //         width: 39.625rem;
+        //         height: 100%;
+        //     }
+        // }
 
-        figcaption {
-            font-weight: 300;
-            b {
-                font-weight: 400;
-            }
-            font-size: 1.5rem;
-            line-height: 2.5625rem;
-        }
+        // figcaption {
+        //     font-weight: 300;
+        //     b {
+        //         font-weight: 400;
+        //     }
+        //     font-size: 1.5rem;
+        //     line-height: 2.5625rem;
+        // }
 
 
     }
@@ -476,9 +476,7 @@ main:has(.page-header) {
 
         display: flex;
         align-items: center;
-        justify-content: center;  
-        // column-gap: 5rem;
-        // row-gap: 5rem;
+        justify-content: center;
         column-gap: 5rem;
         row-gap: 2.5rem;
         flex-wrap: wrap;
@@ -1118,30 +1116,20 @@ main:has(.page-header) {
     
     
     div {
-        background-color: $clr7;
+        // background-color: $clr7;
         padding: 3rem;
         border-radius: 1rem;
         &:first-of-type {
             margin-bottom: 2rem;
         }
-
-    }
-    h2 {
-        @include mixins.fonts($family: $montserrat-font, $weight: 600);
-        // font-family: Gotham$;
-        font-size: 2.5rem;
-        line-height: 3.0475rem;
-    }
-
-    p, li {
-        @include mixins.fonts($family: $gotham-font, $weight: 400);
-        font-size: 1.5rem ;
-        line-height: 2.3125rem;
-        text-align: justify;
     }
 
     li {
-        font-size: 1.5rem;
+        font-size: inherit;
+        line-height: inherit;
+        text-align: inherit;
+
+        list-style-position: inside;
     }
 }
 
@@ -1149,38 +1137,11 @@ main:has(.page-header) {
     // background-color: red;
 
     figure {
-        width: 100%;
+        width: 73.125rem;
+        max-width: 100%;
         margin-inline: auto;
     }
 }
-
-
-.objectives-wrapper {
-
-    ol {
-        padding-left: 2.5rem;
-    }
-
-    li {
-        @include mixins.fonts($family: $gotham-font, $weight: 400);
-        font-size: 1.5rem !important;
-        line-height: 2.3125rem;
-        text-align: justify;
-    }
-
-
-    @include mixins.least-medium-screen {
-        ol {
-            padding-left: 1.5rem;
-
-            li {
-                font-size: 0.875rem !important;
-            }
-        }
-    }
-
-}
-
 
 .people-wrapper {
     .listing {
@@ -1196,6 +1157,7 @@ main:has(.page-header) {
             }
         }
     }
+
     .img {
         width: 100%;
         height: 15.375rem;
@@ -1204,7 +1166,7 @@ main:has(.page-header) {
         background-repeat: no-repeat;
         background-size: cover;
 
-        background-color: $clr8;
+        // background-color: $clr8;
         border-radius: 1rem;
     }
 
@@ -1217,22 +1179,10 @@ main:has(.page-header) {
             margin-inline: auto;
         }
     }
-    figcaption {
-        // background-color: red;
-        @include mixins.fonts($family: $inter-font);
-        b {
-            font-weight: 600 !important;
-            font-size: 1.25rem;
-            line-height: 1.5125rem;
-            // display: block;
-        }
 
-        span {
-            font-weight: 400 !important;
-            font-size: 1.1875rem;
-            line-height: 1.75rem;
-            display: block;
-        }
+    b{
+        display: block;
+        margin-bottom: .5rem;
     }
 }
 
@@ -1682,7 +1632,7 @@ p.huddle-title {
                     width: 6px;
                     height: 100%;
 
-                    background-color: $clr-article-1;
+                    // background-color: $clr-article-1;
                 }
             }
         }

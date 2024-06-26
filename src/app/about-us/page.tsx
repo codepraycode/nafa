@@ -4,6 +4,8 @@ import Partners from "@/components/Home/Partners";
 import PageHeader from "@/components/PageHeader";
 import AppLink from "@/components/UI/AppLink";
 import Section from "@/components/UI/Section";
+import SectionTitle, { SectionTitle2 } from "@/components/UI/SectionTitle";
+import { SlideCta } from "@/components/UI/Slider";
 import aboutData from "@/data/about.json";
 import Image from "next/image";
 
@@ -25,11 +27,16 @@ export default function AboutPage() {
             <Section name="page-content">
 
                 <Section name="vision_mission">
-                    <div>
-                        <h2 className="section-title text-capitalize">Our Vision</h2>
-                        <br/><br/><br/>
-                        <p>
-                            <b>
+                    <div className="bg-7 text-clr-dark">
+
+                        <SectionTitle2
+                            title="Our Vision"
+                        />
+
+                        <br/><br/>
+
+                        <p className="ff-gotham fw-400 lg-fs-24 fs-14 lh-37 text-justify">
+                            <b className="fw-700">
                                 Our vision is to create increased opportunities for the African continent through American Football.
                             </b>
                             <br/><br/>
@@ -43,19 +50,20 @@ export default function AboutPage() {
                         </p>
                     </div>
 
-                    <div>
-                        <h2 className="section-title text-capitalize">Our Mission</h2>
-                        <br/><br/><br/>
+                    <div className="bg-7 text-clr-dark">
 
-                        <ol>
+                        <SectionTitle2
+                            title="Our Mission"
+                        />
+
+                        <br/><br/>
+
+                        <ol className="ff-gotham fw-400 lg-fs-24 fs-14 lh-37 text-justify">
                             <li>
                                 To become the governing body for the growth, awareness and development of American Football in Nigeria.
                             </li>
                             <li>
                                 To represent Nigeria by kick-starting a professional American Football League that will consist of American Football teams all over Africa, divided into 4 regional conferences. All conferences will function individually, but still under the supervision/governance of the NAFA;
-                            </li>
-                            <li>
-                                To be focused on grassroots development of the sport, throughout Nigeria (and later Africa) by installing the sport as an intricate part of the nation’s educational curriculum;
                             </li>
                             <li>
                                 To be focused on grassroots development of the sport, throughout Nigeria (and later Africa) by installing the sport as an intricate part of the nation’s educational curriculum;
@@ -72,11 +80,13 @@ export default function AboutPage() {
 
                 <Section name="logo_label">
 
-                    <h2 className="section-title">Our Logo</h2>
+                    <SectionTitle2
+                        title="Our Logo"
+                    />
                     <br/>
                     <figure>
                         <Image
-                            src={"https://s3-alpha-sig.figma.com/img/cf41/4235/19ebcb622408148256d9072033e6052e?Expires=1717372800&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=FSWj-MydVPrictzf1AIsJCRjPrdQGSNDcRrl-gCjtfhxqIpOPF7HttPBjNmZbFkArvNK4qmmNc~~XXUDmcklhEcZaDJzoa7MEPXNn~aSVMgcUU6QVvCL7BfiWGe7w4aKcRO0GURmImEOkkLZ31wM1NZcv1fnSEgfTuVM~FzTb2z-jmpA8Iw0EkeAZVIXPO7Cw5Qd-D~Ks2ICxyzLaG7Vc9KQhIDgRa6zfGaeBizc9LZIQW8DdX8IgxmnKBBQUChRaRnBoBHRJtPUfKFBXowY2mCnkWaUbZiz~jfZf1SR8G6QFFUwz4QvzxQKn6w4vjDWJEUCG2WiJ-~8LM4daJoaSg__"}
+                            src={"https://nobox-upload-bucket.s3.eu-west-2.amazonaws.com/uploads/22b1c3b8-936d-4880-8331-c1baef85e703_19ebcb622408148256d9072033e6052e.png"}
                             alt="Logo Meaning"
                             width={1170}
                             height={807}
@@ -87,9 +97,12 @@ export default function AboutPage() {
                 <br/><br/><br/><br/>
 
                 <Section name="objectives">
-                    <h2 className="section-title">Objectives</h2>
+
+                    <SectionTitle2
+                        title="Objectives"
+                    />
                     <br/><br/>
-                    <ol>
+                    <ol className="ff-gotham fw-400 lg-fs-24 fs-14 lh-37 text-justify text-clr-dark li-inside">
                         <li>Promote contact and non-contact American Football competitions.</li>
                         <li>
                             Develop, manage and grow the American Football League and brand within Africa, for international competition (2 years plan).
@@ -112,9 +125,7 @@ export default function AboutPage() {
                     </ol>
                 </Section>
 
-
-
-                <br/><br/><br/><br/><br/><br/><br/><br/><br/>
+                <br/><br/><br/><br/>
                 <Highlights />
 
                 <br/><br/><br/><br/><br/><br/><br/><br/><br/>
@@ -124,12 +135,20 @@ export default function AboutPage() {
 
                 <br/><br/>
 
-                <AppLink
-                    href={"/our-people"}
-                    className='btn btn-primary slide-cta fs-2'
-                >
-                    Meet Our People
-                </AppLink>
+                <SlideCta
+                    // href={"/our-people"}
+                    // className='btn btn-primary slide-cta fs-2'
+
+                    data={{
+                        cta: {
+                            
+                            link: '/our-people',
+                            label: 'Meet Our People'
+                        }
+                    }}
+
+                    // className="fs-2"
+                />
 
 
             </Section>
