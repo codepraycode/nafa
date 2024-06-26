@@ -1,22 +1,61 @@
 
-import { Highlights } from '@/components/About/Highlights'
+import { HighlightItem, Highlights } from '@/components/About/Highlights'
 import Partners from '@/components/Home/Partners'
 import PageHeader from '@/components/PageHeader'
-import AppLink from '@/components/UI/AppLink'
 import Section from '@/components/UI/Section'
 import Image from 'next/image'
 import React from 'react'
+
+
+
+const highlightitems: HighlightItem[] = [
+    {
+        bgClr: 'bg-1',
+        title: ['About', 'Us'],
+        cta: {
+            label: 'Learn More',
+            link: '/'
+        },
+        paragraph: [
+            'Since the 2011s American football has been an interest to African youth, as their counterparts in the Western World have been making wave in the sport over the years.'
+        ]
+    },
+    {
+        bgClr: 'bg-2',
+        title: ['Organization', 'Structure'],
+        cta: {
+            label: 'Learn More',
+            link: '/'
+        },
+        paragraph: [
+            'Established in 2019, NAFA was created to increase the number of opportunities for people through the game of American football.'
+        ]
+    },
+    {
+        bgClr: 'bg-11',
+        title: ['The HUDDLE', 'Way'],
+        cta: {
+            label: 'Learn More',
+            link: '/'
+        },
+        paragraph: [
+            'We exist to provide a source of livelihood, bridge the educational gap in the society and promote interest for the sport in women. American football is emerging as one of the keys to holistic social development as...'
+        ]
+    },
+];
+
+
 
 export default function HistoryPage() {
     return (
         <>
             <PageHeader                
                 title={
-                    <span className="lg-fs-64 fs-48 lg-lh-64_32 lh-48_24">
+                    <span className='lg-fs-64 fs-48 lg-lh-64_32 lh-48_24'>
                         History of American Football in Nigeria
                     </span>
                 }
-                image={"https://s3-alpha-sig.figma.com/img/383f/f84f/5e165f49a7e2991ba3d1cf201f89cb84?Expires=1718582400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=NxEZm5lBovcftOTVHzG2NUDYrQ1FdFvPL8OPVPvEDSZvYIacoLaNGhio7-iqAObz7rA9g1PpuxrHh~CyzkfS0qkPQopycVIdYPeUwfACJPCUPuGdzKTqoD8HAOMC5d~5a1CtKCkLZLZhlqAp5S0VGP3tM72nnQlXZM-d~qeiKU2w9HFTlDDfdAcmgAAuGMvOfD0Mgcixfqx0DGSKcOmVHO8W-Z5TkQ3ehyuUrcvbvNCrEUWa7iJv2BpyzYWAaLtPWx--n~9-4KLpRylgb1TyBpEQE~MWgSeLJSo8zbhUk-YG39zp2JszKg-1yxBP-coV75uXz3kO1hh3a1Rcub4xzg__"}
+                image={'https://s3-alpha-sig.figma.com/img/383f/f84f/5e165f49a7e2991ba3d1cf201f89cb84?Expires=1718582400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=NxEZm5lBovcftOTVHzG2NUDYrQ1FdFvPL8OPVPvEDSZvYIacoLaNGhio7-iqAObz7rA9g1PpuxrHh~CyzkfS0qkPQopycVIdYPeUwfACJPCUPuGdzKTqoD8HAOMC5d~5a1CtKCkLZLZhlqAp5S0VGP3tM72nnQlXZM-d~qeiKU2w9HFTlDDfdAcmgAAuGMvOfD0Mgcixfqx0DGSKcOmVHO8W-Z5TkQ3ehyuUrcvbvNCrEUWa7iJv2BpyzYWAaLtPWx--n~9-4KLpRylgb1TyBpEQE~MWgSeLJSo8zbhUk-YG39zp2JszKg-1yxBP-coV75uXz3kO1hh3a1Rcub4xzg__'}
                 small
             />
 
@@ -41,10 +80,10 @@ export default function HistoryPage() {
 
                     <div className='text-justify'>
                         <figure>
-                            <div className="image-wrapper">
+                            <div className='image-wrapper'>
                                 <Image
-                                    src="https://nobox-upload-bucket.s3.eu-west-2.amazonaws.com/uploads/8e35aadc-e65d-41d9-8ac4-5e2fdd3e6ea3_8d00323f7bd4d939ca5c8e684ee8d6de.jpeg"
-                                    alt="Figure 3 Cross section of players of the Lagos Marines, the most active tackle football Team in Nigeria today"
+                                    src='https://nobox-upload-bucket.s3.eu-west-2.amazonaws.com/uploads/8e35aadc-e65d-41d9-8ac4-5e2fdd3e6ea3_8d00323f7bd4d939ca5c8e684ee8d6de.jpeg'
+                                    alt='Figure 3 Cross section of players of the Lagos Marines, the most active tackle football Team in Nigeria today'
                                     width={500}
                                     height={500}
                                 />
@@ -105,10 +144,10 @@ In 2017, the American football community in Africa hosted more key events. First
                 <br/><br/><br/><br/><br/><br/>
                 <figure className='f-w'>
 
-                    <div className="image-wrapper">
+                    <div className='image-wrapper'>
                         <Image
-                            src="https://nobox-upload-bucket.s3.eu-west-2.amazonaws.com/uploads/b91a3b8c-ab60-4598-a363-968f7680b2cd_5c481946e7e93030d30c33d4cbe7401c.jpeg"
-                            alt="Figure 3 Cross section of players of the Lagos Marines, the most active tackle football Team in Nigeria today"
+                            src='https://nobox-upload-bucket.s3.eu-west-2.amazonaws.com/uploads/b91a3b8c-ab60-4598-a363-968f7680b2cd_5c481946e7e93030d30c33d4cbe7401c.jpeg'
+                            alt='Figure 3 Cross section of players of the Lagos Marines, the most active tackle football Team in Nigeria today'
                             width={500}
                             height={500}
                         />
@@ -118,7 +157,7 @@ In 2017, the American football community in Africa hosted more key events. First
 
                     <figcaption className='text-justify ff-gotham text-clr-dark lg-lh-41 lh-37 lg-fs-18 fs-14 fw-300'>
                         <i>
-                            <b className='fw-700'>Figure 4</b>{" "}
+                            <b className='fw-700'>Figure 4</b>{' '}
                             The 2018 Sankofa Bowl witnessed the Lagos Marines play the Ivory Coast Riviera Golf Golden Eagles 
                         </i>
                     </figcaption>
@@ -163,10 +202,10 @@ In 2017, the American football community in Africa hosted more key events. First
                 <Section name='figures' noWrapper>
                     <br/><br/><br/><br/><br/><br/>
                     <figure className='f-w'>
-                        <div className="image-wrapper">
+                        <div className='image-wrapper'>
                             <Image
-                                src="https://nobox-upload-bucket.s3.eu-west-2.amazonaws.com/uploads/7a9ec9d1-3726-482c-8c25-6660017ac5fa_774490e7948ef855ed75740da90b3da2.jpeg"
-                                alt="Figure 3 Cross section of players of the Lagos Marines, the most active tackle football Team in Nigeria today"
+                                src='https://nobox-upload-bucket.s3.eu-west-2.amazonaws.com/uploads/7a9ec9d1-3726-482c-8c25-6660017ac5fa_774490e7948ef855ed75740da90b3da2.jpeg'
+                                alt='Figure 3 Cross section of players of the Lagos Marines, the most active tackle football Team in Nigeria today'
                                 width={500}
                                 height={500}
                             />
@@ -174,7 +213,7 @@ In 2017, the American football community in Africa hosted more key events. First
                         <br/>
                         <figcaption className='text-justify ff-gotham text-clr-dark lg-lh-41 lh-37 lg-fs-18 fs-14 fw-300'>
                             <i>
-                                <b>Figure 5</b>{" "}
+                                <b>Figure 5</b>{' '}
                                 The 2020 Lagos Mainlanders Vs Lagos Islanders witnessed the Lagos state First NAFA Exhibition games. 
                             </i>
                         </figcaption>
@@ -183,10 +222,10 @@ In 2017, the American football community in Africa hosted more key events. First
 
                     <br/><br/><br/><br/>
                     <figure className='f-w'>
-                        <div className="image-wrapper">
+                        <div className='image-wrapper'>
                             <Image
-                                src="https://nobox-upload-bucket.s3.eu-west-2.amazonaws.com/uploads/d8d91d03-8372-423e-80b7-d534ccfad21a_ed9f8b88877d50b66eacd77b954933d5.jpeg"
-                                alt="Figure 3 Cross section of players of the Lagos Marines, the most active tackle football Team in Nigeria today"
+                                src='https://nobox-upload-bucket.s3.eu-west-2.amazonaws.com/uploads/d8d91d03-8372-423e-80b7-d534ccfad21a_ed9f8b88877d50b66eacd77b954933d5.jpeg'
+                                alt='Figure 3 Cross section of players of the Lagos Marines, the most active tackle football Team in Nigeria today'
                                 width={500}
                                 height={500}
                             />
@@ -194,7 +233,7 @@ In 2017, the American football community in Africa hosted more key events. First
                         <br/>
                         <figcaption className='text-justify ff-gotham text-clr-dark lg-lh-41 lh-37 lg-fs-18 fs-14 fw-300'>
                             <i>
-                                <b>Figure 6</b>{" "}
+                                <b>Figure 6</b>{' '}
                                 The 2020 Exhibition games by Nigerian American Football Association NAFA. It was the official way to introduce the association to the general public and this event witnessed over 1000 views on sight. 
                             </i>
                         </figcaption>
@@ -203,10 +242,10 @@ In 2017, the American football community in Africa hosted more key events. First
 
                     <br/><br/><br/><br/>
                     <figure className='f-w'>
-                        <div className="image-wrapper">
+                        <div className='image-wrapper'>
                             <Image
-                                src="https://nobox-upload-bucket.s3.eu-west-2.amazonaws.com/uploads/8c71246e-ba19-47b1-b1ca-cf27007d243b_a6283b344b4d2e35150e15f2648f626d.jpeg"
-                                alt="Figure 3 Cross section of players of the Lagos Marines, the most active tackle football Team in Nigeria today"
+                                src='https://nobox-upload-bucket.s3.eu-west-2.amazonaws.com/uploads/8c71246e-ba19-47b1-b1ca-cf27007d243b_a6283b344b4d2e35150e15f2648f626d.jpeg'
+                                alt='Figure 3 Cross section of players of the Lagos Marines, the most active tackle football Team in Nigeria today'
                                 width={500}
                                 height={500}
                             />
@@ -214,7 +253,7 @@ In 2017, the American football community in Africa hosted more key events. First
                         <br/>
                         <figcaption className='text-justify ff-gotham text-clr-dark lg-lh-41 lh-37 lg-fs-18 fs-14 fw-300'>
                             <i>
-                                <b>Figure 7</b>{" "}
+                                <b>Figure 7</b>{' '}
                                 The 2020 Exhibition games with photos of Coach Dominik Mueller from Germany, Founder of American Football in Lagos Nigeria, the man who gave life to American football in Nigeria.
                             </i>
                         </figcaption>
@@ -223,10 +262,10 @@ In 2017, the American football community in Africa hosted more key events. First
 
                     <br/><br/><br/><br/>
                     <figure className='f-w'>
-                        <div className="image-wrapper">
+                        <div className='image-wrapper'>
                             <Image
-                                src="https://nobox-upload-bucket.s3.eu-west-2.amazonaws.com/uploads/4ff8fb7c-c685-40c0-a969-e6381ae162dc_aee2a6b67dde5824ac9786b8163f38f3.jpeg"
-                                alt="Figure 3 Cross section of players of the Lagos Marines, the most active tackle football Team in Nigeria today"
+                                src='https://nobox-upload-bucket.s3.eu-west-2.amazonaws.com/uploads/4ff8fb7c-c685-40c0-a969-e6381ae162dc_aee2a6b67dde5824ac9786b8163f38f3.jpeg'
+                                alt='Figure 3 Cross section of players of the Lagos Marines, the most active tackle football Team in Nigeria today'
                                 width={500}
                                 height={500}
                             />
@@ -234,7 +273,7 @@ In 2017, the American football community in Africa hosted more key events. First
                         <br/>
                         <figcaption className='text-justify ff-gotham text-clr-dark lg-lh-41 lh-37 lg-fs-18 fs-14 fw-300'>
                             <i>
-                                <b>Figure 8</b>{" "}
+                                <b>Figure 8</b>{' '}
                                 The 2020 Exhibition games with photos of Coach Dominik Mueller from Germany, Founder of American Football in Lagos Nigeria, the man who gave life to American football in Nigeria. 
                             </i>
                         </figcaption>
@@ -251,7 +290,10 @@ In 2017, the American football community in Africa hosted more key events. First
                 <br/><br/><br/>
 
 
-                <Highlights />
+                <Highlights
+                    title='Explore More'
+                    items={highlightitems}
+                />
 
                 
             </Section>
