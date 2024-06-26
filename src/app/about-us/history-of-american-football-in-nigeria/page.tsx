@@ -2,6 +2,7 @@
 import { HighlightItem, Highlights } from '@/components/About/Highlights'
 import Partners from '@/components/Home/Partners'
 import PageHeader from '@/components/PageHeader'
+import TextMunch from '@/components/TextMucnh'
 import Section from '@/components/UI/Section'
 import Image from 'next/image'
 import React from 'react'
@@ -52,7 +53,10 @@ export default function HistoryPage() {
             <PageHeader                
                 title={
                     <span className='lg-fs-64 fs-48 lg-lh-64_32 lh-48_24'>
-                        History of American Football in Nigeria
+
+                        <TextMunch
+                            text={['History of American Football in', 'Nigeria']}
+                        />
                     </span>
                 }
                 image={'https://s3-alpha-sig.figma.com/img/383f/f84f/5e165f49a7e2991ba3d1cf201f89cb84?Expires=1718582400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=NxEZm5lBovcftOTVHzG2NUDYrQ1FdFvPL8OPVPvEDSZvYIacoLaNGhio7-iqAObz7rA9g1PpuxrHh~CyzkfS0qkPQopycVIdYPeUwfACJPCUPuGdzKTqoD8HAOMC5d~5a1CtKCkLZLZhlqAp5S0VGP3tM72nnQlXZM-d~qeiKU2w9HFTlDDfdAcmgAAuGMvOfD0Mgcixfqx0DGSKcOmVHO8W-Z5TkQ3ehyuUrcvbvNCrEUWa7iJv2BpyzYWAaLtPWx--n~9-4KLpRylgb1TyBpEQE~MWgSeLJSo8zbhUk-YG39zp2JszKg-1yxBP-coV75uXz3kO1hh3a1Rcub4xzg__'}
@@ -213,8 +217,8 @@ In 2017, the American football community in Africa hosted more key events. First
                         <br/>
                         <figcaption className='text-justify ff-gotham text-clr-dark lg-lh-41 lh-37 lg-fs-18 fs-14 fw-300'>
                             <i>
-                                <b>Figure 5</b>{' '}
-                                The 2020 Lagos Mainlanders Vs Lagos Islanders witnessed the Lagos state First NAFA Exhibition games. 
+                                <b className='fw-700'>Figure 5</b>{' '}
+                                The 2020 Lagos Mainlanders Vs Lagos Islanders witnessed the Lagos state First NAFA Exhibition games.
                             </i>
                         </figcaption>
                     </figure>
@@ -233,7 +237,7 @@ In 2017, the American football community in Africa hosted more key events. First
                         <br/>
                         <figcaption className='text-justify ff-gotham text-clr-dark lg-lh-41 lh-37 lg-fs-18 fs-14 fw-300'>
                             <i>
-                                <b>Figure 6</b>{' '}
+                                <b className='fw-700'>Figure 6</b>{' '}
                                 The 2020 Exhibition games by Nigerian American Football Association NAFA. It was the official way to introduce the association to the general public and this event witnessed over 1000 views on sight. 
                             </i>
                         </figcaption>
@@ -253,7 +257,7 @@ In 2017, the American football community in Africa hosted more key events. First
                         <br/>
                         <figcaption className='text-justify ff-gotham text-clr-dark lg-lh-41 lh-37 lg-fs-18 fs-14 fw-300'>
                             <i>
-                                <b>Figure 7</b>{' '}
+                                <b className='fw-700'>Figure 7</b>{' '}
                                 The 2020 Exhibition games with photos of Coach Dominik Mueller from Germany, Founder of American Football in Lagos Nigeria, the man who gave life to American football in Nigeria.
                             </i>
                         </figcaption>
@@ -273,7 +277,7 @@ In 2017, the American football community in Africa hosted more key events. First
                         <br/>
                         <figcaption className='text-justify ff-gotham text-clr-dark lg-lh-41 lh-37 lg-fs-18 fs-14 fw-300'>
                             <i>
-                                <b>Figure 8</b>{' '}
+                                <b className='fw-700'>Figure 8</b>{' '}
                                 The 2020 Exhibition games with photos of Coach Dominik Mueller from Germany, Founder of American Football in Lagos Nigeria, the man who gave life to American football in Nigeria. 
                             </i>
                         </figcaption>

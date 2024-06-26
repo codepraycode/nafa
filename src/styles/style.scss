@@ -1076,27 +1076,19 @@ main:has(.page-header) {
 
 
 .vision_mission-wrapper {
-    
-    
-    @include mixins.least-large-screen {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
-        // align-items: stretch;
-        gap: 2rem;
 
-        div:first-of-type {
-            margin-bottom: 0rem !important;
-        }
-    }
+    display: flex;
+    width: 100%;
+    gap: 2rem;
+
     
-    
-    div {
-        // background-color: $clr7;
+    & > div {
+        flex: 1;
         padding: 3rem;
         border-radius: 1rem;
-        &:first-of-type {
-            margin-bottom: 2rem;
-        }
+        margin: 0;
+        
+        // width: 38.5rem;
     }
 
     li {
