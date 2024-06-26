@@ -51,7 +51,7 @@ export default function AboutPage() {
         <>
             <PageHeader
                 title={
-                    <span className="lg-fs-128 fs-3">
+                    <span className="lg-fs-128 fs-48 lg-lh-117 lh-43">
                         {aboutData.header.title}
                     </span>
                 }

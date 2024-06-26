@@ -1154,13 +1154,6 @@ main:has(.page-header) {
 }
 
 
-p.huddle-title {
-    @include mixins.fonts($family: $montserrat-font, $weight: 400);
-    font-size: 1.25rem;
-    line-height: 2.3125rem;
-}
-
-
 .huddle-menu {
 
     &-wrapper {
@@ -1171,28 +1164,24 @@ p.huddle-title {
         
         @include mixins.least-large-screen {
             flex-direction: row;
-            // display: grid;
-            // grid-template-columns: 1fr 1fr;
         }
     }
 
-    @include mixins.fonts($family: $gotham-font, $weight: 400);
+    // h2 {
+    //     font-size: 3rem;
+    //     line-height: 3.875rem;
+    //     color: $clr-text-8;
+    //     font-family: inherit;
+    //     font-weight: 700;
+    // }
 
-    h2 {
-        font-size: 3rem;
-        line-height: 3.875rem;
-        color: $clr-text-8;
-        font-family: inherit;
-        font-weight: 700;
-    }
-
-    p {
-        // @include mixins.fonts($family: $gotham-font, $weight: 700);
-        font-family: inherit;
-        font-size: 1.25rem;
-        line-height: 2.3125rem;
-        color: $clr-text-1;
-    }
+    // p {
+    //     // @include mixins.fonts($family: $gotham-font, $weight: 700);
+    //     font-family: inherit;
+    //     font-size: 1.25rem;
+    //     line-height: 2.3125rem;
+    //     color: $clr-text-1;
+    // }
     
     li {
         max-width: 100%;
@@ -1223,11 +1212,11 @@ p.huddle-title {
 
             align-items: center;
             font-family: inherit;
-            color: $clr-text-light;
-            text-decoration: none;
+            // color: $clr-text-light;
+            // text-decoration: none;
 
-            font-size: 1.25rem;
-            line-height: 2.3125rem;
+            // font-size: 1.25rem;
+            // line-height: 2.3125rem;
 
 
             &::after {
@@ -1249,12 +1238,12 @@ p.huddle-title {
             }
         }
         
-        b {
-            @include mixins.fonts($family: $gotham-font, $weight: 700);
+        // b {
+        //     @include mixins.fonts($family: $gotham-font, $weight: 700);
             
-            font-size: 2.5rem;
-            width: 2rem;
-        }
+        //     font-size: 2.5rem;
+        //     width: 2rem;
+        // }
 
         hr {
             height: 100%;
@@ -1272,14 +1261,14 @@ p.huddle-title {
             width: 40.1875rem;
             height: 9.5625rem;
 
-            a {
+            // a {
                 
-                font-size: 3rem;
-                b {
-                    width: 5rem;
-                    font-size: 6rem;
-                }
-            }
+            //     font-size: 3rem;
+            //     b {
+            //         width: 5rem;
+            //         font-size: 6rem;
+            //     }
+            // }
 
             hr {
                 margin-inline: 2rem;
@@ -1311,24 +1300,24 @@ p.huddle-title {
         }
     }
 
-    h3 {
-        @include mixins.fonts($family: $inter-font, $weight:400);
-        font-size: 1.75rem;
-        line-height: 2.118125rem;
+    // h3 {
+    //     @include mixins.fonts($family: $inter-font, $weight:400);
+    //     font-size: 1.75rem;
+    //     line-height: 2.118125rem;
         
-        color: inherit;
+    //     color: inherit;
 
-        b {
-            font-weight: 600;
-        }
-    }
+    //     b {
+    //         font-weight: 600;
+    //     }
+    // }
 
-    p {
-        @include mixins.fonts($family: $inter-font, $weight: 400);
-        font-size: 1.25rem;
-        line-height: 1.75rem;
-        color: $clr-text-1;
-    }
+    // p {
+    //     @include mixins.fonts($family: $inter-font, $weight: 400);
+    //     font-size: 1.25rem;
+    //     line-height: 1.75rem;
+    //     color: $clr-text-1;
+    // }
     
     a:not(.btn) {
         text-decoration: none;

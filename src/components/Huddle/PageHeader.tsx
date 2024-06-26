@@ -27,7 +27,11 @@ export default function HuddlePageHeader() {
 
     return (
         <PageHeader
-            title={pageH.title || pageH.text as string}
+            title={
+                <span className="lg-fs-128 fs-48 lg-lh-117 lh-43">
+                    {pageH.title || pageH.text as string}
+                </span>
+            }
             image={pageH.image.src}
         />
     )

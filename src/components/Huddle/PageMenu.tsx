@@ -6,7 +6,7 @@ import { slugifyLink } from '@/utils/slugify';
 import { usePathname } from 'next/navigation';
 
 
-const pagePath = "/about-us/huddle/"
+const pagePath = "/about-us/the-huddle-way/"
 export default function PageMenu() {
 
     const current_path = usePathname();
@@ -19,6 +19,7 @@ export default function PageMenu() {
                     if (!item) return null;
                     
                     const firstLetter = item.text.charAt(0);
+                    const rlink = slugifyLink(item.text, pagePath);
 
                     
                     return (
@@ -35,9 +36,9 @@ export default function PageMenu() {
                         }}
                         >
                             <Link
-                                href={slugifyLink(item.text, pagePath)}
+                                href={rlink}
                                 scroll={false}
-                                data-active={current_path.includes(slugifyLink(item.text, "/huddle/"))}
+                                data-active={current_path.includes(rlink)}
                             >
                                 <b>{firstLetter}</b>
                                 <hr/>
