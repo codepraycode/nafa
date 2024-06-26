@@ -8,23 +8,29 @@ import { unslugify } from '@/utils/slugify';
 
 
 function Breadcrumb() {
-    // TODO: Read current url and use paths to create breadcrumb
+
     const list = usePathList()
-    // console.log(list);
+
     return (
         <ul role='list' className='breadcrumb'>
             {
                 list.map((e, i)=>{
-                    const label = e === "" ? "Home" : e;
+                    const label = e === "" ? (
+                        <span className='fw-600'>
+                            Home
+                        </span>) : (
+                        <span className='fw-400'>
+                            {unslugify(e)}
+                        </span>);
                     const link = "/";
 
                     return (
                         <li key={i}>
                             <AppLink
-                                href={"/"}
-                                className='text-w-600'
+                                href={link}
+                                className='ff-montserrat fs-14 lh-17_07 text-clr-light text-decoration-none'
                             >
-                                {unslugify(label)}
+                                { label }
                             </AppLink>
                         </li>
                     )

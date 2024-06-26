@@ -9,8 +9,12 @@ import React from 'react'
 export default function HistoryPage() {
     return (
         <>
-            <PageHeader
-                title='History of American Football in Nigeria'
+            <PageHeader                
+                title={
+                    <span className="lg-fs-64 fs-48 lg-lh-64_32 lh-48_24">
+                        History of American Football in Nigeria
+                    </span>
+                }
                 image={"https://s3-alpha-sig.figma.com/img/383f/f84f/5e165f49a7e2991ba3d1cf201f89cb84?Expires=1718582400&Key-Pair-Id=APKAQ4GOSFWCVNEHN3O4&Signature=NxEZm5lBovcftOTVHzG2NUDYrQ1FdFvPL8OPVPvEDSZvYIacoLaNGhio7-iqAObz7rA9g1PpuxrHh~CyzkfS0qkPQopycVIdYPeUwfACJPCUPuGdzKTqoD8HAOMC5d~5a1CtKCkLZLZhlqAp5S0VGP3tM72nnQlXZM-d~qeiKU2w9HFTlDDfdAcmgAAuGMvOfD0Mgcixfqx0DGSKcOmVHO8W-Z5TkQ3ehyuUrcvbvNCrEUWa7iJv2BpyzYWAaLtPWx--n~9-4KLpRylgb1TyBpEQE~MWgSeLJSo8zbhUk-YG39zp2JszKg-1yxBP-coV75uXz3kO1hh3a1Rcub4xzg__"}
                 small
             />

@@ -190,6 +190,13 @@
     &-16 {
         line-height: 1.05875rem;
     }
+    &-17 {
+        line-height: 1.0625rem;
+
+        &_07 {
+            line-height: 1.066875rem;
+        }
+    }
     &-19 {
         line-height: 1.21875rem;
     }
@@ -228,8 +235,20 @@
     &-48 {
         line-height: 3rem;
 
+        &_24 {
+            line-height: 3.015rem;
+        }
+
         &_76 {
             line-height: 3.0475rem;
+        }
+    }
+
+    &-64 {
+        line-height: 4rem;
+
+        &_32 {
+            line-height: 4.02rem;
         }
     }
     
