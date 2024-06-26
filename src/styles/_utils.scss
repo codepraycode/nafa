@@ -1,6 +1,7 @@
 @use "./variables" as *;
 @use "./mixins" as mixins;
 @import './utils/layout';
+@import './utils/spacing';
 @import './utils/text';
 @import './utils/btn';
 
@@ -12,23 +13,8 @@
 
 
 .f-w {
-
-    @include mixins.fonts($family: $montserrat-font, $weight: 300);
     display: block;
     width: 100% !important;
-
-    figcaption {
-        b {
-            font-weight: 700;
-        }
-        font-weight: 300;
-        
-        font-size: 0.875rem;
-        @include mixins.least-large-screen {
-            font-size: 1.5rem;
-        }
-    }
-    
     .image-wrapper {
         width: 100% !important;
         img {
@@ -440,9 +426,16 @@
     }
 }
 
+ul,
+ol {
+    &.li-inside {
+        list-style-position: inside;
+        padding-left: 0;
+    }
 
-.li-inside {
-    list-style-position: inside;
-
-    padding-left:0;
+    &.li-p {
+        &-1 {
+            margin-left: .6rem;
+        }
+    }
 }

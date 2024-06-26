@@ -39,6 +39,12 @@
         }
     }
 
+
+    // Style
+    &-italic {
+        font-style: italic;
+    }
+
 }
 
 @include mixins.responsive-options('text-clr') {
@@ -232,6 +238,10 @@
         line-height: 2.438125rem;
     }
 
+    &-41 {
+        line-height: 2.5625rem;
+    }
+
     &-48 {
         line-height: 3rem;
 
@@ -242,6 +252,10 @@
         &_76 {
             line-height: 3.0475rem;
         }
+    }
+
+    &-54 {
+        line-height: 3.375rem;
     }
 
     &-64 {
@@ -260,6 +274,9 @@
 
 // Font weight
 @include mixins.responsive-options('fw') {
+    &-300 {
+        font-weight: 300;
+    }
     &-400 {
         font-weight: 400;
     }

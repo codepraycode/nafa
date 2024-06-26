@@ -12,6 +12,7 @@ export function Highlights() {
             <SectionTitle2
                 title="Explore More"
             />
+
             <br/><br/><br/>
             
 

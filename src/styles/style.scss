@@ -116,7 +116,7 @@ main:has(.page-header) {
 .page-content {
     padding-block: 7rem;
     
-    @include mixins.fonts($family: $montserrat-font);
+    // @include mixins.fonts($family: $montserrat-font);
     
     // h2 {
     //     font-size: 2rem;
@@ -146,26 +146,16 @@ main:has(.page-header) {
         max-width: 100%;
         // background-color: red;
         
-        // .image-wrapper {
-        //     overflow: hidden;
-        //     border-radius: 1rem 1rem 1rem 1rem;
-        //     width: 100%;
-        //     height: 100%;
-        //     img {
-        //         width: 39.625rem;
-        //         height: 100%;
-        //     }
-        // }
-
-        // figcaption {
-        //     font-weight: 300;
-        //     b {
-        //         font-weight: 400;
-        //     }
-        //     font-size: 1.5rem;
-        //     line-height: 2.5625rem;
-        // }
-
+        .image-wrapper {
+            overflow: hidden;
+            border-radius: 1rem 1rem 1rem 1rem;
+            width: 100%;
+            height: 100%;
+            img {
+                width: 39.625rem;
+                height: 100%;
+            }
+        }
 
     }
 }
@@ -174,11 +164,17 @@ main:has(.page-header) {
 .even-section {
 
     &-wrapper {
+        figure {
+            margin-top: 2.5rem;
+        }
         @include mixins.least-large-screen {
             display: grid;
             grid-template-columns: 1fr 1fr;
             grid-template-rows: auto;
             gap: 5rem;
+            figure {
+                margin-top: 1rem;
+            }
         }
     }
 
