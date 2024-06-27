@@ -1,0 +1,47 @@
+/* Define the Inter Light font (300) */
+@font-face {
+    font-family: 'Inter';
+    src: url('/fonts/Inter/Inter-Light-BETA.otf') format('opentype');
+    font-weight: 300;
+    font-style: normal;
+}
+
+/* Define the Inter Light Italic font (300) */
+@font-face {
+    font-family: 'Inter';
+    src: url('/fonts/Inter/Inter-LightItalic-BETA.otf') format('opentype');
+    font-weight: 300;
+    font-style: italic;
+}
+
+/* Define the Inter Regular font (400) */
+@font-face {
+    font-family: 'Inter';
+    src: url('/fonts/Inter/Inter-Regular.otf') format('opentype');
+    font-weight: 400;
+    font-style: normal;
+}
+
+/* Define the Inter Italic font (400) */
+@font-face {
+    font-family: 'Inter';
+    src: url('/fonts/Inter/Inter-Italic.otf') format('opentype');
+    font-weight: 400;
+    font-style: italic;
+}
+
+/* Define the Inter Bold font (700) */
+@font-face {
+    font-family: 'Inter';
+    src: url('/fonts/Inter/Inter-Bold.otf') format('opentype');
+    font-weight: 700;
+    font-style: normal;
+}
+
+/* Define the Inter Bold Italic font (700) */
+@font-face {
+    font-family: 'Inter';
+    src: url('/fonts/Inter/Inter-BoldItalic.otf') format('opentype');
+    font-weight: 700;
+    font-style: italic;
+}
