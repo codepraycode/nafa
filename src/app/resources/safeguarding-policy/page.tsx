@@ -85,7 +85,7 @@ export default function HistoryPage() {
 
                     <br/><br/>
 
-                    <p className='ff-montserrat fw-400 fs-20 lh-37 text-justify'>
+                    <p className='ff-montserrat fw-400 fs-20 lh-37 lg-text-justify'>
                         The Nigeria American Football Association (NAFA) is committed 
                         to providing a fun, safe, and respectful environment for all 
                         children, young people, and adults involved in American Football. 
@@ -97,13 +97,13 @@ export default function HistoryPage() {
 
                     <h2
                         id={slugifyLink("Purpose of the policy", "#")}
-                        className='ff-montserrat fw-600 fs-32 lh-37 text-justify'
+                        className='ff-montserrat fw-600 fs-32 lh-37 lg-text-justify'
                     >
                         Purpose of the policy
                     </h2>
                     <br/><br/>
 
-                    <p className='ff-montserrat fw-400 fs-20 lh-37 text-justify'>
+                    <p className='ff-montserrat fw-400 fs-20 lh-37 lg-text-justify'>
                         This policy outlines our commitment to safeguarding individuals 
                         involved in the delivery of American Football in Nigeria. It is 
                         supported by codes of conduct, guidelines, and procedures to ensure 
@@ -119,13 +119,13 @@ export default function HistoryPage() {
 
                     <h2
                         id={slugify("Definitions")}
-                        className='ff-montserrat fw-600 fs-32 lh-37 text-justify'
+                        className='ff-montserrat fw-600 fs-32 lh-37 lg-text-justify'
                     >
                         Definitions
                     </h2>
                     <br/><br/>
 
-                    <ul className='ff-montserrat fw-400 fs-20 lh-37 text-justify'>
+                    <ul className='ff-montserrat fw-400 fs-20 lh-37 lg-text-justify'>
                         <li>
                             <span className='fw-600'>Child</span>: A person under the age of 18 years.
                         </li>
@@ -157,7 +157,7 @@ export default function HistoryPage() {
 
                     <h2
                         id={slugifyLink("Scope of the policyy", "#")}
-                        className='ff-montserrat fw-600 fs-32 lh-37 text-justify'
+                        className='ff-montserrat fw-600 fs-32 lh-37 lg-text-justify'
                     >
                         Scope of the policy 
                     </h2>
@@ -165,13 +165,13 @@ export default function HistoryPage() {
 
                     <div>
 
-                        <p className='ff-montserrat fw-400 fs-20 lh-37 text-justify'>
+                        <p className='ff-montserrat fw-400 fs-20 lh-37 lg-text-justify'>
                             This policy applies to all individuals involved in NAFA activities, including but not limited to:
                         </p>
 
                         <br/>
 
-                        <ul className='ff-montserrat fw-400 fs-20 lh-37 text-justify'>
+                        <ul className='ff-montserrat fw-400 fs-20 lh-37 lg-text-justify'>
                             <li>
                                 Coaches and instructors
                             </li>
@@ -208,14 +208,14 @@ export default function HistoryPage() {
                     <br/><br/>
                     <h2
                         id={slugifyLink("Policy Actiony", "#")}
-                        className='ff-montserrat fw-600 fs-32 lh-37 text-justify'
+                        className='ff-montserrat fw-600 fs-32 lh-37 lg-text-justify'
                     >
                         Policy Actions
                     </h2>
                     <br/><br/>
 
                     <div>
-                        <ul className='ff-montserrat fw-400 fs-20 lh-37 text-justify'>
+                        <ul className='ff-montserrat fw-400 fs-20 lh-37 lg-text-justify'>
                             <li>Appoint a safeguarding officer. </li>
                             <li>Set up an internal steering group to guide our work 
                                 and/or an external expert advisory group.
@@ -243,7 +243,7 @@ export default function HistoryPage() {
                             <li>NAFA will continually assess how children participate in football across the country and regularly review our safeguarding practices, at least annually. This is to ensure ongoing learning and improvements in line with evolving best practices and national legislation. Additionally, NAFA will proactively consult with children and other vulnerable groups, guided by local agencies and partners, to enhance our safeguarding strategies effectively.</li>
                         </ul>
                         
-                        <p className='ff-montserrat fw-400 fs-20 lh-37 text-justify'>
+                        <p className='ff-montserrat fw-400 fs-20 lh-37 lg-text-justify'>
                             This policy, and its accompanying code of conduct, procedures and guidelines, will be widely promoted and made available on the NAFA website.
                         </p>
                     </div>
@@ -251,12 +251,12 @@ export default function HistoryPage() {
                     <br/><br/>
                     <h2
                         id={slugifyLink("Non-Compliancy", "#")}
-                        className='ff-montserrat fw-600 fs-32 lh-37 text-justify'
+                        className='ff-montserrat fw-600 fs-32 lh-37 lg-text-justify'
                     >
                         Non-Compliance
                     </h2>
                     <br/><br/>
-                    <p className='ff-montserrat fw-400 fs-20 lh-37 text-justify'>
+                    <p className='ff-montserrat fw-400 fs-20 lh-37 lg-text-justify'>
                         Failure to comply with this policy by anyone involved with NAFA Activities as distinctly enumerated under the scope of Policy will result in disciplinary action, including dismissal.
                     </p>
                     <br/><br/>
@@ -264,7 +264,7 @@ export default function HistoryPage() {
 
                     <h2
                         id={slugifyLink("Monitoring and Reviey", "#")}
-                        className='ff-montserrat fw-600 fs-32 lh-37 text-justify'
+                        className='ff-montserrat fw-600 fs-32 lh-37 lg-text-justify'
                     >
                         Monitoring and Review
                     </h2>
@@ -272,11 +272,11 @@ export default function HistoryPage() {
 
 
                     <div>
-                        <p className='ff-montserrat fw-400 fs-20 lh-37 text-justify'>
+                        <p className='ff-montserrat fw-400 fs-20 lh-37 lg-text-justify'>
                             This policy will undergo an annual review conducted in collaboration with expert local organizations and NGOs. Reviews may also occur more urgently under the following circumstances:
                         </p>
 
-                        <ul className='ff-montserrat fw-400 fs-20 lh-37 text-justify'>
+                        <ul className='ff-montserrat fw-400 fs-20 lh-37 lg-text-justify'>
                             <li>
                                 Changes in national legislation, policies, and services related to the rights and protection of children and adults, including safeguarding specifics.
                             </li>
@@ -290,12 +290,12 @@ export default function HistoryPage() {
                     <br/><br/>
                     <h2
                         id={slugifyLink("Approval and Implementatioy", "#")}
-                        className='ff-montserrat fw-600 fs-32 lh-37 text-justify'
+                        className='ff-montserrat fw-600 fs-32 lh-37 lg-text-justify'
                     >
                         Approval and Implementation
                     </h2>
                     <br/><br/>
-                    <p className='ff-montserrat fw-400 fs-20 lh-37 text-justify'>
+                    <p className='ff-montserrat fw-400 fs-20 lh-37 lg-text-justify'>
                         This policy is approved by the Executive Committee of NAFA and is effective from the 1st day of June 2024.
                         <br/>
                         It will be prominently displayed and available on the NAFA website.
