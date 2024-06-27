@@ -42,7 +42,7 @@ function ItemHighlight({data}:{data: PageDataItemHighlight[]}) {
 
                             <br/><br/>
 
-                            <button className="btn btn-light">
+                            <button className="btn btn-light d-flex align-center">
                                 Learn More
                             </button>
                         </Link>

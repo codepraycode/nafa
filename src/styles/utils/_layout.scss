@@ -25,3 +25,37 @@
         display: flex !important;
     }
 }
+
+@include mixins.responsive-options('gap') {
+    &-1 {
+        gap: 1rem;
+    }
+    &-2 {
+        gap: 2rem;
+    }
+}
+
+@include mixins.responsive-options('align') {
+    &-center {
+        align-items: center;
+    }
+    &-start {
+        align-items: flex-start;
+    }
+    &-end {
+        align-items: flex-end;
+    }
+}
+
+
+@include mixins.responsive-options('flex') {
+    &-1 {
+        flex: 1;
+    }
+    &-column {
+        flex-direction: column;
+    }
+    &-row {
+        flex-direction: row;
+    }
+}

@@ -16,13 +16,18 @@ const navLinks = siteData.nav;
 export default function Header() {
     return (
         <header>
-            <div className="header-top">
-                <ul role='list'>
+            <div className="header-top bg-1 d-none lg-d-flex align-center">
+                <ul role='list' className='d-flex gap-2'>
                     {
                         topNavLinks.map((item, i) => (
 
                             <li key={i}>
-                                <AppLink href={slugify(item)}>{item}</AppLink>
+                                <AppLink
+                                    href={slugify(item)}
+                                    className='text-clr-light ff-inter'
+                                >
+                                    {item}
+                                </AppLink>
                             </li>
                         ))
                     }
@@ -30,18 +35,19 @@ export default function Header() {
             </div>
 
 
-            <div className="header-wrapper">
+            <div className="header-wrapper d-flex align-center">
+
                 <Logo second/>
 
-                <nav>
+                <nav className='d-flex align-center'>
 
-                    <ul role='list' className='links'>
+                    <ul role='list' className='links text-clr-dark'>
                         {
                             navLinks.map((item, i)=>(
                                 <li key={i}>
                                     <AppLink
                                         href={item.link}
-                                        // onClick={(e)=>e.preventDefault()}
+                                        className='ff-inria fw-400 fs-20 lh-23'
                                     >
                                         {item.label}
                                     </AppLink>
@@ -49,15 +55,29 @@ export default function Header() {
 
                                     {
                                         item.submenu.length > 0 && (
-                                            <ul role='list' className="submenu">
+                                            <ul role='list' className="submenu ff-inria">
 
                                                 {
                                                     item.submenu.map((sitem, i)=>(
                                                        <React.Fragment key={i}>
                                                             <li>
-                                                                <AppLink href={sitem.link}>
-                                                                    <h3>{sitem.label}</h3>
-                                                                    {sitem.description && <p>{sitem.description}</p>}
+                                                                <AppLink
+                                                                    href={sitem.link}
+                                                                >
+                                                                    <h3
+                                                                        className='fw-400 fs-20 lh-23 text-clr-9'
+                                                                    >
+                                                                        {sitem.label}
+                                                                    </h3>
+
+                                                                    {
+                                                                        sitem.description && (
+                                                                        <p
+                                                                            className='fw-300 fs-14 lh-19 text-clr-3 mt-11'
+                                                                        >
+                                                                            {sitem.description}
+                                                                        </p>
+                                                                    )}
                                                                 </AppLink>
                                                             </li>
                                                             {
@@ -75,10 +95,27 @@ export default function Header() {
                         }
                     </ul>
 
-                    <div className="cta">
-                        <AppLink href={slugify("Become a member")} className='btn btn-primary'>Become a member</AppLink>
-                        <AppLink href={slugify("login")} className='btn btn-outline btn-d-md'>Login</AppLink>
-                        <AppLink href={slugify("login")} className='btn btn-outline btn-d-sm'>Enroll Your Organization</AppLink>
+                    <div className="d-flex gap-1 ff-inter fw-500 fs-14 lh-24">
+                        <AppLink
+                            href={slugify("Become a member")}
+                            className='btn btn-primary'
+                        >
+                            Become a member
+                        </AppLink>
+
+                        <AppLink
+                            href={slugify("login")}
+                            className='btn btn-outline d-none lg-d-block'
+                        >
+                            Login
+                        </AppLink>
+
+                        <AppLink
+                            href={slugify("login")}
+                            className='btn btn-outline d-inline-block md-d-none lg-d-none'
+                        >
+                            Enroll Your Organization
+                        </AppLink>
                     </div>
                 </nav>
 

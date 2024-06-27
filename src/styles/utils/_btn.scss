@@ -2,63 +2,53 @@
 @use "../mixins" as mixins;
 
 
-// Button
-@include mixins.responsive-options('btn') {
+
+.btn {
     text-decoration: none;
     text-align: center;
     display: inline-block;
 
-    padding-block: .7rem;
-    padding-inline: 1rem;
-
-    border-radius: .3rem;
-    padding: .8rem 1.2rem;
-
-    color: $clr-text-1;
-
     outline: 0;
-    border: 0;
+    
+    // min-width: var(--btn-min-width, 8.8125rem);
+    width: var(--btn-width, fit-content);
+    max-width: var(--btn-max-width, 100%);
 
+    padding-block: var(--btn-padding-block, .5rem);
+    padding-inline: var(--btn-padding-inline, 1rem);
+    
+    border-color: var(--btn-border-color, whitesmoke);
+    border-style: var(--btn-border-style, solid);
+    border-width: var(--btn-border-width, 0.5px);
+    border-radius: var(--btn-border-radius, 4px);
+
+    background: var(--btn-background, hsla(216, 12%, 84%, 1));
+    color: var(--btn-color, $clr-text-4);
 
     @include mixins.box-shadow;
-
-    // @include mixins.fonts($family: $inter-font);
-    font-weight: 500;
+}
 
 
-    &-d-md {
-        display: none !important;
-
-        @include mixins.least-large-screen {
-            display: inline-block !important;
-        }
-    }
-
-    &-d-sm {
-        display: none;
-
-        @include mixins.least-small-screen {
-            display: inline-block;
-        }
-    }
-
+// Button
+@include mixins.responsive-options('btn') {
 
     &-primary {
-        background-color: $clr2;
-        color: $clr-text-light !important;
-        border: 1px solid $clr-text-light;
+        --btn-background: hsla(209, 100%, 21%, 1);
+        --btn-color: hsla(0, 0%, 100%, 1);
+
+        --btn-border-width: 0.5px;
+        --btn-border-color: hsla(216, 12%, 84%, 1);
     }
 
     &-light {
-        // color: hsla(216, 12%, 84%, 1);
-        // padding: .8rem 1.2rem;
         box-shadow: 0 1 2px 0 rgba(6, 25, 56, 0.05);
-        background-color: rgba(255, 255, 255, 1);
-        margin-inline: auto;
+        --btn-background: rgba(255, 255, 255, 1);
     }
 
     &-outline {
-        border: .5px solid hsla(216, 12%, 84%, 1);
-        color: $clr-text-4;
+        --btn-border-width: 0.5px;
+        --btn-border-color: hsla(216, 12%, 84%, 1);
+        --btn-background: transparent;
+        
     }
 }

@@ -26,7 +26,7 @@ function ItemListing({data}:{data: PageDataItem[]}) {
                         />
 
                         <div
-                            className="bg-light"
+                            className="bg-light d-flex flex-column gap-1"
                         >
                             <h3
                                 className="ff-montserrat fw-500 lg-fs-24 fs-18 lh-24 text-clr-2"
@@ -41,7 +41,7 @@ function ItemListing({data}:{data: PageDataItem[]}) {
                             </p>
 
                             <Link
-                                className="btn btn-light ff-inter fw-500 fs-14 lh-24"
+                                className="btn btn-light d-block text-center ff-inter fw-500 fs-14 lh-24"
                                 href={item.cta?.link || "#"}
                             >
                                 {item.cta?.label || "Learn More"}

@@ -78,6 +78,9 @@
     &-8 {
         color: $clr-text-8;
     }
+    &-9 {
+        color: $clr-text-9;
+    }
 }
 
 @include mixins.responsive-options('bg') {
@@ -220,6 +223,9 @@
     }
     &-20 {
         line-height: 1.25rem;
+    }
+    &-23 {
+        line-height: 1.49875rem;
     }
     &-24 {
         line-height: 1.5rem;

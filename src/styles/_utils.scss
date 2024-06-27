@@ -7,7 +7,10 @@
 
 
 .logo {
-    width: 8rem;
+    display: inline-block;
+    width: 9.75rem;
+    height: 2.6875rem;
+    // background-color: red;
 }
 
 
@@ -113,6 +116,12 @@
 }
 
 
+.cursor {
+    &-pointer {
+        cursor: pointer;
+    }
+}
+
 
 .article-list {
     
@@ -149,9 +158,9 @@
         }
 
         .btn {
-            margin-inline: 0;
-            width: fit-content;
             margin-top: auto;
+            margin-inline: 0;
+            --btn-width: fit-content;
         }
 
 

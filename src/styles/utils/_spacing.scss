@@ -3,6 +3,26 @@
 
 
 // Button
+@include mixins.responsive-options('mt') {
+    &-1 {
+        margin-top: 1.5rem;
+    }
+    &-2 {
+        margin-top: 2.5rem;
+    }
+    &-3 {
+        margin-top: 3.5rem;
+    }
+
+    &-11 {
+        margin-top: .7rem;
+    }
+
+    &-18 {
+        margin-top: 1.125rem;
+    }
+}
+
 @include mixins.responsive-options('mb') {
     &-1 {
         margin-bottom: 1.5rem;
@@ -12,6 +32,10 @@
     }
     &-3 {
         margin-bottom: 3.5rem;
+    }
+
+    &-18 {
+        margin-bottom: 1.125rem;
     }
 }
 
@@ -24,6 +48,9 @@
     }
     &-3 {
         margin-block: 3.5rem;
+    }
+    &-11 {
+        margin-block: .7rem;
     }
 }
 

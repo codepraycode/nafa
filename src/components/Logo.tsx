@@ -12,15 +12,17 @@ interface LogoProps {
 export default function Logo(props: LogoProps) {
 
     return (
-        <div className="logo">
-            <AppLink href={"/"}>
-                <Image
-                    src={props.second ? "/logo.png" : "/logo-2.png"}
-                    alt='NAFA LOGO'
-                    width={100}
-                    height={100}
-                />
-            </AppLink>
-        </div>
+        <AppLink href={"/"} className='logo'>
+            <Image
+                src={
+                    props.second ? 
+                    "/logo.png" : 
+                    "/logo-2.png"
+                }
+                alt='NAFA LOGO'
+                width={100}
+                height={100}
+            />
+        </AppLink>
     )
 }
