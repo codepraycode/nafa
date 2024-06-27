@@ -583,14 +583,19 @@ main:has(.page-header) {
         height: 47.5rem;
     }
 
+
     .btn {
+        width: 100%;
+        padding-block: .5rem;
+
         &:first-of-type {
-            margin-right: 1rem;
+            margin-right: 1.5rem;
             margin-bottom: 1rem;
         }
 
-        @include mixins.least-small-screen {
-            width: 100%;
+        @include mixins.least-large-screen {
+            min-width: 9.875rem;
+            width: fit-content;
         }
     }
 }

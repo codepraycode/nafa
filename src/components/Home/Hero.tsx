@@ -34,7 +34,7 @@ export default function Hero() {
                             <div>
 
                                 <h1
-                                    className='text-clr-light ff-inria fw-700 fs-3 lg-fs-8 lg-lh-7'
+                                    className='text-clr-light ff-inria fw-700 fs-44 lg-fs-128 lg-lh-117 lh-44'
                                 >
                                     {
                                         item.title.map((it, i)=>(
@@ -49,18 +49,25 @@ export default function Hero() {
                                 </h1>
                                 <br/>
                                 <p
-                                    className='text-clr-light ff-inria fw-700 fs-1 lh-1 lg-lh-2'
+                                    className='text-clr-light ff-inria fw-700 lg-fs-24 fs-16 lh-22 lg-lh-33'
                                 >
                                     {item.text}
                                 </p>
                                 <br/><br/>
                             </div>
 
-                            <div className="cta">
-                                <Link href={"/"} className='btn btn-primary'>
+                            <div className="ctaa">
+                                <Link
+                                    href={"/"}
+                                    className='btn btn-primary ff-inter fw-500 fs-14 lh-24'
+                                >
                                     Become a Member
                                 </Link>
-                                <Link href={"/"} className='btn btn-light'>
+
+                                <Link
+                                    href={"/"}
+                                    className='btn btn-light ff-inter fw-500 fs-14 lh-24 text-clr-4'
+                                >
                                     Enroll Your Organization
                                 </Link>
 
