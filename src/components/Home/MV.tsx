@@ -13,15 +13,16 @@ export default function MV() {
             }}
         >
             <p
-                className='text-uppercase fw-600 lg-fs-24 fs-16 lg-lh-29 lh-19'
+                className='ff-montserrat text-uppercase fw-600 lg-fs-24 fs-16 lg-lh-29 lh-19'
             >
                 {homeData.mv.title}
             </p>
 
             <hr/>
+
             <Link
                 href={"/"}
-                className='btn btn-light fs-14 fw-500 lh-24'
+                className='btn btn-light fs-14 fw-500 lh-24 ff-inter fw-500'
             >
                 {homeData.mv.cta.label}
             </Link>

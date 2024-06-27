@@ -14,7 +14,7 @@ export default function Articles() {
 
             <SectionTitle title={homeData.articles.title}/>
 
-            <br/><br/><br/>
+            <br/>
 
             <ArticleItems />
 

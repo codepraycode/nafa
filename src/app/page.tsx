@@ -16,9 +16,7 @@ export default function Home() {
             <About />
             <br/><br/><br/><br/>
             <KickOff />
-            <br/><br/><br/><br/>
             <LiveScores />
-
             <Articles />
             <br/><br/><br/><br/>
             <RG />

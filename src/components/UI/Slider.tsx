@@ -53,7 +53,7 @@ export function SlideCta({data, className}:{data: any, className?: string}) {
     return (
         <Link
             href={data.cta.link}
-            className={`btn btn-primary slide-cta ${className || ''} fw-500 fs-14 lh-24 text-clr-light`}
+            className={`btn btn-primary slide-cta ${className || ''} ff-inter fw-500 fs-14 lh-24 text-clr-light`}
         >
             {data.cta.label}
         </Link>

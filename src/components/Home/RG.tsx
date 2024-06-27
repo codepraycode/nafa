@@ -13,7 +13,7 @@ export default function RG() {
             }}
         >
 
-            <div className="text-center text-clr-light">
+            <div className="ff-inter text-center text-clr-light">
                 <h2
                     className='fw-600 lg-fs-48 fs-28 lh-30'
                 >
@@ -29,7 +29,11 @@ export default function RG() {
                 </p>
 
                 <br/><br/>
-                <Link href={homeData.rg.cta.link} className='btn btn-light'>
+
+                <Link
+                    href={homeData.rg.cta.link}
+                    className='btn btn-light'
+                >
                     {homeData.rg.cta.label}
                 </Link>
             </div>

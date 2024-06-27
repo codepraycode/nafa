@@ -34,7 +34,7 @@ export default function Projects() {
                                 className='project-item text-decoration-none text-clr-light'
                             >
                                 <span
-                                    className='fw-600 fs-24 lh-29'
+                                    className='ff-montserrat fw-600 fs-24 lh-29'
                                 >
                                     {item.title}
                                 </span>

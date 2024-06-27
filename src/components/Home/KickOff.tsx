@@ -9,7 +9,7 @@ export default function KickOff() {
             name='kickoff'
         >
             <h1
-                className='text-clr-6 fw-600 fs-20 lg-fs-40 lh-24'
+                className='ff-montserrat text-clr-6 fw-600 fs-20 lg-fs-40 lh-24'
             >
                 {homeData.kickoff.title}
             </h1>
@@ -25,20 +25,20 @@ export default function KickOff() {
 
                             <div className='details'>
                                 <h2
-                                    className='text-clr-2 lg-fs-24 fs-18 fw-500 lh-24'
+                                    className='ff-montserrat text-clr-2 lg-fs-24 fs-18 fw-500 lh-24'
                                 >
                                     {item.title}
                                 </h2>
 
                                 <p
-                                    className='fw-500 fs-14 lh-24 text-clr-3'
+                                    className='ff-montserrat fw-500 fs-14 lh-24 text-clr-3'
                                 >
                                     {item.details}
                                 </p>
 
                                 <Link
                                     href={item.cta.link}
-                                    className='btn btn-light fw-500 fs-14 lh-24 text-center text-clr-4'
+                                    className='btn btn-light ff-inter fw-500 fs-14 lh-24 text-center text-clr-4'
                                 >
                                     {item.cta.label}
                                 </Link>

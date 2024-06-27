@@ -55,7 +55,7 @@ export default function ArticleItems() {
                                     style={{backgroundImage: `url(${item.image})`}}
                                 />
 
-                                <div className='details'>
+                                <div className='details ff-inter'>
                                     <h2
                                         className='fw-500 fs-14 lh-24 text-clr-dark'
                                     >

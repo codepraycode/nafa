@@ -44,7 +44,7 @@ export default function Events() {
                                     />
                                 </div>
 
-                                <div className='details text-clr-2'>
+                                <div className='details ff-inter text-clr-2'>
                                     <div>
                                         <h3
                                             className='fw-600 lg-fs-48 fs-36 lh-24'

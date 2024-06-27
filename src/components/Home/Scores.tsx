@@ -7,6 +7,8 @@ export default function LiveScores() {
     return (
         <Section
             name='live_scores'
+
+            className='ff-montserrat'
         >
             <h2
                 className='fw-600 lg-fs-32 fs-20 lh-24 text-clr-4 text-uppercase'
