@@ -146,9 +146,12 @@ footer {
     }
 
     .logo {
-        width: 9.75rem;
+        width: 4rem;
         height: 4.5625rem;
+
+        display: block;
         margin-inline: auto;
+
         
         @include mixins.least-large-screen {
             width: 4rem;

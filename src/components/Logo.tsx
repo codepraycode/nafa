@@ -16,8 +16,8 @@ export default function Logo(props: LogoProps) {
             <Image
                 src={
                     props.second ? 
-                    "/logo.png" : 
-                    "/logo-2.png"
+                    "/logo-2.png" :
+                    "/logo.png"
                 }
                 alt='NAFA LOGO'
                 width={100}

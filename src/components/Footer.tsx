@@ -7,7 +7,7 @@ export default function Footer() {
 
 
             <div className="footer-wrapper">
-                <Logo />
+                <Logo second/>
 
                 <nav>
                     <div>

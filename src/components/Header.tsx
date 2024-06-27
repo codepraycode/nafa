@@ -37,7 +37,7 @@ export default function Header() {
 
             <div className="header-wrapper d-flex align-center">
 
-                <Logo second/>
+                <Logo />
 
                 <nav className='d-flex align-center'>
 
