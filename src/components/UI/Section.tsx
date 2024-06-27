@@ -5,6 +5,7 @@ import React, { HTMLAttributes } from 'react'
 export interface SectionProps extends HTMLAttributes<HTMLElement> {
     name: string,
     children: React.ReactNode,
+    wrapperClassName?: string,
     noWrapper?:boolean,
     image?:string
 }
@@ -12,11 +13,11 @@ export interface SectionProps extends HTMLAttributes<HTMLElement> {
 
 export default function Section(props: SectionProps) {
 
-    const {className: moreCln, noWrapper, children, ...rest} = props;
+    const {className: moreCln, wrapperClassName: wrpcl, noWrapper, children, ...rest} = props;
 
-    const className = (`${props.name}` +" " + moreCln).trim();
+    const className = (`${props.name}` +" " + (moreCln || '')).trim();
 
-    const wrapperClassName = `${props.name}-wrapper`
+    const wrapperClassName = `${props.name}-wrapper ${wrpcl}`.trim();
 
 
     return (

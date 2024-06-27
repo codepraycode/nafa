@@ -18,9 +18,15 @@ export default function HistoryPage() {
                 image={""}
             />
 
-            <Section name='page-content' className='policy'>
-                <div className='items-menu'>
-                    <ul className='role-list'>
+            <Section
+                name='page-content'
+                className='policy'
+                wrapperClassName='lg-d-flex align-start lg-flex-row flex-column gap-40 lg-px-0 px-16'
+            >
+                <div className='items-menu mb-80 lg-mb-0'>
+                    <ul
+                        className='role-list d-inline-block ff-gotham fw-400 fs-20 lh-37 lg-text-justify text-decoration-none'
+                    >
                         <li>
                             <Link href={slugifyLink("PURPOSE OF THE POLICY", "#")}>
                                 PURPOSE OF THE POLICY
@@ -61,11 +67,13 @@ export default function HistoryPage() {
 
                 <div className="items-content">
                     <h1
-                        className='text-clr-8 fs-48 fw-700 lh-37 ff-gotham'
+                        className='text-clr-8 fs-48 fw-700 lg-lh-37 lh-48 ff-gotham'
                     >
                         POLICY STATEMENT FOR NAFA
                     </h1>
+
                     <br/><br/>
+
                     <p className='ff-montserrat fw-400 fs-20 lh-37 text-justify'>
                         The Nigeria American Football Association (NAFA) is committed 
                         to providing a fun, safe, and respectful environment for all 

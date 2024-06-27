@@ -1424,29 +1424,21 @@ main:has(.page-header) {
 
 
 .policy .page-content-wrapper {
-    display: flex;
-    align-items: flex-start;
-    flex-direction: column;
-    gap: 2.5rem;
-
-    padding-inline: 1rem;
-
-    @include mixins.least-large-screen {
-        flex-direction: row;
-        padding-inline: 0rem;
-    }
 
     .items-menu {
         width: 25.75rem;
         max-width: 100%;
 
         ul {
+            width: 100%;
             list-style: none;
-            padding: 0;
             
             border: 0.5px solid hsla(0, 0%, 12%, 1);
+            
             border-radius: 0.3125rem;
             padding-block: 2.0625rem;
+            padding-inline: 0;
+
             li {
                 padding-left: 1.5rem;
                 color: $clr-text-dark;
@@ -1458,18 +1450,14 @@ main:has(.page-header) {
                 }
                 
                 a {
-                    display: inline-block;
-                    @include mixins.fonts($family: $gotham-font, $weight: 400);
-                    font-size: 1.25rem;
-                    line-height: 2.3125rem;
+                    // display: inline-block;
+                    // @include mixins.fonts($family: $gotham-font, $weight: 400);
+                    font-size: inherit;
+                    line-height: inherit;
                     
                     color: inherit;
-                    text-decoration: none;
-
-
-                    @include mixins.least-large-screen {
-                        text-align: justify;
-                    }
+                    text-decoration: inherit;
+                    text-align: inherit;
                     
                 }
             }
