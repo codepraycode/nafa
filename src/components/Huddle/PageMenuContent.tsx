@@ -24,7 +24,7 @@ function HuddlePageContent({data}:{data: PageData | null}) {
                 <PageMenu />
 
                 <div className='ff-gotham lh-37'>
-                    <h2 className='fw-700 lg-fs-48 fs-20 lh-37 text-clr-8'>
+                    <h2 className='fw-700 lg-fs-48 fs-20 lh-62 text-clr-8'>
                         {data.title}
                     </h2>
 

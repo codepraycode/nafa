@@ -12,12 +12,12 @@ export default function Footer() {
                 <nav>
                     <div>
                         <h3
-                            className='fw-600 lg-fs-24 fs-18 lh-24 text-clr-dark'
+                            className='ff-inter fw-600 lg-fs-24 fs-18 lh-24 text-clr-dark'
                         >
                             Explore
                         </h3>
                         {/* <br/> */}
-                        <ul role='list' className='text-decoration-none fw-400 lg-fs-20 fs-14 lh-16 lg-lh-24'>
+                        <ul role='list' className='ff-inter text-decoration-none fw-400 lg-fs-20 fs-14 lh-16 lg-lh-24'>
                             <li><AppLink href={"/"}>Tournaments & Events</AppLink></li>
                             <li><AppLink href={"/"}>About NAFA</AppLink></li>
                             <li><AppLink href={"/"}>News</AppLink></li>
@@ -28,11 +28,11 @@ export default function Footer() {
 
                     <div>
                         <h3
-                            className='fw-600 lg-fs-24 fs-18 lh-24 text-clr-dark'
+                            className='ff-inter fw-600 lg-fs-24 fs-18 lh-24 text-clr-dark'
                         >
                             Also Visit
                         </h3>
-                        <ul role='list' className='text-decoration-none fw-400 lg-fs-20 fs-14 lh-16 lg-lh-24'>
+                        <ul role='list' className='ff-inter text-decoration-none fw-400 lg-fs-20 fs-14 lh-16 lg-lh-24'>
                             <li><AppLink href={"/"}>All stories & topics</AppLink></li>
                             <li><AppLink href={"/"}>Reports & Documents</AppLink></li>
                             <li><AppLink href={"/"}>Jobs & Career</AppLink></li>
@@ -72,7 +72,7 @@ export default function Footer() {
                 </ul>            
 
 
-                <ul role='list' className='footer_extras text-decoration-none fw-400 lg-fs-16 fs-14 lg-lh-19 lg-lh-16 text-clr-3'>
+                <ul role='list' className='footer_extras text-decoration-none ff-inter fw-400 lg-fs-16 fs-14 lg-lh-19 lg-lh-16 text-clr-3'>
                     <li>
                         <AppLink href="/">
                             Terms of service
@@ -95,11 +95,9 @@ export default function Footer() {
                     </li>
                 </ul>
             
-                <p className="fw-400 lg-fs-16 fs-14 lg-lh-19 lg-lh-16 text-clr-3">
+                <p className="ff-inter fw-400 lg-fs-16 fs-14 lg-lh-19 lg-lh-16 text-clr-3">
                     Copyright 2024 NAFA. All rights reserved.
-                </p>
-
-                <p>
+                    <br/><br/><br/>
                     Cookie Settings
                 </p>
             </div>

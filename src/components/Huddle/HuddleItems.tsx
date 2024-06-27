@@ -48,10 +48,10 @@ function ItemHighlight({data}:{data: PageDataItemHighlight[]}) {
                         </Link>
 
                         <Link href={slugifyLink(item.title, "#")}
-                            className="_back fw-400"
+                            className="_back"
                         >
                             <h3
-                                className="fs-28 lh-33"
+                                className="fw-400 fs-28 lh-33"
                             >
                                 <b
                                     className="fw-600"
@@ -69,7 +69,7 @@ function ItemHighlight({data}:{data: PageDataItemHighlight[]}) {
                             <br/><br/>
 
                             <p
-                                className="fs-20 lh-28 text-clr-dark"
+                                className="fw-400 fs-20 lh-28 text-clr-dark"
                             >
                                 {item.text}
                             </p>

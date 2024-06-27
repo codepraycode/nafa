@@ -1,6 +1,7 @@
 import Link from "next/link";
 import { PageDataItem } from "./Huddle/types";
 import Section from "./UI/Section";
+import { SectionTitle2 } from "./UI/SectionTitle";
 
 
 
@@ -24,18 +25,23 @@ function ItemListing({data}:{data: PageDataItem[]}) {
                             }}
                         />
 
-
-                        <div>
-                            <h3>
+                        <div
+                            className="bg-light"
+                        >
+                            <h3
+                                className="ff-montserrat fw-500 lg-fs-24 fs-18 lh-24 text-clr-2"
+                            >
                                 {item.title}
                             </h3>
 
-                            <p>
+                            <p
+                                className="ff-montserrat fw-500 fs-14 lh-24 text-clr-3"
+                            >
                                 {item.text}
                             </p>
 
                             <Link
-                                className="btn btn-light"
+                                className="btn btn-light ff-inter fw-500 fs-14 lh-24"
                                 href={item.cta?.link || "#"}
                             >
                                 {item.cta?.label || "Learn More"}
@@ -52,12 +58,14 @@ function ItemListing({data}:{data: PageDataItem[]}) {
 export default function ExpoloreItems({title, data}: ExpoloreItemsProps) {
     return (
         <Section name="explore">
-            <h2
-                className="ff-inter fw-400 fs-20 lh-24 text-clr-light"
-            >
-                {title}
-            </h2>
-            <ItemListing data={data as PageDataItem[]}/>
+            <SectionTitle2
+                title={title}
+                className='ff-montserrat fw-600 lg-fs-40 fs-20 lg-lh-48_76 lh-24_38 text-clr-2 text-capitalize underline'
+            />
+
+            <ItemListing
+                data={data as PageDataItem[]}
+            />
         </Section>
     )
 }

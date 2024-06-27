@@ -11,7 +11,7 @@ export default function Partners() {
             name="partners"
         >
             <h2
-                className="fw-500 fs-24 lh-24 text-clr-dark text-center"
+                className="ff-inter fw-500 fs-24 lh-24 text-clr-dark text-center"
             >
                 {data.title}
             </h2>
