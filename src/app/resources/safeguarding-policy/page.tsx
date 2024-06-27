@@ -1,10 +1,8 @@
 
-import Partners from '@/components/Home/Partners'
+
 import PageHeader from '@/components/PageHeader'
-import AppLink from '@/components/UI/AppLink'
 import Section from '@/components/UI/Section'
 import { slugify, slugifyLink } from '@/utils/slugify'
-import Image from 'next/image'
 import Link from 'next/link'
 import React from 'react'
 
@@ -12,9 +10,12 @@ export default function HistoryPage() {
     return (
         <>
             <PageHeader
-                title='SAFEGUARDING POLICY'
+                title={
+                    <span className='lg-fs-80 fs-48 lg-lh-73 lh-48_24'>
+                        SAFEGUARDING POLICY
+                    </span>
+                }
                 image={""}
-                small
             />
 
             <Section name='page-content' className='policy'>
@@ -66,7 +67,11 @@ export default function HistoryPage() {
                     </h1>
                     <br/><br/>
                     <p className='ff-montserrat fw-400 fs-20 lh-37 text-justify'>
-                        The Nigeria American Football Association (NAFA) is committed to providing a fun, safe, and respectful environment for all children, young people, and adults involved in American Football. We recognise the right of all participants to be free from all forms of abuse and acknowledge our duty of care to safeguard them.
+                        The Nigeria American Football Association (NAFA) is committed 
+                        to providing a fun, safe, and respectful environment for all 
+                        children, young people, and adults involved in American Football. 
+                        We recognise the right of all participants to be free from all forms 
+                        of abuse and acknowledge our duty of care to safeguard them.
                     </p>
 
                     <br/><br/><br/><br/>
@@ -80,8 +85,15 @@ export default function HistoryPage() {
                     <br/><br/>
 
                     <p className='ff-montserrat fw-400 fs-20 lh-37 text-justify'>
-                        This policy outlines our commitment to safeguarding individuals involved in the delivery of American Football in Nigeria. It is supported by codes of conduct, guidelines, and procedures to ensure effective implementation. This policy applies to everyone, without any form of discrimination.<br/>
-                        We recognise that certain groups, such as disabled individuals, women, and those on elite pathways, may be particularly vulnerable to abuse. NAFA accepts the responsibility to promote their inclusion, safety, and well-being throughout all levels of our sport.
+                        This policy outlines our commitment to safeguarding individuals 
+                        involved in the delivery of American Football in Nigeria. It is 
+                        supported by codes of conduct, guidelines, and procedures to ensure 
+                        effective implementation. This policy applies to everyone, without 
+                        any form of discrimination.<br/>
+                        We recognise that certain groups, such as disabled individuals, women, 
+                        and those on elite pathways, may be particularly vulnerable to abuse. 
+                        NAFA accepts the responsibility to promote their inclusion, safety, 
+                        and well-being throughout all levels of our sport.
                     </p>
 
                     <br/><br/><br/><br/>
@@ -102,15 +114,24 @@ export default function HistoryPage() {
                             <span className='fw-600'>Adult</span>: A person aged 18 years or older.
                         </li>
                         <li>
-                            <span className='fw-600'>Abuse</span>: Any act or omission that harms another person, which can be physical, emotional, sexual, or by neglect. Abuse can occur in person or online and can be perpetrated by an adult or another child.
+                            <span className='fw-600'>Abuse</span>: Any act or omission that 
+                            harms another person, which can be physical, emotional, sexual, or 
+                            by neglect. Abuse can occur in person or online and can be perpetrated by 
+                            an adult or another child.
                         </li>
 
                         <li>
-                            <span className='fw-600'>Safeguarding</span>: Proactive measures taken to ensure the safety of children and vulnerable adults from harm when involved in American Football.
+                            <span className='fw-600'>Safeguarding</span>: Proactive measures taken to 
+                            ensure the safety of children and vulnerable adults from harm when involved 
+                            in American Football.
                         </li>
 
                         <li>
-                            <span className='fw-600'>Child/Adult Protection</span>: refers to the action taken in response to a specific concern for a child or other vulnerable individual who may be suffering or are at risk of suffering harm or abuse. It is an essential part of safeguarding and requires referral to specialized protection services, law-enforcement agencies and expert local organizations who are trained to advice on and manage cases, if concerns arise.
+                            <span className='fw-600'>Child/Adult Protection</span>: 
+                            refers to the action taken in response to a specific concern for a child or other vulnerable individual 
+                            who may be suffering or are at risk of suffering harm or abuse. It 
+                            is an essential part of safeguarding and requires referral to specialized protection services, law-enforcement agencies 
+                            and expert local organizations who are trained to advice on and manage cases, if concerns arise.
                         </li>
                     </ul>
                     <br/><br/>
@@ -177,9 +198,21 @@ export default function HistoryPage() {
                     <div>
                         <ul className='ff-montserrat fw-400 fs-20 lh-37 text-justify'>
                             <li>Appoint a safeguarding officer. </li>
-                            <li>Set up an internal steering group to guide our work and/or an external expert advisory group.</li>
-                            <li>Collaborate with local child protection authorities/agencies and civil society organisations.</li>
-                            <li>Implement protocols to ensure prompt and appropriate action in response to allegations of abuse. This includes the referral of concerns to the relevant statutory authorities. Recognising that in some contexts, such authorities may not exist, it is crucial to establish and maintain partnerships with expert local organisations and NGOs. These partners will be vetted for their competence and training in managing such issues, ensuring a comprehensive and effective response system is in place.</li>
+                            <li>Set up an internal steering group to guide our work 
+                                and/or an external expert advisory group.
+                            </li>
+                            <li>Collaborate with local child protection authorities/agencies 
+                                and civil society organisations.
+                            </li>
+                            <li>Implement protocols to ensure prompt and appropriate action in 
+                                response to allegations of abuse. This includes the referral of 
+                                concerns to the relevant statutory authorities. Recognising that 
+                                in some contexts, such authorities may not exist, it is crucial 
+                                to establish and maintain partnerships with expert local organisations 
+                                and NGOs. These partners will be vetted for their competence and training 
+                                in managing such issues, ensuring a comprehensive and effective response 
+                                system is in place.
+                            </li>
                             <li>Develop an implementation/action plan to promote and install safeguarding measures across the NAFA.</li>
                             <li>Implement stringent recruitment and screening procedures to prevent the employment of unsuitable individuals.</li>
                             <li>Ensure that all staff and volunteers are fully aware of their roles and responsibilities concerning safeguarding practices. Provide comprehensive training upon their induction into the organisation and continue with regular training sessions and updates at least annually.</li>

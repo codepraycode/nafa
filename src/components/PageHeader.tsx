@@ -68,7 +68,6 @@ export default function PageHeader(props:PageHeader) {
             <br/><br/><br/><br/>
 
             <h1
-                data-small={props.small && "true"}
                 className='ff-inria-sans fw-700 text-clr-light text-center lg-text-left'
             >
                 {props.title}
