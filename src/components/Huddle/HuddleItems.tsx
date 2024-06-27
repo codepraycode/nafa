@@ -5,6 +5,7 @@ import { PageDataItem, PageDataItemHighlight } from "./types";
 import Link from "next/link";
 import Section from "../UI/Section";
 import ExpoloreItems from "../ExploreItems";
+import React from "react";
 
 
 
@@ -14,12 +15,20 @@ function ItemHighlight({data}:{data: PageDataItemHighlight[]}) {
         <>
             {
                 data.map((item, i)=>(
-                    <article key={i}>
+                    <article
+                        key={i}
+                        className="ff-inter"
+                    >
                         <Link href={slugifyLink(item.title, "#")}
                             className="_front"
                             style={{backgroundColor: item.bg}}
                         >
-                            <h3><TextMunch text={item.heading}/></h3>
+                            <h3
+                                className="fw-400 fs-28 lh-33 text-clr-light"
+                            >
+                                <TextMunch text={item.heading}/>
+                            </h3>
+
                             <br/><br/>
 
                             <div className="img-wrapper">
@@ -39,20 +48,31 @@ function ItemHighlight({data}:{data: PageDataItemHighlight[]}) {
                         </Link>
 
                         <Link href={slugifyLink(item.title, "#")}
-                            className="_back"
+                            className="_back fw-400"
                         >
-                            {/* <h3>
-                                <b>{item.title}</b>: {item.heading}
-                            </h3> */}
-                            <h3><b>{item.title}</b>: {item.heading.map((e,i)=>(
-                                <>
-                                    {e}
-                                    {(i !== item.heading.length -1) && <br/>}
-                                </>
-                            ))}</h3>
+                            <h3
+                                className="fs-28 lh-33"
+                            >
+                                <b
+                                    className="fw-600"
+                                >
+                                    {item.title}
+                                </b>:{" "}
+                                {item.heading.map((e,i)=>(
+                                    <React.Fragment key={i}>
+                                        {e}
+                                        {(i !== item.heading.length -1) && <br/>}
+                                    </React.Fragment>
+                                ))}
+                            </h3>
+
                             <br/><br/>
 
-                            <p>{item.text}</p>
+                            <p
+                                className="fs-20 lh-28 text-clr-dark"
+                            >
+                                {item.text}
+                            </p>
                         </Link>
                     </article>
                 ))

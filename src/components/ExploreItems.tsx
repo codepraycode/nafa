@@ -52,7 +52,11 @@ function ItemListing({data}:{data: PageDataItem[]}) {
 export default function ExpoloreItems({title, data}: ExpoloreItemsProps) {
     return (
         <Section name="explore">
-            <h2 className="section-title">{title}</h2>
+            <h2
+                className="ff-inter fw-400 fs-20 lh-24 text-clr-light"
+            >
+                {title}
+            </h2>
             <ItemListing data={data as PageDataItem[]}/>
         </Section>
     )

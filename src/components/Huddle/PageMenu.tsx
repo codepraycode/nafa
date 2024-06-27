@@ -39,10 +39,21 @@ export default function PageMenu() {
                                 href={rlink}
                                 scroll={false}
                                 data-active={current_path.includes(rlink)}
+                                className='lh-37 text-clr-light text-decoration-none'
                             >
-                                <b>{firstLetter}</b>
+                                <b
+                                    className='ff-gotham fw-700 lg-fs-96 fs-40'
+                                >
+                                    {firstLetter}
+                                </b>
+
                                 <hr/>
-                                <span>{item.text}</span>
+
+                                <span
+                                    className='ff-poppins fw-500 lg-fs-48 fs-20'
+                                >
+                                    {item.text}
+                                </span>
                             </Link>
                         </li>
                     )

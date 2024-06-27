@@ -23,20 +23,25 @@ function HuddlePageContent({data}:{data: PageData | null}) {
             <Section name="huddle-menu">
                 <PageMenu />
 
-                <div>
-                    <h2>
+                <div className='ff-gotham lh-37'>
+                    <h2 className='fw-700 lg-fs-48 fs-20 lh-37 text-clr-8'>
                         {data.title}
                     </h2>
+
                     <br/>
-                    <p>
+
+                    <p
+                        className='fw-400 lg-fs-20 fs-14 text-justify text-clr-dark'
+                    >
                         <TextMunch text={data.paragraph}/>
                     </p>
+
                 </div>
             </Section>
 
             <br/><br/><br/><br/>
             
-            <p className="huddle-title">
+            <p className="ff-montserrat fw-400 lg-fs-20 fs-14 lh-37 text-clr-dark">
                 {/* {data.text} */}
                 <TextMunch text={data.text}/>
             </p>
@@ -78,7 +83,7 @@ export default function PageContent() {
         case 'entertainment':
             pageData = huddleData.sectionData.entertainment;
             break;
-        case "huddle":
+        case "the-huddle-way":
             pageData = huddleData.sectionData.default;
             break;
         default:

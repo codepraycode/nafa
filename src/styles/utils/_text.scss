@@ -175,6 +175,10 @@
         font-size: 3rem;
     }
 
+    &-96 {
+        font-size: 6rem;
+    }
+
     &-100 {
         font-size: 6.25rem;
     }
@@ -232,6 +236,10 @@
     }
     &-29 {
         line-height: 1.82875rem;
+    }
+
+    &-33 {
+        line-height: 2.118125rem;
     }
 
     &-36 {
@@ -320,6 +328,10 @@
     &-inter {
         font-family: $inter-font;
         font-variation-settings: "slnt" 0;
+    }
+
+    &-poppins {
+        font-family: $poppins;
     }
 
     &-inria-sans,
