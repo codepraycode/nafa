@@ -97,12 +97,25 @@ main:has(.page-header) {
 }
 
 
+.header-image {
+
+    background-blend-mode: multiply;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    &--right {
+        // background-position: right;
+        background-position-y: center;
+        background-position-x: right;
+
+        background-size: contain;
+    }
+}
+
+
 .page-header {
     
     position: relative;
-    background-blend-mode: multiply;
-    background-position: center;
-    background-repeat: no-repeat;
 
 
     min-height: 20.4375rem;

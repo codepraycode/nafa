@@ -44,24 +44,33 @@ function Breadcrumb() {
 
 
 interface PageHeader {
-    title: string | React.ReactNode,
-    text?: string | React.ReactNode,
-    image?: string,
-    small?: boolean,
+    title: string | React.ReactNode;
+    text?: string | React.ReactNode;
+    image?: string;
+    backgroundImage?: string;
+    className?: string;
+    small?: boolean;
+
 }
+
+
+const defaultHeaderStyle = (image?: string) => !image ? '' : `
+linear-gradient(
+269.67deg, 
+#FFFFFF 0.29%, 
+#355920 30.51%, 
+#000000 70.07%
+),
+url(${image})
+`
 
 export default function PageHeader(props:PageHeader) {
     return (
         <Section
             name='page-header'
+            className={props.className || ''}
             style={{
-                backgroundImage: `linear-gradient(
-                    269.67deg, 
-                    #FFFFFF 0.29%, 
-                    #355920 30.51%, 
-                    #000000 70.07%
-                    ),
-                    url(${props.image})`
+                backgroundImage: props.backgroundImage || defaultHeaderStyle(props.image)
             }}
         >
             <Breadcrumb />

@@ -6,6 +6,9 @@ import { slugify, slugifyLink } from '@/utils/slugify'
 import Link from 'next/link'
 import React from 'react'
 
+
+const headerImage = "https://nobox-upload-bucket.s3.eu-west-2.amazonaws.com/uploads/00665c29-09a2-4d66-9423-ae0bf4e5747b_5b21f6e2ba279250cb822e4004b4e60c.png";
+
 export default function HistoryPage() {
     return (
         <>
@@ -15,7 +18,15 @@ export default function HistoryPage() {
                         SAFEGUARDING POLICY
                     </span>
                 }
-                image={""}
+                backgroundImage={`
+                    linear-gradient(
+                        269.65deg, 
+                        #355920 0.3%, 
+                        #000000 97.53%),
+                        url(${headerImage})
+                `}
+
+                className='header-image header-image--right'
             />
 
             <Section
