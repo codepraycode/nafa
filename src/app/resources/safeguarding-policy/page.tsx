@@ -34,7 +34,7 @@ export default function HistoryPage() {
                 className='policy'
                 wrapperClassName='lg-d-flex align-start lg-flex-row flex-column gap-40 lg-px-0 px-16'
             >
-                <div className='items-menu mb-80 lg-mb-0'>
+                <div className='items-menu mb-80 lg-mb-0 lg-position-sticky top-80'>
                     <ul
                         className='role-list d-inline-block ff-gotham fw-400 fs-20 lh-37 lg-text-justify text-decoration-none'
                     >

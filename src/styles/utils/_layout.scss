@@ -62,3 +62,22 @@
         flex-direction: row;
     }
 }
+
+@include mixins.responsive-options('position') {
+    &-sticky {
+        position: sticky;
+    }
+}
+
+@include mixins.responsive-options('top') {
+    &-0 {
+        top: 0rem;
+    }
+
+    &-78 {
+        top: 4.875rem;
+    }
+    &-80 {
+        top: 8rem;
+    }
+}
